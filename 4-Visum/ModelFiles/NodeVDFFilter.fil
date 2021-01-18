@@ -1,0 +1,10 @@
+<?xml  version = "1.0"  encoding = "UTF-8"?>
+<FILTER  VERSIONNO = "1900">
+  <NODE    USEFILTER = "1"    COMPLEMENT = "0">
+    <CONDITIONS>
+      <CONDITION        OPERATION = "OP_NONE"        COMPLEMENT = "0">
+        <CONTAINEDIN          ATTRIBUTE = "TYPENO"          VALUE = "5,20,43"        />        
+      </CONDITION>
+    </CONDITIONS>
+  </NODE>
+</FILTER>

@@ -1,0 +1,2369 @@
+01/25/17 16.04.54.241 Open file
+                      Open "P:\Transportation\TravelDemandModel\SCOG_Model\2016_RTP\2012\VersionFiles\Skagit\ModelFiles\protocol.txt"
+01/25/17 16.04.54.242 Path of LOG files has been adjusted.
+                         Previous path: "\\SBS08\UserShares\gabephilips\Application Data\PTV Vision\PTV Visum 16\Log\protocol.txt"
+                         New path: "P:\Transportation\TravelDemandModel\SCOG_Model\2016_RTP\2012\VersionFiles\Skagit\ModelFiles\protocol.txt"
+                      Open "P:\Transportation\TravelDemandModel\SCOG_Model\2016_RTP\2012\VersionFiles\Skagit\ModelFiles\messages.txt"
+01/25/17 16.04.57.312 Procedure - start
+01/25/17 16.04.57.376 Start Procedure step   2: "Read filter"
+01/25/17 16.04.57.496 Start Procedure step   3: "Edit attribute"
+                      Links: 4892 objects were subject to changes. 
+01/25/17 16.04.57.689 Start Procedure step   4: "Edit attribute"
+                      Links: 4892 objects were subject to changes. 
+01/25/17 16.04.57.847 Start Procedure step   5: "Edit attribute"
+                      Links: 4892 objects were subject to changes. 
+01/25/17 16.04.58.052 Start Procedure step   6: "Edit attribute"
+                      Links: 4892 objects were subject to changes. 
+01/25/17 16.04.58.222 Start Procedure step   7: "Edit attribute"
+                      Turns: 13024 objects were subject to changes. 
+01/25/17 16.04.58.929 Start Procedure step   8: "Edit attribute"
+                      Turns: 13024 objects were subject to changes. 
+01/25/17 16.04.59.636 Start Procedure step   9: "Edit attribute"
+                      Nodes: 2020 objects were subject to changes. 
+01/25/17 16.04.59.813 Start Procedure step  10: "Read filter"
+01/25/17 16.04.59.952 Start Procedure step  11: "Edit attribute"
+                      Nodes: 474 objects were subject to changes. 
+01/25/17 16.05.00.131 Start Procedure step  12: "Read filter"
+01/25/17 16.05.00.261 Start Procedure step  13: "Init assignment"
+01/25/17 16.05.00.343 Start Procedure step  14: "Group"
+01/25/17 16.05.00.414 Start Procedure step  15: "Group"
+01/25/17 16.05.00.486 Start Procedure step  16: "Read filter"
+01/25/17 16.05.00.611 Start Procedure step  17: "Calculate PrT skim matrix"
+                      The shortest path graph has been reduced by 47.0%
+01/25/17 16.05.01.519 Start Procedure step  18: "Calculate PrT skim matrix"
+                      The shortest path graph has been reduced by 47.0%
+01/25/17 16.05.02.372 Start Procedure step  19: "Combination of matrices and vectors"
+01/25/17 16.05.02.464 Start Procedure step  20: "Read filter"
+01/25/17 16.05.02.598 Start Procedure step  21: "Trip distribution"
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+                      Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+                      Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+                      Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+                      Matrix total 5 RECpa after distribution of all demand strata:  384.041
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+Matrix total 5 RECpa after distribution of all demand strata:  384.041
+01/25/17 16.05.03.052 Start Procedure step  22: "Read filter"
+01/25/17 16.05.03.170 Start Procedure step  23: "Combination of matrices and vectors"
+01/25/17 16.05.03.264 Start Procedure step  24: "Combination of matrices and vectors"
+01/25/17 16.05.03.363 Start Procedure step  25: "Combination of matrices and vectors"
+01/25/17 16.05.03.464 Start Procedure step  26: "Combination of matrices and vectors"
+01/25/17 16.05.03.547 Start Procedure step  27: "Combination of matrices and vectors"
+01/25/17 16.05.03.631 Start Procedure step  28: "Group"
+01/25/17 16.05.03.703 Start Procedure step  29: "PrT assignment"
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Equilibrium assignment: Start solution is recalculated.
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg A-HBW, routes in total 201662
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg B-HBO, routes in total 197660
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg C-NHB, routes in total 183374
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg D-KSCO, routes in total 2646
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg E-REC, routes in total 4408
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg XXC, routes in total 33
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg A-HBW, routes in total 222842
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg B-HBO, routes in total 218583
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg C-NHB, routes in total 202829
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg D-KSCO, routes in total 3135
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg E-REC, routes in total 5228
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg XXC, routes in total 41
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg A-HBW, routes in total 306395
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg B-HBO, routes in total 300895
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg C-NHB, routes in total 279529
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg D-KSCO, routes in total 4026
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg E-REC, routes in total 8147
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg XXC, routes in total 63
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     1 network balancing step     1 modified OD pairs 227427 total excess cost 296296.06210459 avg excess cost 6.77965620
+                      Iteration     1 network balancing step     2 modified OD pairs 10894 total excess cost 965.03169477 avg excess cost 0.02208124
+                      Iteration     1 network balancing step     3 modified OD pairs  1405 total excess cost 157.48552428 avg excess cost 0.00360348
+                      Iteration     1 network balancing step     4 modified OD pairs  1856 total excess cost 107.08176696 avg excess cost 0.00245018
+                      Iteration     1 network balancing step     5 modified OD pairs   324 total excess cost 94.48268912 avg excess cost 0.00216189
+                      Iteration     1 number of deleted paths after OD balancing 268759
+                      Iteration     1 number of deleted paths after network balancing 7
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg A-HBW routes total 309501 routes new 94389
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg B-HBO routes total 303662 routes new 186822
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg C-NHB routes total 281951 routes new 272312
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg D-KSCO routes total 4104 routes new 273479
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg E-REC routes total 7368 routes new 276335
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg XXC routes total 56 routes new 276353
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     2 network balancing step     1 modified OD pairs 260298 total excess cost 38589.91194777 avg excess cost 0.88298958
+                      Iteration     2 network balancing step     2 modified OD pairs 17948 total excess cost 552.00841763 avg excess cost 0.01263070
+                      Iteration     2 network balancing step     3 modified OD pairs   974 total excess cost 84.35876586 avg excess cost 0.00193024
+                      Iteration     2 network balancing step     4 modified OD pairs   375 total excess cost 86.55745030 avg excess cost 0.00198055
+                      Iteration     2 network balancing step     5 modified OD pairs   454 total excess cost 34.27187674 avg excess cost 0.00078419
+                      Iteration     2 number of deleted paths after OD balancing 291500
+                      Iteration     2 number of deleted paths after network balancing 1853
+                      
+                      Iteration     2 gap 0.01545038
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg A-HBW routes total 251251 routes new 41803
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg B-HBO routes total 246774 routes new 83037
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg C-NHB routes total 229546 routes new 121612
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg D-KSCO routes total 3226 routes new 122000
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg E-REC routes total 5949 routes new 123495
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg XXC routes total 45 routes new 123502
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     3 network balancing step     1 modified OD pairs 101270 total excess cost 11597.29383207 avg excess cost 0.26536183
+                      Iteration     3 network balancing step     2 modified OD pairs 16723 total excess cost 368.05693249 avg excess cost 0.00842164
+                      Iteration     3 network balancing step     3 modified OD pairs  2696 total excess cost 50.76445086 avg excess cost 0.00116156
+                      Iteration     3 network balancing step     4 modified OD pairs   248 total excess cost 44.93678029 avg excess cost 0.00102821
+                      Iteration     3 network balancing step     5 modified OD pairs    43 total excess cost 39.79292021 avg excess cost 0.00091052
+                      Iteration     3 number of deleted paths after OD balancing 121303
+                      Iteration     3 number of deleted paths after network balancing 5425
+                      
+                      Iteration     3 gap 0.00136513
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg A-HBW routes total 254973 routes new 46597
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg B-HBO routes total 249818 routes new 91949
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg C-NHB routes total 232643 routes new 134679
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg D-KSCO routes total 3335 routes new 135195
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg E-REC routes total 6430 routes new 137174
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg XXC routes total 48 routes new 137184
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     4 network balancing step     1 modified OD pairs 100663 total excess cost 2125.84621317 avg excess cost 0.04864225
+                      Iteration     4 network balancing step     2 modified OD pairs 19894 total excess cost 115.96886487 avg excess cost 0.00265353
+                      Iteration     4 network balancing step     3 modified OD pairs   353 total excess cost 59.37264121 avg excess cost 0.00135853
+                      Iteration     4 network balancing step     4 modified OD pairs   389 total excess cost 50.55822222 avg excess cost 0.00115684
+                      Iteration     4 network balancing step     5 modified OD pairs   180 total excess cost 47.07579532 avg excess cost 0.00107716
+                      Iteration     4 number of deleted paths after OD balancing 122141
+                      Iteration     4 number of deleted paths after network balancing 16538
+                      
+                      Iteration     4 gap 0.00165316
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg A-HBW routes total 226285 routes new 18399
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg B-HBO routes total 222059 routes new 36498
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg C-NHB routes total 206795 routes new 53871
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg D-KSCO routes total 3016 routes new 54072
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg E-REC routes total 5595 routes new 55220
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg XXC routes total 41 routes new 55223
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     5 network balancing step     1 modified OD pairs 22706 total excess cost 693.29684169 avg excess cost 0.01586357
+                      Iteration     5 network balancing step     2 modified OD pairs  6812 total excess cost 64.69705054 avg excess cost 0.00148036
+                      Iteration     5 network balancing step     3 modified OD pairs   243 total excess cost 31.36954628 avg excess cost 0.00071778
+                      Iteration     5 network balancing step     4 modified OD pairs  1253 total excess cost 25.41326099 avg excess cost 0.00058149
+                      Iteration     5 network balancing step     5 modified OD pairs   476 total excess cost 12.09301769 avg excess cost 0.00027670
+                      Iteration     5 number of deleted paths after OD balancing 31438
+                      Iteration     5 number of deleted paths after network balancing 24024
+                      
+                      Iteration     5 gap 0.00020629
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg A-HBW routes total 238282 routes new 30467
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg B-HBO routes total 233260 routes new 59836
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg C-NHB routes total 217311 routes new 87795
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg D-KSCO routes total 3237 routes new 88244
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg E-REC routes total 5265 routes new 89064
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg XXC routes total 46 routes new 89072
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     6 network balancing step     1 modified OD pairs 34207 total excess cost 297.74000235 avg excess cost 0.00681270
+                      Iteration     6 network balancing step     2 modified OD pairs 45071 total excess cost 66.64146002 avg excess cost 0.00152485
+                      Iteration     6 network balancing step     3 modified OD pairs   205 total excess cost 84.57175316 avg excess cost 0.00193512
+                      Iteration     6 network balancing step     4 modified OD pairs   184 total excess cost 37.69904107 avg excess cost 0.00086261
+                      Iteration     6 network balancing step     5 modified OD pairs    43 total excess cost 37.22721501 avg excess cost 0.00085181
+                      Iteration     6 network balancing step     6 modified OD pairs    50 total excess cost 34.76106366 avg excess cost 0.00079538
+                      Iteration     6 network balancing step     7 modified OD pairs    70 total excess cost 32.28363455 avg excess cost 0.00073869
+                      Iteration     6 network balancing step     8 modified OD pairs    52 total excess cost 32.48482528 avg excess cost 0.00074330
+                      Iteration     6 network balancing step     9 modified OD pairs    47 total excess cost 34.63266371 avg excess cost 0.00079244
+                      Iteration     6 network balancing step    10 modified OD pairs    72 total excess cost 32.94680780 avg excess cost 0.00075387
+                      Iteration     6 number of deleted paths after OD balancing 80085
+                      Iteration     6 number of deleted paths after network balancing 9505
+                      
+                      Iteration     6 gap 0.00013009
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg A-HBW routes total 223296 routes new 15654
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg B-HBO routes total 219111 routes new 31050
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg C-NHB routes total 203783 routes new 45650
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg D-KSCO routes total 2980 routes new 45842
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg E-REC routes total 5539 routes new 46936
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg XXC routes total 42 routes new 46940
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     7 network balancing step     1 modified OD pairs  6751 total excess cost 90.55826714 avg excess cost 0.00207210
+                      Iteration     7 network balancing step     2 modified OD pairs  2474 total excess cost 31.87902432 avg excess cost 0.00072944
+                      Iteration     7 network balancing step     3 modified OD pairs  2371 total excess cost 16.44314426 avg excess cost 0.00037624
+                      Iteration     7 network balancing step     4 modified OD pairs    48 total excess cost 12.00305228 avg excess cost 0.00027465
+                      Iteration     7 network balancing step     5 modified OD pairs   338 total excess cost 6.83361785 avg excess cost 0.00015636
+                      Iteration     7 network balancing step     6 modified OD pairs    25 total excess cost 5.81360933 avg excess cost 0.00013302
+                      Iteration     7 network balancing step     7 modified OD pairs    12 total excess cost 18.00280859 avg excess cost 0.00041193
+                      Iteration     7 network balancing step     8 modified OD pairs   114 total excess cost 23.56662965 avg excess cost 0.00053924
+                      Iteration     7 network balancing step     9 modified OD pairs    17 total excess cost 1.13644955 avg excess cost 0.00002600
+                      Iteration     7 network balancing step    10 modified OD pairs    14 total excess cost 1.10157458 avg excess cost 0.00002521
+                      Iteration     7 number of deleted paths after OD balancing 12097
+                      Iteration     7 number of deleted paths after network balancing 34933
+                      
+                      Iteration     7 gap 0.00010340
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg A-HBW routes total 215119 routes new 7506
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg B-HBO routes total 211078 routes new 14900
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg C-NHB routes total 196209 routes new 21957
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg D-KSCO routes total 2814 routes new 21984
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg E-REC routes total 4902 routes new 22439
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg XXC routes total 42 routes new 22443
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     8 network balancing step     1 modified OD pairs  8505 total excess cost 66.68312244 avg excess cost 0.00152580
+                      Iteration     8 network balancing step     2 modified OD pairs  6797 total excess cost 23.37371629 avg excess cost 0.00053482
+                      Iteration     8 network balancing step     3 modified OD pairs    85 total excess cost 22.83702212 avg excess cost 0.00052254
+                      Iteration     8 network balancing step     4 modified OD pairs    28 total excess cost 15.18652007 avg excess cost 0.00034749
+                      Iteration     8 network balancing step     5 modified OD pairs    28 total excess cost 6.15707305 avg excess cost 0.00014088
+                      Iteration     8 network balancing step     6 modified OD pairs    15 total excess cost 1.74006054 avg excess cost 0.00003981
+                      Iteration     8 network balancing step     7 modified OD pairs    19 total excess cost 18.61475480 avg excess cost 0.00042593
+                      Iteration     8 network balancing step     8 modified OD pairs    30 total excess cost 5.81384768 avg excess cost 0.00013303
+                      Iteration     8 network balancing step     9 modified OD pairs    29 total excess cost 0.83161996 avg excess cost 0.00001903
+                      Iteration     8 network balancing step    10 modified OD pairs   163 total excess cost 14.24783273 avg excess cost 0.00032601
+                      Iteration     8 number of deleted paths after OD balancing 15659
+                      Iteration     8 number of deleted paths after network balancing 6971
+                      
+                      Iteration     8 gap 0.00005226
+                      
+                      Equilibrium assignment finished after 8 iteration steps
+01/25/17 16.06.07.045 Time before  WBRePack
+01/25/17 16.06.07.245 Time after WBRePack
+01/25/17 16.06.07.578 Time before  WBRePack
+01/25/17 16.06.07.777 Time after WBRePack
+01/25/17 16.06.08.103 Time before  WBRePack
+01/25/17 16.06.08.302 Time after WBRePack
+01/25/17 16.06.08.629 Time before  WBRePack
+01/25/17 16.06.08.639 Time after WBRePack
+01/25/17 16.06.08.650 Time before  WBRePack
+01/25/17 16.06.08.665 Time after WBRePack
+01/25/17 16.06.08.681 Time before  WBRePack
+01/25/17 16.06.08.681 Time after WBRePack
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The assignment reached convergence after 8 of a maximum of 10 iterations with a GAP of 2.95085643e-005.
+01/25/17 16.06.08.731 Time before Aggregate path trees
+01/25/17 16.06.09.117 Time after Aggregate path trees
+01/25/17 16.06.09.117 Time before Aggregate paths
+01/25/17 16.06.09.210 Time after Aggregate paths
+01/25/17 16.06.09.216 Time before Aggregate path trees
+01/25/17 16.06.09.562 Time after Aggregate path trees
+01/25/17 16.06.09.562 Time before Aggregate paths
+01/25/17 16.06.09.646 Time after Aggregate paths
+01/25/17 16.06.09.652 Time before Aggregate path trees
+01/25/17 16.06.10.017 Time after Aggregate path trees
+01/25/17 16.06.10.017 Time before Aggregate paths
+01/25/17 16.06.10.110 Time after Aggregate paths
+01/25/17 16.06.10.119 Time before Aggregate path trees
+01/25/17 16.06.10.146 Time after Aggregate path trees
+01/25/17 16.06.10.146 Time before Aggregate paths
+01/25/17 16.06.10.154 Time after Aggregate paths
+01/25/17 16.06.10.154 Time before Aggregate path trees
+01/25/17 16.06.10.197 Time after Aggregate path trees
+01/25/17 16.06.10.197 Time before Aggregate paths
+01/25/17 16.06.10.206 Time after Aggregate paths
+01/25/17 16.06.10.206 Time before Aggregate path trees
+01/25/17 16.06.10.207 Time after Aggregate path trees
+01/25/17 16.06.10.207 Time before Aggregate paths
+01/25/17 16.06.10.211 Time after Aggregate paths
+                      Go to: Convergence criterion not met  Attribute VOLVEHPRT(AP), max difference 3492.87731748 on link no. 604, Sum of deviations: 1076188.94603307
+                      GoTo: No convergence reached - Start iteration 1 of 5
+01/25/17 16.06.10.590 Start Procedure step  18: "Calculate PrT skim matrix"
+                      The shortest path graph has been reduced by 47.0%
+01/25/17 16.06.11.768 Start Procedure step  19: "Combination of matrices and vectors"
+01/25/17 16.06.11.865 Start Procedure step  20: "Read filter"
+01/25/17 16.06.12.010 Start Procedure step  21: "Trip distribution"
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+                      Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+                      Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+                      Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+                      Matrix total 5 RECpa after distribution of all demand strata:  384.041
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+Matrix total 5 RECpa after distribution of all demand strata:  384.041
+01/25/17 16.06.12.501 Start Procedure step  22: "Read filter"
+01/25/17 16.06.12.626 Start Procedure step  23: "Combination of matrices and vectors"
+01/25/17 16.06.12.727 Start Procedure step  24: "Combination of matrices and vectors"
+01/25/17 16.06.12.827 Start Procedure step  25: "Combination of matrices and vectors"
+01/25/17 16.06.12.924 Start Procedure step  26: "Combination of matrices and vectors"
+01/25/17 16.06.13.009 Start Procedure step  27: "Combination of matrices and vectors"
+01/25/17 16.06.13.095 Start Procedure step  28: "Group"
+01/25/17 16.06.13.170 Start Procedure step  29: "PrT assignment"
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Equilibrium assignment: Start solution is recalculated.
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg A-HBW, routes in total 201662
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg B-HBO, routes in total 197660
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg C-NHB, routes in total 183374
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg D-KSCO, routes in total 2646
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg E-REC, routes in total 4408
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg XXC, routes in total 33
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg A-HBW, routes in total 222051
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg B-HBO, routes in total 217794
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg C-NHB, routes in total 202292
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg D-KSCO, routes in total 3109
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg E-REC, routes in total 5224
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg XXC, routes in total 41
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg A-HBW, routes in total 297974
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg B-HBO, routes in total 292656
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg C-NHB, routes in total 272348
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg D-KSCO, routes in total 4142
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg E-REC, routes in total 8120
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg XXC, routes in total 64
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     1 network balancing step     1 modified OD pairs 194896 total excess cost 162629.46892120 avg excess cost 3.72826052
+                      Iteration     1 network balancing step     2 modified OD pairs  5005 total excess cost 799.83450295 avg excess cost 0.01833611
+                      Iteration     1 network balancing step     3 modified OD pairs  2038 total excess cost 171.80046171 avg excess cost 0.00393850
+                      Iteration     1 network balancing step     4 modified OD pairs  1061 total excess cost 86.83404748 avg excess cost 0.00199066
+                      Iteration     1 network balancing step     5 modified OD pairs   853 total excess cost 64.99297819 avg excess cost 0.00148996
+                      Iteration     1 number of deleted paths after OD balancing 231597
+                      Iteration     1 number of deleted paths after network balancing 30
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg A-HBW routes total 301406 routes new 81637
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg B-HBO routes total 295548 routes new 161499
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg C-NHB routes total 274579 routes new 235439
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg D-KSCO routes total 3886 routes new 236380
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg E-REC routes total 7285 routes new 239067
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg XXC routes total 54 routes new 239081
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     2 network balancing step     1 modified OD pairs 231159 total excess cost 36728.91863227 avg excess cost 0.84200593
+                      Iteration     2 network balancing step     2 modified OD pairs 11791 total excess cost 370.23287798 avg excess cost 0.00848754
+                      Iteration     2 network balancing step     3 modified OD pairs   722 total excess cost 31.16137527 avg excess cost 0.00071437
+                      Iteration     2 network balancing step     4 modified OD pairs    46 total excess cost 18.35408107 avg excess cost 0.00042077
+                      Iteration     2 network balancing step     5 modified OD pairs    27 total excess cost 0.14046852 avg excess cost 0.00000322
+                      Iteration     2 number of deleted paths after OD balancing 260022
+                      Iteration     2 number of deleted paths after network balancing 3799
+                      
+                      Iteration     2 gap 0.01427607
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg A-HBW routes total 247435 routes new 36088
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg B-HBO routes total 242766 routes new 71451
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg C-NHB routes total 225647 routes new 104238
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg D-KSCO routes total 3170 routes new 104596
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg E-REC routes total 5408 routes new 105526
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg XXC routes total 41 routes new 105530
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     3 network balancing step     1 modified OD pairs 88659 total excess cost 7731.20718355 avg excess cost 0.17723697
+                      Iteration     3 network balancing step     2 modified OD pairs 10847 total excess cost 121.65000754 avg excess cost 0.00278881
+                      Iteration     3 network balancing step     3 modified OD pairs   409 total excess cost 68.06415289 avg excess cost 0.00156036
+                      Iteration     3 network balancing step     4 modified OD pairs    53 total excess cost 1.87876624 avg excess cost 0.00004307
+                      Iteration     3 network balancing step     5 modified OD pairs    17 total excess cost 13.21220978 avg excess cost 0.00030289
+                      Iteration     3 number of deleted paths after OD balancing 100557
+                      Iteration     3 number of deleted paths after network balancing 6519
+                      
+                      Iteration     3 gap 0.00109298
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg A-HBW routes total 261818 routes new 50998
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg B-HBO routes total 256478 routes new 100588
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg C-NHB routes total 238865 routes new 147074
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg D-KSCO routes total 3466 routes new 147742
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg E-REC routes total 6532 routes new 149805
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg XXC routes total 49 routes new 149817
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     4 network balancing step     1 modified OD pairs 121711 total excess cost 1775.94356808 avg excess cost 0.04071329
+                      Iteration     4 network balancing step     2 modified OD pairs 17623 total excess cost 140.03697628 avg excess cost 0.00321033
+                      Iteration     4 network balancing step     3 modified OD pairs   388 total excess cost 54.17276599 avg excess cost 0.00124190
+                      Iteration     4 network balancing step     4 modified OD pairs   469 total excess cost 24.29277611 avg excess cost 0.00055691
+                      Iteration     4 network balancing step     5 modified OD pairs     9 total excess cost 4.17575687 avg excess cost 0.00009573
+                      Iteration     4 number of deleted paths after OD balancing 140388
+                      Iteration     4 number of deleted paths after network balancing 9808
+                      
+                      Iteration     4 gap 0.00134203
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg A-HBW routes total 230349 routes new 19646
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg B-HBO routes total 226192 routes new 39066
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg C-NHB routes total 210825 routes new 57620
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg D-KSCO routes total 2923 routes new 57769
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg E-REC routes total 5421 routes new 58734
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg XXC routes total 42 routes new 58740
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     5 network balancing step     1 modified OD pairs 24763 total excess cost 1180.93788769 avg excess cost 0.02707286
+                      Iteration     5 network balancing step     2 modified OD pairs  1646 total excess cost 82.48132300 avg excess cost 0.00189087
+                      Iteration     5 network balancing step     3 modified OD pairs   453 total excess cost 16.86260122 avg excess cost 0.00038657
+                      Iteration     5 network balancing step     4 modified OD pairs     9 total excess cost 11.36366305 avg excess cost 0.00026051
+                      Iteration     5 network balancing step     5 modified OD pairs    15 total excess cost 14.49963479 avg excess cost 0.00033240
+                      Iteration     5 number of deleted paths after OD balancing 27049
+                      Iteration     5 number of deleted paths after network balancing 32010
+                      
+                      Iteration     5 gap 0.00022458
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg A-HBW routes total 221077 routes new 10488
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg B-HBO routes total 217083 routes new 20903
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg C-NHB routes total 201885 routes new 30608
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg D-KSCO routes total 2978 routes new 30818
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg E-REC routes total 5102 routes new 31468
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg XXC routes total 43 routes new 31475
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     6 network balancing step     1 modified OD pairs 18247 total excess cost 408.15887606 avg excess cost 0.00935699
+                      Iteration     6 network balancing step     2 modified OD pairs  5563 total excess cost 76.72051162 avg excess cost 0.00175881
+                      Iteration     6 network balancing step     3 modified OD pairs    76 total excess cost 12.55718103 avg excess cost 0.00028787
+                      Iteration     6 network balancing step     4 modified OD pairs   124 total excess cost 2.62459813 avg excess cost 0.00006017
+                      Iteration     6 network balancing step     5 modified OD pairs    16 total excess cost 2.13709575 avg excess cost 0.00004899
+                      Iteration     6 network balancing step     6 modified OD pairs    10 total excess cost 1.13271256 avg excess cost 0.00002597
+                      Iteration     6 network balancing step     7 modified OD pairs     5 total excess cost 1.25892432 avg excess cost 0.00002886
+                      Iteration     6 network balancing step     8 modified OD pairs    12 total excess cost 0.52606024 avg excess cost 0.00001206
+                      Iteration     6 network balancing step     9 modified OD pairs    17 total excess cost 0.87347819 avg excess cost 0.00002002
+                      Iteration     6 network balancing step    10 modified OD pairs     5 total excess cost 0.68162969 avg excess cost 0.00001563
+                      Iteration     6 number of deleted paths after OD balancing 24061
+                      Iteration     6 number of deleted paths after network balancing 7470
+                      
+                      Iteration     6 gap 0.00022483
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg A-HBW routes total 223384 routes new 12814
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg B-HBO routes total 219368 routes new 25532
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg C-NHB routes total 204398 routes new 37769
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg D-KSCO routes total 2861 routes new 37862
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg E-REC routes total 5188 routes new 38598
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg XXC routes total 42 routes new 38604
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     7 network balancing step     1 modified OD pairs  6794 total excess cost 261.13088371 avg excess cost 0.00598639
+                      Iteration     7 network balancing step     2 modified OD pairs  1644 total excess cost 76.05147908 avg excess cost 0.00174347
+                      Iteration     7 network balancing step     3 modified OD pairs    52 total excess cost 61.02403634 avg excess cost 0.00139897
+                      Iteration     7 network balancing step     4 modified OD pairs    15 total excess cost 56.09863274 avg excess cost 0.00128605
+                      Iteration     7 network balancing step     5 modified OD pairs    49 total excess cost 59.56587999 avg excess cost 0.00136554
+                      Iteration     7 network balancing step     6 modified OD pairs    24 total excess cost 38.93199662 avg excess cost 0.00089251
+                      Iteration     7 network balancing step     7 modified OD pairs    18 total excess cost 27.93907527 avg excess cost 0.00064050
+                      Iteration     7 network balancing step     8 modified OD pairs    27 total excess cost 30.83770027 avg excess cost 0.00070695
+                      Iteration     7 network balancing step     9 modified OD pairs    10 total excess cost 16.50738680 avg excess cost 0.00037843
+                      Iteration     7 network balancing step    10 modified OD pairs    41 total excess cost 25.99201630 avg excess cost 0.00059586
+                      Iteration     7 number of deleted paths after OD balancing 8594
+                      Iteration     7 number of deleted paths after network balancing 30066
+                      
+                      Iteration     7 gap 0.00013673
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg A-HBW routes total 218951 routes new 8401
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg B-HBO routes total 214986 routes new 16757
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg C-NHB routes total 200000 routes new 24613
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg D-KSCO routes total 2974 routes new 24818
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg E-REC routes total 5086 routes new 25452
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg XXC routes total 43 routes new 25459
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     8 network balancing step     1 modified OD pairs 11420 total excess cost 137.27817511 avg excess cost 0.00314709
+                      Iteration     8 network balancing step     2 modified OD pairs  1307 total excess cost 32.82209702 avg excess cost 0.00075244
+                      Iteration     8 network balancing step     3 modified OD pairs   122 total excess cost 12.25453547 avg excess cost 0.00028093
+                      Iteration     8 network balancing step     4 modified OD pairs    10 total excess cost 3.83049390 avg excess cost 0.00008781
+                      Iteration     8 network balancing step     5 modified OD pairs     2 total excess cost 3.50554800 avg excess cost 0.00008036
+                      Iteration     8 network balancing step     6 modified OD pairs     2 total excess cost 2.83084470 avg excess cost 0.00006490
+                      Iteration     8 network balancing step     7 modified OD pairs     2 total excess cost 2.26390452 avg excess cost 0.00005190
+                      Iteration     8 network balancing step     8 modified OD pairs     2 total excess cost 2.36874299 avg excess cost 0.00005430
+                      Iteration     8 network balancing step     9 modified OD pairs     2 total excess cost 2.53577003 avg excess cost 0.00005813
+                      Iteration     8 network balancing step    10 modified OD pairs     2 total excess cost 1.83212185 avg excess cost 0.00004200
+                      Iteration     8 number of deleted paths after OD balancing 12826
+                      Iteration     8 number of deleted paths after network balancing 12641
+                      
+                      Iteration     8 gap 0.00011709
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 9 DSeg A-HBW routes total 221520 routes new 10971
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 9 DSeg B-HBO routes total 217496 routes new 21843
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 9 DSeg C-NHB routes total 202636 routes new 32338
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 9 DSeg D-KSCO routes total 2828 routes new 32396
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 9 DSeg E-REC routes total 5140 routes new 33083
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 9 DSeg XXC routes total 42 routes new 33089
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     9 network balancing step     1 modified OD pairs  3899 total excess cost 126.22498852 avg excess cost 0.00289369
+                      Iteration     9 network balancing step     2 modified OD pairs   624 total excess cost 53.72893108 avg excess cost 0.00123173
+                      Iteration     9 network balancing step     3 modified OD pairs    46 total excess cost 29.20868659 avg excess cost 0.00066961
+                      Iteration     9 network balancing step     4 modified OD pairs    58 total excess cost 24.92327404 avg excess cost 0.00057136
+                      Iteration     9 network balancing step     5 modified OD pairs    58 total excess cost 13.61918604 avg excess cost 0.00031222
+                      Iteration     9 network balancing step     6 modified OD pairs    20 total excess cost 13.56219634 avg excess cost 0.00031091
+                      Iteration     9 network balancing step     7 modified OD pairs    18 total excess cost 17.99065954 avg excess cost 0.00041243
+                      Iteration     9 network balancing step     8 modified OD pairs    42 total excess cost 24.32026902 avg excess cost 0.00055754
+                      Iteration     9 network balancing step     9 modified OD pairs    15 total excess cost 12.45302246 avg excess cost 0.00028548
+                      Iteration     9 network balancing step    10 modified OD pairs    39 total excess cost 13.41958020 avg excess cost 0.00030764
+                      Iteration     9 number of deleted paths after OD balancing 4720
+                      Iteration     9 number of deleted paths after network balancing 28454
+                      
+                      Iteration     9 gap 0.00004726
+                      
+                      Equilibrium assignment finished after 9 iteration steps
+01/25/17 16.07.23.589 Time before  WBRePack
+01/25/17 16.07.23.845 Time after WBRePack
+01/25/17 16.07.24.193 Time before  WBRePack
+01/25/17 16.07.24.385 Time after WBRePack
+01/25/17 16.07.24.710 Time before  WBRePack
+01/25/17 16.07.24.947 Time after WBRePack
+01/25/17 16.07.25.272 Time before  WBRePack
+01/25/17 16.07.25.281 Time after WBRePack
+01/25/17 16.07.25.291 Time before  WBRePack
+01/25/17 16.07.25.304 Time after WBRePack
+01/25/17 16.07.25.319 Time before  WBRePack
+01/25/17 16.07.25.319 Time after WBRePack
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The assignment reached convergence after 9 of a maximum of 10 iterations with a GAP of 3.56131172e-005.
+01/25/17 16.07.25.370 Time before Aggregate path trees
+01/25/17 16.07.25.773 Time after Aggregate path trees
+01/25/17 16.07.25.773 Time before Aggregate paths
+01/25/17 16.07.25.868 Time after Aggregate paths
+01/25/17 16.07.25.875 Time before Aggregate path trees
+01/25/17 16.07.26.237 Time after Aggregate path trees
+01/25/17 16.07.26.237 Time before Aggregate paths
+01/25/17 16.07.26.323 Time after Aggregate paths
+01/25/17 16.07.26.329 Time before Aggregate path trees
+01/25/17 16.07.26.708 Time after Aggregate path trees
+01/25/17 16.07.26.708 Time before Aggregate paths
+01/25/17 16.07.26.804 Time after Aggregate paths
+01/25/17 16.07.26.811 Time before Aggregate path trees
+01/25/17 16.07.26.837 Time after Aggregate path trees
+01/25/17 16.07.26.837 Time before Aggregate paths
+01/25/17 16.07.26.845 Time after Aggregate paths
+01/25/17 16.07.26.845 Time before Aggregate path trees
+01/25/17 16.07.26.890 Time after Aggregate path trees
+01/25/17 16.07.26.890 Time before Aggregate paths
+01/25/17 16.07.26.899 Time after Aggregate paths
+01/25/17 16.07.26.900 Time before Aggregate path trees
+01/25/17 16.07.26.900 Time after Aggregate path trees
+01/25/17 16.07.26.900 Time before Aggregate paths
+01/25/17 16.07.26.905 Time after Aggregate paths
+                      Go to: Convergence criterion not met  Attribute VOLVEHPRT(AP), max difference 222.61458388 on link no. 6356, Sum of deviations: 55952.98369394
+                      GoTo: No convergence reached - Start iteration 2 of 5
+01/25/17 16.07.27.289 Start Procedure step  18: "Calculate PrT skim matrix"
+                      The shortest path graph has been reduced by 47.0%
+01/25/17 16.07.28.466 Start Procedure step  19: "Combination of matrices and vectors"
+01/25/17 16.07.28.567 Start Procedure step  20: "Read filter"
+01/25/17 16.07.28.705 Start Procedure step  21: "Trip distribution"
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+                      Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+                      Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+                      Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+                      Matrix total 5 RECpa after distribution of all demand strata:  384.041
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+Matrix total 5 RECpa after distribution of all demand strata:  384.041
+01/25/17 16.07.29.196 Start Procedure step  22: "Read filter"
+01/25/17 16.07.29.322 Start Procedure step  23: "Combination of matrices and vectors"
+01/25/17 16.07.29.422 Start Procedure step  24: "Combination of matrices and vectors"
+01/25/17 16.07.29.524 Start Procedure step  25: "Combination of matrices and vectors"
+01/25/17 16.07.29.623 Start Procedure step  26: "Combination of matrices and vectors"
+01/25/17 16.07.29.713 Start Procedure step  27: "Combination of matrices and vectors"
+01/25/17 16.07.29.795 Start Procedure step  28: "Group"
+01/25/17 16.07.29.870 Start Procedure step  29: "PrT assignment"
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Equilibrium assignment: Start solution is recalculated.
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg A-HBW, routes in total 201662
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg B-HBO, routes in total 197660
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg C-NHB, routes in total 183374
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg D-KSCO, routes in total 2646
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg E-REC, routes in total 4408
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg XXC, routes in total 33
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg A-HBW, routes in total 222048
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg B-HBO, routes in total 217798
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg C-NHB, routes in total 202290
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg D-KSCO, routes in total 3110
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg E-REC, routes in total 5224
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg XXC, routes in total 41
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg A-HBW, routes in total 298086
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg B-HBO, routes in total 292784
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg C-NHB, routes in total 272417
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg D-KSCO, routes in total 3915
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg E-REC, routes in total 8114
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg XXC, routes in total 63
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     1 network balancing step     1 modified OD pairs 194103 total excess cost 183917.68140659 avg excess cost 4.21456324
+                      Iteration     1 network balancing step     2 modified OD pairs  4750 total excess cost 795.55557026 avg excess cost 0.01823054
+                      Iteration     1 network balancing step     3 modified OD pairs  1559 total excess cost 162.80475197 avg excess cost 0.00373075
+                      Iteration     1 network balancing step     4 modified OD pairs  2198 total excess cost 132.17500332 avg excess cost 0.00302885
+                      Iteration     1 network balancing step     5 modified OD pairs  1325 total excess cost 68.68705615 avg excess cost 0.00157400
+                      Iteration     1 number of deleted paths after OD balancing 226736
+                      Iteration     1 number of deleted paths after network balancing 25
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg A-HBW routes total 305510 routes new 84004
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg B-HBO routes total 299660 routes new 166206
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg C-NHB routes total 278305 routes new 242401
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg D-KSCO routes total 4007 routes new 243490
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg E-REC routes total 7290 routes new 246192
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg XXC routes total 52 routes new 246206
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     2 network balancing step     1 modified OD pairs 238300 total excess cost 43185.61508841 avg excess cost 0.98961940
+                      Iteration     2 network balancing step     2 modified OD pairs 10142 total excess cost 239.09856371 avg excess cost 0.00547906
+                      Iteration     2 network balancing step     3 modified OD pairs   188 total excess cost 57.67594322 avg excess cost 0.00132167
+                      Iteration     2 network balancing step     4 modified OD pairs   218 total excess cost 22.38841784 avg excess cost 0.00051304
+                      Iteration     2 network balancing step     5 modified OD pairs   479 total excess cost 29.70312156 avg excess cost 0.00068066
+                      Iteration     2 number of deleted paths after OD balancing 267351
+                      Iteration     2 number of deleted paths after network balancing 3486
+                      
+                      Iteration     2 gap 0.01585970
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg A-HBW routes total 249982 routes new 36878
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg B-HBO routes total 245225 routes new 72982
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg C-NHB routes total 228017 routes new 106604
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg D-KSCO routes total 3218 routes new 106966
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg E-REC routes total 5477 routes new 107971
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg XXC routes total 45 routes new 107977
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     3 network balancing step     1 modified OD pairs 86045 total excess cost 8154.30685815 avg excess cost 0.18685991
+                      Iteration     3 network balancing step     2 modified OD pairs  3632 total excess cost 131.85953699 avg excess cost 0.00302163
+                      Iteration     3 network balancing step     3 modified OD pairs   222 total excess cost 47.05801137 avg excess cost 0.00107836
+                      Iteration     3 network balancing step     4 modified OD pairs    68 total excess cost 67.87204037 avg excess cost 0.00155532
+                      Iteration     3 network balancing step     5 modified OD pairs   936 total excess cost 54.99348140 avg excess cost 0.00126020
+                      Iteration     3 number of deleted paths after OD balancing 91259
+                      Iteration     3 number of deleted paths after network balancing 18538
+                      
+                      Iteration     3 gap 0.00114352
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg A-HBW routes total 259583 routes new 47089
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg B-HBO routes total 254207 routes new 92796
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg C-NHB routes total 236828 routes new 135806
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg D-KSCO routes total 3443 routes new 136404
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg E-REC routes total 6249 routes new 138182
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg XXC routes total 50 routes new 138193
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     4 network balancing step     1 modified OD pairs 109946 total excess cost 1990.19002755 avg excess cost 0.04560617
+                      Iteration     4 network balancing step     2 modified OD pairs  6163 total excess cost 63.22572012 avg excess cost 0.00144885
+                      Iteration     4 network balancing step     3 modified OD pairs    27 total excess cost 2.99364692 avg excess cost 0.00006860
+                      Iteration     4 network balancing step     4 modified OD pairs    31 total excess cost 2.91387253 avg excess cost 0.00006677
+                      Iteration     4 network balancing step     5 modified OD pairs    70 total excess cost 0.93114493 avg excess cost 0.00002134
+                      Iteration     4 number of deleted paths after OD balancing 116800
+                      Iteration     4 number of deleted paths after network balancing 22149
+                      
+                      Iteration     4 gap 0.00230911
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg A-HBW routes total 231110 routes new 18864
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg B-HBO routes total 226771 routes new 37394
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg C-NHB routes total 211254 routes new 55072
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg D-KSCO routes total 3030 routes new 55261
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg E-REC routes total 5723 routes new 56515
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg XXC routes total 42 routes new 56519
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     5 network balancing step     1 modified OD pairs 24230 total excess cost 1518.08746502 avg excess cost 0.03478771
+                      Iteration     5 network balancing step     2 modified OD pairs  2826 total excess cost 98.92174858 avg excess cost 0.00226684
+                      Iteration     5 network balancing step     3 modified OD pairs   210 total excess cost 77.98080186 avg excess cost 0.00178697
+                      Iteration     5 network balancing step     4 modified OD pairs    58 total excess cost 20.65073541 avg excess cost 0.00047322
+                      Iteration     5 network balancing step     5 modified OD pairs   151 total excess cost 10.91289410 avg excess cost 0.00025007
+                      Iteration     5 number of deleted paths after OD balancing 27470
+                      Iteration     5 number of deleted paths after network balancing 29126
+                      
+                      Iteration     5 gap 0.00029452
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg A-HBW routes total 226487 routes new 14264
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg B-HBO routes total 222414 routes new 28463
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg C-NHB routes total 206928 routes new 41840
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg D-KSCO routes total 3072 routes new 42074
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg E-REC routes total 4946 routes new 42551
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg XXC routes total 43 routes new 42556
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     6 network balancing step     1 modified OD pairs 17627 total excess cost 486.22307450 avg excess cost 0.01114204
+                      Iteration     6 network balancing step     2 modified OD pairs  2703 total excess cost 12.22146281 avg excess cost 0.00028006
+                      Iteration     6 network balancing step     3 modified OD pairs  1415 total excess cost 13.26473591 avg excess cost 0.00030397
+                      Iteration     6 network balancing step     4 modified OD pairs   231 total excess cost 9.63666297 avg excess cost 0.00022083
+                      Iteration     6 network balancing step     5 modified OD pairs    40 total excess cost 7.65586006 avg excess cost 0.00017544
+                      Iteration     6 network balancing step     6 modified OD pairs    79 total excess cost 5.56090092 avg excess cost 0.00012743
+                      Iteration     6 network balancing step     7 modified OD pairs    35 total excess cost 5.48899097 avg excess cost 0.00012578
+                      Iteration     6 network balancing step     8 modified OD pairs    29 total excess cost 2.34296408 avg excess cost 0.00005369
+                      Iteration     6 network balancing step     9 modified OD pairs    18 total excess cost 5.30019009 avg excess cost 0.00012146
+                      Iteration     6 network balancing step    10 modified OD pairs    12 total excess cost 5.24121957 avg excess cost 0.00012011
+                      Iteration     6 number of deleted paths after OD balancing 22261
+                      Iteration     6 number of deleted paths after network balancing 20424
+                      
+                      Iteration     6 gap 0.00019185
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg A-HBW routes total 223212 routes new 11031
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg B-HBO routes total 218988 routes new 21844
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg C-NHB routes total 203931 routes new 32269
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg D-KSCO routes total 2914 routes new 32347
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg E-REC routes total 4888 routes new 32766
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg XXC routes total 40 routes new 32768
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     7 network balancing step     1 modified OD pairs  9898 total excess cost 383.79751107 avg excess cost 0.00879491
+                      Iteration     7 network balancing step     2 modified OD pairs  2413 total excess cost 73.65747809 avg excess cost 0.00168790
+                      Iteration     7 network balancing step     3 modified OD pairs    49 total excess cost 10.75661644 avg excess cost 0.00024649
+                      Iteration     7 network balancing step     4 modified OD pairs    38 total excess cost 9.71866551 avg excess cost 0.00022271
+                      Iteration     7 network balancing step     5 modified OD pairs    17 total excess cost 7.82065130 avg excess cost 0.00017921
+                      Iteration     7 network balancing step     6 modified OD pairs    45 total excess cost 43.22605273 avg excess cost 0.00099055
+                      Iteration     7 network balancing step     7 modified OD pairs    37 total excess cost 4.92813084 avg excess cost 0.00011293
+                      Iteration     7 network balancing step     8 modified OD pairs    32 total excess cost 5.80173035 avg excess cost 0.00013295
+                      Iteration     7 network balancing step     9 modified OD pairs    57 total excess cost 36.97730963 avg excess cost 0.00084735
+                      Iteration     7 network balancing step    10 modified OD pairs    27 total excess cost 41.91630003 avg excess cost 0.00096053
+                      Iteration     7 number of deleted paths after OD balancing 12582
+                      Iteration     7 number of deleted paths after network balancing 20236
+                      
+                      Iteration     7 gap 0.00010423
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg A-HBW routes total 223861 routes new 11696
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg B-HBO routes total 219834 routes new 23372
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg C-NHB routes total 204623 routes new 34505
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg D-KSCO routes total 2922 routes new 34592
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg E-REC routes total 4932 routes new 35055
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg XXC routes total 42 routes new 35059
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     8 network balancing step     1 modified OD pairs  7915 total excess cost 250.20936340 avg excess cost 0.00573367
+                      Iteration     8 network balancing step     2 modified OD pairs  7610 total excess cost 13.78228744 avg excess cost 0.00031583
+                      Iteration     8 network balancing step     3 modified OD pairs   321 total excess cost 20.48014375 avg excess cost 0.00046931
+                      Iteration     8 network balancing step     4 modified OD pairs   325 total excess cost 16.05041952 avg excess cost 0.00036780
+                      Iteration     8 network balancing step     5 modified OD pairs    75 total excess cost 14.24199751 avg excess cost 0.00032636
+                      Iteration     8 network balancing step     6 modified OD pairs    42 total excess cost 10.62838407 avg excess cost 0.00024355
+                      Iteration     8 network balancing step     7 modified OD pairs    44 total excess cost 4.65707213 avg excess cost 0.00010672
+                      Iteration     8 network balancing step     8 modified OD pairs    35 total excess cost 4.34403301 avg excess cost 0.00009955
+                      Iteration     8 network balancing step     9 modified OD pairs    77 total excess cost 3.41687042 avg excess cost 0.00007830
+                      Iteration     8 network balancing step    10 modified OD pairs    26 total excess cost 3.69025146 avg excess cost 0.00008456
+                      Iteration     8 number of deleted paths after OD balancing 16473
+                      Iteration     8 number of deleted paths after network balancing 18698
+                      
+                      Iteration     8 gap 0.00009580
+                      
+                      Equilibrium assignment finished after 8 iteration steps
+01/25/17 16.08.35.080 Time before  WBRePack
+01/25/17 16.08.35.287 Time after WBRePack
+01/25/17 16.08.35.623 Time before  WBRePack
+01/25/17 16.08.35.819 Time after WBRePack
+01/25/17 16.08.36.152 Time before  WBRePack
+01/25/17 16.08.36.339 Time after WBRePack
+01/25/17 16.08.36.658 Time before  WBRePack
+01/25/17 16.08.36.668 Time after WBRePack
+01/25/17 16.08.36.679 Time before  WBRePack
+01/25/17 16.08.36.692 Time after WBRePack
+01/25/17 16.08.36.708 Time before  WBRePack
+01/25/17 16.08.36.708 Time after WBRePack
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The assignment reached convergence after 8 of a maximum of 10 iterations with a GAP of 7.34001968e-005.
+01/25/17 16.08.36.758 Time before Aggregate path trees
+01/25/17 16.08.37.161 Time after Aggregate path trees
+01/25/17 16.08.37.161 Time before Aggregate paths
+01/25/17 16.08.37.264 Time after Aggregate paths
+01/25/17 16.08.37.271 Time before Aggregate path trees
+01/25/17 16.08.37.633 Time after Aggregate path trees
+01/25/17 16.08.37.633 Time before Aggregate paths
+01/25/17 16.08.37.719 Time after Aggregate paths
+01/25/17 16.08.37.725 Time before Aggregate path trees
+01/25/17 16.08.38.096 Time after Aggregate path trees
+01/25/17 16.08.38.096 Time before Aggregate paths
+01/25/17 16.08.38.192 Time after Aggregate paths
+01/25/17 16.08.38.199 Time before Aggregate path trees
+01/25/17 16.08.38.225 Time after Aggregate path trees
+01/25/17 16.08.38.225 Time before Aggregate paths
+01/25/17 16.08.38.235 Time after Aggregate paths
+01/25/17 16.08.38.236 Time before Aggregate path trees
+01/25/17 16.08.38.279 Time after Aggregate path trees
+01/25/17 16.08.38.279 Time before Aggregate paths
+01/25/17 16.08.38.288 Time after Aggregate paths
+01/25/17 16.08.38.288 Time before Aggregate path trees
+01/25/17 16.08.38.289 Time after Aggregate path trees
+01/25/17 16.08.38.289 Time before Aggregate paths
+01/25/17 16.08.38.293 Time after Aggregate paths
+                      Go to: Convergence criterion not met  Attribute VOLVEHPRT(AP), max difference 105.47051066 on link no. 6356, Sum of deviations: 17877.55657141
+                      GoTo: No convergence reached - Start iteration 3 of 5
+01/25/17 16.08.38.656 Start Procedure step  18: "Calculate PrT skim matrix"
+                      The shortest path graph has been reduced by 47.0%
+01/25/17 16.08.39.842 Start Procedure step  19: "Combination of matrices and vectors"
+01/25/17 16.08.39.941 Start Procedure step  20: "Read filter"
+01/25/17 16.08.40.081 Start Procedure step  21: "Trip distribution"
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+                      Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+                      Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+                      Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+                      Matrix total 5 RECpa after distribution of all demand strata:  384.041
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+Matrix total 5 RECpa after distribution of all demand strata:  384.041
+01/25/17 16.08.40.591 Start Procedure step  22: "Read filter"
+01/25/17 16.08.40.712 Start Procedure step  23: "Combination of matrices and vectors"
+01/25/17 16.08.40.811 Start Procedure step  24: "Combination of matrices and vectors"
+01/25/17 16.08.40.911 Start Procedure step  25: "Combination of matrices and vectors"
+01/25/17 16.08.41.005 Start Procedure step  26: "Combination of matrices and vectors"
+01/25/17 16.08.41.091 Start Procedure step  27: "Combination of matrices and vectors"
+01/25/17 16.08.41.174 Start Procedure step  28: "Group"
+01/25/17 16.08.41.244 Start Procedure step  29: "PrT assignment"
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Equilibrium assignment: Start solution is recalculated.
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg A-HBW, routes in total 201662
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg B-HBO, routes in total 197660
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg C-NHB, routes in total 183374
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg D-KSCO, routes in total 2646
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg E-REC, routes in total 4408
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg XXC, routes in total 33
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg A-HBW, routes in total 222048
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg B-HBO, routes in total 217798
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg C-NHB, routes in total 202290
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg D-KSCO, routes in total 3110
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg E-REC, routes in total 5224
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg XXC, routes in total 41
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg A-HBW, routes in total 297571
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg B-HBO, routes in total 292278
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg C-NHB, routes in total 271925
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg D-KSCO, routes in total 3911
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg E-REC, routes in total 8114
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg XXC, routes in total 63
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     1 network balancing step     1 modified OD pairs 193109 total excess cost 179851.77969671 avg excess cost 4.12190648
+                      Iteration     1 network balancing step     2 modified OD pairs  4396 total excess cost 739.52156985 avg excess cost 0.01694862
+                      Iteration     1 network balancing step     3 modified OD pairs  1274 total excess cost 139.66457450 avg excess cost 0.00320088
+                      Iteration     1 network balancing step     4 modified OD pairs  2060 total excess cost 143.28061932 avg excess cost 0.00328376
+                      Iteration     1 network balancing step     5 modified OD pairs   881 total excess cost 103.16715656 avg excess cost 0.00236442
+                      Iteration     1 number of deleted paths after OD balancing 225262
+                      Iteration     1 number of deleted paths after network balancing 21
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg A-HBW routes total 305640 routes new 84202
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg B-HBO routes total 299700 routes new 166528
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg C-NHB routes total 278287 routes new 242658
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg D-KSCO routes total 4165 routes new 243863
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg E-REC routes total 7321 routes new 246574
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg XXC routes total 55 routes new 246589
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     2 network balancing step     1 modified OD pairs 235683 total excess cost 42168.91669152 avg excess cost 0.96644210
+                      Iteration     2 network balancing step     2 modified OD pairs 10427 total excess cost 394.85342223 avg excess cost 0.00904939
+                      Iteration     2 network balancing step     3 modified OD pairs  2164 total excess cost 71.56476759 avg excess cost 0.00164015
+                      Iteration     2 network balancing step     4 modified OD pairs    75 total excess cost 60.40449052 avg excess cost 0.00138437
+                      Iteration     2 network balancing step     5 modified OD pairs    56 total excess cost 58.10530043 avg excess cost 0.00133168
+                      Iteration     2 number of deleted paths after OD balancing 266791
+                      Iteration     2 number of deleted paths after network balancing 5509
+                      
+                      Iteration     2 gap 0.01502189
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg A-HBW routes total 249514 routes new 36817
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg B-HBO routes total 244764 routes new 72866
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg C-NHB routes total 227478 routes new 106276
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg D-KSCO routes total 3232 routes new 106639
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg E-REC routes total 5458 routes new 107616
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg XXC routes total 44 routes new 107622
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     3 network balancing step     1 modified OD pairs 86542 total excess cost 7671.06528535 avg excess cost 0.17580818
+                      Iteration     3 network balancing step     2 modified OD pairs  4914 total excess cost 102.31833827 avg excess cost 0.00234497
+                      Iteration     3 network balancing step     3 modified OD pairs   121 total excess cost 48.06675479 avg excess cost 0.00110161
+                      Iteration     3 network balancing step     4 modified OD pairs    45 total excess cost 36.15502195 avg excess cost 0.00082861
+                      Iteration     3 network balancing step     5 modified OD pairs    13 total excess cost 34.31134414 avg excess cost 0.00078636
+                      Iteration     3 number of deleted paths after OD balancing 92157
+                      Iteration     3 number of deleted paths after network balancing 17406
+                      
+                      Iteration     3 gap 0.00110699
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg A-HBW routes total 258493 routes new 46456
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg B-HBO routes total 253099 routes new 91499
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg C-NHB routes total 235437 routes new 133478
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg D-KSCO routes total 3464 routes new 134082
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg E-REC routes total 6213 routes new 135816
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg XXC routes total 48 routes new 135827
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     4 network balancing step     1 modified OD pairs 122925 total excess cost 1869.43623485 avg excess cost 0.04284440
+                      Iteration     4 network balancing step     2 modified OD pairs  7203 total excess cost 115.98261991 avg excess cost 0.00265813
+                      Iteration     4 network balancing step     3 modified OD pairs   300 total excess cost 37.13419666 avg excess cost 0.00085105
+                      Iteration     4 network balancing step     4 modified OD pairs    41 total excess cost 37.09787723 avg excess cost 0.00085022
+                      Iteration     4 network balancing step     5 modified OD pairs     8 total excess cost 24.00350396 avg excess cost 0.00055012
+                      Iteration     4 number of deleted paths after OD balancing 130614
+                      Iteration     4 number of deleted paths after network balancing 5715
+                      
+                      Iteration     4 gap 0.00199219
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg A-HBW routes total 231469 routes new 19602
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg B-HBO routes total 227265 routes new 38974
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg C-NHB routes total 211502 routes new 57172
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg D-KSCO routes total 3023 routes new 57346
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg E-REC routes total 5543 routes new 58413
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg XXC routes total 42 routes new 58419
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     5 network balancing step     1 modified OD pairs 24881 total excess cost 1344.16644213 avg excess cost 0.03080608
+                      Iteration     5 network balancing step     2 modified OD pairs  2304 total excess cost 57.69380650 avg excess cost 0.00132225
+                      Iteration     5 network balancing step     3 modified OD pairs   782 total excess cost 43.94882258 avg excess cost 0.00100723
+                      Iteration     5 network balancing step     4 modified OD pairs   228 total excess cost 38.02801680 avg excess cost 0.00087154
+                      Iteration     5 network balancing step     5 modified OD pairs    29 total excess cost 45.05789486 avg excess cost 0.00103265
+                      Iteration     5 number of deleted paths after OD balancing 28620
+                      Iteration     5 number of deleted paths after network balancing 30606
+                      
+                      Iteration     5 gap 0.00027478
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg A-HBW routes total 220325 routes new 8726
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg B-HBO routes total 216225 routes new 17331
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg C-NHB routes total 201129 routes new 25412
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg D-KSCO routes total 3028 routes new 25598
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg E-REC routes total 4566 routes new 25691
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg XXC routes total 38 routes new 25693
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     6 network balancing step     1 modified OD pairs 14281 total excess cost 526.53333844 avg excess cost 0.01206728
+                      Iteration     6 network balancing step     2 modified OD pairs  3975 total excess cost 84.11937514 avg excess cost 0.00192788
+                      Iteration     6 network balancing step     3 modified OD pairs    89 total excess cost 27.75745917 avg excess cost 0.00063616
+                      Iteration     6 network balancing step     4 modified OD pairs    12 total excess cost 22.14848610 avg excess cost 0.00050761
+                      Iteration     6 network balancing step     5 modified OD pairs     9 total excess cost 24.75392588 avg excess cost 0.00056732
+                      Iteration     6 network balancing step     6 modified OD pairs    32 total excess cost 23.91916123 avg excess cost 0.00054819
+                      Iteration     6 network balancing step     7 modified OD pairs    19 total excess cost 22.62429831 avg excess cost 0.00051851
+                      Iteration     6 network balancing step     8 modified OD pairs    12 total excess cost 20.52882400 avg excess cost 0.00047049
+                      Iteration     6 network balancing step     9 modified OD pairs     8 total excess cost 20.79551810 avg excess cost 0.00047660
+                      Iteration     6 network balancing step    10 modified OD pairs    11 total excess cost 20.54062561 avg excess cost 0.00047076
+                      Iteration     6 number of deleted paths after OD balancing 18398
+                      Iteration     6 number of deleted paths after network balancing 7347
+                      
+                      Iteration     6 gap 0.00018883
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg A-HBW routes total 227105 routes new 15526
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg B-HBO routes total 222991 routes new 30918
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg C-NHB routes total 207570 routes new 45452
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg D-KSCO routes total 2963 routes new 45572
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg E-REC routes total 5420 routes new 46519
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg XXC routes total 42 routes new 46525
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     7 network balancing step     1 modified OD pairs 20830 total excess cost 420.96044956 avg excess cost 0.00964772
+                      Iteration     7 network balancing step     2 modified OD pairs  1754 total excess cost 37.08957050 avg excess cost 0.00085003
+                      Iteration     7 network balancing step     3 modified OD pairs   117 total excess cost 33.67714597 avg excess cost 0.00077182
+                      Iteration     7 network balancing step     4 modified OD pairs    47 total excess cost 33.57997766 avg excess cost 0.00076960
+                      Iteration     7 network balancing step     5 modified OD pairs    17 total excess cost 31.55670783 avg excess cost 0.00072323
+                      Iteration     7 network balancing step     6 modified OD pairs    24 total excess cost 38.75646285 avg excess cost 0.00088823
+                      Iteration     7 network balancing step     7 modified OD pairs    85 total excess cost 31.47700999 avg excess cost 0.00072140
+                      Iteration     7 network balancing step     8 modified OD pairs   189 total excess cost 26.24552988 avg excess cost 0.00060150
+                      Iteration     7 network balancing step     9 modified OD pairs    27 total excess cost 18.68934845 avg excess cost 0.00042833
+                      Iteration     7 network balancing step    10 modified OD pairs    11 total excess cost 18.79448714 avg excess cost 0.00043074
+                      Iteration     7 number of deleted paths after OD balancing 23059
+                      Iteration     7 number of deleted paths after network balancing 23544
+                      
+                      Iteration     7 gap 0.00012651
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg A-HBW routes total 219370 routes new 7816
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg B-HBO routes total 215307 routes new 15551
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg C-NHB routes total 200312 routes new 22853
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg D-KSCO routes total 2894 routes new 22904
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg E-REC routes total 4568 routes new 22999
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg XXC routes total 36 routes new 22999
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     8 network balancing step     1 modified OD pairs  6178 total excess cost 162.76262039 avg excess cost 0.00373025
+                      Iteration     8 network balancing step     2 modified OD pairs  1612 total excess cost 31.25442082 avg excess cost 0.00071630
+                      Iteration     8 network balancing step     3 modified OD pairs   120 total excess cost 27.46255310 avg excess cost 0.00062940
+                      Iteration     8 network balancing step     4 modified OD pairs   209 total excess cost 49.10398961 avg excess cost 0.00112538
+                      Iteration     8 network balancing step     5 modified OD pairs    28 total excess cost 9.42635957 avg excess cost 0.00021604
+                      Iteration     8 network balancing step     6 modified OD pairs    78 total excess cost 46.01967872 avg excess cost 0.00105470
+                      Iteration     8 network balancing step     7 modified OD pairs   123 total excess cost 43.50554871 avg excess cost 0.00099708
+                      Iteration     8 network balancing step     8 modified OD pairs    53 total excess cost 45.77840428 avg excess cost 0.00104917
+                      Iteration     8 network balancing step     9 modified OD pairs    52 total excess cost 43.78653962 avg excess cost 0.00100352
+                      Iteration     8 network balancing step    10 modified OD pairs    54 total excess cost 47.77909349 avg excess cost 0.00109502
+                      Iteration     8 number of deleted paths after OD balancing 8432
+                      Iteration     8 number of deleted paths after network balancing 14737
+                      
+                      Iteration     8 gap 0.00008522
+                      
+                      Equilibrium assignment finished after 8 iteration steps
+01/25/17 16.09.47.536 Time before  WBRePack
+01/25/17 16.09.47.722 Time after WBRePack
+01/25/17 16.09.48.038 Time before  WBRePack
+01/25/17 16.09.48.586 Time after WBRePack
+01/25/17 16.09.48.897 Time before  WBRePack
+01/25/17 16.09.49.644 Time after WBRePack
+01/25/17 16.09.49.934 Time before  WBRePack
+01/25/17 16.09.49.943 Time after WBRePack
+01/25/17 16.09.49.952 Time before  WBRePack
+01/25/17 16.09.49.967 Time after WBRePack
+01/25/17 16.09.49.982 Time before  WBRePack
+01/25/17 16.09.49.982 Time after WBRePack
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The assignment reached convergence after 8 of a maximum of 10 iterations with a GAP of 5.56774665e-005.
+01/25/17 16.09.50.035 Time before Aggregate path trees
+01/25/17 16.09.50.402 Time after Aggregate path trees
+01/25/17 16.09.50.402 Time before Aggregate paths
+01/25/17 16.09.50.492 Time after Aggregate paths
+01/25/17 16.09.50.499 Time before Aggregate path trees
+01/25/17 16.09.50.837 Time after Aggregate path trees
+01/25/17 16.09.50.837 Time before Aggregate paths
+01/25/17 16.09.50.923 Time after Aggregate paths
+01/25/17 16.09.50.930 Time before Aggregate path trees
+01/25/17 16.09.51.282 Time after Aggregate path trees
+01/25/17 16.09.51.282 Time before Aggregate paths
+01/25/17 16.09.51.369 Time after Aggregate paths
+01/25/17 16.09.51.376 Time before Aggregate path trees
+01/25/17 16.09.51.400 Time after Aggregate path trees
+01/25/17 16.09.51.400 Time before Aggregate paths
+01/25/17 16.09.51.408 Time after Aggregate paths
+01/25/17 16.09.51.408 Time before Aggregate path trees
+01/25/17 16.09.51.451 Time after Aggregate path trees
+01/25/17 16.09.51.451 Time before Aggregate paths
+01/25/17 16.09.51.460 Time after Aggregate paths
+01/25/17 16.09.51.460 Time before Aggregate path trees
+01/25/17 16.09.51.461 Time after Aggregate path trees
+01/25/17 16.09.51.461 Time before Aggregate paths
+01/25/17 16.09.51.465 Time after Aggregate paths
+                      Go to: Convergence criterion not met  Attribute VOLVEHPRT(AP), max difference 38.04229469 on link no. 6356, Sum of deviations: 7112.28190232
+                      GoTo: No convergence reached - Start iteration 4 of 5
+01/25/17 16.09.51.821 Start Procedure step  18: "Calculate PrT skim matrix"
+                      The shortest path graph has been reduced by 47.0%
+01/25/17 16.09.53.059 Start Procedure step  19: "Combination of matrices and vectors"
+01/25/17 16.09.53.155 Start Procedure step  20: "Read filter"
+01/25/17 16.09.53.289 Start Procedure step  21: "Trip distribution"
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+                      Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+                      Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+                      Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+                      Matrix total 5 RECpa after distribution of all demand strata:  384.041
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+Matrix total 5 RECpa after distribution of all demand strata:  384.041
+01/25/17 16.09.53.796 Start Procedure step  22: "Read filter"
+01/25/17 16.09.53.927 Start Procedure step  23: "Combination of matrices and vectors"
+01/25/17 16.09.54.028 Start Procedure step  24: "Combination of matrices and vectors"
+01/25/17 16.09.54.129 Start Procedure step  25: "Combination of matrices and vectors"
+01/25/17 16.09.54.228 Start Procedure step  26: "Combination of matrices and vectors"
+01/25/17 16.09.54.309 Start Procedure step  27: "Combination of matrices and vectors"
+01/25/17 16.09.54.396 Start Procedure step  28: "Group"
+01/25/17 16.09.54.477 Start Procedure step  29: "PrT assignment"
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Equilibrium assignment: Start solution is recalculated.
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg A-HBW, routes in total 201662
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg B-HBO, routes in total 197660
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg C-NHB, routes in total 183374
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg D-KSCO, routes in total 2646
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg E-REC, routes in total 4408
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg XXC, routes in total 33
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg A-HBW, routes in total 222048
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg B-HBO, routes in total 217798
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg C-NHB, routes in total 202290
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg D-KSCO, routes in total 3110
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg E-REC, routes in total 5224
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg XXC, routes in total 41
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg A-HBW, routes in total 297582
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg B-HBO, routes in total 292288
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg C-NHB, routes in total 271935
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg D-KSCO, routes in total 3911
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg E-REC, routes in total 8112
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg XXC, routes in total 63
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     1 network balancing step     1 modified OD pairs 192169 total excess cost 180662.64890835 avg excess cost 4.14029375
+                      Iteration     1 network balancing step     2 modified OD pairs  5049 total excess cost 814.92344879 avg excess cost 0.01867582
+                      Iteration     1 network balancing step     3 modified OD pairs  2082 total excess cost 188.35610023 avg excess cost 0.00431661
+                      Iteration     1 network balancing step     4 modified OD pairs  2250 total excess cost 89.80384369 avg excess cost 0.00205806
+                      Iteration     1 network balancing step     5 modified OD pairs  1425 total excess cost 73.18507904 avg excess cost 0.00167720
+                      Iteration     1 number of deleted paths after OD balancing 225792
+                      Iteration     1 number of deleted paths after network balancing 21
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg A-HBW routes total 306959 routes new 85667
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg B-HBO routes total 301018 routes new 169464
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg C-NHB routes total 279513 routes new 247005
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg D-KSCO routes total 4159 routes new 248218
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg E-REC routes total 7324 routes new 250935
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg XXC routes total 55 routes new 250950
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     2 network balancing step     1 modified OD pairs 232329 total excess cost 43409.58663930 avg excess cost 0.99482899
+                      Iteration     2 network balancing step     2 modified OD pairs 14963 total excess cost 343.64200916 avg excess cost 0.00787533
+                      Iteration     2 network balancing step     3 modified OD pairs   905 total excess cost 52.74602153 avg excess cost 0.00120879
+                      Iteration     2 network balancing step     4 modified OD pairs    89 total excess cost 52.03468606 avg excess cost 0.00119249
+                      Iteration     2 network balancing step     5 modified OD pairs    87 total excess cost 37.02892812 avg excess cost 0.00084860
+                      Iteration     2 number of deleted paths after OD balancing 266996
+                      Iteration     2 number of deleted paths after network balancing 9158
+                      
+                      Iteration     2 gap 0.01543504
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg A-HBW routes total 249535 routes new 36848
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg B-HBO routes total 244794 routes new 72911
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg C-NHB routes total 227513 routes new 106357
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg D-KSCO routes total 3222 routes new 106723
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg E-REC routes total 5475 routes new 107705
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg XXC routes total 46 routes new 107711
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     3 network balancing step     1 modified OD pairs 90432 total excess cost 7707.00553008 avg excess cost 0.17662349
+                      Iteration     3 network balancing step     2 modified OD pairs  6808 total excess cost 99.82047521 avg excess cost 0.00228761
+                      Iteration     3 network balancing step     3 modified OD pairs    83 total excess cost 23.66598055 avg excess cost 0.00054236
+                      Iteration     3 network balancing step     4 modified OD pairs    26 total excess cost 2.72642330 avg excess cost 0.00006248
+                      Iteration     3 network balancing step     5 modified OD pairs     2 total excess cost 1.32655502 avg excess cost 0.00003040
+                      Iteration     3 number of deleted paths after OD balancing 97787
+                      Iteration     3 number of deleted paths after network balancing 11659
+                      
+                      Iteration     3 gap 0.00115079
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg A-HBW routes total 256911 routes new 44797
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg B-HBO routes total 251527 routes new 88176
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg C-NHB routes total 233959 routes new 128621
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg D-KSCO routes total 3440 routes new 129216
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg E-REC routes total 5776 routes new 130514
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg XXC routes total 50 routes new 130524
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     4 network balancing step     1 modified OD pairs 115687 total excess cost 1911.27559726 avg excess cost 0.04380121
+                      Iteration     4 network balancing step     2 modified OD pairs 11069 total excess cost 130.50383821 avg excess cost 0.00299079
+                      Iteration     4 network balancing step     3 modified OD pairs   459 total excess cost 39.85894693 avg excess cost 0.00091346
+                      Iteration     4 network balancing step     4 modified OD pairs    35 total excess cost 20.19516121 avg excess cost 0.00046282
+                      Iteration     4 network balancing step     5 modified OD pairs    32 total excess cost 19.33161257 avg excess cost 0.00044303
+                      Iteration     4 number of deleted paths after OD balancing 127712
+                      Iteration     4 number of deleted paths after network balancing 3648
+                      
+                      Iteration     4 gap 0.00209813
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg A-HBW routes total 230695 routes new 18857
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg B-HBO routes total 226427 routes new 37419
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg C-NHB routes total 210712 routes new 54881
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg D-KSCO routes total 3061 routes new 55108
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg E-REC routes total 5308 routes new 55938
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg XXC routes total 41 routes new 55941
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     5 network balancing step     1 modified OD pairs 22146 total excess cost 1351.32616591 avg excess cost 0.03096870
+                      Iteration     5 network balancing step     2 modified OD pairs  2227 total excess cost 37.67902330 avg excess cost 0.00086350
+                      Iteration     5 network balancing step     3 modified OD pairs   147 total excess cost 16.95190879 avg excess cost 0.00038849
+                      Iteration     5 network balancing step     4 modified OD pairs   214 total excess cost 12.74114165 avg excess cost 0.00029199
+                      Iteration     5 network balancing step     5 modified OD pairs   136 total excess cost 17.99232673 avg excess cost 0.00041233
+                      Iteration     5 number of deleted paths after OD balancing 24883
+                      Iteration     5 number of deleted paths after network balancing 31289
+                      
+                      Iteration     5 gap 0.00028813
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg A-HBW routes total 218720 routes new 6963
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg B-HBO routes total 214667 routes new 13841
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg C-NHB routes total 199547 routes new 20208
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg D-KSCO routes total 3010 routes new 20387
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg E-REC routes total 4543 routes new 20453
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg XXC routes total 40 routes new 20455
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     6 network balancing step     1 modified OD pairs 14511 total excess cost 521.67867283 avg excess cost 0.01195545
+                      Iteration     6 network balancing step     2 modified OD pairs  2294 total excess cost 56.72976130 avg excess cost 0.00130009
+                      Iteration     6 network balancing step     3 modified OD pairs    62 total excess cost 30.54268771 avg excess cost 0.00069995
+                      Iteration     6 network balancing step     4 modified OD pairs    22 total excess cost 22.11707388 avg excess cost 0.00050686
+                      Iteration     6 network balancing step     5 modified OD pairs    47 total excess cost 23.64794745 avg excess cost 0.00054195
+                      Iteration     6 network balancing step     6 modified OD pairs    37 total excess cost 24.05296464 avg excess cost 0.00055123
+                      Iteration     6 network balancing step     7 modified OD pairs    15 total excess cost 27.69068006 avg excess cost 0.00063459
+                      Iteration     6 network balancing step     8 modified OD pairs     8 total excess cost 21.97112410 avg excess cost 0.00050352
+                      Iteration     6 network balancing step     9 modified OD pairs    18 total excess cost 22.28676282 avg excess cost 0.00051075
+                      Iteration     6 network balancing step    10 modified OD pairs    25 total excess cost 27.32012080 avg excess cost 0.00062610
+                      Iteration     6 number of deleted paths after OD balancing 16977
+                      Iteration     6 number of deleted paths after network balancing 3547
+                      
+                      Iteration     6 gap 0.00018887
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg A-HBW routes total 220225 routes new 8491
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg B-HBO routes total 216132 routes new 16856
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg C-NHB routes total 201087 routes new 24786
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg D-KSCO routes total 2961 routes new 24916
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg E-REC routes total 4921 routes new 25361
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg XXC routes total 41 routes new 25364
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     7 network balancing step     1 modified OD pairs  9283 total excess cost 494.63800187 avg excess cost 0.01133575
+                      Iteration     7 network balancing step     2 modified OD pairs  1211 total excess cost 40.72294858 avg excess cost 0.00093326
+                      Iteration     7 network balancing step     3 modified OD pairs   277 total excess cost 32.44590116 avg excess cost 0.00074357
+                      Iteration     7 network balancing step     4 modified OD pairs   119 total excess cost 10.47304025 avg excess cost 0.00024001
+                      Iteration     7 network balancing step     5 modified OD pairs     8 total excess cost 13.03974130 avg excess cost 0.00029884
+                      Iteration     7 network balancing step     6 modified OD pairs    51 total excess cost 13.72822652 avg excess cost 0.00031461
+                      Iteration     7 network balancing step     7 modified OD pairs    15 total excess cost 13.44975658 avg excess cost 0.00030823
+                      Iteration     7 network balancing step     8 modified OD pairs     6 total excess cost 6.21481763 avg excess cost 0.00014243
+                      Iteration     7 network balancing step     9 modified OD pairs     6 total excess cost 10.74879034 avg excess cost 0.00024633
+                      Iteration     7 network balancing step    10 modified OD pairs     5 total excess cost 10.60167061 avg excess cost 0.00024296
+                      Iteration     7 number of deleted paths after OD balancing 10969
+                      Iteration     7 number of deleted paths after network balancing 14490
+                      
+                      Iteration     7 gap 0.00012822
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg A-HBW routes total 219114 routes new 7409
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg B-HBO routes total 215044 routes new 14719
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg C-NHB routes total 200098 routes new 21692
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg D-KSCO routes total 2863 routes new 21726
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg E-REC routes total 4548 routes new 21798
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg XXC routes total 39 routes new 21798
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     8 network balancing step     1 modified OD pairs  5031 total excess cost 256.88517248 avg excess cost 0.00588711
+                      Iteration     8 network balancing step     2 modified OD pairs  1080 total excess cost 82.33026332 avg excess cost 0.00188678
+                      Iteration     8 network balancing step     3 modified OD pairs   350 total excess cost 54.27520070 avg excess cost 0.00124384
+                      Iteration     8 network balancing step     4 modified OD pairs    28 total excess cost 56.43220086 avg excess cost 0.00129327
+                      Iteration     8 network balancing step     5 modified OD pairs    47 total excess cost 11.47855786 avg excess cost 0.00026306
+                      Iteration     8 network balancing step     6 modified OD pairs    97 total excess cost 11.27240842 avg excess cost 0.00025833
+                      Iteration     8 network balancing step     7 modified OD pairs    97 total excess cost 51.01447415 avg excess cost 0.00116911
+                      Iteration     8 network balancing step     8 modified OD pairs    49 total excess cost 20.55499362 avg excess cost 0.00047106
+                      Iteration     8 network balancing step     9 modified OD pairs    39 total excess cost 20.08118417 avg excess cost 0.00046021
+                      Iteration     8 network balancing step    10 modified OD pairs   258 total excess cost 59.61623100 avg excess cost 0.00136624
+                      Iteration     8 number of deleted paths after OD balancing 7063
+                      Iteration     8 number of deleted paths after network balancing 14884
+                      
+                      Iteration     8 gap 0.00008311
+                      
+                      Equilibrium assignment finished after 8 iteration steps
+01/25/17 16.10.59.893 Time before  WBRePack
+01/25/17 16.11.00.076 Time after WBRePack
+01/25/17 16.11.00.409 Time before  WBRePack
+01/25/17 16.11.00.860 Time after WBRePack
+01/25/17 16.11.01.167 Time before  WBRePack
+01/25/17 16.11.01.351 Time after WBRePack
+01/25/17 16.11.01.652 Time before  WBRePack
+01/25/17 16.11.01.685 Time after WBRePack
+01/25/17 16.11.01.695 Time before  WBRePack
+01/25/17 16.11.01.710 Time after WBRePack
+01/25/17 16.11.01.724 Time before  WBRePack
+01/25/17 16.11.01.724 Time after WBRePack
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The assignment reached convergence after 8 of a maximum of 10 iterations with a GAP of 6.09031721e-005.
+01/25/17 16.11.01.779 Time before Aggregate path trees
+01/25/17 16.11.02.340 Time after Aggregate path trees
+01/25/17 16.11.02.340 Time before Aggregate paths
+01/25/17 16.11.02.434 Time after Aggregate paths
+01/25/17 16.11.02.440 Time before Aggregate path trees
+01/25/17 16.11.02.799 Time after Aggregate path trees
+01/25/17 16.11.02.799 Time before Aggregate paths
+01/25/17 16.11.02.886 Time after Aggregate paths
+01/25/17 16.11.02.893 Time before Aggregate path trees
+01/25/17 16.11.03.439 Time after Aggregate path trees
+01/25/17 16.11.03.439 Time before Aggregate paths
+01/25/17 16.11.03.526 Time after Aggregate paths
+01/25/17 16.11.03.533 Time before Aggregate path trees
+01/25/17 16.11.03.557 Time after Aggregate path trees
+01/25/17 16.11.03.557 Time before Aggregate paths
+01/25/17 16.11.03.565 Time after Aggregate paths
+01/25/17 16.11.03.566 Time before Aggregate path trees
+01/25/17 16.11.03.608 Time after Aggregate path trees
+01/25/17 16.11.03.608 Time before Aggregate paths
+01/25/17 16.11.03.616 Time after Aggregate paths
+01/25/17 16.11.03.617 Time before Aggregate path trees
+01/25/17 16.11.03.617 Time after Aggregate path trees
+01/25/17 16.11.03.617 Time before Aggregate paths
+01/25/17 16.11.03.621 Time after Aggregate paths
+                      Go to: Convergence criterion not met  Attribute VOLVEHPRT(AP), max difference 16.21216214 on link no. 6356, Sum of deviations: 3549.60408351
+                      GoTo: No convergence reached - Start iteration 5 of 5
+01/25/17 16.11.03.996 Start Procedure step  18: "Calculate PrT skim matrix"
+                      The shortest path graph has been reduced by 47.0%
+01/25/17 16.11.05.086 Start Procedure step  19: "Combination of matrices and vectors"
+01/25/17 16.11.05.185 Start Procedure step  20: "Read filter"
+01/25/17 16.11.05.585 Start Procedure step  21: "Trip distribution"
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+                      Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+                      Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+                      Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+                      Matrix total 5 RECpa after distribution of all demand strata:  384.041
+                      Matrix total 1 HBWpa after distribution of all demand strata: 9895.114
+Matrix total 2 HBOpa after distribution of all demand strata: 20706.483
+Matrix total 3 NHBpa after distribution of all demand strata: 9348.155
+Matrix total 4 KSCOpa after distribution of all demand strata: 2422.399
+Matrix total 5 RECpa after distribution of all demand strata:  384.041
+01/25/17 16.11.06.044 Start Procedure step  22: "Read filter"
+01/25/17 16.11.06.167 Start Procedure step  23: "Combination of matrices and vectors"
+01/25/17 16.11.06.268 Start Procedure step  24: "Combination of matrices and vectors"
+01/25/17 16.11.06.368 Start Procedure step  25: "Combination of matrices and vectors"
+01/25/17 16.11.06.467 Start Procedure step  26: "Combination of matrices and vectors"
+01/25/17 16.11.06.549 Start Procedure step  27: "Combination of matrices and vectors"
+01/25/17 16.11.06.634 Start Procedure step  28: "Group"
+01/25/17 16.11.06.709 Start Procedure step  29: "PrT assignment"
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Equilibrium assignment: Start solution is recalculated.
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg A-HBW, routes in total 201662
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg B-HBO, routes in total 197660
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg C-NHB, routes in total 183374
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg D-KSCO, routes in total 2646
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg E-REC, routes in total 4408
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg XXC, routes in total 33
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg A-HBW, routes in total 222048
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg B-HBO, routes in total 217798
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg C-NHB, routes in total 202290
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg D-KSCO, routes in total 3110
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg E-REC, routes in total 5224
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg XXC, routes in total 41
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg A-HBW, routes in total 297563
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg B-HBO, routes in total 292269
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg C-NHB, routes in total 271917
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg D-KSCO, routes in total 3911
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg E-REC, routes in total 8112
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg XXC, routes in total 63
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     1 network balancing step     1 modified OD pairs 192386 total excess cost 180437.61113625 avg excess cost 4.13521097
+                      Iteration     1 network balancing step     2 modified OD pairs  4737 total excess cost 782.86554179 avg excess cost 0.01794146
+                      Iteration     1 network balancing step     3 modified OD pairs  2003 total excess cost 168.13254268 avg excess cost 0.00385321
+                      Iteration     1 network balancing step     4 modified OD pairs  2152 total excess cost 78.36135623 avg excess cost 0.00179586
+                      Iteration     1 network balancing step     5 modified OD pairs   676 total excess cost 63.92886082 avg excess cost 0.00146510
+                      Iteration     1 number of deleted paths after OD balancing 225309
+                      Iteration     1 number of deleted paths after network balancing 21
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg A-HBW routes total 306928 routes new 85489
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg B-HBO routes total 300956 routes new 169102
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg C-NHB routes total 279515 routes new 246486
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg D-KSCO routes total 4155 routes new 247698
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg E-REC routes total 7326 routes new 250415
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg XXC routes total 55 routes new 250430
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     2 network balancing step     1 modified OD pairs 235951 total excess cost 42874.18352459 avg excess cost 0.98257671
+                      Iteration     2 network balancing step     2 modified OD pairs 15261 total excess cost 338.85549487 avg excess cost 0.00776578
+                      Iteration     2 network balancing step     3 modified OD pairs  1048 total excess cost 50.97053443 avg excess cost 0.00116813
+                      Iteration     2 network balancing step     4 modified OD pairs    88 total excess cost 48.94373682 avg excess cost 0.00112168
+                      Iteration     2 network balancing step     5 modified OD pairs   375 total excess cost 29.24300423 avg excess cost 0.00067018
+                      Iteration     2 number of deleted paths after OD balancing 271190
+                      Iteration     2 number of deleted paths after network balancing 5447
+                      
+                      Iteration     2 gap 0.01530555
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg A-HBW routes total 250063 routes new 37559
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg B-HBO routes total 245345 routes new 74360
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg C-NHB routes total 228020 routes new 108498
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg D-KSCO routes total 3233 routes new 108894
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg E-REC routes total 5506 routes new 109909
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg XXC routes total 47 routes new 109916
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     3 network balancing step     1 modified OD pairs 89460 total excess cost 7710.82688541 avg excess cost 0.17671424
+                      Iteration     3 network balancing step     2 modified OD pairs  5977 total excess cost 116.66388245 avg excess cost 0.00267367
+                      Iteration     3 network balancing step     3 modified OD pairs  1891 total excess cost 16.91614122 avg excess cost 0.00038768
+                      Iteration     3 network balancing step     4 modified OD pairs    47 total excess cost 11.04524407 avg excess cost 0.00025313
+                      Iteration     3 network balancing step     5 modified OD pairs    43 total excess cost 10.02369460 avg excess cost 0.00022972
+                      Iteration     3 number of deleted paths after OD balancing 98117
+                      Iteration     3 number of deleted paths after network balancing 13706
+                      
+                      Iteration     3 gap 0.00112856
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg A-HBW routes total 258178 routes new 46308
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg B-HBO routes total 252738 routes new 91147
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg C-NHB routes total 235147 routes new 133023
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg D-KSCO routes total 3423 routes new 133614
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg E-REC routes total 5824 routes new 134959
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg XXC routes total 50 routes new 134969
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     4 network balancing step     1 modified OD pairs 123203 total excess cost 1918.73654486 avg excess cost 0.04397299
+                      Iteration     4 network balancing step     2 modified OD pairs  6842 total excess cost 103.00729792 avg excess cost 0.00236069
+                      Iteration     4 network balancing step     3 modified OD pairs   596 total excess cost 38.78562826 avg excess cost 0.00088888
+                      Iteration     4 network balancing step     4 modified OD pairs   130 total excess cost 12.79781569 avg excess cost 0.00029330
+                      Iteration     4 network balancing step     5 modified OD pairs    12 total excess cost 10.56274435 avg excess cost 0.00024207
+                      Iteration     4 number of deleted paths after OD balancing 131035
+                      Iteration     4 number of deleted paths after network balancing 4350
+                      
+                      Iteration     4 gap 0.00209551
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg A-HBW routes total 227730 routes new 16000
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg B-HBO routes total 223495 routes new 31739
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg C-NHB routes total 208138 routes new 46735
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg D-KSCO routes total 3002 routes new 46909
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg E-REC routes total 5142 routes new 47571
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg XXC routes total 42 routes new 47574
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     5 network balancing step     1 modified OD pairs 21277 total excess cost 1385.01182511 avg excess cost 0.03174125
+                      Iteration     5 network balancing step     2 modified OD pairs  2484 total excess cost 58.31619636 avg excess cost 0.00133647
+                      Iteration     5 network balancing step     3 modified OD pairs   365 total excess cost 12.63086675 avg excess cost 0.00028947
+                      Iteration     5 network balancing step     4 modified OD pairs    29 total excess cost 17.87687460 avg excess cost 0.00040970
+                      Iteration     5 network balancing step     5 modified OD pairs   157 total excess cost 13.67343606 avg excess cost 0.00031336
+                      Iteration     5 number of deleted paths after OD balancing 24254
+                      Iteration     5 number of deleted paths after network balancing 24043
+                      
+                      Iteration     5 gap 0.00027349
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg A-HBW routes total 217964 routes new 6483
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg B-HBO routes total 213918 routes new 12899
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg C-NHB routes total 198877 routes new 18836
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg D-KSCO routes total 3000 routes new 19019
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg E-REC routes total 4544 routes new 19091
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg XXC routes total 42 routes new 19093
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     6 network balancing step     1 modified OD pairs 13779 total excess cost 534.08357937 avg excess cost 0.01223996
+                      Iteration     6 network balancing step     2 modified OD pairs  1631 total excess cost 61.85362441 avg excess cost 0.00141754
+                      Iteration     6 network balancing step     3 modified OD pairs   183 total excess cost 14.40251120 avg excess cost 0.00033007
+                      Iteration     6 network balancing step     4 modified OD pairs     5 total excess cost 11.46694997 avg excess cost 0.00026280
+                      Iteration     6 network balancing step     5 modified OD pairs     5 total excess cost 5.37655776 avg excess cost 0.00012322
+                      Iteration     6 network balancing step     6 modified OD pairs     6 total excess cost 12.72485817 avg excess cost 0.00029162
+                      Iteration     6 network balancing step     7 modified OD pairs     4 total excess cost 5.36891335 avg excess cost 0.00012304
+                      Iteration     6 network balancing step     8 modified OD pairs     3 total excess cost 2.88761592 avg excess cost 0.00006618
+                      Iteration     6 network balancing step     9 modified OD pairs     0 total excess cost -0.00000000 avg excess cost -0.00000000
+                      Iteration     6 number of deleted paths after OD balancing 15613
+                      Iteration     6 number of deleted paths after network balancing 3552
+                      
+                      Iteration     6 gap 0.00017586
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg A-HBW routes total 222069 routes new 10619
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg B-HBO routes total 217958 routes new 21092
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg C-NHB routes total 203008 routes new 31184
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg D-KSCO routes total 2914 routes new 31281
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg E-REC routes total 4927 routes new 31736
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg XXC routes total 42 routes new 31738
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     7 network balancing step     1 modified OD pairs 18682 total excess cost 388.94248416 avg excess cost 0.00891366
+                      Iteration     7 network balancing step     2 modified OD pairs  2452 total excess cost 71.01588112 avg excess cost 0.00162752
+                      Iteration     7 network balancing step     3 modified OD pairs   116 total excess cost 21.38337144 avg excess cost 0.00049006
+                      Iteration     7 network balancing step     4 modified OD pairs   223 total excess cost 19.14123900 avg excess cost 0.00043867
+                      Iteration     7 network balancing step     5 modified OD pairs    25 total excess cost 16.63477370 avg excess cost 0.00038123
+                      Iteration     7 network balancing step     6 modified OD pairs    32 total excess cost 23.58481310 avg excess cost 0.00054051
+                      Iteration     7 network balancing step     7 modified OD pairs    20 total excess cost 22.92298330 avg excess cost 0.00052534
+                      Iteration     7 network balancing step     8 modified OD pairs    87 total excess cost 29.15382521 avg excess cost 0.00066814
+                      Iteration     7 network balancing step     9 modified OD pairs    15 total excess cost 15.45502734 avg excess cost 0.00035419
+                      Iteration     7 network balancing step    10 modified OD pairs    19 total excess cost 11.68328040 avg excess cost 0.00026775
+                      Iteration     7 number of deleted paths after OD balancing 21761
+                      Iteration     7 number of deleted paths after network balancing 10194
+                      
+                      Iteration     7 gap 0.00011815
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg A-HBW routes total 216214 routes new 4832
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg B-HBO routes total 212220 routes new 9641
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg C-NHB routes total 197308 routes new 14108
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg D-KSCO routes total 2838 routes new 14129
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg E-REC routes total 4564 routes new 14221
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg XXC routes total 40 routes new 14221
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     8 network balancing step     1 modified OD pairs  5771 total excess cost 178.34364444 avg excess cost 0.00408722
+                      Iteration     8 network balancing step     2 modified OD pairs   414 total excess cost 21.53376939 avg excess cost 0.00049350
+                      Iteration     8 network balancing step     3 modified OD pairs   294 total excess cost 36.14737432 avg excess cost 0.00082841
+                      Iteration     8 network balancing step     4 modified OD pairs   125 total excess cost 24.47385806 avg excess cost 0.00056088
+                      Iteration     8 network balancing step     5 modified OD pairs    32 total excess cost 26.96012267 avg excess cost 0.00061786
+                      Iteration     8 network balancing step     6 modified OD pairs    35 total excess cost 8.31871641 avg excess cost 0.00019065
+                      Iteration     8 network balancing step     7 modified OD pairs   297 total excess cost 11.23158842 avg excess cost 0.00025740
+                      Iteration     8 network balancing step     8 modified OD pairs   455 total excess cost 3.19639386 avg excess cost 0.00007325
+                      Iteration     8 network balancing step     9 modified OD pairs     6 total excess cost 0.52718445 avg excess cost 0.00001208
+                      Iteration     8 network balancing step    10 modified OD pairs     2 total excess cost 0.29828834 avg excess cost 0.00000684
+                      Iteration     8 number of deleted paths after OD balancing 7375
+                      Iteration     8 number of deleted paths after network balancing 6889
+                      
+                      Iteration     8 gap 0.00008876
+                      
+                      Equilibrium assignment finished after 8 iteration steps
+01/25/17 16.12.11.968 Time before  WBRePack
+01/25/17 16.12.12.173 Time after WBRePack
+01/25/17 16.12.12.505 Time before  WBRePack
+01/25/17 16.12.12.706 Time after WBRePack
+01/25/17 16.12.13.033 Time before  WBRePack
+01/25/17 16.12.13.214 Time after WBRePack
+01/25/17 16.12.13.525 Time before  WBRePack
+01/25/17 16.12.13.535 Time after WBRePack
+01/25/17 16.12.13.548 Time before  WBRePack
+01/25/17 16.12.13.568 Time after WBRePack
+01/25/17 16.12.13.584 Time before  WBRePack
+01/25/17 16.12.13.584 Time after WBRePack
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The assignment reached convergence after 8 of a maximum of 10 iterations with a GAP of 6.32263854e-005.
+01/25/17 16.12.13.633 Time before Aggregate path trees
+01/25/17 16.12.14.032 Time after Aggregate path trees
+01/25/17 16.12.14.032 Time before Aggregate paths
+01/25/17 16.12.14.132 Time after Aggregate paths
+01/25/17 16.12.14.139 Time before Aggregate path trees
+01/25/17 16.12.14.497 Time after Aggregate path trees
+01/25/17 16.12.14.497 Time before Aggregate paths
+01/25/17 16.12.14.589 Time after Aggregate paths
+01/25/17 16.12.14.595 Time before Aggregate path trees
+01/25/17 16.12.14.967 Time after Aggregate path trees
+01/25/17 16.12.14.967 Time before Aggregate paths
+01/25/17 16.12.15.072 Time after Aggregate paths
+01/25/17 16.12.15.082 Time before Aggregate path trees
+01/25/17 16.12.15.111 Time after Aggregate path trees
+01/25/17 16.12.15.111 Time before Aggregate paths
+01/25/17 16.12.15.119 Time after Aggregate paths
+01/25/17 16.12.15.119 Time before Aggregate path trees
+01/25/17 16.12.15.166 Time after Aggregate path trees
+01/25/17 16.12.15.166 Time before Aggregate paths
+01/25/17 16.12.15.176 Time after Aggregate paths
+01/25/17 16.12.15.177 Time before Aggregate path trees
+01/25/17 16.12.15.178 Time after Aggregate path trees
+01/25/17 16.12.15.178 Time before Aggregate paths
+01/25/17 16.12.15.182 Time after Aggregate paths
+                      Go to: Convergence criterion not met  Attribute VOLVEHPRT(AP), max difference 11.08071358 on link no. 16198, Sum of deviations: 2256.11507433
+                      GoTo: No convergence reached - Maximum number of iterations (5) reached - No GoTo procedure
+01/25/17 16.12.15.563 Start Procedure step  31: "Group"
+01/25/17 16.12.15.642 Start Procedure step  32: "PrT assignment"
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg A-HBW, routes in total 201662
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg B-HBO, routes in total 197660
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg C-NHB, routes in total 183374
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg D-KSCO, routes in total 2646
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg E-REC, routes in total 4408
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 1, DSeg XXC, routes in total 33
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg A-HBW, routes in total 222048
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg B-HBO, routes in total 217798
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg C-NHB, routes in total 202290
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg D-KSCO, routes in total 3110
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg E-REC, routes in total 5224
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2, DSeg XXC, routes in total 41
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg A-HBW, routes in total 296157
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg B-HBO, routes in total 290897
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg C-NHB, routes in total 270736
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg D-KSCO, routes in total 3903
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg E-REC, routes in total 8105
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3, DSeg XXC, routes in total 63
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     1 network balancing step     1 modified OD pairs 191283 total excess cost 181755.86947904 avg excess cost 4.16542239
+                      Iteration     1 network balancing step     2 modified OD pairs  4340 total excess cost 950.78858581 avg excess cost 0.02178987
+                      Iteration     1 network balancing step     3 modified OD pairs  2175 total excess cost 216.37845666 avg excess cost 0.00495889
+                      Iteration     1 network balancing step     4 modified OD pairs   816 total excess cost 143.99598935 avg excess cost 0.00330005
+                      Iteration     1 network balancing step     5 modified OD pairs  1874 total excess cost 106.62980698 avg excess cost 0.00244371
+                      Iteration     1 network balancing step     6 modified OD pairs  1514 total excess cost 101.22582560 avg excess cost 0.00231986
+                      Iteration     1 network balancing step     7 modified OD pairs   892 total excess cost 91.02783831 avg excess cost 0.00208615
+                      Iteration     1 network balancing step     8 modified OD pairs   455 total excess cost 83.15914319 avg excess cost 0.00190581
+                      Iteration     1 network balancing step     9 modified OD pairs   181 total excess cost 80.14541565 avg excess cost 0.00183675
+                      Iteration     1 network balancing step    10 modified OD pairs    68 total excess cost 56.16260138 avg excess cost 0.00128712
+                      Iteration     1 network balancing step    11 modified OD pairs    99 total excess cost 54.87525130 avg excess cost 0.00125761
+                      Iteration     1 network balancing step    12 modified OD pairs    81 total excess cost 54.09631508 avg excess cost 0.00123976
+                      Iteration     1 network balancing step    13 modified OD pairs   173 total excess cost 51.99636828 avg excess cost 0.00119164
+                      Iteration     1 network balancing step    14 modified OD pairs    59 total excess cost 51.88853191 avg excess cost 0.00118916
+                      Iteration     1 network balancing step    15 modified OD pairs    49 total excess cost 50.93524937 avg excess cost 0.00116732
+                      Iteration     1 network balancing step    16 modified OD pairs    36 total excess cost 51.14594293 avg excess cost 0.00117215
+                      Iteration     1 network balancing step    17 modified OD pairs    40 total excess cost 50.00801750 avg excess cost 0.00114607
+                      Iteration     1 network balancing step    18 modified OD pairs    31 total excess cost 53.22801341 avg excess cost 0.00121986
+                      Iteration     1 network balancing step    19 modified OD pairs    23 total excess cost 49.81175009 avg excess cost 0.00114157
+                      Iteration     1 network balancing step    20 modified OD pairs    27 total excess cost 30.76332995 avg excess cost 0.00070502
+                      Iteration     1 number of deleted paths after OD balancing 227793
+                      Iteration     1 number of deleted paths after network balancing 17
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg A-HBW routes total 305781 routes new 86676
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg B-HBO routes total 300013 routes new 171462
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg C-NHB routes total 278696 routes new 250032
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg D-KSCO routes total 4051 routes new 251143
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg E-REC routes total 7330 routes new 253858
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 2 DSeg XXC routes total 52 routes new 253872
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     2 network balancing step     1 modified OD pairs 242383 total excess cost 45351.90259147 avg excess cost 1.03936028
+                      Iteration     2 network balancing step     2 modified OD pairs 10956 total excess cost 236.70736696 avg excess cost 0.00542478
+                      Iteration     2 network balancing step     3 modified OD pairs   759 total excess cost 32.03195633 avg excess cost 0.00073410
+                      Iteration     2 network balancing step     4 modified OD pairs    39 total excess cost 8.79783587 avg excess cost 0.00020163
+                      Iteration     2 network balancing step     5 modified OD pairs    45 total excess cost 8.84106901 avg excess cost 0.00020262
+                      Iteration     2 network balancing step     6 modified OD pairs    43 total excess cost 8.50212555 avg excess cost 0.00019485
+                      Iteration     2 network balancing step     7 modified OD pairs    34 total excess cost 8.14791808 avg excess cost 0.00018673
+                      Iteration     2 network balancing step     8 modified OD pairs    13 total excess cost 0.08279858 avg excess cost 0.00000190
+                      Iteration     2 network balancing step     9 modified OD pairs    87 total excess cost 1.09343376 avg excess cost 0.00002506
+                      Iteration     2 network balancing step    10 modified OD pairs    36 total excess cost 0.67007676 avg excess cost 0.00001536
+                      Iteration     2 network balancing step    11 modified OD pairs    72 total excess cost 0.67801189 avg excess cost 0.00001554
+                      Iteration     2 network balancing step    12 modified OD pairs    86 total excess cost 1.11543344 avg excess cost 0.00002556
+                      Iteration     2 network balancing step    13 modified OD pairs   111 total excess cost 0.60753381 avg excess cost 0.00001392
+                      Iteration     2 network balancing step    14 modified OD pairs   107 total excess cost 2.33564814 avg excess cost 0.00005353
+                      Iteration     2 network balancing step    15 modified OD pairs    16 total excess cost 7.89190555 avg excess cost 0.00018086
+                      Iteration     2 network balancing step    16 modified OD pairs    64 total excess cost 7.97322170 avg excess cost 0.00018273
+                      Iteration     2 network balancing step    17 modified OD pairs    33 total excess cost 8.70374533 avg excess cost 0.00019947
+                      Iteration     2 network balancing step    18 modified OD pairs   496 total excess cost 9.03050071 avg excess cost 0.00020696
+                      Iteration     2 network balancing step    19 modified OD pairs    53 total excess cost 1.21170932 avg excess cost 0.00002777
+                      Iteration     2 network balancing step    20 modified OD pairs     4 total excess cost 8.13173248 avg excess cost 0.00018636
+                      Iteration     2 number of deleted paths after OD balancing 271961
+                      Iteration     2 number of deleted paths after network balancing 4407
+                      
+                      Iteration     2 gap 0.01663958
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg A-HBW routes total 247630 routes new 36191
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg B-HBO routes total 243065 routes new 71650
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg C-NHB routes total 225863 routes new 104416
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg D-KSCO routes total 3240 routes new 104772
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg E-REC routes total 5421 routes new 105703
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 3 DSeg XXC routes total 43 routes new 105707
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     3 network balancing step     1 modified OD pairs 85451 total excess cost 8386.06541872 avg excess cost 0.19218914
+                      Iteration     3 network balancing step     2 modified OD pairs  4065 total excess cost 204.58499386 avg excess cost 0.00468861
+                      Iteration     3 network balancing step     3 modified OD pairs   438 total excess cost 140.94002057 avg excess cost 0.00323002
+                      Iteration     3 network balancing step     4 modified OD pairs    90 total excess cost 68.21485107 avg excess cost 0.00156333
+                      Iteration     3 network balancing step     5 modified OD pairs    23 total excess cost 62.15089690 avg excess cost 0.00142435
+                      Iteration     3 network balancing step     6 modified OD pairs    18 total excess cost 59.96540915 avg excess cost 0.00137427
+                      Iteration     3 network balancing step     7 modified OD pairs    13 total excess cost 57.42297044 avg excess cost 0.00131600
+                      Iteration     3 network balancing step     8 modified OD pairs    13 total excess cost 55.38668908 avg excess cost 0.00126933
+                      Iteration     3 network balancing step     9 modified OD pairs    25 total excess cost 56.60771306 avg excess cost 0.00129732
+                      Iteration     3 network balancing step    10 modified OD pairs    32 total excess cost 58.62956477 avg excess cost 0.00134365
+                      Iteration     3 network balancing step    11 modified OD pairs    27 total excess cost 55.40470320 avg excess cost 0.00126975
+                      Iteration     3 network balancing step    12 modified OD pairs    18 total excess cost 56.17528919 avg excess cost 0.00128741
+                      Iteration     3 network balancing step    13 modified OD pairs    28 total excess cost 12.70454979 avg excess cost 0.00029116
+                      Iteration     3 network balancing step    14 modified OD pairs    30 total excess cost 12.50050364 avg excess cost 0.00028648
+                      Iteration     3 network balancing step    15 modified OD pairs   250 total excess cost 8.67025178 avg excess cost 0.00019870
+                      Iteration     3 network balancing step    16 modified OD pairs    13 total excess cost 11.68929741 avg excess cost 0.00026789
+                      Iteration     3 network balancing step    17 modified OD pairs    13 total excess cost 10.83956741 avg excess cost 0.00024842
+                      Iteration     3 network balancing step    18 modified OD pairs    10 total excess cost 7.72241995 avg excess cost 0.00017698
+                      Iteration     3 network balancing step    19 modified OD pairs    13 total excess cost 10.88265202 avg excess cost 0.00024941
+                      Iteration     3 network balancing step    20 modified OD pairs    15 total excess cost 12.19259054 avg excess cost 0.00027943
+                      Iteration     3 number of deleted paths after OD balancing 90918
+                      Iteration     3 number of deleted paths after network balancing 16766
+                      
+                      Iteration     3 gap 0.00119007
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg A-HBW routes total 257484 routes new 46675
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg B-HBO routes total 252199 routes new 91928
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg C-NHB routes total 234538 routes new 134020
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg D-KSCO routes total 3459 routes new 134617
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg E-REC routes total 5838 routes new 135979
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 4 DSeg XXC routes total 49 routes new 135989
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     4 network balancing step     1 modified OD pairs 120288 total excess cost 2065.51699060 avg excess cost 0.04733685
+                      Iteration     4 network balancing step     2 modified OD pairs  7778 total excess cost 87.32308553 avg excess cost 0.00200124
+                      Iteration     4 network balancing step     3 modified OD pairs   293 total excess cost 21.41994431 avg excess cost 0.00049090
+                      Iteration     4 network balancing step     4 modified OD pairs    51 total excess cost 16.29269586 avg excess cost 0.00037339
+                      Iteration     4 network balancing step     5 modified OD pairs    61 total excess cost 10.29470112 avg excess cost 0.00023593
+                      Iteration     4 network balancing step     6 modified OD pairs    40 total excess cost 3.75044143 avg excess cost 0.00008595
+                      Iteration     4 network balancing step     7 modified OD pairs    62 total excess cost 0.53199012 avg excess cost 0.00001219
+                      Iteration     4 network balancing step     8 modified OD pairs     4 total excess cost 0.42115166 avg excess cost 0.00000965
+                      Iteration     4 network balancing step     9 modified OD pairs     3 total excess cost 0.41220781 avg excess cost 0.00000945
+                      Iteration     4 network balancing step    10 modified OD pairs     5 total excess cost 0.40772452 avg excess cost 0.00000934
+                      Iteration     4 network balancing step    11 modified OD pairs     4 total excess cost 0.39866283 avg excess cost 0.00000914
+                      Iteration     4 network balancing step    12 modified OD pairs     2 total excess cost 0.39222553 avg excess cost 0.00000899
+                      Iteration     4 network balancing step    13 modified OD pairs     5 total excess cost 0.61849497 avg excess cost 0.00001417
+                      Iteration     4 network balancing step    14 modified OD pairs     3 total excess cost 0.39485248 avg excess cost 0.00000905
+                      Iteration     4 network balancing step    15 modified OD pairs     8 total excess cost 0.62913565 avg excess cost 0.00001442
+                      Iteration     4 network balancing step    16 modified OD pairs     4 total excess cost 0.39226624 avg excess cost 0.00000899
+                      Iteration     4 network balancing step    17 modified OD pairs    10 total excess cost 0.66658331 avg excess cost 0.00001528
+                      Iteration     4 network balancing step    18 modified OD pairs    13 total excess cost 0.40501409 avg excess cost 0.00000928
+                      Iteration     4 network balancing step    19 modified OD pairs     2 total excess cost 0.35608832 avg excess cost 0.00000816
+                      Iteration     4 network balancing step    20 modified OD pairs     5 total excess cost 0.52789988 avg excess cost 0.00001210
+                      Iteration     4 number of deleted paths after OD balancing 129290
+                      Iteration     4 number of deleted paths after network balancing 8065
+                      
+                      Iteration     4 gap 0.00190232
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg A-HBW routes total 229646 routes new 19282
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg B-HBO routes total 225513 routes new 38306
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg C-NHB routes total 210023 routes new 56317
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg D-KSCO routes total 3026 routes new 56503
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg E-REC routes total 5714 routes new 57749
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 5 DSeg XXC routes total 43 routes new 57753
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     5 network balancing step     1 modified OD pairs 29474 total excess cost 1383.35895538 avg excess cost 0.03170337
+                      Iteration     5 network balancing step     2 modified OD pairs  2012 total excess cost 39.43024195 avg excess cost 0.00090365
+                      Iteration     5 network balancing step     3 modified OD pairs   637 total excess cost 16.71985079 avg excess cost 0.00038318
+                      Iteration     5 network balancing step     4 modified OD pairs   142 total excess cost 12.43736829 avg excess cost 0.00028504
+                      Iteration     5 network balancing step     5 modified OD pairs    40 total excess cost 0.94104976 avg excess cost 0.00002157
+                      Iteration     5 network balancing step     6 modified OD pairs     9 total excess cost 1.82623304 avg excess cost 0.00004185
+                      Iteration     5 network balancing step     7 modified OD pairs    67 total excess cost 5.28936522 avg excess cost 0.00012122
+                      Iteration     5 network balancing step     8 modified OD pairs     5 total excess cost 0.20857658 avg excess cost 0.00000478
+                      Iteration     5 network balancing step     9 modified OD pairs    51 total excess cost 1.42171019 avg excess cost 0.00003258
+                      Iteration     5 network balancing step    10 modified OD pairs     9 total excess cost 0.96126883 avg excess cost 0.00002203
+                      Iteration     5 network balancing step    11 modified OD pairs     2 total excess cost 1.36195917 avg excess cost 0.00003121
+                      Iteration     5 network balancing step    12 modified OD pairs    39 total excess cost 1.04785368 avg excess cost 0.00002401
+                      Iteration     5 network balancing step    13 modified OD pairs    14 total excess cost 0.89247860 avg excess cost 0.00002045
+                      Iteration     5 network balancing step    14 modified OD pairs     2 total excess cost 0.80026046 avg excess cost 0.00001834
+                      Iteration     5 network balancing step    15 modified OD pairs     2 total excess cost 0.93945724 avg excess cost 0.00002153
+                      Iteration     5 network balancing step    16 modified OD pairs     2 total excess cost 0.82117783 avg excess cost 0.00001882
+                      Iteration     5 network balancing step    17 modified OD pairs     2 total excess cost 0.84164466 avg excess cost 0.00001929
+                      Iteration     5 network balancing step    18 modified OD pairs    37 total excess cost 6.36468964 avg excess cost 0.00014586
+                      Iteration     5 network balancing step    19 modified OD pairs     6 total excess cost 0.47387488 avg excess cost 0.00001086
+                      Iteration     5 network balancing step    20 modified OD pairs     7 total excess cost 0.43709479 avg excess cost 0.00001002
+                      Iteration     5 number of deleted paths after OD balancing 32598
+                      Iteration     5 number of deleted paths after network balancing 25328
+                      
+                      Iteration     5 gap 0.00026099
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg A-HBW routes total 217978 routes new 7669
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg B-HBO routes total 214015 routes new 15251
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg C-NHB routes total 199081 routes new 22375
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg D-KSCO routes total 2874 routes new 22413
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg E-REC routes total 4542 routes new 22490
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 6 DSeg XXC routes total 39 routes new 22490
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     6 network balancing step     1 modified OD pairs 15641 total excess cost 478.56068391 avg excess cost 0.01096750
+                      Iteration     6 network balancing step     2 modified OD pairs  2219 total excess cost 52.00734767 avg excess cost 0.00119189
+                      Iteration     6 network balancing step     3 modified OD pairs   187 total excess cost 22.79782391 avg excess cost 0.00052247
+                      Iteration     6 network balancing step     4 modified OD pairs    36 total excess cost 16.65717713 avg excess cost 0.00038174
+                      Iteration     6 network balancing step     5 modified OD pairs    11 total excess cost 52.57810230 avg excess cost 0.00120497
+                      Iteration     6 network balancing step     6 modified OD pairs    26 total excess cost 11.03218257 avg excess cost 0.00025283
+                      Iteration     6 network balancing step     7 modified OD pairs    13 total excess cost 3.99790877 avg excess cost 0.00009162
+                      Iteration     6 network balancing step     8 modified OD pairs    19 total excess cost 4.26982081 avg excess cost 0.00009785
+                      Iteration     6 network balancing step     9 modified OD pairs    10 total excess cost 8.03312512 avg excess cost 0.00018410
+                      Iteration     6 network balancing step    10 modified OD pairs     9 total excess cost 6.19580840 avg excess cost 0.00014199
+                      Iteration     6 network balancing step    11 modified OD pairs    26 total excess cost 47.44492087 avg excess cost 0.00108733
+                      Iteration     6 network balancing step    12 modified OD pairs     6 total excess cost 10.62993720 avg excess cost 0.00024361
+                      Iteration     6 network balancing step    13 modified OD pairs     4 total excess cost 11.79654901 avg excess cost 0.00027035
+                      Iteration     6 network balancing step    14 modified OD pairs     5 total excess cost 0.25275615 avg excess cost 0.00000579
+                      Iteration     6 network balancing step    15 modified OD pairs     3 total excess cost 43.30888102 avg excess cost 0.00099254
+                      Iteration     6 network balancing step    16 modified OD pairs     3 total excess cost 6.75708410 avg excess cost 0.00015486
+                      Iteration     6 network balancing step    17 modified OD pairs     4 total excess cost 43.57257015 avg excess cost 0.00099858
+                      Iteration     6 network balancing step    18 modified OD pairs     5 total excess cost 6.72884838 avg excess cost 0.00015421
+                      Iteration     6 network balancing step    19 modified OD pairs     2 total excess cost 6.71988592 avg excess cost 0.00015400
+                      Iteration     6 network balancing step    20 modified OD pairs     9 total excess cost 6.74618080 avg excess cost 0.00015461
+                      Iteration     6 number of deleted paths after OD balancing 18154
+                      Iteration     6 number of deleted paths after network balancing 5488
+                      
+                      Iteration     6 gap 0.00018423
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg A-HBW routes total 220915 routes new 11015
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg B-HBO routes total 216929 routes new 21904
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg C-NHB routes total 201934 routes new 32231
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg D-KSCO routes total 2953 routes new 32348
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg E-REC routes total 5454 routes new 33337
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 7 DSeg XXC routes total 43 routes new 33341
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     7 network balancing step     1 modified OD pairs  9261 total excess cost 469.47423129 avg excess cost 0.01075926
+                      Iteration     7 network balancing step     2 modified OD pairs  1411 total excess cost 32.31591428 avg excess cost 0.00074061
+                      Iteration     7 network balancing step     3 modified OD pairs   108 total excess cost 19.06877073 avg excess cost 0.00043701
+                      Iteration     7 network balancing step     4 modified OD pairs    77 total excess cost 11.79705960 avg excess cost 0.00027036
+                      Iteration     7 network balancing step     5 modified OD pairs     6 total excess cost 5.67200567 avg excess cost 0.00012999
+                      Iteration     7 network balancing step     6 modified OD pairs   174 total excess cost 4.63692930 avg excess cost 0.00010627
+                      Iteration     7 network balancing step     7 modified OD pairs     3 total excess cost 0.03444759 avg excess cost 0.00000079
+                      Iteration     7 network balancing step     8 modified OD pairs     0 total excess cost -0.00000000 avg excess cost -0.00000000
+                      Iteration     7 number of deleted paths after OD balancing 11038
+                      Iteration     7 number of deleted paths after network balancing 22346
+                      
+                      Iteration     7 gap 0.00013134
+                      
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg A-HBW routes total 216390 routes new 6505
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg B-HBO routes total 212485 routes new 12965
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg C-NHB routes total 197720 routes new 19091
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg D-KSCO routes total 2871 routes new 19126
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg E-REC routes total 4514 routes new 19175
+                      The shortest path graph has been reduced by 46.4%
+                      Iteration 8 DSeg XXC routes total 39 routes new 19175
+                      Start of ICA calculation
+                      End of ICA calculation
+                      Iteration     8 network balancing step     1 modified OD pairs  5145 total excess cost 258.98184288 avg excess cost 0.00593526
+                      Iteration     8 network balancing step     2 modified OD pairs  1222 total excess cost 29.78422397 avg excess cost 0.00068259
+                      Iteration     8 network balancing step     3 modified OD pairs    54 total excess cost 26.70060591 avg excess cost 0.00061192
+                      Iteration     8 network balancing step     4 modified OD pairs   250 total excess cost 17.99211339 avg excess cost 0.00041234
+                      Iteration     8 network balancing step     5 modified OD pairs   707 total excess cost 17.06306911 avg excess cost 0.00039105
+                      Iteration     8 network balancing step     6 modified OD pairs    44 total excess cost 22.36900933 avg excess cost 0.00051265
+                      Iteration     8 network balancing step     7 modified OD pairs    15 total excess cost 8.31912301 avg excess cost 0.00019065
+                      Iteration     8 network balancing step     8 modified OD pairs    29 total excess cost 8.14647819 avg excess cost 0.00018670
+                      Iteration     8 network balancing step     9 modified OD pairs    16 total excess cost 7.18772041 avg excess cost 0.00016473
+                      Iteration     8 network balancing step    10 modified OD pairs    17 total excess cost 51.87175948 avg excess cost 0.00118878
+                      Iteration     8 network balancing step    11 modified OD pairs    29 total excess cost 13.93118471 avg excess cost 0.00031927
+                      Iteration     8 network balancing step    12 modified OD pairs    14 total excess cost 19.17156671 avg excess cost 0.00043937
+                      Iteration     8 network balancing step    13 modified OD pairs     9 total excess cost 16.70104376 avg excess cost 0.00038275
+                      Iteration     8 network balancing step    14 modified OD pairs    23 total excess cost 13.57884447 avg excess cost 0.00031120
+                      Iteration     8 network balancing step    15 modified OD pairs     4 total excess cost 13.51098420 avg excess cost 0.00030964
+                      Iteration     8 network balancing step    16 modified OD pairs     5 total excess cost 16.41780591 avg excess cost 0.00037626
+                      Iteration     8 network balancing step    17 modified OD pairs    11 total excess cost 16.32505569 avg excess cost 0.00037413
+                      Iteration     8 network balancing step    18 modified OD pairs     6 total excess cost 13.25809133 avg excess cost 0.00030384
+                      Iteration     8 network balancing step    19 modified OD pairs     5 total excess cost 13.32287637 avg excess cost 0.00030533
+                      Iteration     8 network balancing step    20 modified OD pairs    10 total excess cost 18.54080916 avg excess cost 0.00042491
+                      Iteration     8 number of deleted paths after OD balancing 7522
+                      Iteration     8 number of deleted paths after network balancing 11784
+                      
+                      Iteration     8 gap 0.00007747
+                      
+                      Equilibrium assignment finished after 8 iteration steps
+01/25/17 16.13.39.720 Time before  WBRePack
+01/25/17 16.13.39.907 Time after WBRePack
+01/25/17 16.13.40.240 Time before  WBRePack
+01/25/17 16.13.40.428 Time after WBRePack
+01/25/17 16.13.40.762 Time before  WBRePack
+01/25/17 16.13.40.943 Time after WBRePack
+01/25/17 16.13.41.250 Time before  WBRePack
+01/25/17 16.13.41.259 Time after WBRePack
+01/25/17 16.13.41.269 Time before  WBRePack
+01/25/17 16.13.41.285 Time after WBRePack
+01/25/17 16.13.41.300 Time before  WBRePack
+01/25/17 16.13.41.301 Time after WBRePack
+                      Start of ICA calculation
+                      End of ICA calculation
+                      The assignment reached convergence after 8 of a maximum of 100 iterations with a GAP of 5.89821480e-005.
+01/25/17 16.13.41.354 Time before Aggregate path trees
+01/25/17 16.13.41.752 Time after Aggregate path trees
+01/25/17 16.13.41.752 Time before Aggregate paths
+01/25/17 16.13.41.849 Time after Aggregate paths
+01/25/17 16.13.41.856 Time before Aggregate path trees
+01/25/17 16.13.42.214 Time after Aggregate path trees
+01/25/17 16.13.42.214 Time before Aggregate paths
+01/25/17 16.13.42.304 Time after Aggregate paths
+01/25/17 16.13.42.310 Time before Aggregate path trees
+01/25/17 16.13.42.680 Time after Aggregate path trees
+01/25/17 16.13.42.680 Time before Aggregate paths
+01/25/17 16.13.42.778 Time after Aggregate paths
+01/25/17 16.13.42.785 Time before Aggregate path trees
+01/25/17 16.13.42.812 Time after Aggregate path trees
+01/25/17 16.13.42.812 Time before Aggregate paths
+01/25/17 16.13.42.820 Time after Aggregate paths
+01/25/17 16.13.42.820 Time before Aggregate path trees
+01/25/17 16.13.42.864 Time after Aggregate path trees
+01/25/17 16.13.42.864 Time before Aggregate paths
+01/25/17 16.13.42.873 Time after Aggregate paths
+01/25/17 16.13.42.873 Time before Aggregate path trees
+01/25/17 16.13.42.874 Time after Aggregate path trees
+01/25/17 16.13.42.874 Time before Aggregate paths
+01/25/17 16.13.42.878 Time after Aggregate paths
+01/25/17 16.13.43.164 Start Procedure step  33: "Group"
+01/25/17 16.13.43.237 Start Procedure step  34: "Read filter"
+01/25/17 16.13.43.374 Start Procedure step  35: "Assignment analysis"
+01/25/17 16.13.43.458 Start Procedure step  36: "Read filter"
+01/25/17 16.13.43.808 Procedure - end

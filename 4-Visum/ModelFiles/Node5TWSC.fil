@@ -1,0 +1,46 @@
+<?xml  version = "1.0"  encoding = "UTF-8"?>
+<FILTER  VERSIONNO = "1300">
+  <NODE    USEFILTER = "1"    COMPLEMENT = "0">
+    <CONDITIONS>
+      <CONDITION        OPERATION = "OP_NONE"        COMPLEMENT = "0">
+        <CONTAINEDIN          ATTRIBUTE = "TYPENO"          VALUE = "5"        />        
+      </CONDITION>
+    </CONDITIONS>
+  </NODE>
+  <LINK
+    USEFILTER = "1"
+    COMPLEMENT = "0"
+    UNDIRECTED = "0">
+    <CONDITIONS>
+      <CONDITION        OPERATION = "OP_NONE"        COMPLEMENT = "0">
+        <CONTAINSONEOF          ATTRIBUTE = "TSYSSET"          VALUE = "C"        />        
+      </CONDITION>
+    </CONDITIONS>
+  </LINK>
+  <ZONE    USEFILTER = "0"    COMPLEMENT = "0">
+    <CONDITIONS>
+      <CONDITION        OPERATION = "OP_NONE"        COMPLEMENT = "0">
+        <GREATEREQUALVAL          ATTRIBUTE = "NO"          VALUE = "1000.0000"        />        
+      </CONDITION>
+    </CONDITIONS>
+  </ZONE>
+  <ODPAIR
+    USEFILTER = "0"
+    COMPLEMENT = "0"
+    CALCNETWORKVOLUMES = "1">
+    <CONDITIONS>
+      <CONDITION        OPERATION = "OP_NONE"        COMPLEMENT = "1">
+        <CONTAINEDIN          ATTRIBUTE = "FROMZONE\RELATIVESTATE"          VALUE = "RELSTATEIGNORE"        />        
+      </CONDITION>
+      <CONDITION        OPERATION = "OP_AND"        COMPLEMENT = "0">
+        <GREATEREQUALVAL          ATTRIBUTE = "DIRECTDIST"          VALUE = "0.0000"        />        
+      </CONDITION>
+      <CONDITION        OPERATION = "OP_OR"        COMPLEMENT = "1">
+        <CONTAINEDIN          ATTRIBUTE = "TOZONE\RELATIVESTATE"          VALUE = "RELSTATEIGNORE"        />        
+      </CONDITION>
+      <CONDITION        OPERATION = "OP_AND"        COMPLEMENT = "0">
+        <GREATEREQUALVAL          ATTRIBUTE = "DIRECTDIST"          VALUE = "0.0000"        />        
+      </CONDITION>
+    </CONDITIONS>
+  </ODPAIR>
+</FILTER>

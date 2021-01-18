@@ -1,0 +1,16 @@
+<?xml  version = "1.0"  encoding = "UTF-8"?>
+<FILTER  VERSIONNO = "1900">
+  <LINK
+    USEFILTER = "1"
+    COMPLEMENT = "0"
+    UNDIRECTED = "0">
+    <CONDITIONS>
+      <CONDITION        OPERATION = "OP_NONE"        COMPLEMENT = "0">
+        <CONTAINSONEOF          ATTRIBUTE = "TSYSSET"          VALUE = "C"        />        
+      </CONDITION>
+      <CONDITION        OPERATION = "OP_AND"        COMPLEMENT = "0">
+        <GREATERVAL          ATTRIBUTE = "COUNT_2018"          VALUE = "0"        />        
+      </CONDITION>
+    </CONDITIONS>
+  </LINK>
+</FILTER>
