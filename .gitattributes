@@ -1,0 +1,6 @@
+*.fil linguist-language=XML
+*.ver -linguist-detectable
+*.lla -linguist-detectable
+*.qla -linguist-detectable
+*.pfd -linguist-detectable
+*.omx -linguist-detectable
