@@ -3,4 +3,5 @@
 *.lla -linguist-detectable
 *.qla -linguist-detectable
 *.pfd -linguist-detectable
+*.mly -linguist-detectable
 *.omx -linguist-detectable
