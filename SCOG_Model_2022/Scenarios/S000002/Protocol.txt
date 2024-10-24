@@ -1,0 +1,128 @@
+﻿2024-10-23 19:45:43.679 Open file
+2024-10-23 19:45:43.679 Open "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000002\Protocol.txt"
+2024-10-23 19:45:43.680 Open "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000002\Messages.txt"
+2024-10-23 19:45:43.680 Starting to process calculation request for scenario 2
+2024-10-23 19:45:43.796 Delete network
+2024-10-23 19:45:43.887 Start time of Read version SCOG_Model_2022Base
+2024-10-23 19:45:44.173       27 POI categories
+2024-10-23 19:45:44.185        1 Time interval sets
+2024-10-23 19:45:44.198       93 User-defined attributes
+2024-10-23 19:45:44.208        9 Notepad lines
+2024-10-23 19:45:44.218        2 Transport systems
+2024-10-23 19:45:44.228        2 Modes
+2024-10-23 19:45:44.237        4 Demand segments
+2024-10-23 19:45:44.245        1 Valid days
+2024-10-23 19:45:44.253        5 Block item types
+2024-10-23 19:45:44.263        2 PuT directions
+2024-10-23 19:45:44.285    47851 Points
+2024-10-23 19:45:44.344    30605 Edges
+2024-10-23 19:45:44.371    23745 Faces
+2024-10-23 19:45:44.389    23708 Surfaces
+2024-10-23 19:45:44.399     1702 Nodes
+2024-10-23 19:45:44.408      327 Zones
+2024-10-23 19:45:44.415        3 Main zones
+2024-10-23 19:45:44.422      147 Territories
+2024-10-23 19:45:44.430      100 Link types
+2024-10-23 19:45:44.447     4130 Links
+2024-10-23 19:45:44.460      143 Turning standards
+2024-10-23 19:45:44.478    11072 Turns
+2024-10-23 19:45:44.484      968 Connectors
+2024-10-23 19:45:44.493        1 Fare systems
+2024-10-23 19:45:44.502       12 Count locations
+2024-10-23 19:45:44.515        1 Block versions
+2024-10-23 19:45:44.559    23380 Points of interest
+2024-10-23 19:45:44.564    23380 POI allocations
+2024-10-23 19:45:44.572       24 Geometries
+2024-10-23 19:45:44.602        9 Screenlines
+2024-10-23 19:45:44.608        1 Demand models
+2024-10-23 19:45:44.615        1 Time series
+2024-10-23 19:45:44.621        1 Person groups
+2024-10-23 19:45:44.630        5 Activity pairs
+2024-10-23 19:45:44.639        3 Demand strata
+2024-10-23 19:45:44.651       17 Matrices
+2024-10-23 19:45:44.664       13 Matrix data
+2024-10-23 19:45:44.673        1 Demand time series
+2024-10-23 19:45:44.680        4 Demand descriptions
+2024-10-23 19:45:44.841        4 Aliases
+2024-10-23 19:45:45.066 End time of Read version SCOG_Model_2022Base
+2024-10-23 19:45:46.035 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000002\Variables.xml".
+2024-10-23 19:45:46.193 Procedure - start
+2024-10-23 19:45:46.282 Start Procedure step   1: "Group"
+2024-10-23 19:45:46.283 End Procedure step   1: "Group", run time 0.000007s
+2024-10-23 19:45:46.444 Start Procedure step   2: "Read filter"
+2024-10-23 19:45:46.499 End Procedure step   2: "Read filter", run time 0.054490s
+2024-10-23 19:45:46.557 Start Procedure step   3: "Edit attribute"
+2024-10-23 19:45:46.645 Links: 4130 objects were changed.
+2024-10-23 19:45:46.653 End Procedure step   3: "Edit attribute", run time 0.095974s
+2024-10-23 19:45:46.692 Start Procedure step   4: "Edit attribute"
+2024-10-23 19:45:46.717 Links: 4130 objects were changed.
+2024-10-23 19:45:46.725 End Procedure step   4: "Edit attribute", run time 0.033597s
+2024-10-23 19:45:46.763 Start Procedure step   5: "Edit attribute"
+2024-10-23 19:45:46.798 Links: 4130 objects were changed.
+2024-10-23 19:45:46.806 End Procedure step   5: "Edit attribute", run time 0.042265s
+2024-10-23 19:45:46.844 Start Procedure step   6: "Edit attribute"
+2024-10-23 19:45:46.870 Links: 4130 objects were changed.
+2024-10-23 19:45:46.879 End Procedure step   6: "Edit attribute", run time 0.034784s
+2024-10-23 19:45:46.917 Start Procedure step   7: "Edit attribute"
+2024-10-23 19:45:47.300 Turns: 11072 objects were changed.
+2024-10-23 19:45:47.307 End Procedure step   7: "Edit attribute", run time 0.390429s
+2024-10-23 19:45:47.345 Start Procedure step   8: "Edit attribute"
+2024-10-23 19:45:47.731 Turns: 11072 objects were changed.
+2024-10-23 19:45:47.743 End Procedure step   8: "Edit attribute", run time 0.397652s
+2024-10-23 19:45:47.810 Start Procedure step   9: "Edit attribute"
+2024-10-23 19:45:47.857 Nodes: 1702 objects were changed.
+2024-10-23 19:45:47.871 End Procedure step   9: "Edit attribute", run time 0.060313s
+2024-10-23 19:45:47.945 Start Procedure step  10: "Read filter"
+2024-10-23 19:45:47.984 End Procedure step  10: "Read filter", run time 0.038753s
+2024-10-23 19:45:48.056 Start Procedure step  11: "Edit attribute"
+2024-10-23 19:45:48.098 Nodes: 453 objects were changed.
+2024-10-23 19:45:48.109 End Procedure step  11: "Edit attribute", run time 0.053275s
+2024-10-23 19:45:48.168 Start Procedure step  12: "Read filter"
+2024-10-23 19:45:48.199 End Procedure step  12: "Read filter", run time 0.030786s
+2024-10-23 19:45:48.264 Start Procedure step  13: "Delete assignment results"
+2024-10-23 19:45:48.272 End Procedure step  13: "Delete assignment results", run time 0.008051s
+2024-10-23 19:45:48.417 Procedure - end
+2024-10-23 19:45:48.566 Save version S000002result Start time
+2024-10-23 19:45:48.648       27 POI categories
+2024-10-23 19:45:48.653        1 Time interval sets
+2024-10-23 19:45:48.657       93 User-defined attributes
+2024-10-23 19:45:48.661        9 Notepad lines
+2024-10-23 19:45:48.665        2 Transport systems
+2024-10-23 19:45:48.668        2 Modes
+2024-10-23 19:45:48.672        4 Demand segments
+2024-10-23 19:45:48.677        1 Valid days
+2024-10-23 19:45:48.682        5 Block item types
+2024-10-23 19:45:48.687        2 PuT directions
+2024-10-23 19:45:48.734    47851 Points
+2024-10-23 19:45:49.104    30605 Edges
+2024-10-23 19:45:49.122    23745 Faces
+2024-10-23 19:45:49.135    23708 Surfaces
+2024-10-23 19:45:49.146     1702 Nodes
+2024-10-23 19:45:49.154      327 Zones
+2024-10-23 19:45:49.158        3 Main zones
+2024-10-23 19:45:49.162      147 Territories
+2024-10-23 19:45:49.169      100 Link types
+2024-10-23 19:45:49.191     4130 Links
+2024-10-23 19:45:49.195      143 Turning standards
+2024-10-23 19:45:49.213    11072 Turns
+2024-10-23 19:45:49.221      968 Connectors
+2024-10-23 19:45:49.229        1 Fare systems
+2024-10-23 19:45:49.245       12 Count locations
+2024-10-23 19:45:49.254        1 Block versions
+2024-10-23 19:45:49.273    23380 Points of interest
+2024-10-23 19:45:49.279    23380 POI allocations
+2024-10-23 19:45:49.313       24 Geometries
+2024-10-23 19:45:49.322        9 Screenlines
+2024-10-23 19:45:49.332        1 Demand models
+2024-10-23 19:45:49.336        1 Time series
+2024-10-23 19:45:49.343        1 Person groups
+2024-10-23 19:45:49.348        5 Activity pairs
+2024-10-23 19:45:49.355        3 Demand strata
+2024-10-23 19:45:49.362       17 Matrices
+2024-10-23 19:45:49.373       13 Matrix data
+2024-10-23 19:45:49.377        1 Demand time series
+2024-10-23 19:45:49.383        4 Demand descriptions
+2024-10-23 19:45:49.645 Save version S000002result End time
+2024-10-23 19:45:49.686 Processing calculation request db902887-f3fa-486d-8888-edeb25cf7e5f completed
+2024-10-23 19:45:49.688 No further calculation request to process
+2024-10-23 19:45:49.857 Close file

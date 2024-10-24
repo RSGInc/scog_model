@@ -1,4 +1,0 @@
-12/10/15 08.55.16.404 Path of LOG files has been adjusted.
-                         Previous path: "\\SBS08\UserShares\gabephilips\Application Data\PTV Vision\PTV Visum 15\Log\messages.txt"
-                         New path: "P:\Transportation\TravelDemandModel\SCOG_Model\2016_RTP\2012\VersionFiles\Skagit\ModelFiles\messages0.txt"
-12/10/15 09.11.46.160            Note Save version? : &No
