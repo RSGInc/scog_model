@@ -8,6 +8,7 @@ import VisumPy.helpers
 import VisumPy.matrices
 import pandas as pd
 import csv
+from itertools import product
 
 
 # def CheckAttr(attrID,dtype):
@@ -41,12 +42,6 @@ NumWorkersModel = pd.read_csv(hh_parameters_path+'NumberOfWorkersModel_MNL.csv')
 #NumChildrenModel = pd.read_csv(hh_parameters_path+'NumberOfChildrenModel.csv')
 #NumAutosModel = pd.read_csv(hh_parameters_path+'NumberOfVehiclesModel_NIRCC.csv')
 
-""" Define Output csvs """
-HIOutputFile   = pd.read_csv(hh_out_path+"HHSize_Inc.csv")
-HIWOutputFile  = pd.read_csv(hh_out_path+"HHSize_Inc_Workers.csv")
-#HIWCOutputFile = pd.read_csv(hh_out_path+"HHSize_Inc_Workers_Childrn.csv")
-
-
 # Pull Zone attributes from Visum and create dataframe
 no          = VisumPy.helpers.GetMulti(Visum.Net.Zones,"No")
 tothh       = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HousingUnits")
@@ -60,11 +55,26 @@ hhsize      = VisumPy.helpers.GetMulti(Visum.Net.Zones,"AvgHHSize")
 # Set up dataframe to use for all needed zone attributes. Update as needed during coding
 zone_df = pd.DataFrame({'NO':no, 'TOTHH':tothh, 'HHINC':hhinc, 'HHSIZE':hhsize})
 
+""" Generate Output csvs """
+hhsize = [1,2,3,4] 
+hhinc = [1,2,3,4]
+hhwrk = [0,1,2,3]
+tothh = [0]
+combinations1 = list(product(no,hhsize,hhinc,tothh))
+combinations2 = list(product(no,hhsize,hhinc,hhwrk,tothh))
+HIOut = pd.DataFrame(combinations1, columns=['ZONE','HHSIZE','INCOME','TOTHH'])
+HIWOut = pd.DataFrame(combinations2, columns=['ZONE','HHSIZE','INCOME','WORKERS','TOTHH'])
+
+HIOut.to_csv(hh_out_path+"HHSize_Inc.csv", index = False)
+HIWOut.to_csv(hh_out_path+"HHSize_Inc_Workers.csv", index = False)
+
+HIOutputFile   = pd.read_csv(hh_out_path+"HHSize_Inc.csv")
+HIWOutputFile  = pd.read_csv(hh_out_path+"HHSize_Inc_Workers.csv")
+#HIWCOutputFile = pd.read_csv(hh_out_path+"HHSize_Inc_Workers_Childrn.csv")
+
 # Instead, filter to relevant zones/set active prior to running
 # Drop P&R and External TAZs
 # zone_df = zone_df[(zone_df['NO'] < 8000)]
-
-
 
 
 """ Step 1: HH Size and HH Income models """
