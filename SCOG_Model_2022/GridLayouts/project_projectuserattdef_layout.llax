@@ -17,8 +17,8 @@
 			<attributeDefinition aggregate="false" aggregationFunction="COMPARE" alignment="CENTERALIGNMENT" attributeID="CANBEEMPTY" displayUnits="false" numberOfDecimalPlaces="0" stringFormatType="DEFAULTFMT" subAttributeID1="" subAttributeID2="" subAttributeID3="" useThousandsSeparator="false" weightedAverageAttribute="1.0"/>
 		</attributeDefinitions>
 		<columnWidths>
-			<columnWidth width="56"/>
-			<columnWidth width="68"/>
+			<columnWidth width="132"/>
+			<columnWidth width="121"/>
 			<columnWidth width="32"/>
 			<columnWidth width="36"/>
 			<columnWidth width="60"/>

@@ -37,7 +37,8 @@ hh_out_path = hhsubmodel_path + "Outputs/"
 """ Define Input files and Constants """
 HHSizeModel = pd.read_csv(hh_parameters_path+'HHSizeModel.csv')
 IncomeModel = pd.read_csv(hh_parameters_path+'IncomeModel.csv')
-HHSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_income_2d_table.csv')
+HHIncSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_income_2d_table.csv')
+HHWrkSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_workers_2d_table.csv') # TODO update from PUMS (placeholder from income table)
 NumWorkersModel = pd.read_csv(hh_parameters_path+'NumberOfWorkersModel_MNL.csv')
 #NumChildrenModel = pd.read_csv(hh_parameters_path+'NumberOfChildrenModel.csv')
 #NumAutosModel = pd.read_csv(hh_parameters_path+'NumberOfVehiclesModel_NIRCC.csv')
@@ -177,11 +178,13 @@ VisumPy.helpers.SetMulti(Visum.Net.Zones,"INC4",zone_df['INC4'])
 		# Using the outputs of Step 1 HHSize as rowsums and HHInc as colsums
 y = 0
 for x in range(len(zone_df)):
+
 	if zone_df.loc[x,'TOTHH'] > 0:
-		mat = np.array([[HHSeedMtx['inc1'].values[0],HHSeedMtx['inc2'].values[0],HHSeedMtx['inc3'].values[0],HHSeedMtx['inc4'].values[0]],  # HH1
-                        [HHSeedMtx['inc1'].values[1],HHSeedMtx['inc2'].values[1],HHSeedMtx['inc3'].values[1],HHSeedMtx['inc4'].values[1]],  # HH2
-                        [HHSeedMtx['inc1'].values[2],HHSeedMtx['inc2'].values[2],HHSeedMtx['inc3'].values[2],HHSeedMtx['inc4'].values[2]],  # HH3
-                        [HHSeedMtx['inc1'].values[3],HHSeedMtx['inc2'].values[3],HHSeedMtx['inc3'].values[3],HHSeedMtx['inc4'].values[3]]]) # HH4
+		## HHSize x Income
+		mat = np.array([[HHIncSeedMtx['inc1'].values[0],HHIncSeedMtx['inc2'].values[0],HHIncSeedMtx['inc3'].values[0],HHIncSeedMtx['inc4'].values[0]],  # HH1
+                        [HHIncSeedMtx['inc1'].values[1],HHIncSeedMtx['inc2'].values[1],HHIncSeedMtx['inc3'].values[1],HHIncSeedMtx['inc4'].values[1]],  # HH2
+                        [HHIncSeedMtx['inc1'].values[2],HHIncSeedMtx['inc2'].values[2],HHIncSeedMtx['inc3'].values[2],HHIncSeedMtx['inc4'].values[2]],  # HH3
+                        [HHIncSeedMtx['inc1'].values[3],HHIncSeedMtx['inc2'].values[3],HHIncSeedMtx['inc3'].values[3],HHIncSeedMtx['inc4'].values[3]]]) # HH4
 		r = np.array([zone_df.loc[x,'HHS1'],zone_df.loc[x,'HHS2'],zone_df.loc[x,'HHS3'],zone_df.loc[x,'HHS4']]) # HHSize from the HH size submodel by zone
 		c = np.array([zone_df.loc[x,'INC1'],zone_df.loc[x,'INC2'],zone_df.loc[x,'INC3'],zone_df.loc[x,'INC4']]) # HHIncome from the HH Income submodel by zone
 		""" Run Visum balanceMatrix function """
@@ -203,7 +206,7 @@ for x in range(len(zone_df)):
 		zone_df.loc[x,'HH4INC2'] = balanced_mat[3,1]
 		zone_df.loc[x,'HH4INC3'] = balanced_mat[3,2]
 		zone_df.loc[x,'HH4INC4'] = balanced_mat[3,3]
-		
+
 		# Also Paste values into csv file with 1 row per zone/HH size/income group
 		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[0,0]
 		y = y + 1
@@ -375,70 +378,112 @@ VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK1",zone_df['HHWRK1'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK2",zone_df['HHWRK2'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK3",zone_df['HHWRK3'])
 
+for x in range(len(zone_df)):
+
+	if zone_df.loc[x,'TOTHH'] > 0:
+		## HHSize x Workers
+		mat = np.array([[HHWrkSeedMtx['wrk0'].values[0],HHWrkSeedMtx['wrk1'].values[0],HHWrkSeedMtx['wrk2'].values[0],HHWrkSeedMtx['wrk3'].values[0]],  # HH1
+                        [HHWrkSeedMtx['wrk0'].values[1],HHWrkSeedMtx['wrk1'].values[1],HHWrkSeedMtx['wrk2'].values[1],HHWrkSeedMtx['wrk3'].values[1]],  # HH2
+                        [HHWrkSeedMtx['wrk0'].values[2],HHWrkSeedMtx['wrk1'].values[2],HHWrkSeedMtx['wrk2'].values[2],HHWrkSeedMtx['wrk3'].values[2]],  # HH3
+                        [HHWrkSeedMtx['wrk0'].values[3],HHWrkSeedMtx['wrk1'].values[3],HHWrkSeedMtx['wrk2'].values[3],HHWrkSeedMtx['wrk3'].values[3]]]) # HH4
+		r = np.array([zone_df.loc[x,'HHS1'],zone_df.loc[x,'HHS2'],zone_df.loc[x,'HHS3'],zone_df.loc[x,'HHS4']]) # HHSize from the HH size submodel by zone
+		c = np.array([zone_df.loc[x,'HHWRK0'],zone_df.loc[x,'HHWRK1'],zone_df.loc[x,'HHWRK2'],zone_df.loc[x,'HHWRK3']]) # HHWorkers from the HH workers submodel by zone
+		""" Run Visum balanceMatrix function """
+		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001)
+		# Paste in balanced values to new df fields
+		zone_df.loc[x,'HH1W0'] = balanced_mat[0,0]
+		zone_df.loc[x,'HH1W1'] = balanced_mat[0,1]
+		zone_df.loc[x,'HH2W0'] = balanced_mat[1,0]
+		zone_df.loc[x,'HH2W1'] = balanced_mat[1,1]
+		zone_df.loc[x,'HH2W2'] = balanced_mat[1,2]
+		zone_df.loc[x,'HH3W0'] = balanced_mat[2,0]
+		zone_df.loc[x,'HH3W1'] = balanced_mat[2,1]
+		zone_df.loc[x,'HH3W2'] = balanced_mat[2,2]
+		zone_df.loc[x,'HH3W3'] = balanced_mat[2,3]
+		zone_df.loc[x,'HH4W0'] = balanced_mat[3,0]
+		zone_df.loc[x,'HH4W1'] = balanced_mat[3,1]
+		zone_df.loc[x,'HH4W2'] = balanced_mat[3,2]
+		zone_df.loc[x,'HH4W3'] = balanced_mat[3,3]
+
+# Set Visum zone fields with HHWRK(0-3) values
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1W0",zone_df['HH1W0'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1W1",zone_df['HH1W1'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2W0",zone_df['HH2W0'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2W1",zone_df['HH2W1'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2W2",zone_df['HH2W2'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W0",zone_df['HH3W0'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W1",zone_df['HH3W1'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W2",zone_df['HH3W2'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W3",zone_df['HH3W3'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W0",zone_df['HH4W0'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W1",zone_df['HH4W1'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W2",zone_df['HH4W2'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W3",zone_df['HH4W3'])
 
 
 # Reshape 3-way distribution to be pasted into Visum zone layer
-triple_dist = pd.DataFrame({'NO':zone_df['NO']})
-i = 0
-for x in range(len(triple_dist)):
-	for y in range(1,65):
-		triple_dist.loc[x,y] = HIWOutputFile.loc[i,'TOTHH']
-		i = i + 1
+# triple_dist = pd.DataFrame({'NO':zone_df['NO']})
+# i = 0
+# for x in range(len(triple_dist)):
+# 	for y in range(1,65):
+# 		triple_dist.loc[x,y] = HIWOutputFile.loc[i,'TOTHH']
+# 		i = i + 1
+# 
+# # Replace empty cells with 0
+# triple_dist.fillna(0, inplace=True) # Replace blank cells with 0		
+# 		
+# # Paste 3-way distribution into Visum zone layer
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC1W0",triple_dist[1])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC1W1",triple_dist[2])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC2W0",triple_dist[5])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC2W1",triple_dist[6])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC3W0",triple_dist[9])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC3W1",triple_dist[10])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC4W0",triple_dist[13])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC4W1",triple_dist[14])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC1W0",triple_dist[17])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC1W1",triple_dist[18])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC1W2",triple_dist[19])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC2W0",triple_dist[21])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC2W1",triple_dist[22])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC2W2",triple_dist[23])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC3W0",triple_dist[25])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC3W1",triple_dist[26])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC3W2",triple_dist[27])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC4W0",triple_dist[29])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC4W1",triple_dist[30])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC4W2",triple_dist[31])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC1W0",triple_dist[33])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC1W1",triple_dist[34])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC1W2",triple_dist[35])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC1W3",triple_dist[36])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC2W0",triple_dist[37])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC2W1",triple_dist[38])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC2W2",triple_dist[39])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC2W3",triple_dist[40])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC3W0",triple_dist[41])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC3W1",triple_dist[42])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC3W2",triple_dist[43])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC3W3",triple_dist[44])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC4W0",triple_dist[45])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC4W1",triple_dist[46])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC4W2",triple_dist[47])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC4W3",triple_dist[48])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC1W0",triple_dist[49])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC1W1",triple_dist[50])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC1W2",triple_dist[51])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC1W3",triple_dist[52])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC2W0",triple_dist[53])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC2W1",triple_dist[54])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC2W2",triple_dist[55])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC2W3",triple_dist[56])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC3W0",triple_dist[57])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC3W1",triple_dist[58])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC3W2",triple_dist[59])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC3W3",triple_dist[60])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC4W0",triple_dist[61])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC4W1",triple_dist[62])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC4W2",triple_dist[63])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC4W3",triple_dist[64])
 
-# Replace empty cells with 0
-triple_dist.fillna(0, inplace=True) # Replace blank cells with 0		
-		
-# Paste 3-way distribution into Visum zone layer
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC1W0",triple_dist[1])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC1W1",triple_dist[2])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC2W0",triple_dist[5])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC2W1",triple_dist[6])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC3W0",triple_dist[9])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC3W1",triple_dist[10])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC4W0",triple_dist[13])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC4W1",triple_dist[14])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC1W0",triple_dist[17])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC1W1",triple_dist[18])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC1W2",triple_dist[19])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC2W0",triple_dist[21])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC2W1",triple_dist[22])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC2W2",triple_dist[23])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC3W0",triple_dist[25])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC3W1",triple_dist[26])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC3W2",triple_dist[27])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC4W0",triple_dist[29])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC4W1",triple_dist[30])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC4W2",triple_dist[31])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC1W0",triple_dist[33])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC1W1",triple_dist[34])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC1W2",triple_dist[35])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC1W3",triple_dist[36])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC2W0",triple_dist[37])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC2W1",triple_dist[38])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC2W2",triple_dist[39])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC2W3",triple_dist[40])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC3W0",triple_dist[41])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC3W1",triple_dist[42])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC3W2",triple_dist[43])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC3W3",triple_dist[44])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC4W0",triple_dist[45])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC4W1",triple_dist[46])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC4W2",triple_dist[47])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC4W3",triple_dist[48])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC1W0",triple_dist[49])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC1W1",triple_dist[50])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC1W2",triple_dist[51])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC1W3",triple_dist[52])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC2W0",triple_dist[53])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC2W1",triple_dist[54])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC2W2",triple_dist[55])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC2W3",triple_dist[56])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC3W0",triple_dist[57])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC3W1",triple_dist[58])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC3W2",triple_dist[59])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC3W3",triple_dist[60])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC4W0",triple_dist[61])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC4W1",triple_dist[62])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC4W2",triple_dist[63])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC4W3",triple_dist[64])
-
+ 
