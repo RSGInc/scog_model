@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FILTER VERSIONNO="2300">
+
+  <ZONE COMPLEMENT="0" USEFILTER="1">
+    <CONDITIONS>
+      <CONDITION COMPLEMENT="0" OPERATION="OP_NONE">
+        <GREATEREQUALVAL ATTRIBUTE="NO" VALUE="1000"/>
+      </CONDITION>
+    </CONDITIONS>
+  </ZONE>
+
+</FILTER>
