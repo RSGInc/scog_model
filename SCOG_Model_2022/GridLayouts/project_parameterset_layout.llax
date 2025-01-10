@@ -11,11 +11,11 @@
 		<columnWidths>
 			<columnWidth width="48"/>
 			<columnWidth width="88"/>
-			<columnWidth width="145"/>
-			<columnWidth width="133"/>
-			<columnWidth width="75"/>
+			<columnWidth width="144"/>
+			<columnWidth width="132"/>
+			<columnWidth width="74"/>
 		</columnWidths>
-		<fontDefinition characterSet="0" clipPrecision="0" escapement="0" faceName="Arial" height="-8" italic="false" orientation="0" outPrecision="0" pitchAndFamily="0" quality="0" strikeOut="false" underline="false" weight="400" width="0"/>
+		<fontDefinition characterSet="0" clipPrecision="0" escapement="0" faceName="Arial" height="-17" italic="false" orientation="0" outPrecision="0" pitchAndFamily="0" quality="0" strikeOut="false" underline="false" weight="400" width="0"/>
 		<initialColumnSortings/>
 	</listLayoutCommonEntries>
 	<listGraphicParameterLayoutItems netObjectType=""/>
