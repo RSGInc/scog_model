@@ -113,13 +113,13 @@ if scen_year > base_year: # Fratar matrix for future years
 	# XX_truck_A = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_TRUCK_A")
 	
 	# Balance XX Matrices to Grown P's and A's for Autos
-	mat = VisumPy.helpers.GetMatrix(Visum, 566) # Auto XX Matrix # bug? initially zeros
+	mat = VisumPy.helpers.GetMatrix(Visum, 6) # Auto XX Matrix # bug? initially zeros
 	r = np.array(XX_auto_P)
 	c = np.array(XX_auto_A)
 	#  Run Visum balanceMatrix function
 	balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c)
 	# Set matrix in Visum
-	VisumPy.helpers.SetMatrix(Visum, 568, balanced_mat)
+	VisumPy.helpers.SetMatrix(Visum, 76, balanced_mat)
 	
 	
 	# Balance XX Matrices to Grown P's and A's for Trucks
@@ -133,8 +133,8 @@ if scen_year > base_year: # Fratar matrix for future years
 
 else: # Base year just copy Base Matrices to working matrices
 	# Auto
-	mat = VisumPy.helpers.GetMatrix(Visum, 566) # Auto XX Matrix
-	VisumPy.helpers.SetMatrix(Visum, 568, mat)
+	mat = VisumPy.helpers.GetMatrix(Visum, 6) # Auto XX Matrix
+	VisumPy.helpers.SetMatrix(Visum, 76, mat)
 	# Truck
 	# mat = VisumPy.helpers.GetMatrix(Visum, 567) # Truck XX Matrix
 	# VisumPy.helpers.SetMatrix(Visum, 569, mat)

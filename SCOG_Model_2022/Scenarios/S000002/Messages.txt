@@ -1,1 +1,11 @@
-﻿
+﻿2025-01-16 17:34:14.657           Error Error in Python script: Traceback (most recent call last):
+  File "<Script Block >", line 140, in ExecScript
+  File "<Script Block >", line 55, in RunPythonFile
+  File "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\SharedData\Scripts\HH_SubModel.py", line 191, in <module>
+    balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\PTV Vision\PTV Visum 2024\exe\Python\Lib\site-packages\VisumPy\matrices.py", line 243, in balanceMatrix
+    raise ValueError("0") #"Sum of row targets does not equal sum of col targets --> infeasible!"
+    ^^^^^^^^^^^^^^^^^^^^^
+ValueError: 0
+2025-01-16 17:34:14.758            Note The operation "Procedure run" has caused errors. During the process "Procedure run", an error was written to the "Messages" window:  Error in Python script: Traceback (most recent call last):   File "<Script Block >", line 140, in ExecScript   File "<Script Block >", line 55, in RunPythonFile   File "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\SharedData\Scripts\HH_SubModel.py", line 191, in <module>     balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001)                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   File "C:\Program Files\PTV Vision\PTV Visum 2024\exe\Python\Lib\site-packages\VisumPy\matrices.py", line 243, in balanceMatrix     raise ValueError("0") #"Sum of row targets does not equal sum of col targets --> infeasible!"     ^^^^^^^^^^^^^^^^^^^^^ ValueError: 0  : &Show

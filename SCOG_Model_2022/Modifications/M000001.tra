@@ -1,6 +1,6 @@
 ﻿$VISION
 * Resource Systems Group
-* 2024-10-23 19:26:53
+* 2025-01-16 12:01:06
 * From: U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Temp\Temp_Mod1.ver
 * To:   *
 * 
@@ -8,6 +8,12 @@
 * 
 $VERSION:VERSNR;FILETYPE;LANGUAGE;UNIT
 15;Trans;ENG;MI
+
+* 
+* Table: Network (modified)
+* 
+$NETWORK:SCEN_YEAR
+2050
 
 * 
 * Table: Zones (modified)

@@ -1,1 +1,44 @@
-﻿
+﻿2025-01-16 17:34:22.537         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.537         Warning The value is no valid number.
+2025-01-16 17:34:22.539         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.539         Warning The value is no valid number.
+2025-01-16 17:34:22.540         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.540         Warning The value is no valid number.
+2025-01-16 17:34:22.542         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.542         Warning The value is no valid number.
+2025-01-16 17:34:22.543         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.544         Warning The value is no valid number.
+2025-01-16 17:34:22.546         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.546         Warning The value is no valid number.
+2025-01-16 17:34:22.547         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.547         Warning The value is no valid number.
+2025-01-16 17:34:22.549         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.549         Warning The value is no valid number.
+2025-01-16 17:34:22.550         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.550         Warning The value is no valid number.
+2025-01-16 17:34:22.552         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.552         Warning The value is no valid number.
+2025-01-16 17:34:22.553         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.553         Warning The value is no valid number.
+2025-01-16 17:34:22.554         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.554         Warning The value is no valid number.
+2025-01-16 17:34:22.556         Warning This change cannot be made for 28 objects.
+2025-01-16 17:34:22.556         Warning The value is no valid number.
+2025-01-16 17:34:22.824           Error CComMatrices::get_ItemByKey failed
+2025-01-16 17:34:23.196           Error Error in Python script: Traceback (most recent call last):
+  File "<Script Block >", line 140, in ExecScript
+  File "<Script Block >", line 55, in RunPythonFile
+  File "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\SharedData\Scripts\Prep_ExternalModel.py", line 136, in <module>
+    mat = VisumPy.helpers.GetMatrix(Visum, 566) # Auto XX Matrix
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\PTV Vision\PTV Visum 2024\exe\Python\Lib\site-packages\VisumPy\helpers.py", line 209, in GetMatrix
+    matrix = __getMatrix(Visum, which)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\PTV Vision\PTV Visum 2024\exe\Python\Lib\site-packages\VisumPy\helpers.py", line 663, in __getMatrix
+    matrix = Visum.Net.Matrices.ItemByKey(which)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MICHAE~1.MCC\AppData\Local\Temp\150\gen_py\3.11\4BC04EF2-4B3B-4FD5-ABEA-FFF08919EA2Bx0x24x0.py", line 35531, in ItemByKey
+    ret = self._oleobj_.InvokeTypes(27, LCID, 2, (9, 0), ((12, 1),),MatrixNo
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (0, 'Visum.Visum.2401', 'CComMatrices::get_ItemByKey failed', None, 0, -2147352567), None)
+2025-01-16 17:34:23.280            Note The operation "Procedure run" has caused errors. During the process "Procedure run", 2 errors and 26 warnings were written to the "Messages" window. : &Show

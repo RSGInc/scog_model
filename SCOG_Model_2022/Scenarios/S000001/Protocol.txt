@@ -1,128 +1,109 @@
-﻿2024-10-23 19:45:43.679 Open file
-2024-10-23 19:45:43.679 Open "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Protocol.txt"
-2024-10-23 19:45:43.680 Open "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Messages.txt"
-2024-10-23 19:45:43.680 Starting to process calculation request for scenario 1
-2024-10-23 19:45:43.793 Delete network
-2024-10-23 19:45:43.889 Start time of Read version SCOG_Model_2022Base
-2024-10-23 19:45:44.173       27 POI categories
-2024-10-23 19:45:44.185        1 Time interval sets
-2024-10-23 19:45:44.198       93 User-defined attributes
-2024-10-23 19:45:44.208        9 Notepad lines
-2024-10-23 19:45:44.218        2 Transport systems
-2024-10-23 19:45:44.228        2 Modes
-2024-10-23 19:45:44.236        4 Demand segments
-2024-10-23 19:45:44.245        1 Valid days
-2024-10-23 19:45:44.253        5 Block item types
-2024-10-23 19:45:44.263        2 PuT directions
-2024-10-23 19:45:44.285    47851 Points
-2024-10-23 19:45:44.345    30605 Edges
-2024-10-23 19:45:44.372    23745 Faces
-2024-10-23 19:45:44.390    23708 Surfaces
-2024-10-23 19:45:44.403     1702 Nodes
-2024-10-23 19:45:44.412      327 Zones
-2024-10-23 19:45:44.420        3 Main zones
-2024-10-23 19:45:44.429      147 Territories
-2024-10-23 19:45:44.436      100 Link types
-2024-10-23 19:45:44.451     4130 Links
-2024-10-23 19:45:44.467      143 Turning standards
-2024-10-23 19:45:44.483    11072 Turns
-2024-10-23 19:45:44.493      968 Connectors
-2024-10-23 19:45:44.503        1 Fare systems
-2024-10-23 19:45:44.513       12 Count locations
-2024-10-23 19:45:44.523        1 Block versions
-2024-10-23 19:45:44.566    23380 Points of interest
-2024-10-23 19:45:44.576    23380 POI allocations
-2024-10-23 19:45:44.584       24 Geometries
-2024-10-23 19:45:44.621        9 Screenlines
-2024-10-23 19:45:44.630        1 Demand models
-2024-10-23 19:45:44.638        1 Time series
-2024-10-23 19:45:44.650        1 Person groups
-2024-10-23 19:45:44.658        5 Activity pairs
-2024-10-23 19:45:44.663        3 Demand strata
-2024-10-23 19:45:44.671       17 Matrices
-2024-10-23 19:45:44.684       13 Matrix data
-2024-10-23 19:45:44.689        1 Demand time series
-2024-10-23 19:45:44.693        4 Demand descriptions
-2024-10-23 19:45:44.865        4 Aliases
-2024-10-23 19:45:45.091 End time of Read version SCOG_Model_2022Base
-2024-10-23 19:45:45.218 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Variables.xml".
-2024-10-23 19:45:45.454 Procedure - start
-2024-10-23 19:45:45.555 Start Procedure step   1: "Group"
-2024-10-23 19:45:45.555 End Procedure step   1: "Group", run time 0.000007s
-2024-10-23 19:45:45.862 Start Procedure step   2: "Read filter"
-2024-10-23 19:45:45.925 End Procedure step   2: "Read filter", run time 0.062989s
-2024-10-23 19:45:45.994 Start Procedure step   3: "Edit attribute"
-2024-10-23 19:45:46.102 Links: 4130 objects were changed.
-2024-10-23 19:45:46.117 End Procedure step   3: "Edit attribute", run time 0.122994s
-2024-10-23 19:45:46.177 Start Procedure step   4: "Edit attribute"
-2024-10-23 19:45:46.210 Links: 4130 objects were changed.
-2024-10-23 19:45:46.220 End Procedure step   4: "Edit attribute", run time 0.043045s
-2024-10-23 19:45:46.282 Start Procedure step   5: "Edit attribute"
-2024-10-23 19:45:46.349 Links: 4130 objects were changed.
-2024-10-23 19:45:46.364 End Procedure step   5: "Edit attribute", run time 0.082275s
-2024-10-23 19:45:46.428 Start Procedure step   6: "Edit attribute"
-2024-10-23 19:45:46.471 Links: 4130 objects were changed.
-2024-10-23 19:45:46.487 End Procedure step   6: "Edit attribute", run time 0.058735s
-2024-10-23 19:45:46.553 Start Procedure step   7: "Edit attribute"
-2024-10-23 19:45:47.019 Turns: 11072 objects were changed.
-2024-10-23 19:45:47.028 End Procedure step   7: "Edit attribute", run time 0.475382s
-2024-10-23 19:45:47.068 Start Procedure step   8: "Edit attribute"
-2024-10-23 19:45:47.460 Turns: 11072 objects were changed.
-2024-10-23 19:45:47.469 End Procedure step   8: "Edit attribute", run time 0.401258s
-2024-10-23 19:45:47.508 Start Procedure step   9: "Edit attribute"
-2024-10-23 19:45:47.708 Nodes: 1702 objects were changed.
-2024-10-23 19:45:47.717 End Procedure step   9: "Edit attribute", run time 0.209047s
-2024-10-23 19:45:47.774 Start Procedure step  10: "Read filter"
-2024-10-23 19:45:47.808 End Procedure step  10: "Read filter", run time 0.033674s
-2024-10-23 19:45:47.883 Start Procedure step  11: "Edit attribute"
-2024-10-23 19:45:47.928 Nodes: 453 objects were changed.
-2024-10-23 19:45:47.944 End Procedure step  11: "Edit attribute", run time 0.061017s
-2024-10-23 19:45:48.019 Start Procedure step  12: "Read filter"
-2024-10-23 19:45:48.052 End Procedure step  12: "Read filter", run time 0.032973s
-2024-10-23 19:45:48.119 Start Procedure step  13: "Delete assignment results"
-2024-10-23 19:45:48.126 End Procedure step  13: "Delete assignment results", run time 0.007217s
-2024-10-23 19:45:48.297 Procedure - end
-2024-10-23 19:45:48.442 Save version S000001result Start time
-2024-10-23 19:45:48.535       27 POI categories
-2024-10-23 19:45:48.545        1 Time interval sets
-2024-10-23 19:45:48.554       93 User-defined attributes
-2024-10-23 19:45:48.561        9 Notepad lines
-2024-10-23 19:45:48.567        2 Transport systems
-2024-10-23 19:45:48.573        2 Modes
-2024-10-23 19:45:48.576        4 Demand segments
-2024-10-23 19:45:48.583        1 Valid days
-2024-10-23 19:45:48.590        5 Block item types
-2024-10-23 19:45:48.597        2 PuT directions
-2024-10-23 19:45:48.634    47851 Points
-2024-10-23 19:45:49.008    30605 Edges
-2024-10-23 19:45:49.030    23745 Faces
-2024-10-23 19:45:49.041    23708 Surfaces
-2024-10-23 19:45:49.048     1702 Nodes
-2024-10-23 19:45:49.054      327 Zones
-2024-10-23 19:45:49.058        3 Main zones
-2024-10-23 19:45:49.062      147 Territories
-2024-10-23 19:45:49.067      100 Link types
-2024-10-23 19:45:49.088     4130 Links
-2024-10-23 19:45:49.092      143 Turning standards
-2024-10-23 19:45:49.110    11072 Turns
-2024-10-23 19:45:49.114      968 Connectors
-2024-10-23 19:45:49.120        1 Fare systems
-2024-10-23 19:45:49.133       12 Count locations
-2024-10-23 19:45:49.143        1 Block versions
-2024-10-23 19:45:49.164    23380 Points of interest
-2024-10-23 19:45:49.174    23380 POI allocations
-2024-10-23 19:45:49.214       24 Geometries
-2024-10-23 19:45:49.228        9 Screenlines
-2024-10-23 19:45:49.238        1 Demand models
-2024-10-23 19:45:49.244        1 Time series
-2024-10-23 19:45:49.250        1 Person groups
-2024-10-23 19:45:49.259        5 Activity pairs
-2024-10-23 19:45:49.266        3 Demand strata
-2024-10-23 19:45:49.270       17 Matrices
-2024-10-23 19:45:49.279       13 Matrix data
-2024-10-23 19:45:49.284        1 Demand time series
-2024-10-23 19:45:49.288        4 Demand descriptions
-2024-10-23 19:45:49.580 Save version S000001result End time
-2024-10-23 19:45:49.643 Processing calculation request 95a5e5f6-139a-43a2-a49b-43dcc9e1441a completed
-2024-10-23 19:45:49.645 No further calculation request to process
-2024-10-23 19:45:49.835 Close file
+﻿2025-01-16 17:34:00.498 Open file
+2025-01-16 17:34:00.498 Open "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Protocol.txt"
+2025-01-16 17:34:00.499 Open "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Messages.txt"
+2025-01-16 17:34:00.500 Starting to process calculation request for scenario 1
+2025-01-16 17:34:00.733 Delete network
+2025-01-16 17:34:00.838 Start time of Read version SCOG_Model_2022Base
+2025-01-16 17:34:01.339       27 POI categories
+2025-01-16 17:34:01.350        1 Time interval sets
+2025-01-16 17:34:01.364      151 User-defined attributes
+2025-01-16 17:34:01.374        9 Notepad lines
+2025-01-16 17:34:01.383        2 Transport systems
+2025-01-16 17:34:01.396        2 Modes
+2025-01-16 17:34:01.409        5 Demand segments
+2025-01-16 17:34:01.424        1 Valid days
+2025-01-16 17:34:01.436        5 Block item types
+2025-01-16 17:34:01.448        2 PuT directions
+2025-01-16 17:34:01.470    47851 Points
+2025-01-16 17:34:01.532    30605 Edges
+2025-01-16 17:34:01.558    23745 Faces
+2025-01-16 17:34:01.578    23708 Surfaces
+2025-01-16 17:34:01.591     1702 Nodes
+2025-01-16 17:34:01.604      327 Zones
+2025-01-16 17:34:01.615        3 Main zones
+2025-01-16 17:34:01.626      147 Territories
+2025-01-16 17:34:01.639      100 Link types
+2025-01-16 17:34:01.664     4138 Links
+2025-01-16 17:34:01.692      143 Turning standards
+2025-01-16 17:34:01.715    11088 Turns
+2025-01-16 17:34:01.725      972 Connectors
+2025-01-16 17:34:01.736        1 Fare systems
+2025-01-16 17:34:01.748       12 Count locations
+2025-01-16 17:34:01.759        1 Block versions
+2025-01-16 17:34:01.807    23380 Points of interest
+2025-01-16 17:34:01.825    23380 POI allocations
+2025-01-16 17:34:01.839       24 Geometries
+2025-01-16 17:34:01.878        9 Screenlines
+2025-01-16 17:34:01.890        1 Demand models
+2025-01-16 17:34:01.903        1 Time series
+2025-01-16 17:34:01.913        5 Demand strata
+2025-01-16 17:34:01.924       45 Matrices
+2025-01-16 17:34:01.983       45 Matrix data
+2025-01-16 17:34:01.995        1 Demand time series
+2025-01-16 17:34:02.004        5 Demand descriptions
+2025-01-16 17:34:02.363        4 Aliases
+2025-01-16 17:34:02.638 End time of Read version SCOG_Model_2022Base
+2025-01-16 17:34:02.764 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Procedures\P000001.xml".
+2025-01-16 17:34:02.822 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Procedures\P000001.xml".
+2025-01-16 17:34:02.887 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Variables.xml".
+2025-01-16 17:34:03.124 Procedure - start
+2025-01-16 17:34:03.358 Start Procedure step   1: "Group"
+2025-01-16 17:34:03.359 End Procedure step   1: "Group", run time 0.000007s
+2025-01-16 17:34:03.467 Start Procedure step   2: "Read filter"
+2025-01-16 17:34:03.509 End Procedure step   2: "Read filter", run time 0.042148s
+2025-01-16 17:34:03.564 Start Procedure step   3: "Run script"
+2025-01-16 17:34:22.537 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.537 The value is no valid number.
+2025-01-16 17:34:22.539 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.539 The value is no valid number.
+2025-01-16 17:34:22.540 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.540 The value is no valid number.
+2025-01-16 17:34:22.542 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.542 The value is no valid number.
+2025-01-16 17:34:22.543 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.544 The value is no valid number.
+2025-01-16 17:34:22.546 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.546 The value is no valid number.
+2025-01-16 17:34:22.547 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.547 The value is no valid number.
+2025-01-16 17:34:22.549 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.549 The value is no valid number.
+2025-01-16 17:34:22.550 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.550 The value is no valid number.
+2025-01-16 17:34:22.552 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.552 The value is no valid number.
+2025-01-16 17:34:22.553 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.553 The value is no valid number.
+2025-01-16 17:34:22.554 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.554 The value is no valid number.
+2025-01-16 17:34:22.556 This change cannot be made for 28 objects.
+2025-01-16 17:34:22.556 The value is no valid number.
+2025-01-16 17:34:22.564 End Procedure step   3: "Run script", run time 19.000189s
+2025-01-16 17:34:22.596 Start Procedure step   4: "Group"
+2025-01-16 17:34:22.596 End Procedure step   4: "Group", run time 0.000003s
+2025-01-16 17:34:22.640 Start Procedure step   5: "Read filter"
+2025-01-16 17:34:22.667 End Procedure step   5: "Read filter", run time 0.027193s
+2025-01-16 17:34:22.710 Start Procedure step   6: "Run script"
+2025-01-16 17:34:22.824 CComMatrices::get_ItemByKey failed
+2025-01-16 17:34:23.196 Error in Python script: Traceback (most recent call last):
+  File "<Script Block >", line 140, in ExecScript
+  File "<Script Block >", line 55, in RunPythonFile
+  File "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\SharedData\Scripts\Prep_ExternalModel.py", line 136, in <module>
+    mat = VisumPy.helpers.GetMatrix(Visum, 566) # Auto XX Matrix
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\PTV Vision\PTV Visum 2024\exe\Python\Lib\site-packages\VisumPy\helpers.py", line 209, in GetMatrix
+    matrix = __getMatrix(Visum, which)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\PTV Vision\PTV Visum 2024\exe\Python\Lib\site-packages\VisumPy\helpers.py", line 663, in __getMatrix
+    matrix = Visum.Net.Matrices.ItemByKey(which)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MICHAE~1.MCC\AppData\Local\Temp\150\gen_py\3.11\4BC04EF2-4B3B-4FD5-ABEA-FFF08919EA2Bx0x24x0.py", line 35531, in ItemByKey
+    ret = self._oleobj_.InvokeTypes(27, LCID, 2, (9, 0), ((12, 1),),MatrixNo
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (0, 'Visum.Visum.2401', 'CComMatrices::get_ItemByKey failed', None, 0, -2147352567), None)
+2025-01-16 17:34:23.204 End Procedure step   6: "Run script", run time 0.494676s
+2025-01-16 17:34:23.280 Procedure - end
+2025-01-16 17:34:23.280 The operation "Procedure run" has caused errors. During the process "Procedure run", 2 errors and 26 warnings were written to the "Messages" window. : &Show
+2025-01-16 17:34:23.287 Processing calculation request 39aca2ca-2ae6-42e4-8bde-1c40f6998bcf completed
+2025-01-16 17:34:23.290 No further calculation request to process
+2025-01-16 17:34:23.588 Close file

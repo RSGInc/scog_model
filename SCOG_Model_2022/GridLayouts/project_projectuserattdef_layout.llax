@@ -31,7 +31,7 @@
 			<columnWidth width="140"/>
 			<columnWidth width="80"/>
 		</columnWidths>
-		<fontDefinition characterSet="0" clipPrecision="0" escapement="0" faceName="Arial" height="-17" italic="false" orientation="0" outPrecision="0" pitchAndFamily="0" quality="0" strikeOut="false" underline="false" weight="400" width="0"/>
+		<fontDefinition characterSet="0" clipPrecision="0" escapement="0" faceName="Arial" height="-10" italic="false" orientation="0" outPrecision="0" pitchAndFamily="0" quality="0" strikeOut="false" underline="false" weight="400" width="0"/>
 		<initialColumnSortings/>
 	</listLayoutCommonEntries>
 	<listGraphicParameterLayoutItems netObjectType=""/>
