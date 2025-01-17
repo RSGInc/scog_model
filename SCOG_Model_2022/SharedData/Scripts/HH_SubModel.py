@@ -9,30 +9,13 @@ import VisumPy.matrices
 import pandas as pd
 import csv
 from itertools import product
+import os
 
 
-# def CheckAttr(attrID,dtype):
-	# check if attribute does not exist
-
-
-# mm for SCOG avoid settings outside of visum database
-# # Run settings script
-# from SRTC_Settings import settings_dict
-# 
-# # Need to run settings reader again here for some reason
-# 		# Only need to change values in SRTC_Setting.py and SRTC_Setting.csv, handled by Batch file
-# settings_csv = csv.reader(open(settings_dict['SharedData_Path']+'SRTC_Settings.csv'))
-# settings = list(settings_csv)
-# settings_dict = {}
-# for row in settings:
-#     key = row[0]
-#     value = row[1]
-#     settings_dict[key] = value
-
-# TODO hardcoded
-hhsubmodel_path = "U:/Projects/Clients/SCOG/Model/scog_model/SCOG_Model_2022/SharedData/HH_Submodel/"
-hh_parameters_path = hhsubmodel_path + "Parameters/"
-hh_out_path = hhsubmodel_path + "Outputs/"
+# set paths 
+hhsubmodel_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'HH_Submodel'))
+hh_parameters_path = hhsubmodel_path + "/Parameters/"
+hh_out_path = hhsubmodel_path + "/Outputs/"
 
 """ Define Input files and Constants """
 HHSizeModel = pd.read_csv(hh_parameters_path+'HHSizeModel.csv')
@@ -40,8 +23,7 @@ IncomeModel = pd.read_csv(hh_parameters_path+'IncomeModel.csv')
 HHIncSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_income_2d_table.csv')
 HHWrkSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_workers_2d_table.csv') # TODO update from PUMS (placeholder from income table)
 NumWorkersModel = pd.read_csv(hh_parameters_path+'NumberOfWorkersModel_MNL.csv')
-#NumChildrenModel = pd.read_csv(hh_parameters_path+'NumberOfChildrenModel.csv')
-#NumAutosModel = pd.read_csv(hh_parameters_path+'NumberOfVehiclesModel_NIRCC.csv')
+
 
 # Pull Zone attributes from Visum and create dataframe
 no          = VisumPy.helpers.GetMulti(Visum.Net.Zones,"No")
@@ -188,7 +170,7 @@ for x in range(len(zone_df)):
 		r = np.array([zone_df.loc[x,'HHS1'],zone_df.loc[x,'HHS2'],zone_df.loc[x,'HHS3'],zone_df.loc[x,'HHS4']]) # HHSize from the HH size submodel by zone
 		c = np.array([zone_df.loc[x,'INC1'],zone_df.loc[x,'INC2'],zone_df.loc[x,'INC3'],zone_df.loc[x,'INC4']]) # HHIncome from the HH Income submodel by zone
 		""" Run Visum balanceMatrix function """
-		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001)
+		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.01)
 		# Paste in balanced values to new df fields
 		zone_df.loc[x,'HH1INC1'] = balanced_mat[0,0]
 		zone_df.loc[x,'HH1INC2'] = balanced_mat[0,1]
@@ -389,7 +371,7 @@ for x in range(len(zone_df)):
 		r = np.array([zone_df.loc[x,'HHS1'],zone_df.loc[x,'HHS2'],zone_df.loc[x,'HHS3'],zone_df.loc[x,'HHS4']]) # HHSize from the HH size submodel by zone
 		c = np.array([zone_df.loc[x,'HHWRK0'],zone_df.loc[x,'HHWRK1'],zone_df.loc[x,'HHWRK2'],zone_df.loc[x,'HHWRK3']]) # HHWorkers from the HH workers submodel by zone
 		""" Run Visum balanceMatrix function """
-		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001)
+		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.01)
 		# Paste in balanced values to new df fields
 		zone_df.loc[x,'HH1W0'] = balanced_mat[0,0]
 		zone_df.loc[x,'HH1W1'] = balanced_mat[0,1]

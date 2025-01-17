@@ -13,21 +13,10 @@ import VisumPy.matrices
 import traceback
 import pandas as pd
 import numpy as np
-import csv, sys
+import csv, sys, os
 
-
-# Run settings script
-# from SRTC_Settings import settings_dict
-# 
-# # Need to run settings reader again here for some reason
-# 		# Only need to change values in SRTC_Setting.py and SRTC_Setting.csv, handled by Batch file
-# settings_csv = csv.reader(open(settings_dict['SharedData_Path']+'SRTC_Settings.csv'))
-# settings = list(settings_csv)
-# settings_dict = {}
-# for row in settings:
-#     key = row[0]
-#     value = row[1]
-#     settings_dict[key] = value
+# set paths 
+external_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'External'))
 
 # Pull EXT_GROWTH from Visum table
 no               = VisumPy.helpers.GetMulti(Visum.Net.Zones, "NO", activeOnly = True)
@@ -37,9 +26,7 @@ ext_auto_growth  = VisumPy.helpers.GetMulti(Visum.Net.Zones, "EXT_AUTO_GROWTH", 
 growth_df = pd.DataFrame({'NO':no, 'Auto_Ext_Growth':ext_auto_growth}) #, 'Trk_Ext_Growth':ext_truck_growth})
 
 # External counts and percentages lookup table
-# TODO hardcoded
-external_path = "U:/Projects/Clients/SCOG/Model/scog_model/SCOG_Model_2022/SharedData/External/"
-externalLookupTableFileName = external_path+"Ext_Sta_Summary.csv" # TODO dummy file
+externalLookupTableFileName = external_path + "/Ext_Sta_Summary.csv" # TODO dummy file
 external_lookup_table = VisumPy.csvHelpers.readCSV(externalLookupTableFileName)
 df = pd.DataFrame(external_lookup_table[1:], columns=external_lookup_table[0])
 # Sort increasing order of NO
@@ -53,10 +40,8 @@ df[['NO']]        = df[['NO']].astype(int)
 df = pd.merge(df, growth_df, on='NO', how='left')
 
 # Grow auto and truck XX marginals by growth rate by zone
-scen_year = 2022 # TODO params
-base_year = 2022
-# grow_years = (int(Visum.Scenario.AttValue("SCEN_YEAR")))-(int(Visum.ParameterSet.AttValue("BASE_YEAR")))
-
+scen_year = Visum.Net.AttValue("SCEN_YEAR")
+base_year = Visum.Net.AttValue("BASE_YEAR")
 grow_years = int(scen_year)-int(base_year)
 
 # Convert all count and growth fields to float to make multiplication and other operations run smoothly
