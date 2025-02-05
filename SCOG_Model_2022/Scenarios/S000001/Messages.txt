@@ -1,115 +1,114 @@
-﻿2025-02-04 19:10:31.128         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.128         Warning The value is no valid number.
-2025-02-04 19:10:31.130         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.130         Warning The value is no valid number.
-2025-02-04 19:10:31.132         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.132         Warning The value is no valid number.
-2025-02-04 19:10:31.133         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.133         Warning The value is no valid number.
-2025-02-04 19:10:31.135         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.135         Warning The value is no valid number.
-2025-02-04 19:10:31.137         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.137         Warning The value is no valid number.
-2025-02-04 19:10:31.138         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.138         Warning The value is no valid number.
-2025-02-04 19:10:31.140         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.140         Warning The value is no valid number.
-2025-02-04 19:10:31.141         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.141         Warning The value is no valid number.
-2025-02-04 19:10:31.142         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.142         Warning The value is no valid number.
-2025-02-04 19:10:31.144         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.144         Warning The value is no valid number.
-2025-02-04 19:10:31.145         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.145         Warning The value is no valid number.
-2025-02-04 19:10:31.147         Warning This change cannot be made for 31 objects.
-2025-02-04 19:10:31.147         Warning The value is no valid number.
-2025-02-04 19:10:33.554            Note Matrix '100 MSA' was edited.
-2025-02-04 19:10:33.554            Note Matrix '100 MSA' was changed.
-2025-02-04 19:10:34.102            Note Matrix '31 AM_HBWod' was edited.
-2025-02-04 19:10:34.102            Note Matrix '31 AM_HBWod' was changed.
-2025-02-04 19:10:34.153            Note Matrix '32 AM_HBOod' was edited.
-2025-02-04 19:10:34.153            Note Matrix '32 AM_HBOod' was changed.
-2025-02-04 19:10:34.202            Note Matrix '33 AM_NHBWod' was edited.
-2025-02-04 19:10:34.202            Note Matrix '33 AM_NHBWod' was changed.
-2025-02-04 19:10:34.252            Note Matrix '34 AM_NHBOod' was edited.
-2025-02-04 19:10:34.252            Note Matrix '34 AM_NHBOod' was changed.
-2025-02-04 19:10:34.303            Note Matrix '35 AM_AutoExtod' was edited.
-2025-02-04 19:10:34.303            Note Matrix '35 AM_AutoExtod' was changed.
-2025-02-04 19:10:34.402            Note Matrix '41 PM_HBWod' was edited.
-2025-02-04 19:10:34.402            Note Matrix '41 PM_HBWod' was changed.
-2025-02-04 19:10:34.453            Note Matrix '42 PM_HBOod' was edited.
-2025-02-04 19:10:34.454            Note Matrix '42 PM_HBOod' was changed.
-2025-02-04 19:10:34.504            Note Matrix '43 PM_NHBWod' was edited.
-2025-02-04 19:10:34.504            Note Matrix '43 PM_NHBWod' was changed.
-2025-02-04 19:10:34.556            Note Matrix '44 PM_NHBOod' was edited.
-2025-02-04 19:10:34.556            Note Matrix '44 PM_NHBOod' was changed.
-2025-02-04 19:10:34.607            Note Matrix '45 PM_AutoExtod' was edited.
-2025-02-04 19:10:34.607            Note Matrix '45 PM_AutoExtod' was changed.
-2025-02-04 19:10:34.708            Note Matrix '51 OP_HBWod' was edited.
-2025-02-04 19:10:34.708            Note Matrix '51 OP_HBWod' was changed.
-2025-02-04 19:10:34.758            Note Matrix '52 OP_HBOod' was edited.
-2025-02-04 19:10:34.759            Note Matrix '52 OP_HBOod' was changed.
-2025-02-04 19:10:34.809            Note Matrix '53 OP_NHBWod' was edited.
-2025-02-04 19:10:34.809            Note Matrix '53 OP_NHBWod' was changed.
-2025-02-04 19:10:34.859            Note Matrix '54 OP_NHBOod' was edited.
-2025-02-04 19:10:34.859            Note Matrix '54 OP_NHBOod' was changed.
-2025-02-04 19:10:34.910            Note Matrix '55 OP_AutoExtod' was edited.
-2025-02-04 19:10:34.911            Note Matrix '55 OP_AutoExtod' was changed.
-2025-02-04 19:10:35.009            Note Matrix '61 PMPK_HBWod' was edited.
-2025-02-04 19:10:35.009            Note Matrix '61 PMPK_HBWod' was changed.
-2025-02-04 19:10:35.061            Note Matrix '62 PMPK_HBOod' was edited.
-2025-02-04 19:10:35.061            Note Matrix '62 PMPK_HBOod' was changed.
-2025-02-04 19:10:35.111            Note Matrix '63 PMPK_NHBWod' was edited.
-2025-02-04 19:10:35.111            Note Matrix '63 PMPK_NHBWod' was changed.
-2025-02-04 19:10:35.163            Note Matrix '64 PMPK_NHBOod' was edited.
-2025-02-04 19:10:35.163            Note Matrix '64 PMPK_NHBOod' was changed.
-2025-02-04 19:10:35.216            Note Matrix '65 PMPK_AutoExtod' was edited.
-2025-02-04 19:10:35.216            Note Matrix '65 PMPK_AutoExtod' was changed.
-2025-02-04 19:10:35.506            Note Matrix '11 HBWod' was edited.
-2025-02-04 19:10:35.506            Note Matrix '11 HBWod' was changed.
-2025-02-04 19:10:35.555            Note Matrix '12 HBOod' was edited.
-2025-02-04 19:10:35.555            Note Matrix '12 HBOod' was changed.
-2025-02-04 19:10:35.602            Note Matrix '13 NHBWod' was edited.
-2025-02-04 19:10:35.602            Note Matrix '13 NHBWod' was changed.
-2025-02-04 19:10:35.650            Note Matrix '14 NHBOod' was edited.
-2025-02-04 19:10:35.650            Note Matrix '14 NHBOod' was changed.
-2025-02-04 19:10:35.695            Note Matrix '15 AutoExtod' was edited.
-2025-02-04 19:10:35.696            Note Matrix '15 AutoExtod' was changed.
-2025-02-04 19:10:35.746         Warning Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
-2025-02-04 19:10:35.746            Note There is no existing initial solution for the demand segments HBO,HBW,NHBO,NHBW. The initial solution is recalculated.
-2025-02-04 19:10:39.962            Note Matrix '11 HBWod' was edited.
-2025-02-04 19:10:39.962            Note Matrix '11 HBWod' was changed.
-2025-02-04 19:10:40.014            Note Matrix '12 HBOod' was edited.
-2025-02-04 19:10:40.014            Note Matrix '12 HBOod' was changed.
-2025-02-04 19:10:40.073            Note Matrix '13 NHBWod' was edited.
-2025-02-04 19:10:40.074            Note Matrix '13 NHBWod' was changed.
-2025-02-04 19:10:40.128            Note Matrix '14 NHBOod' was edited.
-2025-02-04 19:10:40.128            Note Matrix '14 NHBOod' was changed.
-2025-02-04 19:10:40.177            Note Matrix '15 AutoExtod' was edited.
-2025-02-04 19:10:40.177            Note Matrix '15 AutoExtod' was changed.
-2025-02-04 19:10:40.228         Warning Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
-2025-02-04 19:10:42.636            Note Matrix '11 HBWod' was edited.
-2025-02-04 19:10:42.636            Note Matrix '11 HBWod' was changed.
-2025-02-04 19:10:42.687            Note Matrix '12 HBOod' was edited.
-2025-02-04 19:10:42.687            Note Matrix '12 HBOod' was changed.
-2025-02-04 19:10:42.740            Note Matrix '13 NHBWod' was edited.
-2025-02-04 19:10:42.741            Note Matrix '13 NHBWod' was changed.
-2025-02-04 19:10:42.791            Note Matrix '14 NHBOod' was edited.
-2025-02-04 19:10:42.791            Note Matrix '14 NHBOod' was changed.
-2025-02-04 19:10:42.838            Note Matrix '15 AutoExtod' was edited.
-2025-02-04 19:10:42.839            Note Matrix '15 AutoExtod' was changed.
-2025-02-04 19:10:42.893         Warning Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
-2025-02-04 19:10:45.039            Note Matrix '11 HBWod' was edited.
-2025-02-04 19:10:45.039            Note Matrix '11 HBWod' was changed.
-2025-02-04 19:10:45.092            Note Matrix '12 HBOod' was edited.
-2025-02-04 19:10:45.093            Note Matrix '12 HBOod' was changed.
-2025-02-04 19:10:45.154            Note Matrix '13 NHBWod' was edited.
-2025-02-04 19:10:45.154            Note Matrix '13 NHBWod' was changed.
-2025-02-04 19:10:45.205            Note Matrix '14 NHBOod' was edited.
-2025-02-04 19:10:45.205            Note Matrix '14 NHBOod' was changed.
-2025-02-04 19:10:45.253            Note Matrix '15 AutoExtod' was edited.
-2025-02-04 19:10:45.253            Note Matrix '15 AutoExtod' was changed.
-2025-02-04 19:10:45.305         Warning Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
-2025-02-04 19:10:47.644         Warning Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
-2025-02-04 19:10:59.071            Note The operation "Procedure run" has caused warnings. During the process "Procedure run", 31 warnings were written to the "Messages" window. : &Show
+﻿2025-02-05 11:08:46.689         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.690         Warning The value is no valid number.
+2025-02-05 11:08:46.692         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.692         Warning The value is no valid number.
+2025-02-05 11:08:46.693         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.693         Warning The value is no valid number.
+2025-02-05 11:08:46.694         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.695         Warning The value is no valid number.
+2025-02-05 11:08:46.696         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.696         Warning The value is no valid number.
+2025-02-05 11:08:46.698         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.699         Warning The value is no valid number.
+2025-02-05 11:08:46.700         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.700         Warning The value is no valid number.
+2025-02-05 11:08:46.701         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.701         Warning The value is no valid number.
+2025-02-05 11:08:46.703         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.703         Warning The value is no valid number.
+2025-02-05 11:08:46.704         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.704         Warning The value is no valid number.
+2025-02-05 11:08:46.705         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.706         Warning The value is no valid number.
+2025-02-05 11:08:46.707         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.707         Warning The value is no valid number.
+2025-02-05 11:08:46.708         Warning This change cannot be made for 31 objects.
+2025-02-05 11:08:46.708         Warning The value is no valid number.
+2025-02-05 11:08:49.152            Note Matrix '100 MSA' was edited.
+2025-02-05 11:08:49.153            Note Matrix '100 MSA' was changed.
+2025-02-05 11:08:49.702            Note Matrix '31 AM_HBWod' was edited.
+2025-02-05 11:08:49.703            Note Matrix '31 AM_HBWod' was changed.
+2025-02-05 11:08:49.746            Note Matrix '32 AM_HBOod' was edited.
+2025-02-05 11:08:49.746            Note Matrix '32 AM_HBOod' was changed.
+2025-02-05 11:08:49.794            Note Matrix '33 AM_NHBWod' was edited.
+2025-02-05 11:08:49.794            Note Matrix '33 AM_NHBWod' was changed.
+2025-02-05 11:08:49.841            Note Matrix '34 AM_NHBOod' was edited.
+2025-02-05 11:08:49.841            Note Matrix '34 AM_NHBOod' was changed.
+2025-02-05 11:08:49.888            Note Matrix '35 AM_AutoExtod' was edited.
+2025-02-05 11:08:49.888            Note Matrix '35 AM_AutoExtod' was changed.
+2025-02-05 11:08:49.978            Note Matrix '41 PM_HBWod' was edited.
+2025-02-05 11:08:49.978            Note Matrix '41 PM_HBWod' was changed.
+2025-02-05 11:08:50.024            Note Matrix '42 PM_HBOod' was edited.
+2025-02-05 11:08:50.024            Note Matrix '42 PM_HBOod' was changed.
+2025-02-05 11:08:50.073            Note Matrix '43 PM_NHBWod' was edited.
+2025-02-05 11:08:50.073            Note Matrix '43 PM_NHBWod' was changed.
+2025-02-05 11:08:50.121            Note Matrix '44 PM_NHBOod' was edited.
+2025-02-05 11:08:50.121            Note Matrix '44 PM_NHBOod' was changed.
+2025-02-05 11:08:50.169            Note Matrix '45 PM_AutoExtod' was edited.
+2025-02-05 11:08:50.169            Note Matrix '45 PM_AutoExtod' was changed.
+2025-02-05 11:08:50.260            Note Matrix '51 OP_HBWod' was edited.
+2025-02-05 11:08:50.260            Note Matrix '51 OP_HBWod' was changed.
+2025-02-05 11:08:50.308            Note Matrix '52 OP_HBOod' was edited.
+2025-02-05 11:08:50.308            Note Matrix '52 OP_HBOod' was changed.
+2025-02-05 11:08:50.355            Note Matrix '53 OP_NHBWod' was edited.
+2025-02-05 11:08:50.356            Note Matrix '53 OP_NHBWod' was changed.
+2025-02-05 11:08:50.401            Note Matrix '54 OP_NHBOod' was edited.
+2025-02-05 11:08:50.401            Note Matrix '54 OP_NHBOod' was changed.
+2025-02-05 11:08:50.448            Note Matrix '55 OP_AutoExtod' was edited.
+2025-02-05 11:08:50.448            Note Matrix '55 OP_AutoExtod' was changed.
+2025-02-05 11:08:50.537            Note Matrix '61 PMPK_HBWod' was edited.
+2025-02-05 11:08:50.537            Note Matrix '61 PMPK_HBWod' was changed.
+2025-02-05 11:08:50.585            Note Matrix '62 PMPK_HBOod' was edited.
+2025-02-05 11:08:50.585            Note Matrix '62 PMPK_HBOod' was changed.
+2025-02-05 11:08:50.632            Note Matrix '63 PMPK_NHBWod' was edited.
+2025-02-05 11:08:50.632            Note Matrix '63 PMPK_NHBWod' was changed.
+2025-02-05 11:08:50.680            Note Matrix '64 PMPK_NHBOod' was edited.
+2025-02-05 11:08:50.680            Note Matrix '64 PMPK_NHBOod' was changed.
+2025-02-05 11:08:50.730            Note Matrix '65 PMPK_AutoExtod' was edited.
+2025-02-05 11:08:50.730            Note Matrix '65 PMPK_AutoExtod' was changed.
+2025-02-05 11:08:51.002            Note Matrix '11 HBWod' was edited.
+2025-02-05 11:08:51.002            Note Matrix '11 HBWod' was changed.
+2025-02-05 11:08:51.047            Note Matrix '12 HBOod' was edited.
+2025-02-05 11:08:51.047            Note Matrix '12 HBOod' was changed.
+2025-02-05 11:08:51.092            Note Matrix '13 NHBWod' was edited.
+2025-02-05 11:08:51.092            Note Matrix '13 NHBWod' was changed.
+2025-02-05 11:08:51.136            Note Matrix '14 NHBOod' was edited.
+2025-02-05 11:08:51.136            Note Matrix '14 NHBOod' was changed.
+2025-02-05 11:08:51.179            Note Matrix '15 AutoExtod' was edited.
+2025-02-05 11:08:51.180            Note Matrix '15 AutoExtod' was changed.
+2025-02-05 11:08:51.229         Warning Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
+2025-02-05 11:08:51.229            Note There is no existing initial solution for the demand segments HBO,HBW,NHBO,NHBW. The initial solution is recalculated.
+2025-02-05 11:08:55.153            Note Matrix '11 HBWod' was edited.
+2025-02-05 11:08:55.153            Note Matrix '11 HBWod' was changed.
+2025-02-05 11:08:55.202            Note Matrix '12 HBOod' was edited.
+2025-02-05 11:08:55.202            Note Matrix '12 HBOod' was changed.
+2025-02-05 11:08:55.252            Note Matrix '13 NHBWod' was edited.
+2025-02-05 11:08:55.252            Note Matrix '13 NHBWod' was changed.
+2025-02-05 11:08:55.302            Note Matrix '14 NHBOod' was edited.
+2025-02-05 11:08:55.302            Note Matrix '14 NHBOod' was changed.
+2025-02-05 11:08:55.346            Note Matrix '15 AutoExtod' was edited.
+2025-02-05 11:08:55.347            Note Matrix '15 AutoExtod' was changed.
+2025-02-05 11:08:55.393         Warning Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
+2025-02-05 11:08:57.559            Note Matrix '11 HBWod' was edited.
+2025-02-05 11:08:57.559            Note Matrix '11 HBWod' was changed.
+2025-02-05 11:08:57.606            Note Matrix '12 HBOod' was edited.
+2025-02-05 11:08:57.606            Note Matrix '12 HBOod' was changed.
+2025-02-05 11:08:57.657            Note Matrix '13 NHBWod' was edited.
+2025-02-05 11:08:57.657            Note Matrix '13 NHBWod' was changed.
+2025-02-05 11:08:57.709            Note Matrix '14 NHBOod' was edited.
+2025-02-05 11:08:57.709            Note Matrix '14 NHBOod' was changed.
+2025-02-05 11:08:57.754            Note Matrix '15 AutoExtod' was edited.
+2025-02-05 11:08:57.754            Note Matrix '15 AutoExtod' was changed.
+2025-02-05 11:08:57.803         Warning Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
+2025-02-05 11:08:59.748            Note Matrix '11 HBWod' was edited.
+2025-02-05 11:08:59.748            Note Matrix '11 HBWod' was changed.
+2025-02-05 11:08:59.796            Note Matrix '12 HBOod' was edited.
+2025-02-05 11:08:59.796            Note Matrix '12 HBOod' was changed.
+2025-02-05 11:08:59.847            Note Matrix '13 NHBWod' was edited.
+2025-02-05 11:08:59.847            Note Matrix '13 NHBWod' was changed.
+2025-02-05 11:08:59.894            Note Matrix '14 NHBOod' was edited.
+2025-02-05 11:08:59.894            Note Matrix '14 NHBOod' was changed.
+2025-02-05 11:08:59.937            Note Matrix '15 AutoExtod' was edited.
+2025-02-05 11:08:59.937            Note Matrix '15 AutoExtod' was changed.
+2025-02-05 11:08:59.988         Warning Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
+2025-02-05 11:09:02.267         Warning Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.

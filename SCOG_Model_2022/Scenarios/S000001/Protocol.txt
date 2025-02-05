@@ -1,140 +1,140 @@
-﻿2025-02-04 19:10:17.468 Open file
-2025-02-04 19:10:17.468 Open "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Protocol.txt"
-2025-02-04 19:10:17.469 Open "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Messages.txt"
-2025-02-04 19:10:17.470 Starting to process calculation request for scenario 1
-2025-02-04 19:10:17.568 Delete network
-2025-02-04 19:10:17.648 Start time of Read version SCOG_Model_2022Base
-2025-02-04 19:10:17.892       27 POI categories
-2025-02-04 19:10:17.897        1 Time interval sets
-2025-02-04 19:10:17.904      157 User-defined attributes
-2025-02-04 19:10:17.908        9 Notepad lines
-2025-02-04 19:10:17.911        2 Transport systems
-2025-02-04 19:10:17.917        2 Modes
-2025-02-04 19:10:17.921        5 Demand segments
-2025-02-04 19:10:17.925        1 Valid days
-2025-02-04 19:10:17.929        5 Block item types
-2025-02-04 19:10:17.933        2 PuT directions
-2025-02-04 19:10:17.950    47939 Points
-2025-02-04 19:10:18.003    30708 Edges
-2025-02-04 19:10:18.028    23791 Faces
-2025-02-04 19:10:18.043    23753 Surfaces
-2025-02-04 19:10:18.051     1700 Nodes
-2025-02-04 19:10:18.056      372 Zones
-2025-02-04 19:10:18.060        3 Main zones
-2025-02-04 19:10:18.064      147 Territories
-2025-02-04 19:10:18.069      100 Link types
-2025-02-04 19:10:18.081     4142 Links
-2025-02-04 19:10:18.091      143 Turning standards
-2025-02-04 19:10:18.106    11096 Turns
-2025-02-04 19:10:18.113     1092 Connectors
-2025-02-04 19:10:18.119        1 Fare systems
-2025-02-04 19:10:18.123       12 Count locations
-2025-02-04 19:10:18.128        1 Block versions
-2025-02-04 19:10:18.168    23380 Points of interest
-2025-02-04 19:10:18.174    23380 POI allocations
-2025-02-04 19:10:18.179       24 Geometries
-2025-02-04 19:10:18.204        9 Screenlines
-2025-02-04 19:10:18.208        1 Demand models
-2025-02-04 19:10:18.211        1 Time series
-2025-02-04 19:10:18.216        5 Demand strata
-2025-02-04 19:10:18.223       45 Matrices
-2025-02-04 19:10:18.244       45 Matrix data
-2025-02-04 19:10:18.248        1 Demand time series
-2025-02-04 19:10:18.253        5 Demand descriptions
-2025-02-04 19:10:18.412        4 Aliases
-2025-02-04 19:10:18.610 End time of Read version SCOG_Model_2022Base
-2025-02-04 19:10:18.727 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Procedures\P000001.xml".
-2025-02-04 19:10:18.778 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Procedures\P000001.xml".
-2025-02-04 19:10:18.796 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Variables.xml".
-2025-02-04 19:10:18.890 Procedure - start
-2025-02-04 19:10:18.956 Start Procedure step   1: "Group"
-2025-02-04 19:10:18.956 End Procedure step   1: "Group", run time 0.000007s
-2025-02-04 19:10:19.072 Start Procedure step   2: "Read filter"
-2025-02-04 19:10:19.098 End Procedure step   2: "Read filter", run time 0.025479s
-2025-02-04 19:10:19.135 Start Procedure step   3: "Run script"
-2025-02-04 19:10:31.128 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.128 The value is no valid number.
-2025-02-04 19:10:31.130 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.130 The value is no valid number.
-2025-02-04 19:10:31.132 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.132 The value is no valid number.
-2025-02-04 19:10:31.133 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.133 The value is no valid number.
-2025-02-04 19:10:31.135 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.135 The value is no valid number.
-2025-02-04 19:10:31.137 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.137 The value is no valid number.
-2025-02-04 19:10:31.138 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.138 The value is no valid number.
-2025-02-04 19:10:31.140 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.140 The value is no valid number.
-2025-02-04 19:10:31.141 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.141 The value is no valid number.
-2025-02-04 19:10:31.142 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.142 The value is no valid number.
-2025-02-04 19:10:31.144 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.144 The value is no valid number.
-2025-02-04 19:10:31.145 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.145 The value is no valid number.
-2025-02-04 19:10:31.147 This change cannot be made for 31 objects.
-2025-02-04 19:10:31.147 The value is no valid number.
-2025-02-04 19:10:31.157 End Procedure step   3: "Run script", run time 12.021910s
-2025-02-04 19:10:31.187 Start Procedure step   4: "Group"
-2025-02-04 19:10:31.187 End Procedure step   4: "Group", run time 0.000001s
-2025-02-04 19:10:31.231 Start Procedure step   5: "Read filter"
-2025-02-04 19:10:31.246 End Procedure step   5: "Read filter", run time 0.015218s
-2025-02-04 19:10:31.283 Start Procedure step   6: "Run script"
-2025-02-04 19:10:31.486 End Procedure step   6: "Run script", run time 0.202773s
-2025-02-04 19:10:31.518 Start Procedure step   7: "Group"
-2025-02-04 19:10:31.518 End Procedure step   7: "Group", run time 0.000002s
-2025-02-04 19:10:31.562 Start Procedure step   8: "Read filter"
-2025-02-04 19:10:31.579 End Procedure step   8: "Read filter", run time 0.016738s
-2025-02-04 19:10:31.617 Start Procedure step   9: "Edit attribute"
-2025-02-04 19:10:31.652 Links: 4142 objects were changed.
-2025-02-04 19:10:31.662 End Procedure step   9: "Edit attribute", run time 0.044508s
-2025-02-04 19:10:31.699 Start Procedure step  10: "Edit attribute"
-2025-02-04 19:10:31.726 Links: 4142 objects were changed.
-2025-02-04 19:10:31.737 End Procedure step  10: "Edit attribute", run time 0.037286s
-2025-02-04 19:10:31.773 Start Procedure step  11: "Edit attribute"
-2025-02-04 19:10:31.810 Links: 4142 objects were changed.
-2025-02-04 19:10:31.819 End Procedure step  11: "Edit attribute", run time 0.046519s
-2025-02-04 19:10:31.859 Start Procedure step  12: "Edit attribute"
-2025-02-04 19:10:31.887 Links: 4142 objects were changed.
-2025-02-04 19:10:31.896 End Procedure step  12: "Edit attribute", run time 0.036515s
-2025-02-04 19:10:31.934 Start Procedure step  13: "Edit attribute"
-2025-02-04 19:10:32.297 Turns: 11096 objects were changed.
-2025-02-04 19:10:32.307 End Procedure step  13: "Edit attribute", run time 0.372988s
-2025-02-04 19:10:32.345 Start Procedure step  14: "Edit attribute"
-2025-02-04 19:10:32.707 Turns: 11096 objects were changed.
-2025-02-04 19:10:32.716 End Procedure step  14: "Edit attribute", run time 0.370964s
-2025-02-04 19:10:32.755 Start Procedure step  15: "Edit attribute"
-2025-02-04 19:10:32.784 Nodes: 1700 objects were changed.
-2025-02-04 19:10:32.793 End Procedure step  15: "Edit attribute", run time 0.038046s
-2025-02-04 19:10:32.832 Start Procedure step  16: "Read filter"
-2025-02-04 19:10:32.851 End Procedure step  16: "Read filter", run time 0.019278s
-2025-02-04 19:10:32.891 Start Procedure step  17: "Edit attribute"
-2025-02-04 19:10:32.918 Nodes: 453 objects were changed.
-2025-02-04 19:10:32.926 End Procedure step  17: "Edit attribute", run time 0.035291s
-2025-02-04 19:10:32.964 Start Procedure step  18: "Read filter"
-2025-02-04 19:10:32.982 End Procedure step  18: "Read filter", run time 0.017755s
-2025-02-04 19:10:33.022 Start Procedure step  19: "Delete assignment results"
-2025-02-04 19:10:33.026 End Procedure step  19: "Delete assignment results", run time 0.003237s
-2025-02-04 19:10:33.070 Start Procedure step  52: "Group"
-2025-02-04 19:10:33.070 End Procedure step  52: "Group", run time 0.000001s
-2025-02-04 19:10:33.111 Start Procedure step  53: "Read filter"
-2025-02-04 19:10:33.129 End Procedure step  53: "Read filter", run time 0.017519s
-2025-02-04 19:10:33.168 Start Procedure step  54: "Trip generation"
-2025-02-04 19:10:33.194 Totals for demand stratum HBO before standardization (option 1): Productions: 49921.821 Attractions: 17950.000
-2025-02-04 19:10:33.196 Totals for demand stratum HBW before standardization (option 1): Productions: 69053.167 Attractions: 17950.000
-2025-02-04 19:10:33.197 Totals for demand stratum NHBO before standardization (option 1): Productions: 49921.821 Attractions: 17950.000
-2025-02-04 19:10:33.198 Totals for demand stratum NHBW before standardization (option 1): Productions: 49921.821 Attractions: 17950.000
-2025-02-04 19:10:33.204 End Procedure step  54: "Trip generation", run time 0.036226s
-2025-02-04 19:10:33.235 Start Procedure step  55: "Group"
-2025-02-04 19:10:33.235 End Procedure step  55: "Group", run time 0.000003s
-2025-02-04 19:10:33.279 Start Procedure step  56: "Read filter"
-2025-02-04 19:10:33.298 End Procedure step  56: "Read filter", run time 0.018780s
-2025-02-04 19:10:33.336 Start Procedure step  57: "Calculate PrT skim matrix"
-2025-02-04 19:10:33.452 CCH Statistics for tsys C
+﻿2025-02-05 11:08:23.879 Open file
+2025-02-05 11:08:23.879 Open "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Protocol.txt"
+2025-02-05 11:08:23.880 Open "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Messages.txt"
+2025-02-05 11:08:23.881 Starting to process calculation request for scenario 1
+2025-02-05 11:08:23.981 Delete network
+2025-02-05 11:08:24.068 Start time of Read version SCOG_Model_2022Base
+2025-02-05 11:08:24.330       27 POI categories
+2025-02-05 11:08:24.335        1 Time interval sets
+2025-02-05 11:08:24.341      157 User-defined attributes
+2025-02-05 11:08:24.347        9 Notepad lines
+2025-02-05 11:08:24.351        2 Transport systems
+2025-02-05 11:08:24.356        2 Modes
+2025-02-05 11:08:24.360        5 Demand segments
+2025-02-05 11:08:24.364        1 Valid days
+2025-02-05 11:08:24.368        5 Block item types
+2025-02-05 11:08:24.372        2 PuT directions
+2025-02-05 11:08:24.390    47939 Points
+2025-02-05 11:08:24.445    30708 Edges
+2025-02-05 11:08:24.469    23791 Faces
+2025-02-05 11:08:24.485    23753 Surfaces
+2025-02-05 11:08:24.492     1700 Nodes
+2025-02-05 11:08:24.497      372 Zones
+2025-02-05 11:08:24.501        3 Main zones
+2025-02-05 11:08:24.506      147 Territories
+2025-02-05 11:08:24.511      100 Link types
+2025-02-05 11:08:24.525     4142 Links
+2025-02-05 11:08:24.534      143 Turning standards
+2025-02-05 11:08:24.551    11096 Turns
+2025-02-05 11:08:24.559     1092 Connectors
+2025-02-05 11:08:24.563        1 Fare systems
+2025-02-05 11:08:24.567       12 Count locations
+2025-02-05 11:08:24.573        1 Block versions
+2025-02-05 11:08:24.609    23380 Points of interest
+2025-02-05 11:08:24.614    23380 POI allocations
+2025-02-05 11:08:24.619       24 Geometries
+2025-02-05 11:08:24.643        9 Screenlines
+2025-02-05 11:08:24.653        1 Demand models
+2025-02-05 11:08:24.657        1 Time series
+2025-02-05 11:08:24.661        5 Demand strata
+2025-02-05 11:08:24.666       45 Matrices
+2025-02-05 11:08:24.688       45 Matrix data
+2025-02-05 11:08:24.694        1 Demand time series
+2025-02-05 11:08:24.697        5 Demand descriptions
+2025-02-05 11:08:24.859        4 Aliases
+2025-02-05 11:08:25.064 End time of Read version SCOG_Model_2022Base
+2025-02-05 11:08:25.157 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Procedures\P000001.xml".
+2025-02-05 11:08:25.209 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Procedures\P000001.xml".
+2025-02-05 11:08:25.226 Procedure parameters read from file "U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\Variables.xml".
+2025-02-05 11:08:25.325 Procedure - start
+2025-02-05 11:08:25.410 Start Procedure step   1: "Group"
+2025-02-05 11:08:25.410 End Procedure step   1: "Group", run time 0.000007s
+2025-02-05 11:08:25.507 Start Procedure step   2: "Read filter"
+2025-02-05 11:08:25.537 End Procedure step   2: "Read filter", run time 0.029472s
+2025-02-05 11:08:25.570 Start Procedure step   3: "Run script"
+2025-02-05 11:08:46.689 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.690 The value is no valid number.
+2025-02-05 11:08:46.692 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.692 The value is no valid number.
+2025-02-05 11:08:46.693 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.693 The value is no valid number.
+2025-02-05 11:08:46.694 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.695 The value is no valid number.
+2025-02-05 11:08:46.696 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.696 The value is no valid number.
+2025-02-05 11:08:46.698 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.699 The value is no valid number.
+2025-02-05 11:08:46.700 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.700 The value is no valid number.
+2025-02-05 11:08:46.701 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.701 The value is no valid number.
+2025-02-05 11:08:46.703 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.703 The value is no valid number.
+2025-02-05 11:08:46.704 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.704 The value is no valid number.
+2025-02-05 11:08:46.705 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.706 The value is no valid number.
+2025-02-05 11:08:46.707 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.707 The value is no valid number.
+2025-02-05 11:08:46.708 This change cannot be made for 31 objects.
+2025-02-05 11:08:46.708 The value is no valid number.
+2025-02-05 11:08:46.719 End Procedure step   3: "Run script", run time 21.148246s
+2025-02-05 11:08:46.767 Start Procedure step   4: "Group"
+2025-02-05 11:08:46.767 End Procedure step   4: "Group", run time 0.000002s
+2025-02-05 11:08:46.806 Start Procedure step   5: "Read filter"
+2025-02-05 11:08:46.827 End Procedure step   5: "Read filter", run time 0.020817s
+2025-02-05 11:08:46.865 Start Procedure step   6: "Run script"
+2025-02-05 11:08:47.097 End Procedure step   6: "Run script", run time 0.232200s
+2025-02-05 11:08:47.128 Start Procedure step   7: "Group"
+2025-02-05 11:08:47.129 End Procedure step   7: "Group", run time 0.000001s
+2025-02-05 11:08:47.172 Start Procedure step   8: "Read filter"
+2025-02-05 11:08:47.198 End Procedure step   8: "Read filter", run time 0.025211s
+2025-02-05 11:08:47.236 Start Procedure step   9: "Edit attribute"
+2025-02-05 11:08:47.266 Links: 4142 objects were changed.
+2025-02-05 11:08:47.274 End Procedure step   9: "Edit attribute", run time 0.038342s
+2025-02-05 11:08:47.313 Start Procedure step  10: "Edit attribute"
+2025-02-05 11:08:47.336 Links: 4142 objects were changed.
+2025-02-05 11:08:47.344 End Procedure step  10: "Edit attribute", run time 0.031058s
+2025-02-05 11:08:47.384 Start Procedure step  11: "Edit attribute"
+2025-02-05 11:08:47.419 Links: 4142 objects were changed.
+2025-02-05 11:08:47.427 End Procedure step  11: "Edit attribute", run time 0.043654s
+2025-02-05 11:08:47.467 Start Procedure step  12: "Edit attribute"
+2025-02-05 11:08:47.489 Links: 4142 objects were changed.
+2025-02-05 11:08:47.498 End Procedure step  12: "Edit attribute", run time 0.031366s
+2025-02-05 11:08:47.535 Start Procedure step  13: "Edit attribute"
+2025-02-05 11:08:47.918 Turns: 11096 objects were changed.
+2025-02-05 11:08:47.926 End Procedure step  13: "Edit attribute", run time 0.391277s
+2025-02-05 11:08:47.966 Start Procedure step  14: "Edit attribute"
+2025-02-05 11:08:48.350 Turns: 11096 objects were changed.
+2025-02-05 11:08:48.358 End Procedure step  14: "Edit attribute", run time 0.391850s
+2025-02-05 11:08:48.397 Start Procedure step  15: "Edit attribute"
+2025-02-05 11:08:48.417 Nodes: 1700 objects were changed.
+2025-02-05 11:08:48.426 End Procedure step  15: "Edit attribute", run time 0.029153s
+2025-02-05 11:08:48.464 Start Procedure step  16: "Read filter"
+2025-02-05 11:08:48.489 End Procedure step  16: "Read filter", run time 0.024565s
+2025-02-05 11:08:48.528 Start Procedure step  17: "Edit attribute"
+2025-02-05 11:08:48.551 Nodes: 453 objects were changed.
+2025-02-05 11:08:48.561 End Procedure step  17: "Edit attribute", run time 0.032660s
+2025-02-05 11:08:48.602 Start Procedure step  18: "Read filter"
+2025-02-05 11:08:48.615 End Procedure step  18: "Read filter", run time 0.013074s
+2025-02-05 11:08:48.655 Start Procedure step  19: "Delete assignment results"
+2025-02-05 11:08:48.657 End Procedure step  19: "Delete assignment results", run time 0.002337s
+2025-02-05 11:08:48.697 Start Procedure step  52: "Group"
+2025-02-05 11:08:48.697 End Procedure step  52: "Group", run time 0.000001s
+2025-02-05 11:08:48.735 Start Procedure step  53: "Read filter"
+2025-02-05 11:08:48.747 End Procedure step  53: "Read filter", run time 0.012148s
+2025-02-05 11:08:48.784 Start Procedure step  54: "Trip generation"
+2025-02-05 11:08:48.799 Totals for demand stratum HBO before standardization (option 1): Productions: 49919.000 Attractions: 17950.000
+2025-02-05 11:08:48.808 Totals for demand stratum HBW before standardization (option 1): Productions: 69052.152 Attractions: 17950.000
+2025-02-05 11:08:48.810 Totals for demand stratum NHBO before standardization (option 1): Productions: 49919.000 Attractions: 17950.000
+2025-02-05 11:08:48.810 Totals for demand stratum NHBW before standardization (option 1): Productions: 49919.000 Attractions: 17950.000
+2025-02-05 11:08:48.816 End Procedure step  54: "Trip generation", run time 0.032378s
+2025-02-05 11:08:48.847 Start Procedure step  55: "Group"
+2025-02-05 11:08:48.847 End Procedure step  55: "Group", run time 0.000001s
+2025-02-05 11:08:48.888 Start Procedure step  56: "Read filter"
+2025-02-05 11:08:48.901 End Procedure step  56: "Read filter", run time 0.013041s
+2025-02-05 11:08:48.937 Start Procedure step  57: "Calculate PrT skim matrix"
+2025-02-05 11:08:49.049 CCH Statistics for tsys C
 Node order: Arc separators.
 Input node count: 5978
 Input arc count: 10329
@@ -154,13 +154,13 @@ CCH triangle count after filtering: 229482
 CH backward arc count: 18197
 CH backward search space size: 12134
 using arc-based node order
-2025-02-04 19:10:33.519 End Procedure step  57: "Calculate PrT skim matrix", run time 0.182555s
-2025-02-04 19:10:33.548 Start Procedure step  58: "Combination of matrices and vectors"
-2025-02-04 19:10:33.554 Matrix '100 MSA' was edited.
-2025-02-04 19:10:33.554 Matrix '100 MSA' was changed.
-2025-02-04 19:10:33.554 End Procedure step  58: "Combination of matrices and vectors", run time 0.005743s
-2025-02-04 19:10:33.593 Start Procedure step  59: "Calculate PrT skim matrix"
-2025-02-04 19:10:33.694 CCH Statistics for tsys C
+2025-02-05 11:08:49.115 End Procedure step  57: "Calculate PrT skim matrix", run time 0.177495s
+2025-02-05 11:08:49.146 Start Procedure step  58: "Combination of matrices and vectors"
+2025-02-05 11:08:49.152 Matrix '100 MSA' was edited.
+2025-02-05 11:08:49.153 Matrix '100 MSA' was changed.
+2025-02-05 11:08:49.153 End Procedure step  58: "Combination of matrices and vectors", run time 0.006147s
+2025-02-05 11:08:49.193 Start Procedure step  59: "Calculate PrT skim matrix"
+2025-02-05 11:08:49.296 CCH Statistics for tsys C
 Node order: Arc separators.
 Input node count: 5978
 Input arc count: 10329
@@ -180,142 +180,142 @@ CCH triangle count after filtering: 229482
 CH backward arc count: 18197
 CH backward search space size: 12134
 using arc-based node order
-2025-02-04 19:10:33.758 End Procedure step  59: "Calculate PrT skim matrix", run time 0.164515s
-2025-02-04 19:10:33.786 Start Procedure step  61: "Read filter"
-2025-02-04 19:10:33.803 End Procedure step  61: "Read filter", run time 0.017219s
-2025-02-04 19:10:33.843 Start Procedure step  62: "Trip distribution"
-2025-02-04 19:10:33.965 Matrix total 2 HBOpa after distribution of all demand strata: 49921.821
-2025-02-04 19:10:33.965 Matrix total 1 HBWpa after distribution of all demand strata: 69053.167
-2025-02-04 19:10:33.965 Matrix total 4 NHBOpa after distribution of all demand strata: 49921.821
-2025-02-04 19:10:33.965 Matrix total 3 NHBWpa after distribution of all demand strata: 49921.821
-2025-02-04 19:10:33.965 Matrix total 2 HBOpa after distribution of all demand strata: 49921.821
-Matrix total 1 HBWpa after distribution of all demand strata: 69053.167
-Matrix total 4 NHBOpa after distribution of all demand strata: 49921.821
-Matrix total 3 NHBWpa after distribution of all demand strata: 49921.821
-2025-02-04 19:10:33.971 End Procedure step  62: "Trip distribution", run time 0.128668s
-2025-02-04 19:10:34.002 Start Procedure step  70: "Group"
-2025-02-04 19:10:34.002 End Procedure step  70: "Group", run time 0.000001s
-2025-02-04 19:10:34.047 Start Procedure step  77: "Group"
-2025-02-04 19:10:34.047 End Procedure step  77: "Group", run time 0.000001s
-2025-02-04 19:10:34.094 Start Procedure step  78: "Combination of matrices and vectors"
-2025-02-04 19:10:34.102 Matrix '31 AM_HBWod' was edited.
-2025-02-04 19:10:34.102 Matrix '31 AM_HBWod' was changed.
-2025-02-04 19:10:34.103 End Procedure step  78: "Combination of matrices and vectors", run time 0.008359s
-2025-02-04 19:10:34.146 Start Procedure step  79: "Combination of matrices and vectors"
-2025-02-04 19:10:34.153 Matrix '32 AM_HBOod' was edited.
-2025-02-04 19:10:34.153 Matrix '32 AM_HBOod' was changed.
-2025-02-04 19:10:34.153 End Procedure step  79: "Combination of matrices and vectors", run time 0.006576s
-2025-02-04 19:10:34.195 Start Procedure step  80: "Combination of matrices and vectors"
-2025-02-04 19:10:34.202 Matrix '33 AM_NHBWod' was edited.
-2025-02-04 19:10:34.202 Matrix '33 AM_NHBWod' was changed.
-2025-02-04 19:10:34.202 End Procedure step  80: "Combination of matrices and vectors", run time 0.007490s
-2025-02-04 19:10:34.245 Start Procedure step  81: "Combination of matrices and vectors"
-2025-02-04 19:10:34.252 Matrix '34 AM_NHBOod' was edited.
-2025-02-04 19:10:34.252 Matrix '34 AM_NHBOod' was changed.
-2025-02-04 19:10:34.252 End Procedure step  81: "Combination of matrices and vectors", run time 0.006839s
-2025-02-04 19:10:34.295 Start Procedure step  82: "Combination of matrices and vectors"
-2025-02-04 19:10:34.303 Matrix '35 AM_AutoExtod' was edited.
-2025-02-04 19:10:34.303 Matrix '35 AM_AutoExtod' was changed.
-2025-02-04 19:10:34.303 End Procedure step  82: "Combination of matrices and vectors", run time 0.008426s
-2025-02-04 19:10:34.350 Start Procedure step  83: "Group"
-2025-02-04 19:10:34.350 End Procedure step  83: "Group", run time 0.000001s
-2025-02-04 19:10:34.395 Start Procedure step  84: "Combination of matrices and vectors"
-2025-02-04 19:10:34.402 Matrix '41 PM_HBWod' was edited.
-2025-02-04 19:10:34.402 Matrix '41 PM_HBWod' was changed.
-2025-02-04 19:10:34.402 End Procedure step  84: "Combination of matrices and vectors", run time 0.007652s
-2025-02-04 19:10:34.447 Start Procedure step  85: "Combination of matrices and vectors"
-2025-02-04 19:10:34.453 Matrix '42 PM_HBOod' was edited.
-2025-02-04 19:10:34.454 Matrix '42 PM_HBOod' was changed.
-2025-02-04 19:10:34.454 End Procedure step  85: "Combination of matrices and vectors", run time 0.007049s
-2025-02-04 19:10:34.496 Start Procedure step  86: "Combination of matrices and vectors"
-2025-02-04 19:10:34.504 Matrix '43 PM_NHBWod' was edited.
-2025-02-04 19:10:34.504 Matrix '43 PM_NHBWod' was changed.
-2025-02-04 19:10:34.504 End Procedure step  86: "Combination of matrices and vectors", run time 0.008568s
-2025-02-04 19:10:34.549 Start Procedure step  87: "Combination of matrices and vectors"
-2025-02-04 19:10:34.556 Matrix '44 PM_NHBOod' was edited.
-2025-02-04 19:10:34.556 Matrix '44 PM_NHBOod' was changed.
-2025-02-04 19:10:34.556 End Procedure step  87: "Combination of matrices and vectors", run time 0.006472s
-2025-02-04 19:10:34.600 Start Procedure step  88: "Combination of matrices and vectors"
-2025-02-04 19:10:34.607 Matrix '45 PM_AutoExtod' was edited.
-2025-02-04 19:10:34.607 Matrix '45 PM_AutoExtod' was changed.
-2025-02-04 19:10:34.607 End Procedure step  88: "Combination of matrices and vectors", run time 0.007622s
-2025-02-04 19:10:34.655 Start Procedure step  89: "Group"
-2025-02-04 19:10:34.655 End Procedure step  89: "Group", run time 0.000001s
-2025-02-04 19:10:34.701 Start Procedure step  90: "Combination of matrices and vectors"
-2025-02-04 19:10:34.708 Matrix '51 OP_HBWod' was edited.
-2025-02-04 19:10:34.708 Matrix '51 OP_HBWod' was changed.
-2025-02-04 19:10:34.708 End Procedure step  90: "Combination of matrices and vectors", run time 0.006507s
-2025-02-04 19:10:34.753 Start Procedure step  91: "Combination of matrices and vectors"
-2025-02-04 19:10:34.758 Matrix '52 OP_HBOod' was edited.
-2025-02-04 19:10:34.759 Matrix '52 OP_HBOod' was changed.
-2025-02-04 19:10:34.759 End Procedure step  91: "Combination of matrices and vectors", run time 0.005895s
-2025-02-04 19:10:34.802 Start Procedure step  92: "Combination of matrices and vectors"
-2025-02-04 19:10:34.809 Matrix '53 OP_NHBWod' was edited.
-2025-02-04 19:10:34.809 Matrix '53 OP_NHBWod' was changed.
-2025-02-04 19:10:34.809 End Procedure step  92: "Combination of matrices and vectors", run time 0.006366s
-2025-02-04 19:10:34.853 Start Procedure step  93: "Combination of matrices and vectors"
-2025-02-04 19:10:34.859 Matrix '54 OP_NHBOod' was edited.
-2025-02-04 19:10:34.859 Matrix '54 OP_NHBOod' was changed.
-2025-02-04 19:10:34.859 End Procedure step  93: "Combination of matrices and vectors", run time 0.006136s
-2025-02-04 19:10:34.904 Start Procedure step  94: "Combination of matrices and vectors"
-2025-02-04 19:10:34.910 Matrix '55 OP_AutoExtod' was edited.
-2025-02-04 19:10:34.911 Matrix '55 OP_AutoExtod' was changed.
-2025-02-04 19:10:34.911 End Procedure step  94: "Combination of matrices and vectors", run time 0.006820s
-2025-02-04 19:10:34.958 Start Procedure step  95: "Group"
-2025-02-04 19:10:34.958 End Procedure step  95: "Group", run time 0.000002s
-2025-02-04 19:10:35.003 Start Procedure step  96: "Combination of matrices and vectors"
-2025-02-04 19:10:35.009 Matrix '61 PMPK_HBWod' was edited.
-2025-02-04 19:10:35.009 Matrix '61 PMPK_HBWod' was changed.
-2025-02-04 19:10:35.009 End Procedure step  96: "Combination of matrices and vectors", run time 0.006143s
-2025-02-04 19:10:35.055 Start Procedure step  97: "Combination of matrices and vectors"
-2025-02-04 19:10:35.061 Matrix '62 PMPK_HBOod' was edited.
-2025-02-04 19:10:35.061 Matrix '62 PMPK_HBOod' was changed.
-2025-02-04 19:10:35.061 End Procedure step  97: "Combination of matrices and vectors", run time 0.005865s
-2025-02-04 19:10:35.105 Start Procedure step  98: "Combination of matrices and vectors"
-2025-02-04 19:10:35.111 Matrix '63 PMPK_NHBWod' was edited.
-2025-02-04 19:10:35.111 Matrix '63 PMPK_NHBWod' was changed.
-2025-02-04 19:10:35.111 End Procedure step  98: "Combination of matrices and vectors", run time 0.006372s
-2025-02-04 19:10:35.157 Start Procedure step  99: "Combination of matrices and vectors"
-2025-02-04 19:10:35.163 Matrix '64 PMPK_NHBOod' was edited.
-2025-02-04 19:10:35.163 Matrix '64 PMPK_NHBOod' was changed.
-2025-02-04 19:10:35.163 End Procedure step  99: "Combination of matrices and vectors", run time 0.006155s
-2025-02-04 19:10:35.209 Start Procedure step 100: "Combination of matrices and vectors"
-2025-02-04 19:10:35.216 Matrix '65 PMPK_AutoExtod' was edited.
-2025-02-04 19:10:35.216 Matrix '65 PMPK_AutoExtod' was changed.
-2025-02-04 19:10:35.217 End Procedure step 100: "Combination of matrices and vectors", run time 0.007603s
-2025-02-04 19:10:35.263 Start Procedure step 101: "Group"
-2025-02-04 19:10:35.263 End Procedure step 101: "Group", run time 0.000002s
-2025-02-04 19:10:35.311 Start Procedure step 102: "Group"
-2025-02-04 19:10:35.311 End Procedure step 102: "Group", run time 0.000001s
-2025-02-04 19:10:35.357 Start Procedure step 103: "Read filter"
-2025-02-04 19:10:35.376 End Procedure step 103: "Read filter", run time 0.018527s
-2025-02-04 19:10:35.419 Start Procedure step 104: "Edit attribute"
-2025-02-04 19:10:35.449 Links: 4005 objects were changed.
-2025-02-04 19:10:35.459 End Procedure step 104: "Edit attribute", run time 0.039864s
-2025-02-04 19:10:35.500 Start Procedure step 105: "Combination of matrices and vectors"
-2025-02-04 19:10:35.506 Matrix '11 HBWod' was edited.
-2025-02-04 19:10:35.506 Matrix '11 HBWod' was changed.
-2025-02-04 19:10:35.506 End Procedure step 105: "Combination of matrices and vectors", run time 0.006519s
-2025-02-04 19:10:35.549 Start Procedure step 106: "Combination of matrices and vectors"
-2025-02-04 19:10:35.555 Matrix '12 HBOod' was edited.
-2025-02-04 19:10:35.555 Matrix '12 HBOod' was changed.
-2025-02-04 19:10:35.555 End Procedure step 106: "Combination of matrices and vectors", run time 0.005594s
-2025-02-04 19:10:35.597 Start Procedure step 107: "Combination of matrices and vectors"
-2025-02-04 19:10:35.602 Matrix '13 NHBWod' was edited.
-2025-02-04 19:10:35.602 Matrix '13 NHBWod' was changed.
-2025-02-04 19:10:35.602 End Procedure step 107: "Combination of matrices and vectors", run time 0.005756s
-2025-02-04 19:10:35.644 Start Procedure step 108: "Combination of matrices and vectors"
-2025-02-04 19:10:35.650 Matrix '14 NHBOod' was edited.
-2025-02-04 19:10:35.650 Matrix '14 NHBOod' was changed.
-2025-02-04 19:10:35.650 End Procedure step 108: "Combination of matrices and vectors", run time 0.005652s
-2025-02-04 19:10:35.691 Start Procedure step 109: "Combination of matrices and vectors"
-2025-02-04 19:10:35.695 Matrix '15 AutoExtod' was edited.
-2025-02-04 19:10:35.696 Matrix '15 AutoExtod' was changed.
-2025-02-04 19:10:35.696 End Procedure step 109: "Combination of matrices and vectors", run time 0.004113s
-2025-02-04 19:10:35.739 Start Procedure step 110: "PrT assignment"
-2025-02-04 19:10:35.746 Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
-2025-02-04 19:10:35.746 There is no existing initial solution for the demand segments HBO,HBW,NHBO,NHBW. The initial solution is recalculated.
-2025-02-04 19:10:35.890 CCH Statistics for tsys C
+2025-02-05 11:08:49.358 End Procedure step  59: "Calculate PrT skim matrix", run time 0.164739s
+2025-02-05 11:08:49.388 Start Procedure step  61: "Read filter"
+2025-02-05 11:08:49.402 End Procedure step  61: "Read filter", run time 0.014192s
+2025-02-05 11:08:49.440 Start Procedure step  62: "Trip distribution"
+2025-02-05 11:08:49.564 Matrix total 2 HBOpa after distribution of all demand strata: 49919.000
+2025-02-05 11:08:49.564 Matrix total 1 HBWpa after distribution of all demand strata: 69052.152
+2025-02-05 11:08:49.564 Matrix total 4 NHBOpa after distribution of all demand strata: 49919.000
+2025-02-05 11:08:49.564 Matrix total 3 NHBWpa after distribution of all demand strata: 49919.000
+2025-02-05 11:08:49.564 Matrix total 2 HBOpa after distribution of all demand strata: 49919.000
+Matrix total 1 HBWpa after distribution of all demand strata: 69052.152
+Matrix total 4 NHBOpa after distribution of all demand strata: 49919.000
+Matrix total 3 NHBWpa after distribution of all demand strata: 49919.000
+2025-02-05 11:08:49.570 End Procedure step  62: "Trip distribution", run time 0.130296s
+2025-02-05 11:08:49.609 Start Procedure step  70: "Group"
+2025-02-05 11:08:49.609 End Procedure step  70: "Group", run time 0.000001s
+2025-02-05 11:08:49.653 Start Procedure step  77: "Group"
+2025-02-05 11:08:49.653 End Procedure step  77: "Group", run time 0.000002s
+2025-02-05 11:08:49.696 Start Procedure step  78: "Combination of matrices and vectors"
+2025-02-05 11:08:49.702 Matrix '31 AM_HBWod' was edited.
+2025-02-05 11:08:49.703 Matrix '31 AM_HBWod' was changed.
+2025-02-05 11:08:49.703 End Procedure step  78: "Combination of matrices and vectors", run time 0.006214s
+2025-02-05 11:08:49.741 Start Procedure step  79: "Combination of matrices and vectors"
+2025-02-05 11:08:49.746 Matrix '32 AM_HBOod' was edited.
+2025-02-05 11:08:49.746 Matrix '32 AM_HBOod' was changed.
+2025-02-05 11:08:49.746 End Procedure step  79: "Combination of matrices and vectors", run time 0.005468s
+2025-02-05 11:08:49.789 Start Procedure step  80: "Combination of matrices and vectors"
+2025-02-05 11:08:49.794 Matrix '33 AM_NHBWod' was edited.
+2025-02-05 11:08:49.794 Matrix '33 AM_NHBWod' was changed.
+2025-02-05 11:08:49.795 End Procedure step  80: "Combination of matrices and vectors", run time 0.005379s
+2025-02-05 11:08:49.836 Start Procedure step  81: "Combination of matrices and vectors"
+2025-02-05 11:08:49.841 Matrix '34 AM_NHBOod' was edited.
+2025-02-05 11:08:49.841 Matrix '34 AM_NHBOod' was changed.
+2025-02-05 11:08:49.841 End Procedure step  81: "Combination of matrices and vectors", run time 0.005233s
+2025-02-05 11:08:49.882 Start Procedure step  82: "Combination of matrices and vectors"
+2025-02-05 11:08:49.888 Matrix '35 AM_AutoExtod' was edited.
+2025-02-05 11:08:49.888 Matrix '35 AM_AutoExtod' was changed.
+2025-02-05 11:08:49.888 End Procedure step  82: "Combination of matrices and vectors", run time 0.006877s
+2025-02-05 11:08:49.931 Start Procedure step  83: "Group"
+2025-02-05 11:08:49.931 End Procedure step  83: "Group", run time 0.000001s
+2025-02-05 11:08:49.972 Start Procedure step  84: "Combination of matrices and vectors"
+2025-02-05 11:08:49.978 Matrix '41 PM_HBWod' was edited.
+2025-02-05 11:08:49.978 Matrix '41 PM_HBWod' was changed.
+2025-02-05 11:08:49.978 End Procedure step  84: "Combination of matrices and vectors", run time 0.005948s
+2025-02-05 11:08:50.019 Start Procedure step  85: "Combination of matrices and vectors"
+2025-02-05 11:08:50.024 Matrix '42 PM_HBOod' was edited.
+2025-02-05 11:08:50.024 Matrix '42 PM_HBOod' was changed.
+2025-02-05 11:08:50.024 End Procedure step  85: "Combination of matrices and vectors", run time 0.005747s
+2025-02-05 11:08:50.068 Start Procedure step  86: "Combination of matrices and vectors"
+2025-02-05 11:08:50.073 Matrix '43 PM_NHBWod' was edited.
+2025-02-05 11:08:50.073 Matrix '43 PM_NHBWod' was changed.
+2025-02-05 11:08:50.073 End Procedure step  86: "Combination of matrices and vectors", run time 0.005618s
+2025-02-05 11:08:50.116 Start Procedure step  87: "Combination of matrices and vectors"
+2025-02-05 11:08:50.121 Matrix '44 PM_NHBOod' was edited.
+2025-02-05 11:08:50.121 Matrix '44 PM_NHBOod' was changed.
+2025-02-05 11:08:50.121 End Procedure step  87: "Combination of matrices and vectors", run time 0.005552s
+2025-02-05 11:08:50.161 Start Procedure step  88: "Combination of matrices and vectors"
+2025-02-05 11:08:50.169 Matrix '45 PM_AutoExtod' was edited.
+2025-02-05 11:08:50.169 Matrix '45 PM_AutoExtod' was changed.
+2025-02-05 11:08:50.169 End Procedure step  88: "Combination of matrices and vectors", run time 0.007363s
+2025-02-05 11:08:50.212 Start Procedure step  89: "Group"
+2025-02-05 11:08:50.212 End Procedure step  89: "Group", run time 0.000001s
+2025-02-05 11:08:50.255 Start Procedure step  90: "Combination of matrices and vectors"
+2025-02-05 11:08:50.260 Matrix '51 OP_HBWod' was edited.
+2025-02-05 11:08:50.260 Matrix '51 OP_HBWod' was changed.
+2025-02-05 11:08:50.260 End Procedure step  90: "Combination of matrices and vectors", run time 0.005382s
+2025-02-05 11:08:50.302 Start Procedure step  91: "Combination of matrices and vectors"
+2025-02-05 11:08:50.308 Matrix '52 OP_HBOod' was edited.
+2025-02-05 11:08:50.308 Matrix '52 OP_HBOod' was changed.
+2025-02-05 11:08:50.308 End Procedure step  91: "Combination of matrices and vectors", run time 0.006369s
+2025-02-05 11:08:50.349 Start Procedure step  92: "Combination of matrices and vectors"
+2025-02-05 11:08:50.355 Matrix '53 OP_NHBWod' was edited.
+2025-02-05 11:08:50.356 Matrix '53 OP_NHBWod' was changed.
+2025-02-05 11:08:50.356 End Procedure step  92: "Combination of matrices and vectors", run time 0.006778s
+2025-02-05 11:08:50.396 Start Procedure step  93: "Combination of matrices and vectors"
+2025-02-05 11:08:50.401 Matrix '54 OP_NHBOod' was edited.
+2025-02-05 11:08:50.401 Matrix '54 OP_NHBOod' was changed.
+2025-02-05 11:08:50.401 End Procedure step  93: "Combination of matrices and vectors", run time 0.005256s
+2025-02-05 11:08:50.442 Start Procedure step  94: "Combination of matrices and vectors"
+2025-02-05 11:08:50.448 Matrix '55 OP_AutoExtod' was edited.
+2025-02-05 11:08:50.448 Matrix '55 OP_AutoExtod' was changed.
+2025-02-05 11:08:50.448 End Procedure step  94: "Combination of matrices and vectors", run time 0.006269s
+2025-02-05 11:08:50.492 Start Procedure step  95: "Group"
+2025-02-05 11:08:50.492 End Procedure step  95: "Group", run time 0.000001s
+2025-02-05 11:08:50.532 Start Procedure step  96: "Combination of matrices and vectors"
+2025-02-05 11:08:50.537 Matrix '61 PMPK_HBWod' was edited.
+2025-02-05 11:08:50.537 Matrix '61 PMPK_HBWod' was changed.
+2025-02-05 11:08:50.538 End Procedure step  96: "Combination of matrices and vectors", run time 0.005382s
+2025-02-05 11:08:50.579 Start Procedure step  97: "Combination of matrices and vectors"
+2025-02-05 11:08:50.585 Matrix '62 PMPK_HBOod' was edited.
+2025-02-05 11:08:50.585 Matrix '62 PMPK_HBOod' was changed.
+2025-02-05 11:08:50.585 End Procedure step  97: "Combination of matrices and vectors", run time 0.005264s
+2025-02-05 11:08:50.627 Start Procedure step  98: "Combination of matrices and vectors"
+2025-02-05 11:08:50.632 Matrix '63 PMPK_NHBWod' was edited.
+2025-02-05 11:08:50.632 Matrix '63 PMPK_NHBWod' was changed.
+2025-02-05 11:08:50.632 End Procedure step  98: "Combination of matrices and vectors", run time 0.005052s
+2025-02-05 11:08:50.675 Start Procedure step  99: "Combination of matrices and vectors"
+2025-02-05 11:08:50.680 Matrix '64 PMPK_NHBOod' was edited.
+2025-02-05 11:08:50.680 Matrix '64 PMPK_NHBOod' was changed.
+2025-02-05 11:08:50.680 End Procedure step  99: "Combination of matrices and vectors", run time 0.005499s
+2025-02-05 11:08:50.724 Start Procedure step 100: "Combination of matrices and vectors"
+2025-02-05 11:08:50.730 Matrix '65 PMPK_AutoExtod' was edited.
+2025-02-05 11:08:50.730 Matrix '65 PMPK_AutoExtod' was changed.
+2025-02-05 11:08:50.730 End Procedure step 100: "Combination of matrices and vectors", run time 0.006070s
+2025-02-05 11:08:50.772 Start Procedure step 101: "Group"
+2025-02-05 11:08:50.772 End Procedure step 101: "Group", run time 0.000001s
+2025-02-05 11:08:50.812 Start Procedure step 102: "Group"
+2025-02-05 11:08:50.812 End Procedure step 102: "Group", run time 0.000001s
+2025-02-05 11:08:50.855 Start Procedure step 103: "Read filter"
+2025-02-05 11:08:50.871 End Procedure step 103: "Read filter", run time 0.015612s
+2025-02-05 11:08:50.918 Start Procedure step 104: "Edit attribute"
+2025-02-05 11:08:50.948 Links: 4005 objects were changed.
+2025-02-05 11:08:50.957 End Procedure step 104: "Edit attribute", run time 0.039181s
+2025-02-05 11:08:50.998 Start Procedure step 105: "Combination of matrices and vectors"
+2025-02-05 11:08:51.002 Matrix '11 HBWod' was edited.
+2025-02-05 11:08:51.002 Matrix '11 HBWod' was changed.
+2025-02-05 11:08:51.002 End Procedure step 105: "Combination of matrices and vectors", run time 0.004709s
+2025-02-05 11:08:51.042 Start Procedure step 106: "Combination of matrices and vectors"
+2025-02-05 11:08:51.047 Matrix '12 HBOod' was edited.
+2025-02-05 11:08:51.047 Matrix '12 HBOod' was changed.
+2025-02-05 11:08:51.047 End Procedure step 106: "Combination of matrices and vectors", run time 0.004432s
+2025-02-05 11:08:51.087 Start Procedure step 107: "Combination of matrices and vectors"
+2025-02-05 11:08:51.092 Matrix '13 NHBWod' was edited.
+2025-02-05 11:08:51.092 Matrix '13 NHBWod' was changed.
+2025-02-05 11:08:51.092 End Procedure step 107: "Combination of matrices and vectors", run time 0.004819s
+2025-02-05 11:08:51.132 Start Procedure step 108: "Combination of matrices and vectors"
+2025-02-05 11:08:51.136 Matrix '14 NHBOod' was edited.
+2025-02-05 11:08:51.136 Matrix '14 NHBOod' was changed.
+2025-02-05 11:08:51.136 End Procedure step 108: "Combination of matrices and vectors", run time 0.004273s
+2025-02-05 11:08:51.176 Start Procedure step 109: "Combination of matrices and vectors"
+2025-02-05 11:08:51.179 Matrix '15 AutoExtod' was edited.
+2025-02-05 11:08:51.180 Matrix '15 AutoExtod' was changed.
+2025-02-05 11:08:51.180 End Procedure step 109: "Combination of matrices and vectors", run time 0.003512s
+2025-02-05 11:08:51.221 Start Procedure step 110: "PrT assignment"
+2025-02-05 11:08:51.229 Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
+2025-02-05 11:08:51.229 There is no existing initial solution for the demand segments HBO,HBW,NHBO,NHBW. The initial solution is recalculated.
+2025-02-05 11:08:51.362 CCH Statistics for tsys C
 Node order: Arc separators.
 Input node count: 5978
 Input arc count: 10329
@@ -335,75 +335,75 @@ CCH triangle count after filtering: 229482
 CH backward arc count: 18172
 CH backward search space size: 12110
 using arc-based node order
-2025-02-04 19:10:35.945 0 of 359 path trees were loaded on unpacked graph instead of contracted graph
-2025-02-04 19:10:39.427 Assignment path-based equilibrium End
-2025-02-04 19:10:39.427 3621 (total)
-2025-02-04 19:10:39.427   88 (initialization)
-2025-02-04 19:10:39.427     0 (calculate initial network volumes)
-2025-02-04 19:10:39.427   52 (calculate initial solution)
-2025-02-04 19:10:39.427   3428 (assignment loop)
-2025-02-04 19:10:39.427     0 (recompute total volumes)
-2025-02-04 19:10:39.427     3 (copy volumes to network)
-2025-02-04 19:10:39.427     0 (recompute constant imps)
-2025-02-04 19:10:39.427     5 (update impedance)
-2025-02-04 19:10:39.427     187 (shortest path search)
-2025-02-04 19:10:39.427     11 (convergence quality indicators)
-2025-02-04 19:10:39.427       1 (store flows)
-2025-02-04 19:10:39.427       2 (veh imp and gap)
-2025-02-04 19:10:39.427       4 (vol and imp diffs per tsys)
-2025-02-04 19:10:39.427       2 (vol and imp diffs ext stab)
-2025-02-04 19:10:39.427       0 (tracing)
-2025-02-04 19:10:39.427     3182 (equilibration)
-2025-02-04 19:10:39.427       0 (dseg imp update)
-2025-02-04 19:10:39.427       12 (non-separable imp update)
-2025-02-04 19:10:39.427       218 (uncompress path trees)
-2025-02-04 19:10:39.427       2922 (equilibration)
-2025-02-04 19:10:39.427       28 (additional OD equilibration)
-2025-02-04 19:10:39.427     21 (remove unused routes)
-2025-02-04 19:10:39.427     18 (path tree recompression)
-2025-02-04 19:10:39.427     1 (other)
-2025-02-04 19:10:39.427   2 (final removal of unused routes)
-2025-02-04 19:10:39.427   2 (distribute volumes to demand segments)
-2025-02-04 19:10:39.427   4 (final path tree recompression)
-2025-02-04 19:10:39.427   42 (calculate final network volumes)
-2025-02-04 19:10:39.427 The assignment ended after 10 of a maximum of 10 iterations with a GAP of 4.08270344e-02 without satisfying the convergence criteria.
-2025-02-04 19:10:39.522 End Procedure step 110: "PrT assignment", run time 3.783098s
-2025-02-04 19:10:39.564 Start Procedure step 111: "Edit attribute"
-2025-02-04 19:10:39.595 Links: 4005 objects were changed.
-2025-02-04 19:10:39.604 End Procedure step 111: "Edit attribute", run time 0.039803s
-2025-02-04 19:10:39.648 Start Procedure step 112: "Edit attribute"
-2025-02-04 19:10:39.690 Links: 4005 objects were changed.
-2025-02-04 19:10:39.700 End Procedure step 112: "Edit attribute", run time 0.052119s
-2025-02-04 19:10:39.745 Start Procedure step 113: "Group"
-2025-02-04 19:10:39.745 End Procedure step 113: "Group", run time 0.000001s
-2025-02-04 19:10:39.793 Start Procedure step 114: "Read filter"
-2025-02-04 19:10:39.809 End Procedure step 114: "Read filter", run time 0.016500s
-2025-02-04 19:10:39.853 Start Procedure step 115: "Edit attribute"
-2025-02-04 19:10:39.882 Links: 4005 objects were changed.
-2025-02-04 19:10:39.891 End Procedure step 115: "Edit attribute", run time 0.038538s
-2025-02-04 19:10:39.934 Start Procedure step 116: "Combination of matrices and vectors"
-2025-02-04 19:10:39.962 Matrix '11 HBWod' was edited.
-2025-02-04 19:10:39.962 Matrix '11 HBWod' was changed.
-2025-02-04 19:10:39.962 End Procedure step 116: "Combination of matrices and vectors", run time 0.027951s
-2025-02-04 19:10:40.006 Start Procedure step 117: "Combination of matrices and vectors"
-2025-02-04 19:10:40.014 Matrix '12 HBOod' was edited.
-2025-02-04 19:10:40.014 Matrix '12 HBOod' was changed.
-2025-02-04 19:10:40.014 End Procedure step 117: "Combination of matrices and vectors", run time 0.007936s
-2025-02-04 19:10:40.057 Start Procedure step 118: "Combination of matrices and vectors"
-2025-02-04 19:10:40.073 Matrix '13 NHBWod' was edited.
-2025-02-04 19:10:40.074 Matrix '13 NHBWod' was changed.
-2025-02-04 19:10:40.074 End Procedure step 118: "Combination of matrices and vectors", run time 0.016346s
-2025-02-04 19:10:40.118 Start Procedure step 119: "Combination of matrices and vectors"
-2025-02-04 19:10:40.128 Matrix '14 NHBOod' was edited.
-2025-02-04 19:10:40.128 Matrix '14 NHBOod' was changed.
-2025-02-04 19:10:40.128 End Procedure step 119: "Combination of matrices and vectors", run time 0.010702s
-2025-02-04 19:10:40.173 Start Procedure step 120: "Combination of matrices and vectors"
-2025-02-04 19:10:40.177 Matrix '15 AutoExtod' was edited.
-2025-02-04 19:10:40.177 Matrix '15 AutoExtod' was changed.
-2025-02-04 19:10:40.177 End Procedure step 120: "Combination of matrices and vectors", run time 0.004506s
-2025-02-04 19:10:40.220 Start Procedure step 121: "PrT assignment"
-2025-02-04 19:10:40.228 Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
-2025-02-04 19:10:40.418 CCH Statistics for tsys C
+2025-02-05 11:08:51.412 0 of 359 path trees were loaded on unpacked graph instead of contracted graph
+2025-02-05 11:08:54.669 Assignment path-based equilibrium End
+2025-02-05 11:08:54.670 3398 (total)
+2025-02-05 11:08:54.670   94 (initialization)
+2025-02-05 11:08:54.670     0 (calculate initial network volumes)
+2025-02-05 11:08:54.670   48 (calculate initial solution)
+2025-02-05 11:08:54.670   3207 (assignment loop)
+2025-02-05 11:08:54.670     0 (recompute total volumes)
+2025-02-05 11:08:54.670     5 (copy volumes to network)
+2025-02-05 11:08:54.670     0 (recompute constant imps)
+2025-02-05 11:08:54.670     4 (update impedance)
+2025-02-05 11:08:54.670     184 (shortest path search)
+2025-02-05 11:08:54.670     9 (convergence quality indicators)
+2025-02-05 11:08:54.670       0 (store flows)
+2025-02-05 11:08:54.670       1 (veh imp and gap)
+2025-02-05 11:08:54.670       2 (vol and imp diffs per tsys)
+2025-02-05 11:08:54.670       4 (vol and imp diffs ext stab)
+2025-02-05 11:08:54.670       0 (tracing)
+2025-02-05 11:08:54.670     2967 (equilibration)
+2025-02-05 11:08:54.670       0 (dseg imp update)
+2025-02-05 11:08:54.670       12 (non-separable imp update)
+2025-02-05 11:08:54.670       152 (uncompress path trees)
+2025-02-05 11:08:54.670       2780 (equilibration)
+2025-02-05 11:08:54.670       22 (additional OD equilibration)
+2025-02-05 11:08:54.670     22 (remove unused routes)
+2025-02-05 11:08:54.670     16 (path tree recompression)
+2025-02-05 11:08:54.670     0 (other)
+2025-02-05 11:08:54.670   2 (final removal of unused routes)
+2025-02-05 11:08:54.670   2 (distribute volumes to demand segments)
+2025-02-05 11:08:54.670   3 (final path tree recompression)
+2025-02-05 11:08:54.670   40 (calculate final network volumes)
+2025-02-05 11:08:54.670 The assignment ended after 10 of a maximum of 10 iterations with a GAP of 4.05321650e-02 without satisfying the convergence criteria.
+2025-02-05 11:08:54.781 End Procedure step 110: "PrT assignment", run time 3.560117s
+2025-02-05 11:08:54.820 Start Procedure step 111: "Edit attribute"
+2025-02-05 11:08:54.848 Links: 4005 objects were changed.
+2025-02-05 11:08:54.857 End Procedure step 111: "Edit attribute", run time 0.036205s
+2025-02-05 11:08:54.898 Start Procedure step 112: "Edit attribute"
+2025-02-05 11:08:54.923 Links: 4005 objects were changed.
+2025-02-05 11:08:54.931 End Procedure step 112: "Edit attribute", run time 0.032282s
+2025-02-05 11:08:54.972 Start Procedure step 113: "Group"
+2025-02-05 11:08:54.972 End Procedure step 113: "Group", run time 0.000001s
+2025-02-05 11:08:55.013 Start Procedure step 114: "Read filter"
+2025-02-05 11:08:55.026 End Procedure step 114: "Read filter", run time 0.012555s
+2025-02-05 11:08:55.068 Start Procedure step 115: "Edit attribute"
+2025-02-05 11:08:55.091 Links: 4005 objects were changed.
+2025-02-05 11:08:55.099 End Procedure step 115: "Edit attribute", run time 0.030768s
+2025-02-05 11:08:55.139 Start Procedure step 116: "Combination of matrices and vectors"
+2025-02-05 11:08:55.153 Matrix '11 HBWod' was edited.
+2025-02-05 11:08:55.153 Matrix '11 HBWod' was changed.
+2025-02-05 11:08:55.153 End Procedure step 116: "Combination of matrices and vectors", run time 0.014075s
+2025-02-05 11:08:55.194 Start Procedure step 117: "Combination of matrices and vectors"
+2025-02-05 11:08:55.202 Matrix '12 HBOod' was edited.
+2025-02-05 11:08:55.202 Matrix '12 HBOod' was changed.
+2025-02-05 11:08:55.202 End Procedure step 117: "Combination of matrices and vectors", run time 0.007442s
+2025-02-05 11:08:55.241 Start Procedure step 118: "Combination of matrices and vectors"
+2025-02-05 11:08:55.252 Matrix '13 NHBWod' was edited.
+2025-02-05 11:08:55.252 Matrix '13 NHBWod' was changed.
+2025-02-05 11:08:55.252 End Procedure step 118: "Combination of matrices and vectors", run time 0.010259s
+2025-02-05 11:08:55.292 Start Procedure step 119: "Combination of matrices and vectors"
+2025-02-05 11:08:55.302 Matrix '14 NHBOod' was edited.
+2025-02-05 11:08:55.302 Matrix '14 NHBOod' was changed.
+2025-02-05 11:08:55.302 End Procedure step 119: "Combination of matrices and vectors", run time 0.010289s
+2025-02-05 11:08:55.343 Start Procedure step 120: "Combination of matrices and vectors"
+2025-02-05 11:08:55.346 Matrix '15 AutoExtod' was edited.
+2025-02-05 11:08:55.347 Matrix '15 AutoExtod' was changed.
+2025-02-05 11:08:55.347 End Procedure step 120: "Combination of matrices and vectors", run time 0.003234s
+2025-02-05 11:08:55.385 Start Procedure step 121: "PrT assignment"
+2025-02-05 11:08:55.393 Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
+2025-02-05 11:08:55.569 CCH Statistics for tsys C
 Node order: Arc separators.
 Input node count: 5978
 Input arc count: 10329
@@ -423,74 +423,74 @@ CCH triangle count after filtering: 229482
 CH backward arc count: 18172
 CH backward search space size: 12110
 using arc-based node order
-2025-02-04 19:10:42.128 Assignment path-based equilibrium End
-2025-02-04 19:10:42.128 1794 (total)
-2025-02-04 19:10:42.128   125 (initialization)
-2025-02-04 19:10:42.128     35 (calculate initial network volumes)
-2025-02-04 19:10:42.128   8 (calculate initial solution)
-2025-02-04 19:10:42.128   1604 (assignment loop)
-2025-02-04 19:10:42.128     2 (recompute total volumes)
-2025-02-04 19:10:42.128     4 (copy volumes to network)
-2025-02-04 19:10:42.128     0 (recompute constant imps)
-2025-02-04 19:10:42.128     4 (update impedance)
-2025-02-04 19:10:42.128     190 (shortest path search)
-2025-02-04 19:10:42.128     9 (convergence quality indicators)
-2025-02-04 19:10:42.128       0 (store flows)
-2025-02-04 19:10:42.128       2 (veh imp and gap)
-2025-02-04 19:10:42.128       0 (vol and imp diffs per tsys)
-2025-02-04 19:10:42.128       6 (vol and imp diffs ext stab)
-2025-02-04 19:10:42.128       0 (tracing)
-2025-02-04 19:10:42.128     1369 (equilibration)
-2025-02-04 19:10:42.128       0 (dseg imp update)
-2025-02-04 19:10:42.128       17 (non-separable imp update)
-2025-02-04 19:10:42.128       114 (uncompress path trees)
-2025-02-04 19:10:42.128       1199 (equilibration)
-2025-02-04 19:10:42.128       39 (additional OD equilibration)
-2025-02-04 19:10:42.128     17 (remove unused routes)
-2025-02-04 19:10:42.128     12 (path tree recompression)
-2025-02-04 19:10:42.128     -3 (other)
-2025-02-04 19:10:42.128   2 (final removal of unused routes)
-2025-02-04 19:10:42.128   2 (distribute volumes to demand segments)
-2025-02-04 19:10:42.128   5 (final path tree recompression)
-2025-02-04 19:10:42.128   46 (calculate final network volumes)
-2025-02-04 19:10:42.128 The assignment ended after 10 of a maximum of 10 iterations with a GAP of 6.09185753e-03 without satisfying the convergence criteria.
-2025-02-04 19:10:42.226 End Procedure step 121: "PrT assignment", run time 2.005965s
-2025-02-04 19:10:42.268 Start Procedure step 122: "Edit attribute"
-2025-02-04 19:10:42.298 Links: 4005 objects were changed.
-2025-02-04 19:10:42.307 End Procedure step 122: "Edit attribute", run time 0.038914s
-2025-02-04 19:10:42.349 Start Procedure step 123: "Edit attribute"
-2025-02-04 19:10:42.378 Links: 4005 objects were changed.
-2025-02-04 19:10:42.387 End Procedure step 123: "Edit attribute", run time 0.038170s
-2025-02-04 19:10:42.434 Start Procedure step 124: "Group"
-2025-02-04 19:10:42.434 End Procedure step 124: "Group", run time 0.000002s
-2025-02-04 19:10:42.480 Start Procedure step 125: "Read filter"
-2025-02-04 19:10:42.497 End Procedure step 125: "Read filter", run time 0.017714s
-2025-02-04 19:10:42.540 Start Procedure step 126: "Edit attribute"
-2025-02-04 19:10:42.570 Links: 4005 objects were changed.
-2025-02-04 19:10:42.579 End Procedure step 126: "Edit attribute", run time 0.038948s
-2025-02-04 19:10:42.621 Start Procedure step 127: "Combination of matrices and vectors"
-2025-02-04 19:10:42.636 Matrix '11 HBWod' was edited.
-2025-02-04 19:10:42.636 Matrix '11 HBWod' was changed.
-2025-02-04 19:10:42.636 End Procedure step 127: "Combination of matrices and vectors", run time 0.015334s
-2025-02-04 19:10:42.680 Start Procedure step 128: "Combination of matrices and vectors"
-2025-02-04 19:10:42.687 Matrix '12 HBOod' was edited.
-2025-02-04 19:10:42.687 Matrix '12 HBOod' was changed.
-2025-02-04 19:10:42.687 End Procedure step 128: "Combination of matrices and vectors", run time 0.006592s
-2025-02-04 19:10:42.730 Start Procedure step 129: "Combination of matrices and vectors"
-2025-02-04 19:10:42.740 Matrix '13 NHBWod' was edited.
-2025-02-04 19:10:42.741 Matrix '13 NHBWod' was changed.
-2025-02-04 19:10:42.741 End Procedure step 129: "Combination of matrices and vectors", run time 0.010856s
-2025-02-04 19:10:42.783 Start Procedure step 130: "Combination of matrices and vectors"
-2025-02-04 19:10:42.791 Matrix '14 NHBOod' was edited.
-2025-02-04 19:10:42.791 Matrix '14 NHBOod' was changed.
-2025-02-04 19:10:42.791 End Procedure step 130: "Combination of matrices and vectors", run time 0.008478s
-2025-02-04 19:10:42.834 Start Procedure step 131: "Combination of matrices and vectors"
-2025-02-04 19:10:42.838 Matrix '15 AutoExtod' was edited.
-2025-02-04 19:10:42.839 Matrix '15 AutoExtod' was changed.
-2025-02-04 19:10:42.839 End Procedure step 131: "Combination of matrices and vectors", run time 0.004789s
-2025-02-04 19:10:42.885 Start Procedure step 132: "PrT assignment"
-2025-02-04 19:10:42.893 Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
-2025-02-04 19:10:43.083 CCH Statistics for tsys C
+2025-02-05 11:08:57.092 Assignment path-based equilibrium End
+2025-02-05 11:08:57.092 1605 (total)
+2025-02-05 11:08:57.092   122 (initialization)
+2025-02-05 11:08:57.092     35 (calculate initial network volumes)
+2025-02-05 11:08:57.092   9 (calculate initial solution)
+2025-02-05 11:08:57.092   1422 (assignment loop)
+2025-02-05 11:08:57.092     1 (recompute total volumes)
+2025-02-05 11:08:57.092     4 (copy volumes to network)
+2025-02-05 11:08:57.092     0 (recompute constant imps)
+2025-02-05 11:08:57.092     3 (update impedance)
+2025-02-05 11:08:57.092     180 (shortest path search)
+2025-02-05 11:08:57.092     9 (convergence quality indicators)
+2025-02-05 11:08:57.092       0 (store flows)
+2025-02-05 11:08:57.092       3 (veh imp and gap)
+2025-02-05 11:08:57.092       1 (vol and imp diffs per tsys)
+2025-02-05 11:08:57.092       3 (vol and imp diffs ext stab)
+2025-02-05 11:08:57.092       0 (tracing)
+2025-02-05 11:08:57.092     1198 (equilibration)
+2025-02-05 11:08:57.092       0 (dseg imp update)
+2025-02-05 11:08:57.092       16 (non-separable imp update)
+2025-02-05 11:08:57.092       105 (uncompress path trees)
+2025-02-05 11:08:57.092       1044 (equilibration)
+2025-02-05 11:08:57.092       32 (additional OD equilibration)
+2025-02-05 11:08:57.092     18 (remove unused routes)
+2025-02-05 11:08:57.092     12 (path tree recompression)
+2025-02-05 11:08:57.092     -3 (other)
+2025-02-05 11:08:57.092   1 (final removal of unused routes)
+2025-02-05 11:08:57.092   3 (distribute volumes to demand segments)
+2025-02-05 11:08:57.092   5 (final path tree recompression)
+2025-02-05 11:08:57.092   40 (calculate final network volumes)
+2025-02-05 11:08:57.092 The assignment ended after 10 of a maximum of 10 iterations with a GAP of 7.04677031e-03 without satisfying the convergence criteria.
+2025-02-05 11:08:57.189 End Procedure step 121: "PrT assignment", run time 1.803463s
+2025-02-05 11:08:57.227 Start Procedure step 122: "Edit attribute"
+2025-02-05 11:08:57.254 Links: 4005 objects were changed.
+2025-02-05 11:08:57.263 End Procedure step 122: "Edit attribute", run time 0.035981s
+2025-02-05 11:08:57.303 Start Procedure step 123: "Edit attribute"
+2025-02-05 11:08:57.329 Links: 4005 objects were changed.
+2025-02-05 11:08:57.338 End Procedure step 123: "Edit attribute", run time 0.035269s
+2025-02-05 11:08:57.380 Start Procedure step 124: "Group"
+2025-02-05 11:08:57.380 End Procedure step 124: "Group", run time 0.000001s
+2025-02-05 11:08:57.423 Start Procedure step 125: "Read filter"
+2025-02-05 11:08:57.434 End Procedure step 125: "Read filter", run time 0.011551s
+2025-02-05 11:08:57.472 Start Procedure step 126: "Edit attribute"
+2025-02-05 11:08:57.497 Links: 4005 objects were changed.
+2025-02-05 11:08:57.505 End Procedure step 126: "Edit attribute", run time 0.033054s
+2025-02-05 11:08:57.544 Start Procedure step 127: "Combination of matrices and vectors"
+2025-02-05 11:08:57.559 Matrix '11 HBWod' was edited.
+2025-02-05 11:08:57.559 Matrix '11 HBWod' was changed.
+2025-02-05 11:08:57.559 End Procedure step 127: "Combination of matrices and vectors", run time 0.014552s
+2025-02-05 11:08:57.600 Start Procedure step 128: "Combination of matrices and vectors"
+2025-02-05 11:08:57.606 Matrix '12 HBOod' was edited.
+2025-02-05 11:08:57.606 Matrix '12 HBOod' was changed.
+2025-02-05 11:08:57.606 End Procedure step 128: "Combination of matrices and vectors", run time 0.005841s
+2025-02-05 11:08:57.650 Start Procedure step 129: "Combination of matrices and vectors"
+2025-02-05 11:08:57.657 Matrix '13 NHBWod' was edited.
+2025-02-05 11:08:57.657 Matrix '13 NHBWod' was changed.
+2025-02-05 11:08:57.657 End Procedure step 129: "Combination of matrices and vectors", run time 0.007214s
+2025-02-05 11:08:57.702 Start Procedure step 130: "Combination of matrices and vectors"
+2025-02-05 11:08:57.709 Matrix '14 NHBOod' was edited.
+2025-02-05 11:08:57.709 Matrix '14 NHBOod' was changed.
+2025-02-05 11:08:57.709 End Procedure step 130: "Combination of matrices and vectors", run time 0.007213s
+2025-02-05 11:08:57.750 Start Procedure step 131: "Combination of matrices and vectors"
+2025-02-05 11:08:57.754 Matrix '15 AutoExtod' was edited.
+2025-02-05 11:08:57.754 Matrix '15 AutoExtod' was changed.
+2025-02-05 11:08:57.754 End Procedure step 131: "Combination of matrices and vectors", run time 0.003526s
+2025-02-05 11:08:57.795 Start Procedure step 132: "PrT assignment"
+2025-02-05 11:08:57.803 Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
+2025-02-05 11:08:57.980 CCH Statistics for tsys C
 Node order: Arc separators.
 Input node count: 5978
 Input arc count: 10329
@@ -510,74 +510,74 @@ CCH triangle count after filtering: 229482
 CH backward arc count: 18172
 CH backward search space size: 12110
 using arc-based node order
-2025-02-04 19:10:44.529 Assignment path-based equilibrium End
-2025-02-04 19:10:44.529 1536 (total)
-2025-02-04 19:10:44.529   132 (initialization)
-2025-02-04 19:10:44.529     37 (calculate initial network volumes)
-2025-02-04 19:10:44.529   22 (calculate initial solution)
-2025-02-04 19:10:44.529   1324 (assignment loop)
-2025-02-04 19:10:44.529     0 (recompute total volumes)
-2025-02-04 19:10:44.529     3 (copy volumes to network)
-2025-02-04 19:10:44.529     0 (recompute constant imps)
-2025-02-04 19:10:44.529     3 (update impedance)
-2025-02-04 19:10:44.529     193 (shortest path search)
-2025-02-04 19:10:44.529     11 (convergence quality indicators)
-2025-02-04 19:10:44.529       0 (store flows)
-2025-02-04 19:10:44.529       1 (veh imp and gap)
-2025-02-04 19:10:44.529       2 (vol and imp diffs per tsys)
-2025-02-04 19:10:44.529       4 (vol and imp diffs ext stab)
-2025-02-04 19:10:44.529       0 (tracing)
-2025-02-04 19:10:44.529     1098 (equilibration)
-2025-02-04 19:10:44.529       0 (dseg imp update)
-2025-02-04 19:10:44.529       8 (non-separable imp update)
-2025-02-04 19:10:44.529       116 (uncompress path trees)
-2025-02-04 19:10:44.529       916 (equilibration)
-2025-02-04 19:10:44.529       55 (additional OD equilibration)
-2025-02-04 19:10:44.529     18 (remove unused routes)
-2025-02-04 19:10:44.529     14 (path tree recompression)
-2025-02-04 19:10:44.529     -16 (other)
-2025-02-04 19:10:44.529   1 (final removal of unused routes)
-2025-02-04 19:10:44.529   3 (distribute volumes to demand segments)
-2025-02-04 19:10:44.529   6 (final path tree recompression)
-2025-02-04 19:10:44.529   45 (calculate final network volumes)
-2025-02-04 19:10:44.529 The assignment ended after 10 of a maximum of 10 iterations with a GAP of 3.83704503e-03 without satisfying the convergence criteria.
-2025-02-04 19:10:44.627 End Procedure step 132: "PrT assignment", run time 1.742440s
-2025-02-04 19:10:44.665 Start Procedure step 133: "Edit attribute"
-2025-02-04 19:10:44.695 Links: 4005 objects were changed.
-2025-02-04 19:10:44.704 End Procedure step 133: "Edit attribute", run time 0.039165s
-2025-02-04 19:10:44.746 Start Procedure step 134: "Edit attribute"
-2025-02-04 19:10:44.775 Links: 4005 objects were changed.
-2025-02-04 19:10:44.785 End Procedure step 134: "Edit attribute", run time 0.039289s
-2025-02-04 19:10:44.827 Start Procedure step 135: "Group"
-2025-02-04 19:10:44.828 End Procedure step 135: "Group", run time 0.000001s
-2025-02-04 19:10:44.884 Start Procedure step 136: "Read filter"
-2025-02-04 19:10:44.901 End Procedure step 136: "Read filter", run time 0.016769s
-2025-02-04 19:10:44.944 Start Procedure step 137: "Edit attribute"
-2025-02-04 19:10:44.973 Links: 4005 objects were changed.
-2025-02-04 19:10:44.982 End Procedure step 137: "Edit attribute", run time 0.038265s
-2025-02-04 19:10:45.026 Start Procedure step 138: "Combination of matrices and vectors"
-2025-02-04 19:10:45.039 Matrix '11 HBWod' was edited.
-2025-02-04 19:10:45.039 Matrix '11 HBWod' was changed.
-2025-02-04 19:10:45.039 End Procedure step 138: "Combination of matrices and vectors", run time 0.013243s
-2025-02-04 19:10:45.083 Start Procedure step 139: "Combination of matrices and vectors"
-2025-02-04 19:10:45.092 Matrix '12 HBOod' was edited.
-2025-02-04 19:10:45.093 Matrix '12 HBOod' was changed.
-2025-02-04 19:10:45.093 End Procedure step 139: "Combination of matrices and vectors", run time 0.009696s
-2025-02-04 19:10:45.136 Start Procedure step 140: "Combination of matrices and vectors"
-2025-02-04 19:10:45.154 Matrix '13 NHBWod' was edited.
-2025-02-04 19:10:45.154 Matrix '13 NHBWod' was changed.
-2025-02-04 19:10:45.154 End Procedure step 140: "Combination of matrices and vectors", run time 0.017567s
-2025-02-04 19:10:45.198 Start Procedure step 141: "Combination of matrices and vectors"
-2025-02-04 19:10:45.205 Matrix '14 NHBOod' was edited.
-2025-02-04 19:10:45.205 Matrix '14 NHBOod' was changed.
-2025-02-04 19:10:45.205 End Procedure step 141: "Combination of matrices and vectors", run time 0.007788s
-2025-02-04 19:10:45.249 Start Procedure step 142: "Combination of matrices and vectors"
-2025-02-04 19:10:45.253 Matrix '15 AutoExtod' was edited.
-2025-02-04 19:10:45.253 Matrix '15 AutoExtod' was changed.
-2025-02-04 19:10:45.254 End Procedure step 142: "Combination of matrices and vectors", run time 0.004581s
-2025-02-04 19:10:45.296 Start Procedure step 143: "PrT assignment"
-2025-02-04 19:10:45.305 Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
-2025-02-04 19:10:45.488 CCH Statistics for tsys C
+2025-02-05 11:08:59.248 Assignment path-based equilibrium End
+2025-02-05 11:08:59.248 1363 (total)
+2025-02-05 11:08:59.248   135 (initialization)
+2025-02-05 11:08:59.248     35 (calculate initial network volumes)
+2025-02-05 11:08:59.248   23 (calculate initial solution)
+2025-02-05 11:08:59.248   1151 (assignment loop)
+2025-02-05 11:08:59.248     0 (recompute total volumes)
+2025-02-05 11:08:59.248     5 (copy volumes to network)
+2025-02-05 11:08:59.248     0 (recompute constant imps)
+2025-02-05 11:08:59.248     4 (update impedance)
+2025-02-05 11:08:59.248     185 (shortest path search)
+2025-02-05 11:08:59.248     8 (convergence quality indicators)
+2025-02-05 11:08:59.248       0 (store flows)
+2025-02-05 11:08:59.248       2 (veh imp and gap)
+2025-02-05 11:08:59.248       0 (vol and imp diffs per tsys)
+2025-02-05 11:08:59.248       3 (vol and imp diffs ext stab)
+2025-02-05 11:08:59.248       0 (tracing)
+2025-02-05 11:08:59.248     936 (equilibration)
+2025-02-05 11:08:59.248       0 (dseg imp update)
+2025-02-05 11:08:59.248       10 (non-separable imp update)
+2025-02-05 11:08:59.248       106 (uncompress path trees)
+2025-02-05 11:08:59.248       767 (equilibration)
+2025-02-05 11:08:59.248       51 (additional OD equilibration)
+2025-02-05 11:08:59.248     18 (remove unused routes)
+2025-02-05 11:08:59.248     13 (path tree recompression)
+2025-02-05 11:08:59.248     -18 (other)
+2025-02-05 11:08:59.248   2 (final removal of unused routes)
+2025-02-05 11:08:59.248   3 (distribute volumes to demand segments)
+2025-02-05 11:08:59.248   6 (final path tree recompression)
+2025-02-05 11:08:59.248   40 (calculate final network volumes)
+2025-02-05 11:08:59.248 The assignment ended after 10 of a maximum of 10 iterations with a GAP of 3.33854468e-03 without satisfying the convergence criteria.
+2025-02-05 11:08:59.345 End Procedure step 132: "PrT assignment", run time 1.550163s
+2025-02-05 11:08:59.401 Start Procedure step 133: "Edit attribute"
+2025-02-05 11:08:59.427 Links: 4005 objects were changed.
+2025-02-05 11:08:59.435 End Procedure step 133: "Edit attribute", run time 0.034155s
+2025-02-05 11:08:59.484 Start Procedure step 134: "Edit attribute"
+2025-02-05 11:08:59.511 Links: 4005 objects were changed.
+2025-02-05 11:08:59.520 End Procedure step 134: "Edit attribute", run time 0.036538s
+2025-02-05 11:08:59.561 Start Procedure step 135: "Group"
+2025-02-05 11:08:59.561 End Procedure step 135: "Group", run time 0.000001s
+2025-02-05 11:08:59.602 Start Procedure step 136: "Read filter"
+2025-02-05 11:08:59.615 End Procedure step 136: "Read filter", run time 0.013367s
+2025-02-05 11:08:59.658 Start Procedure step 137: "Edit attribute"
+2025-02-05 11:08:59.684 Links: 4005 objects were changed.
+2025-02-05 11:08:59.693 End Procedure step 137: "Edit attribute", run time 0.035377s
+2025-02-05 11:08:59.733 Start Procedure step 138: "Combination of matrices and vectors"
+2025-02-05 11:08:59.748 Matrix '11 HBWod' was edited.
+2025-02-05 11:08:59.748 Matrix '11 HBWod' was changed.
+2025-02-05 11:08:59.748 End Procedure step 138: "Combination of matrices and vectors", run time 0.014875s
+2025-02-05 11:08:59.789 Start Procedure step 139: "Combination of matrices and vectors"
+2025-02-05 11:08:59.796 Matrix '12 HBOod' was edited.
+2025-02-05 11:08:59.796 Matrix '12 HBOod' was changed.
+2025-02-05 11:08:59.796 End Procedure step 139: "Combination of matrices and vectors", run time 0.007054s
+2025-02-05 11:08:59.839 Start Procedure step 140: "Combination of matrices and vectors"
+2025-02-05 11:08:59.847 Matrix '13 NHBWod' was edited.
+2025-02-05 11:08:59.847 Matrix '13 NHBWod' was changed.
+2025-02-05 11:08:59.847 End Procedure step 140: "Combination of matrices and vectors", run time 0.008106s
+2025-02-05 11:08:59.888 Start Procedure step 141: "Combination of matrices and vectors"
+2025-02-05 11:08:59.894 Matrix '14 NHBOod' was edited.
+2025-02-05 11:08:59.894 Matrix '14 NHBOod' was changed.
+2025-02-05 11:08:59.894 End Procedure step 141: "Combination of matrices and vectors", run time 0.006497s
+2025-02-05 11:08:59.934 Start Procedure step 142: "Combination of matrices and vectors"
+2025-02-05 11:08:59.937 Matrix '15 AutoExtod' was edited.
+2025-02-05 11:08:59.937 Matrix '15 AutoExtod' was changed.
+2025-02-05 11:08:59.937 End Procedure step 142: "Combination of matrices and vectors", run time 0.003243s
+2025-02-05 11:08:59.980 Start Procedure step 143: "PrT assignment"
+2025-02-05 11:08:59.988 Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
+2025-02-05 11:09:00.153 CCH Statistics for tsys C
 Node order: Arc separators.
 Input node count: 5978
 Input arc count: 10329
@@ -597,49 +597,49 @@ CCH triangle count after filtering: 229482
 CH backward arc count: 18172
 CH backward search space size: 12110
 using arc-based node order
-2025-02-04 19:10:47.292 Assignment path-based equilibrium End
-2025-02-04 19:10:47.292 1898 (total)
-2025-02-04 19:10:47.292   136 (initialization)
-2025-02-04 19:10:47.292     36 (calculate initial network volumes)
-2025-02-04 19:10:47.292   18 (calculate initial solution)
-2025-02-04 19:10:47.292   1690 (assignment loop)
-2025-02-04 19:10:47.292     1 (recompute total volumes)
-2025-02-04 19:10:47.292     7 (copy volumes to network)
-2025-02-04 19:10:47.292     0 (recompute constant imps)
-2025-02-04 19:10:47.292     2 (update impedance)
-2025-02-04 19:10:47.292     189 (shortest path search)
-2025-02-04 19:10:47.292     9 (convergence quality indicators)
-2025-02-04 19:10:47.292       0 (store flows)
-2025-02-04 19:10:47.292       1 (veh imp and gap)
-2025-02-04 19:10:47.292       2 (vol and imp diffs per tsys)
-2025-02-04 19:10:47.292       2 (vol and imp diffs ext stab)
-2025-02-04 19:10:47.292       0 (tracing)
-2025-02-04 19:10:47.292     1458 (equilibration)
-2025-02-04 19:10:47.292       0 (dseg imp update)
-2025-02-04 19:10:47.292       15 (non-separable imp update)
-2025-02-04 19:10:47.292       119 (uncompress path trees)
-2025-02-04 19:10:47.292       1295 (equilibration)
-2025-02-04 19:10:47.292       27 (additional OD equilibration)
-2025-02-04 19:10:47.292     18 (remove unused routes)
-2025-02-04 19:10:47.292     18 (path tree recompression)
-2025-02-04 19:10:47.292     -12 (other)
-2025-02-04 19:10:47.292   1 (final removal of unused routes)
-2025-02-04 19:10:47.292   3 (distribute volumes to demand segments)
-2025-02-04 19:10:47.292   6 (final path tree recompression)
-2025-02-04 19:10:47.292   41 (calculate final network volumes)
-2025-02-04 19:10:47.292 The assignment ended after 10 of a maximum of 10 iterations with a GAP of 6.44546206e-03 without satisfying the convergence criteria.
-2025-02-04 19:10:47.392 End Procedure step 143: "PrT assignment", run time 2.095288s
-2025-02-04 19:10:47.431 Start Procedure step 144: "Edit attribute"
-2025-02-04 19:10:47.462 Links: 4005 objects were changed.
-2025-02-04 19:10:47.470 End Procedure step 144: "Edit attribute", run time 0.039450s
-2025-02-04 19:10:47.510 Start Procedure step 145: "Edit attribute"
-2025-02-04 19:10:47.537 Links: 4005 objects were changed.
-2025-02-04 19:10:47.547 End Procedure step 145: "Edit attribute", run time 0.036596s
-2025-02-04 19:10:47.593 Start Procedure step 158: "Group"
-2025-02-04 19:10:47.593 End Procedure step 158: "Group", run time 0.000001s
-2025-02-04 19:10:47.636 Start Procedure step 159: "PrT assignment"
-2025-02-04 19:10:47.644 Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
-2025-02-04 19:10:47.832 CCH Statistics for tsys C
+2025-02-05 11:09:01.921 Assignment path-based equilibrium End
+2025-02-05 11:09:01.921 1849 (total)
+2025-02-05 11:09:01.921   121 (initialization)
+2025-02-05 11:09:01.921     36 (calculate initial network volumes)
+2025-02-05 11:09:01.921   22 (calculate initial solution)
+2025-02-05 11:09:01.921   1653 (assignment loop)
+2025-02-05 11:09:01.921     0 (recompute total volumes)
+2025-02-05 11:09:01.921     4 (copy volumes to network)
+2025-02-05 11:09:01.921     0 (recompute constant imps)
+2025-02-05 11:09:01.921     5 (update impedance)
+2025-02-05 11:09:01.921     180 (shortest path search)
+2025-02-05 11:09:01.921     8 (convergence quality indicators)
+2025-02-05 11:09:01.921       1 (store flows)
+2025-02-05 11:09:01.921       1 (veh imp and gap)
+2025-02-05 11:09:01.921       0 (vol and imp diffs per tsys)
+2025-02-05 11:09:01.921       5 (vol and imp diffs ext stab)
+2025-02-05 11:09:01.921       0 (tracing)
+2025-02-05 11:09:01.921     1435 (equilibration)
+2025-02-05 11:09:01.921       0 (dseg imp update)
+2025-02-05 11:09:01.921       13 (non-separable imp update)
+2025-02-05 11:09:01.921       113 (uncompress path trees)
+2025-02-05 11:09:01.921       1271 (equilibration)
+2025-02-05 11:09:01.921       35 (additional OD equilibration)
+2025-02-05 11:09:01.921     17 (remove unused routes)
+2025-02-05 11:09:01.921     20 (path tree recompression)
+2025-02-05 11:09:01.921     -16 (other)
+2025-02-05 11:09:01.921   2 (final removal of unused routes)
+2025-02-05 11:09:01.921   2 (distribute volumes to demand segments)
+2025-02-05 11:09:01.921   6 (final path tree recompression)
+2025-02-05 11:09:01.921   40 (calculate final network volumes)
+2025-02-05 11:09:01.921 The assignment ended after 10 of a maximum of 10 iterations with a GAP of 6.59722185e-03 without satisfying the convergence criteria.
+2025-02-05 11:09:02.018 End Procedure step 143: "PrT assignment", run time 2.037632s
+2025-02-05 11:09:02.059 Start Procedure step 144: "Edit attribute"
+2025-02-05 11:09:02.086 Links: 4005 objects were changed.
+2025-02-05 11:09:02.095 End Procedure step 144: "Edit attribute", run time 0.036639s
+2025-02-05 11:09:02.136 Start Procedure step 145: "Edit attribute"
+2025-02-05 11:09:02.163 Links: 4005 objects were changed.
+2025-02-05 11:09:02.172 End Procedure step 145: "Edit attribute", run time 0.036246s
+2025-02-05 11:09:02.216 Start Procedure step 158: "Group"
+2025-02-05 11:09:02.216 End Procedure step 158: "Group", run time 0.000001s
+2025-02-05 11:09:02.259 Start Procedure step 159: "PrT assignment"
+2025-02-05 11:09:02.267 Demand segment AutoExt: There is no demand for any OD relation outside the diagonal.
+2025-02-05 11:09:02.438 CCH Statistics for tsys C
 Node order: Arc separators.
 Input node count: 5978
 Input arc count: 10329
@@ -659,97 +659,96 @@ CCH triangle count after filtering: 229482
 CH backward arc count: 18172
 CH backward search space size: 12110
 using arc-based node order
-2025-02-04 19:10:47.881 0 of 359 path trees were loaded on unpacked graph instead of contracted graph
-2025-02-04 19:10:55.752 Assignment path-based equilibrium End
-2025-02-04 19:10:55.752 8001 (total)
-2025-02-04 19:10:55.752   86 (initialization)
-2025-02-04 19:10:55.752     0 (calculate initial network volumes)
-2025-02-04 19:10:55.752   44 (calculate initial solution)
-2025-02-04 19:10:55.752   7814 (assignment loop)
-2025-02-04 19:10:55.752     1 (recompute total volumes)
-2025-02-04 19:10:55.752     22 (copy volumes to network)
-2025-02-04 19:10:55.752     0 (recompute constant imps)
-2025-02-04 19:10:55.752     16 (update impedance)
-2025-02-04 19:10:55.752     796 (shortest path search)
-2025-02-04 19:10:55.752     37 (convergence quality indicators)
-2025-02-04 19:10:55.752       7 (store flows)
-2025-02-04 19:10:55.752       4 (veh imp and gap)
-2025-02-04 19:10:55.752       7 (vol and imp diffs per tsys)
-2025-02-04 19:10:55.752       10 (vol and imp diffs ext stab)
-2025-02-04 19:10:55.752       0 (tracing)
-2025-02-04 19:10:55.752     6803 (equilibration)
-2025-02-04 19:10:55.752       0 (dseg imp update)
-2025-02-04 19:10:55.752       53 (non-separable imp update)
-2025-02-04 19:10:55.752       454 (uncompress path trees)
-2025-02-04 19:10:55.752       5707 (equilibration)
-2025-02-04 19:10:55.753       579 (additional OD equilibration)
-2025-02-04 19:10:55.753     83 (remove unused routes)
-2025-02-04 19:10:55.753     56 (path tree recompression)
-2025-02-04 19:10:55.753     0 (other)
-2025-02-04 19:10:55.753   2 (final removal of unused routes)
-2025-02-04 19:10:55.753   2 (distribute volumes to demand segments)
-2025-02-04 19:10:55.753   8 (final path tree recompression)
-2025-02-04 19:10:55.753   41 (calculate final network volumes)
-2025-02-04 19:10:55.753 The assignment reached convergence after 45 of a maximum of 100 iterations with GAP of 9.93616022e-05.
-2025-02-04 19:10:55.854 End Procedure step 159: "PrT assignment", run time 8.217691s
-2025-02-04 19:10:55.897 Start Procedure step 160: "Group"
-2025-02-04 19:10:55.897 End Procedure step 160: "Group", run time 0.000001s
-2025-02-04 19:10:55.942 Start Procedure step 161: "Read filter"
-2025-02-04 19:10:55.957 End Procedure step 161: "Read filter", run time 0.015687s
-2025-02-04 19:10:56.000 Start Procedure step 162: "Assignment analysis"
-2025-02-04 19:10:56.008 End Procedure step 162: "Assignment analysis", run time 0.007398s
-2025-02-04 19:10:56.052 Start Procedure step 163: "Read filter"
-2025-02-04 19:10:56.067 End Procedure step 163: "Read filter", run time 0.015364s
-2025-02-04 19:10:56.111 Start Procedure step 164: "Run script"
-2025-02-04 19:10:58.968 End Procedure step 164: "Run script", run time 2.857223s
-2025-02-04 19:10:59.021 MatrixPool: FreeMatrices
-2025-02-04 19:10:59.021 MatrixPool: In use  : 0
-2025-02-04 19:10:59.021 MatrixPool: Free           : 0
-2025-02-04 19:10:59.021 MatrixPool: Max. size     : 4
-2025-02-04 19:10:59.021 MatrixPool: Created       : 4
-2025-02-04 19:10:59.021 MatrixPool: Reused: 127
-2025-02-04 19:10:59.071 Procedure - end
-2025-02-04 19:10:59.071 The operation "Procedure run" has caused warnings. During the process "Procedure run", 31 warnings were written to the "Messages" window. : &Show
-2025-02-04 19:10:59.259 Save version S000001result Start time
-2025-02-04 19:10:59.365       27 POI categories
-2025-02-04 19:10:59.369        1 Time interval sets
-2025-02-04 19:10:59.427      157 User-defined attributes
-2025-02-04 19:10:59.432        9 Notepad lines
-2025-02-04 19:10:59.436        2 Transport systems
-2025-02-04 19:10:59.440        2 Modes
-2025-02-04 19:10:59.444        5 Demand segments
-2025-02-04 19:10:59.449        1 Valid days
-2025-02-04 19:10:59.454        5 Block item types
-2025-02-04 19:10:59.459        2 PuT directions
-2025-02-04 19:10:59.711    47939 Points
-2025-02-04 19:11:00.166    30708 Edges
-2025-02-04 19:11:00.184    23791 Faces
-2025-02-04 19:11:00.196    23753 Surfaces
-2025-02-04 19:11:00.202     1700 Nodes
-2025-02-04 19:11:00.208      372 Zones
-2025-02-04 19:11:00.212        3 Main zones
-2025-02-04 19:11:00.216      147 Territories
-2025-02-04 19:11:00.220      100 Link types
-2025-02-04 19:11:00.237     4142 Links
-2025-02-04 19:11:00.242      143 Turning standards
-2025-02-04 19:11:00.263    11096 Turns
-2025-02-04 19:11:00.268     1092 Connectors
-2025-02-04 19:11:00.274        1 Fare systems
-2025-02-04 19:11:00.285       12 Count locations
-2025-02-04 19:11:00.290        1 Block versions
-2025-02-04 19:11:00.307    23380 Points of interest
-2025-02-04 19:11:00.312    23380 POI allocations
-2025-02-04 19:11:00.347       24 Geometries
-2025-02-04 19:11:00.354        9 Screenlines
-2025-02-04 19:11:00.361        1 Demand models
-2025-02-04 19:11:00.364        1 Time series
-2025-02-04 19:11:00.373        5 Demand strata
-2025-02-04 19:11:00.377       46 Matrices
-2025-02-04 19:11:01.426       46 Matrix data
-2025-02-04 19:11:01.431        1 Demand time series
-2025-02-04 19:11:01.436        5 Demand descriptions
-2025-02-04 19:11:01.848       45 PrT assignment quality data
-2025-02-04 19:11:02.022 Save version S000001result End time
-2025-02-04 19:11:02.057 Processing calculation request dc5e6fcb-e0ce-42fd-badd-33ed3caa16ca completed
-2025-02-04 19:11:02.059 No further calculation request to process
-2025-02-04 19:11:02.251 Close file
+2025-02-05 11:09:02.482 0 of 359 path trees were loaded on unpacked graph instead of contracted graph
+2025-02-05 11:09:10.885 Assignment path-based equilibrium End
+2025-02-05 11:09:10.885 8533 (total)
+2025-02-05 11:09:10.885   90 (initialization)
+2025-02-05 11:09:10.885     0 (calculate initial network volumes)
+2025-02-05 11:09:10.885   41 (calculate initial solution)
+2025-02-05 11:09:10.885   8345 (assignment loop)
+2025-02-05 11:09:10.885     3 (recompute total volumes)
+2025-02-05 11:09:10.885     23 (copy volumes to network)
+2025-02-05 11:09:10.885     0 (recompute constant imps)
+2025-02-05 11:09:10.885     25 (update impedance)
+2025-02-05 11:09:10.885     938 (shortest path search)
+2025-02-05 11:09:10.885     46 (convergence quality indicators)
+2025-02-05 11:09:10.885       3 (store flows)
+2025-02-05 11:09:10.885       4 (veh imp and gap)
+2025-02-05 11:09:10.885       14 (vol and imp diffs per tsys)
+2025-02-05 11:09:10.885       16 (vol and imp diffs ext stab)
+2025-02-05 11:09:10.885       0 (tracing)
+2025-02-05 11:09:10.885     7142 (equilibration)
+2025-02-05 11:09:10.885       0 (dseg imp update)
+2025-02-05 11:09:10.885       74 (non-separable imp update)
+2025-02-05 11:09:10.885       455 (uncompress path trees)
+2025-02-05 11:09:10.885       5850 (equilibration)
+2025-02-05 11:09:10.885       755 (additional OD equilibration)
+2025-02-05 11:09:10.885     93 (remove unused routes)
+2025-02-05 11:09:10.885     75 (path tree recompression)
+2025-02-05 11:09:10.885     0 (other)
+2025-02-05 11:09:10.885   1 (final removal of unused routes)
+2025-02-05 11:09:10.885   2 (distribute volumes to demand segments)
+2025-02-05 11:09:10.885   9 (final path tree recompression)
+2025-02-05 11:09:10.885   41 (calculate final network volumes)
+2025-02-05 11:09:10.885 The assignment reached convergence after 54 of a maximum of 100 iterations with GAP of 9.62723910e-05.
+2025-02-05 11:09:10.982 End Procedure step 159: "PrT assignment", run time 8.722305s
+2025-02-05 11:09:11.027 Start Procedure step 160: "Group"
+2025-02-05 11:09:11.027 End Procedure step 160: "Group", run time 0.000001s
+2025-02-05 11:09:11.071 Start Procedure step 161: "Read filter"
+2025-02-05 11:09:11.092 End Procedure step 161: "Read filter", run time 0.021634s
+2025-02-05 11:09:11.132 Start Procedure step 162: "Assignment analysis"
+2025-02-05 11:09:11.138 End Procedure step 162: "Assignment analysis", run time 0.006078s
+2025-02-05 11:09:11.178 Start Procedure step 163: "Read filter"
+2025-02-05 11:09:11.190 End Procedure step 163: "Read filter", run time 0.012070s
+2025-02-05 11:09:11.230 Start Procedure step 164: "Run script"
+2025-02-05 11:09:13.414 End Procedure step 164: "Run script", run time 2.183289s
+2025-02-05 11:09:13.461 MatrixPool: FreeMatrices
+2025-02-05 11:09:13.461 MatrixPool: In use  : 0
+2025-02-05 11:09:13.461 MatrixPool: Free           : 0
+2025-02-05 11:09:13.461 MatrixPool: Max. size     : 3
+2025-02-05 11:09:13.461 MatrixPool: Created       : 3
+2025-02-05 11:09:13.461 MatrixPool: Reused: 128
+2025-02-05 11:09:13.513 Procedure - end
+2025-02-05 11:09:13.625 Save version S000001result Start time
+2025-02-05 11:09:13.705       27 POI categories
+2025-02-05 11:09:13.710        1 Time interval sets
+2025-02-05 11:09:13.715      157 User-defined attributes
+2025-02-05 11:09:13.718        9 Notepad lines
+2025-02-05 11:09:13.723        2 Transport systems
+2025-02-05 11:09:13.726        2 Modes
+2025-02-05 11:09:13.731        5 Demand segments
+2025-02-05 11:09:13.736        1 Valid days
+2025-02-05 11:09:13.741        5 Block item types
+2025-02-05 11:09:13.746        2 PuT directions
+2025-02-05 11:09:13.839    47939 Points
+2025-02-05 11:09:14.077    30708 Edges
+2025-02-05 11:09:14.099    23791 Faces
+2025-02-05 11:09:14.111    23753 Surfaces
+2025-02-05 11:09:14.118     1700 Nodes
+2025-02-05 11:09:14.124      372 Zones
+2025-02-05 11:09:14.128        3 Main zones
+2025-02-05 11:09:14.133      147 Territories
+2025-02-05 11:09:14.137      100 Link types
+2025-02-05 11:09:14.154     4142 Links
+2025-02-05 11:09:14.159      143 Turning standards
+2025-02-05 11:09:14.181    11096 Turns
+2025-02-05 11:09:14.187     1092 Connectors
+2025-02-05 11:09:14.192        1 Fare systems
+2025-02-05 11:09:14.204       12 Count locations
+2025-02-05 11:09:14.209        1 Block versions
+2025-02-05 11:09:14.224    23380 Points of interest
+2025-02-05 11:09:14.230    23380 POI allocations
+2025-02-05 11:09:14.267       24 Geometries
+2025-02-05 11:09:14.274        9 Screenlines
+2025-02-05 11:09:14.282        1 Demand models
+2025-02-05 11:09:14.287        1 Time series
+2025-02-05 11:09:14.295        5 Demand strata
+2025-02-05 11:09:14.300       46 Matrices
+2025-02-05 11:09:15.351       46 Matrix data
+2025-02-05 11:09:15.357        1 Demand time series
+2025-02-05 11:09:15.362        5 Demand descriptions
+2025-02-05 11:09:15.784       54 PrT assignment quality data
+2025-02-05 11:09:15.999 Save version S000001result End time
+2025-02-05 11:09:16.031 Processing calculation request 03ca3453-8bdb-4770-be79-81d6bea73906 completed
+2025-02-05 11:09:16.034 No further calculation request to process
+2025-02-05 11:09:16.240 Close file
