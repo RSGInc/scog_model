@@ -17,16 +17,16 @@
 			<attributeDefinition aggregate="false" aggregationFunction="COMPARE" alignment="CENTERALIGNMENT" attributeID="CANBEEMPTY" displayUnits="false" numberOfDecimalPlaces="0" stringFormatType="DEFAULTFMT" subAttributeID1="" subAttributeID2="" subAttributeID3="" useThousandsSeparator="false" weightedAverageAttribute="1.0"/>
 		</attributeDefinitions>
 		<columnWidths>
-			<columnWidth width="132"/>
-			<columnWidth width="120"/>
+			<columnWidth width="57"/>
+			<columnWidth width="68"/>
 			<columnWidth width="32"/>
-			<columnWidth width="36"/>
-			<columnWidth width="60"/>
+			<columnWidth width="37"/>
+			<columnWidth width="61"/>
 			<columnWidth width="84"/>
 			<columnWidth width="88"/>
 			<columnWidth width="76"/>
 			<columnWidth width="108"/>
-			<columnWidth width="56"/>
+			<columnWidth width="57"/>
 			<columnWidth width="124"/>
 			<columnWidth width="140"/>
 			<columnWidth width="80"/>

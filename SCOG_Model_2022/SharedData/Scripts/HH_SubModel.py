@@ -55,9 +55,8 @@ HIOutputFile   = pd.read_csv(hh_out_path+"HHSize_Inc.csv")
 HIWOutputFile  = pd.read_csv(hh_out_path+"HHSize_Inc_Workers.csv")
 #HIWCOutputFile = pd.read_csv(hh_out_path+"HHSize_Inc_Workers_Childrn.csv")
 
-# Instead, filter to relevant zones/set active prior to running
 # Drop P&R and External TAZs
-# zone_df = zone_df[(zone_df['NO'] < 8000)]
+# zone_df = zone_df[(zone_df['NO'] < 1000)] # hardcoded, still produces warnings for 15 zones
 
 
 """ Step 1: HH Size and HH Income models """

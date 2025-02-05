@@ -1,142 +1,142 @@
 ﻿* Networks
-Netze                                           "[NOT SET]"                                                                       net                                                                          USE_SHARED_FOLDER
+Netze                                           "[NOT SET]"                                                                            net                                                                          USE_SHARED_FOLDER
 * Versions
-Versionen                                       "[NOT SET]"                                                                       ver                                                                          USE_SHARED_FOLDER
+Versionen                                       "[NOT SET]"                                                                            ver                                                                          USE_SHARED_FOLDER
 * OD demand data
-Nachfragedaten                                  "[NOT SET]"                                                                       dmd                                                                          USE_SHARED_FOLDER
+Nachfragedaten                                  "[NOT SET]"                                                                            dmd                                                                          USE_SHARED_FOLDER
 * MultiUser networks
-MultiUserNetze                                  "[NOT SET]"                                                                       NotEditable:[edf;idf]                                                        USE_SHARED_FOLDER
+MultiUserNetze                                  "[NOT SET]"                                                                            NotEditable:[edf;idf]                                                        USE_SHARED_FOLDER
 * Project directories
-Projektverzeichnisse                            "%APPDATA%\PTV Vision\%MAINPROGVERSION%"                                          pfd                                                                          USE_SHARED_FOLDER
+Projektverzeichnisse                            "%APPDATA%\PTV Vision\%MAINPROGVERSION%"                                               pfd                                                                          USE_SHARED_FOLDER
 * Graphic parameters
-Grafikparameter                                 "[NOT SET]"                                                                       NotEditable:[gpa;gpax]                                                       USE_SHARED_FOLDER
+Grafikparameter                                 "[NOT SET]"                                                                            NotEditable:[gpa;gpax]                                                       USE_SHARED_FOLDER
 * Texts
-Texte                                           "[NOT SET]"                                                                       txt                                                                          USE_SHARED_FOLDER
+Texte                                           "[NOT SET]"                                                                            txt                                                                          USE_SHARED_FOLDER
 * Procedure parameters
-Verfahrensparameter                             "[NOT SET]"                                                                       par;xml                                                                      USE_SHARED_FOLDER
+Verfahrensparameter                             "[NOT SET]"                                                                            par;xml                                                                      USE_SHARED_FOLDER
 * RASW Scenario
-RASW-Fall                                       "[NOT SET]"                                                                       rwf                                                                          USE_SHARED_FOLDER
+RASW-Fall                                       "[NOT SET]"                                                                            rwf                                                                          USE_SHARED_FOLDER
 * Attributes
-Attribute                                       "[NOT SET]"                                                                       att                                                                          USE_SHARED_FOLDER
+Attribute                                       "[NOT SET]"                                                                            att                                                                          USE_SHARED_FOLDER
 * Environmental parameters
-Umweltparameter                                 "[NOT SET]"                                                                       upa                                                                          USE_SHARED_FOLDER
+Umweltparameter                                 "[NOT SET]"                                                                            upa                                                                          USE_SHARED_FOLDER
 * List layout
-Listen-Layout                                   "[NOT SET]"                                                                       NotEditable:[llax;lla]                                                       USE_SHARED_FOLDER
+Listen-Layout                                   "[NOT SET]"                                                                            NotEditable:[llax;lla]                                                       USE_SHARED_FOLDER
 * Filter
-Filter                                          .\Filters                                                                         fil                                                                          USE_SHARED_FOLDER
+Filter                                          "[NOT SET]"                                                                            fil                                                                          USE_SHARED_FOLDER
 * Active network objects
-Aktive Netzelemente                             "[NOT SET]"                                                                       ane                                                                          USE_SHARED_FOLDER
+Aktive Netzelemente                             "[NOT SET]"                                                                            ane                                                                          USE_SHARED_FOLDER
 * Shapefile
-Shapefile                                       "[NOT SET]"                                                                       NotEditable:[shp]                                                            USE_SHARED_FOLDER
+Shapefile                                       "[NOT SET]"                                                                            NotEditable:[shp]                                                            USE_SHARED_FOLDER
 * Survey data
-Fahrgastdaten                                   "[NOT SET]"                                                                       *                                                                            USE_SHARED_FOLDER
+Fahrgastdaten                                   "[NOT SET]"                                                                            *                                                                            USE_SHARED_FOLDER
 * Access database
-Access-Datenbank                                "[NOT SET]"                                                                       NotEditable:[mdb]                                                            USE_SHARED_FOLDER
+Access-Datenbank                                "[NOT SET]"                                                                            NotEditable:[mdb]                                                            USE_SHARED_FOLDER
 * Emme
-Emme                                            "[NOT SET]"                                                                       emme                                                                         USE_SHARED_FOLDER
+Emme                                            "[NOT SET]"                                                                            emme                                                                         USE_SHARED_FOLDER
 * References
-Verknuepfungen                                  "[NOT SET]"                                                                       *                                                                            USE_SHARED_FOLDER
+Verknuepfungen                                  "[NOT SET]"                                                                            *                                                                            USE_SHARED_FOLDER
 * Image files
-Bilddateien                                     "[NOT SET]"                                                                       NotEditable:[bmp;jpg;wmf;emf;gif;tiff;png]                                   USE_SHARED_FOLDER
+Bilddateien                                     "[NOT SET]"                                                                            NotEditable:[bmp;jpg;wmf;emf;gif;tiff;png]                                   USE_SHARED_FOLDER
 * SVG files
-SVG-Dateien                                     "[NOT SET]"                                                                       NotEditable:[svg]                                                            USE_SHARED_FOLDER
+SVG-Dateien                                     "[NOT SET]"                                                                            NotEditable:[svg]                                                            USE_SHARED_FOLDER
 * External control files
-Externe Steuerungsdateien                       "[NOT SET]"                                                                       NotEditable:[nse;rbc;sig]                                                    USE_SHARED_FOLDER
+Externe Steuerungsdateien                       "[NOT SET]"                                                                            NotEditable:[nse;rbc;sig]                                                    USE_SHARED_FOLDER
 * Script files
-Skript-Dateien                                  .\Scripts                                                                         NotEditable:[pys;py;vbs;js]                                                  USE_SHARED_FOLDER
+Skript-Dateien                                  "[NOT SET]"                                                                            NotEditable:[pys;py;vbs;js]                                                  USE_SHARED_FOLDER
 * PuT interface parameter files
-ÖV-Schnittstellen-Parameterdateien              "[NOT SET]"                                                                       NotEditable:[putp;puti;haf;xml]                                              USE_SHARED_FOLDER
+ÖV-Schnittstellen-Parameterdateien              "[NOT SET]"                                                                            NotEditable:[putp;puti;haf;xml]                                              USE_SHARED_FOLDER
 * Screenshots
-Screenshots                                     "[NOT SET]"                                                                       NotEditable:[png;jpg;tiff;gif;bmp;emf;wmf]                                   USE_SHARED_FOLDER
+Screenshots                                     "[NOT SET]"                                                                            NotEditable:[png;jpg;tiff;gif;bmp;emf;wmf]                                   USE_SHARED_FOLDER
 * Connection file
-Verbindungsdatei                                "[NOT SET]"                                                                       con                                                                          USE_SHARED_FOLDER
+Verbindungsdatei                                "[NOT SET]"                                                                            con                                                                          USE_SHARED_FOLDER
 * Timetable graphic parameters
-Fahrplan-Grafikparameter                        "[NOT SET]"                                                                       gpt;gpbe;gpgt;gptt                                                           USE_SHARED_FOLDER
+Fahrplan-Grafikparameter                        "[NOT SET]"                                                                            gpt;gpbe;gpgt;gptt                                                           USE_SHARED_FOLDER
 * Timetable Editor Network Graph
-Fahrplaneditor Netzgraph                        "[NOT SET]"                                                                       *                                                                            USE_SHARED_FOLDER
+Fahrplaneditor Netzgraph                        "[NOT SET]"                                                                            *                                                                            USE_SHARED_FOLDER
 * Route import
-Routen-Import                                   "[NOT SET]"                                                                       rim                                                                          USE_SHARED_FOLDER
+Routen-Import                                   "[NOT SET]"                                                                            rim                                                                          USE_SHARED_FOLDER
 * Legend parameters
-Legenden-Parameter                              "[NOT SET]"                                                                       lgd                                                                          USE_SHARED_FOLDER
+Legenden-Parameter                              "[NOT SET]"                                                                            lgd                                                                          USE_SHARED_FOLDER
 * Backgrounds
-Hintergruende                                   "[NOT SET]"                                                                       NotEditable:[emf;wmf;bmp;dwg;dxf;ecw;jp2;jpg;png;shp;sid;svg;tga;tif;gif]    USE_SHARED_FOLDER
+Hintergruende                                   "[NOT SET]"                                                                            NotEditable:[emf;wmf;bmp;dwg;dxf;ecw;jp2;jpg;png;shp;sid;svg;tga;tif;gif]    USE_SHARED_FOLDER
 * ICA files
-ICA-Dateien                                     "[NOT SET]"                                                                       *                                                                            USE_SHARED_FOLDER
+ICA-Dateien                                     "[NOT SET]"                                                                            *                                                                            USE_SHARED_FOLDER
 * Additive-network-reading-para
-Additives-Netzlesen-Para                        "[NOT SET]"                                                                       anrp                                                                         USE_SHARED_FOLDER
+Additives-Netzlesen-Para                        "[NOT SET]"                                                                            anrp                                                                         USE_SHARED_FOLDER
 * Script menu files
-Skriptmenue-Dateien                             "[NOT SET]"                                                                       xml                                                                          USE_SHARED_FOLDER
+Skriptmenue-Dateien                             "[NOT SET]"                                                                            xml                                                                          USE_SHARED_FOLDER
 * DXF files
-DXF-Dateien                                     "[NOT SET]"                                                                       NotEditable:[dxf]                                                            USE_SHARED_FOLDER
+DXF-Dateien                                     "[NOT SET]"                                                                            NotEditable:[dxf]                                                            USE_SHARED_FOLDER
 * Network merge param
-Netzvereinigungs-Para                           "[NOT SET]"                                                                       nmp                                                                          USE_SHARED_FOLDER
+Netzvereinigungs-Para                           "[NOT SET]"                                                                            nmp                                                                          USE_SHARED_FOLDER
 * ANM networks
-ANM-Netze                                       "[NOT SET]"                                                                       anm                                                                          USE_SHARED_FOLDER
+ANM-Netze                                       "[NOT SET]"                                                                            anm                                                                          USE_SHARED_FOLDER
 * Additive-demand-reading-para
-Additives-Nachfragelesen-Para                   "[NOT SET]"                                                                       adrp                                                                         USE_SHARED_FOLDER
+Additives-Nachfragelesen-Para                   "[NOT SET]"                                                                            adrp                                                                         USE_SHARED_FOLDER
 * Log files
-Log-Dateien                                     "%APPDATA%\PTV Vision\%MAINPROGVERSION%\Log"                                      *                                                                            USE_SHARED_FOLDER
+Log-Dateien                                     "%APPDATA%\PTV Vision\%MAINPROGVERSION%\Log"                                           *                                                                            USE_SCENARIO_FOLDER
 * ANM export parameter files
-ANM - Exportparameterdateien                    "[NOT SET]"                                                                       anmp                                                                         USE_SHARED_FOLDER
+ANM - Exportparameterdateien                    "[NOT SET]"                                                                            anmp                                                                         USE_SHARED_FOLDER
 * ANM - routes
-ANM - Routen                                    "[NOT SET]"                                                                       anmRoutes                                                                    USE_SHARED_FOLDER
+ANM - Routen                                    "[NOT SET]"                                                                            anmRoutes                                                                    USE_SHARED_FOLDER
 * UserVDF-DLLs
-UserVDF-DLLs                                    "%APPDATA%\PTV Vision\%MAINPROGVERSION%\UserVDF-DLLs\"                            NotEditable:[dll]                                                            USE_SHARED_FOLDER
+UserVDF-DLLs                                    "%APPDATA%\PTV Vision\%MAINPROGVERSION%\UserVDF-DLLs\"                                 NotEditable:[dll]                                                            USE_SHARED_FOLDER
 * Projections
-Projections                                     "%APPDATA%\PTV Vision\%MAINPROGVERSION%\Projections"                              NotEditable:[prj]                                                            USE_SHARED_FOLDER
+Projections                                     "%APPDATA%\PTV Vision\%MAINPROGVERSION%\Projections"                                   NotEditable:[prj]                                                            USE_SHARED_FOLDER
 * Quick view layout
-Schnellansichts-Layout                          "[NOT SET]"                                                                       qla                                                                          USE_SHARED_FOLDER
+Schnellansichts-Layout                          "[NOT SET]"                                                                            qla                                                                          USE_SHARED_FOLDER
 * Visum AddIns
-Visum AddIns                                    "%APPDATA%\PTV Vision\%MAINPROGVERSION%\AddIns"                                   vai                                                                          USE_SHARED_FOLDER
+Visum AddIns                                    "%APPDATA%\PTV Vision\%MAINPROGVERSION%\AddIns"                                        vai                                                                          USE_SHARED_FOLDER
 * Matrices
-Matrizen                                        "[NOT SET]"                                                                       mtx;mx;fma                                                                   USE_SHARED_FOLDER
+Matrizen                                        "[NOT SET]"                                                                            mtx;mx;fma                                                                   USE_SHARED_FOLDER
 * Model transfer files
-Modelltransfer-Dateien                          "[NOT SET]"                                                                       tra                                                                          USE_SHARED_FOLDER
+Modelltransfer-Dateien                          "[NOT SET]"                                                                            tra                                                                          USE_SHARED_FOLDER
 * Exported turn volumes
-Exportierte Knotenströme                        "[NOT SET]"                                                                       NotEditable:[png;svg;jpg;tiff;gif;bmp;emf;wmf]                               USE_SHARED_FOLDER
+Exportierte Knotenströme                        "[NOT SET]"                                                                            NotEditable:[png;svg;jpg;tiff;gif;bmp;emf;wmf]                               USE_SHARED_FOLDER
 * Intervals
-Intervalle                                      "[NOT SET]"                                                                       att;cod                                                                      USE_SHARED_FOLDER
+Intervalle                                      "[NOT SET]"                                                                            att;cod                                                                      USE_SHARED_FOLDER
 * Matrix editor layout
-Matrixeditor-Layout                             "[NOT SET]"                                                                       mly                                                                          USE_SHARED_FOLDER
+Matrixeditor-Layout                             "[NOT SET]"                                                                            mly                                                                          USE_SHARED_FOLDER
 * Graphic parameters signal time-space diagram
-Grafikparameter Grünbanddarstellung             "[NOT SET]"                                                                       gptsd                                                                        USE_SHARED_FOLDER
+Grafikparameter Grünbanddarstellung             "[NOT SET]"                                                                            gptsd                                                                        USE_SHARED_FOLDER
 * Matrix editor graphic parameters
-Grafikparameter Matrixeditor                    "[NOT SET]"                                                                       gpm                                                                          USE_SHARED_FOLDER
+Grafikparameter Matrixeditor                    "[NOT SET]"                                                                            gpm                                                                          USE_SHARED_FOLDER
 * Parameters for matrix operations
-Parameter für Matrixoperationen                 "[NOT SET]"                                                                       xml                                                                          USE_SHARED_FOLDER
+Parameter für Matrixoperationen                 "[NOT SET]"                                                                            xml                                                                          USE_SHARED_FOLDER
 * User preferences
-Benutzereinstellungen                           "[NOT SET]"                                                                       xml                                                                          USE_SHARED_FOLDER
+Benutzereinstellungen                           "[NOT SET]"                                                                            xml                                                                          USE_SHARED_FOLDER
 * Scenario management project
-Szenariomanagement-Projekt                      C:\Windows\system32\                                                              NotEditable:[vpdb;vpdbx]                                                     USE_SHARED_FOLDER
+Szenariomanagement-Projekt                      U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\           NotEditable:[vpdb;vpdbx]                                                     USE_SHARED_FOLDER
 * RailML files
-RailML-Dateien                                  "[NOT SET]"                                                                       NotEditable:[railml;xml]                                                     USE_SHARED_FOLDER
+RailML-Dateien                                  "[NOT SET]"                                                                            NotEditable:[railml;xml]                                                     USE_SHARED_FOLDER
 * Access 2007 database
-Access-2007-Datenbank                           "[NOT SET]"                                                                       NotEditable:[accdb]                                                          USE_SHARED_FOLDER
+Access-2007-Datenbank                           "[NOT SET]"                                                                            NotEditable:[accdb]                                                          USE_SHARED_FOLDER
 * Synchro networks
-Synchro-Netze                                   "[NOT SET]"                                                                       csv                                                                          USE_SHARED_FOLDER
+Synchro-Netze                                   "[NOT SET]"                                                                            csv                                                                          USE_SHARED_FOLDER
 * Schematic line diagram: Layout
-Schematischer-Liniennetzplan-Layout             "[NOT SET]"                                                                       xml                                                                          USE_SHARED_FOLDER
+Schematischer-Liniennetzplan-Layout             "[NOT SET]"                                                                            xml                                                                          USE_SHARED_FOLDER
 * Graphic parameters Transfers display of regular services
-Grafikparameter Umsteiger-Taktdarstellung       "[NOT SET]"                                                                       gpta                                                                         USE_SHARED_FOLDER
+Grafikparameter Umsteiger-Taktdarstellung       "[NOT SET]"                                                                            gpta                                                                         USE_SHARED_FOLDER
 * Vistro networks
-VISTRO-Netze                                    "[NOT SET]"                                                                       vistro                                                                       USE_SHARED_FOLDER
+VISTRO-Netze                                    "[NOT SET]"                                                                            vistro                                                                       USE_SHARED_FOLDER
 * Graphic parameters Schematic line diagram
-Grafikparameter Schematischer Liniennetzplan    "[NOT SET]"                                                                       gpsld                                                                        USE_SHARED_FOLDER
+Grafikparameter Schematischer Liniennetzplan    "[NOT SET]"                                                                            gpsld                                                                        USE_SHARED_FOLDER
 * Vistro scenario management project
-Vistro-Szenariomanagement-Projekt               C:\Windows\system32\                                                              NotEditable:[vistropdb;vistropdbx]                                           USE_SHARED_FOLDER
+Vistro-Szenariomanagement-Projekt               U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\           NotEditable:[vistropdb;vistropdbx]                                           USE_SHARED_FOLDER
 * Other input data
-Sonstige Eingabedaten                           "[NOT SET]"                                                                       *                                                                            USE_SHARED_FOLDER
+Sonstige Eingabedaten                           "[NOT SET]"                                                                            *                                                                            USE_SHARED_FOLDER
 * Other output data
-Sonstige Ausgabedaten                           "[NOT SET]"                                                                       *                                                                            USE_SHARED_FOLDER
+Sonstige Ausgabedaten                           "[NOT SET]"                                                                            *                                                                            USE_SHARED_FOLDER
 * Subnetwork generator parameters
-Teilnetzgenerator-Parameter                     "[NOT SET]"                                                                       xml                                                                          USE_SHARED_FOLDER
+Teilnetzgenerator-Parameter                     "[NOT SET]"                                                                            xml                                                                          USE_SHARED_FOLDER
 * Timetable layout
-Fahrplan-Layout                                 "[NOT SET]"                                                                       tly;tlbe;tltt;tlgt;tlls;tlbs                                                 USE_SHARED_FOLDER
+Fahrplan-Layout                                 "[NOT SET]"                                                                            tly;tlbe;tltt;tlgt;tlls;tlbs                                                 USE_SHARED_FOLDER
 * Global layouts
-Gesamtlayouts                                   "[NOT SET]"                                                                       lay                                                                          USE_SHARED_FOLDER
+Gesamtlayouts                                   "[NOT SET]"                                                                            lay                                                                          USE_SHARED_FOLDER
 * Inpx networks
-Inpx-Netze                                      "[NOT SET]"                                                                       inpx                                                                         USE_SHARED_FOLDER
+Inpx-Netze                                      "[NOT SET]"                                                                            inpx                                                                         USE_SHARED_FOLDER
 * SQLite database
-SQLite-Datenbank                                "[NOT SET]"                                                                       NotEditable:[sqlite3]                                                        USE_SHARED_FOLDER
+SQLite-Datenbank                                "[NOT SET]"                                                                            NotEditable:[sqlite3]                                                        USE_SHARED_FOLDER
 * Vistro update files
-Vistro-Update-Dateien                           C:\Windows\system32\                                                              NotEditable:[vistroupdate]                                                   USE_SHARED_FOLDER
+Vistro-Update-Dateien                           U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Scenarios\S000001\           NotEditable:[vistroupdate]                                                   USE_SCENARIO_FOLDER
