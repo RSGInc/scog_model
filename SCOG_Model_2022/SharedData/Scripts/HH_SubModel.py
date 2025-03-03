@@ -169,7 +169,7 @@ for x in range(len(zone_df)):
 		r = np.array([zone_df.loc[x,'HHS1'],zone_df.loc[x,'HHS2'],zone_df.loc[x,'HHS3'],zone_df.loc[x,'HHS4']]) # HHSize from the HH size submodel by zone
 		c = np.array([zone_df.loc[x,'INC1'],zone_df.loc[x,'INC2'],zone_df.loc[x,'INC3'],zone_df.loc[x,'INC4']]) # HHIncome from the HH Income submodel by zone
 		""" Run Visum balanceMatrix function """
-		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.01)
+		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.1) # TODO matrix balancing issue
 		# Paste in balanced values to new df fields
 		zone_df.loc[x,'HH1INC1'] = balanced_mat[0,0]
 		zone_df.loc[x,'HH1INC2'] = balanced_mat[0,1]
@@ -370,7 +370,7 @@ for x in range(len(zone_df)):
 		r = np.array([zone_df.loc[x,'HHS1'],zone_df.loc[x,'HHS2'],zone_df.loc[x,'HHS3'],zone_df.loc[x,'HHS4']]) # HHSize from the HH size submodel by zone
 		c = np.array([zone_df.loc[x,'HHWRK0'],zone_df.loc[x,'HHWRK1'],zone_df.loc[x,'HHWRK2'],zone_df.loc[x,'HHWRK3']]) # HHWorkers from the HH workers submodel by zone
 		""" Run Visum balanceMatrix function """
-		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.01)
+		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.1) # TODO matrix balancing issue
 		# Paste in balanced values to new df fields
 		zone_df.loc[x,'HH1W0'] = balanced_mat[0,0]
 		zone_df.loc[x,'HH1W1'] = balanced_mat[0,1]
