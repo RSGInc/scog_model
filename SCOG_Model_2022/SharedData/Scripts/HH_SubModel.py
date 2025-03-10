@@ -3,6 +3,7 @@
 # luke.gordon@rsginc.com for SRTC, michael.mccarthy@rsginc.com adapted for SCOG
 
 # Libraries
+import sys
 import numpy as np
 import VisumPy.helpers
 import VisumPy.matrices
@@ -10,7 +11,18 @@ import pandas as pd
 import csv
 from itertools import product
 import os
+# import logging
+from VisumPy.AddIn import AddIn, AddInState, MessageType, AddInParameter
 
+
+if len(sys.argv) > 1:
+    # Set translation functionality, because body script is in debug mode and the dialog script got not called before
+    # The VISUM object will be created by functionality of class 'AddIn'  ( the debug sys.argv[2] - parameter is used for this)
+    addIn = AddIn()
+else:
+    # In else condition (the AddIn was called out of Visum) the AddIn class object is needed only to get logging functionality. The passed VISUM object
+    # is needed for logging functionality. Translation functionality must not be set because it already got set in dialog script
+    addIn = AddIn(Visum)
 
 # set paths 
 hhsubmodel_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'HH_Submodel'))
@@ -21,7 +33,7 @@ hh_out_path = hhsubmodel_path + "/Outputs/"
 HHSizeModel = pd.read_csv(hh_parameters_path+'HHSizeModel.csv')
 IncomeModel = pd.read_csv(hh_parameters_path+'IncomeModel.csv')
 HHIncSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_income_2d_table.csv')
-HHWrkSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_workers_2d_table.csv') # TODO update from PUMS (placeholder from income table)
+HHWrkSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_workers_2d_table.csv')
 NumWorkersModel = pd.read_csv(hh_parameters_path+'NumberOfWorkersModel_MNL.csv')
 
 
@@ -56,7 +68,7 @@ HIWOutputFile  = pd.read_csv(hh_out_path+"HHSize_Inc_Workers.csv")
 #HIWCOutputFile = pd.read_csv(hh_out_path+"HHSize_Inc_Workers_Childrn.csv")
 
 # Drop P&R and External TAZs
-# zone_df = zone_df[(zone_df['NO'] < 1000)] # hardcoded, still produces warnings for 15 zones
+zone_df = zone_df[(zone_df['NO'] < 1000)] # hardcoded, still produces warnings for 15 zones
 
 
 """ Step 1: HH Size and HH Income models """
@@ -85,11 +97,23 @@ if len(zone_df) != taz_records:
     raise Exception("Merge process in HHSizeModel is not correct")
 
 # Multiply TOTHH by HH1/2/3/4 values from lookup table
+# and rescale to ensure same TOTHH
+
 for x in range(len(zone_df)):
-	zone_df.loc[x,'HHS1'] = zone_df.loc[x,'HH1'] * zone_df.loc[x,'TOTHH']
-	zone_df.loc[x,'HHS2'] = zone_df.loc[x,'HH2'] * zone_df.loc[x,'TOTHH']
-	zone_df.loc[x,'HHS3'] = zone_df.loc[x,'HH3'] * zone_df.loc[x,'TOTHH']
-	zone_df.loc[x,'HHS4'] = zone_df.loc[x,'HH4'] * zone_df.loc[x,'TOTHH']
+	zone_df.loc[x,'frac_tot'] = zone_df.loc[x,'HH1'] + zone_df.loc[x,'HH2'] + zone_df.loc[x,'HH3'] + zone_df.loc[x,'HH4']
+	zone_df.loc[x,'HHS1'] = (zone_df.loc[x,'HH1'] / zone_df.loc[x,'frac_tot']) * zone_df.loc[x,'TOTHH']
+	zone_df.loc[x,'HHS2'] = (zone_df.loc[x,'HH2'] / zone_df.loc[x,'frac_tot']) * zone_df.loc[x,'TOTHH']
+	zone_df.loc[x,'HHS3'] = (zone_df.loc[x,'HH3'] / zone_df.loc[x,'frac_tot']) * zone_df.loc[x,'TOTHH']
+	zone_df.loc[x,'HHS4'] = (zone_df.loc[x,'HH4'] / zone_df.loc[x,'frac_tot']) * zone_df.loc[x,'TOTHH']
+
+
+# refactor
+'''
+zone_df['HHS1'] = zone_df['HH1'] * zone_df['TOTHH']
+zone_df['HHS2'] = zone_df['HH2'] * zone_df['TOTHH']
+zone_df['HHS3'] = zone_df['HH3'] * zone_df['TOTHH']
+zone_df['HHS4'] = zone_df['HH4'] * zone_df['TOTHH']
+'''
 
 # Replace empty cells with 0
 zone_df.fillna(0, inplace=True) # Replace blank cells with 0	
@@ -136,12 +160,20 @@ if len(zone_df) != taz_records:
     raise Exception("Merge process in IncomeModel is not correct")
 
 # Multiply TOTHH by HHINC1/2/3/4 values from lookup table
-for x in range(len(zone_df)):
-	zone_df.loc[x,'INC1'] = zone_df.loc[x,'HHINC1'] * zone_df.loc[x,'TOTHH']
-	zone_df.loc[x,'INC2'] = zone_df.loc[x,'HHINC2'] * zone_df.loc[x,'TOTHH']
-	zone_df.loc[x,'INC3'] = zone_df.loc[x,'HHINC3'] * zone_df.loc[x,'TOTHH']
-	zone_df.loc[x,'INC4'] = zone_df.loc[x,'HHINC4'] * zone_df.loc[x,'TOTHH']
 
+for x in range(len(zone_df)):
+	zone_df.loc[x,'frac_tot'] = zone_df.loc[x,'HHINC1'] + zone_df.loc[x,'HHINC2'] + zone_df.loc[x,'HHINC3'] + zone_df.loc[x,'HHINC4']
+	zone_df.loc[x,'INC1'] = (zone_df.loc[x,'HHINC1']  / zone_df.loc[x,'frac_tot']) * zone_df.loc[x,'TOTHH']
+	zone_df.loc[x,'INC2'] = (zone_df.loc[x,'HHINC2']  / zone_df.loc[x,'frac_tot']) * zone_df.loc[x,'TOTHH']
+	zone_df.loc[x,'INC3'] = (zone_df.loc[x,'HHINC3']  / zone_df.loc[x,'frac_tot']) * zone_df.loc[x,'TOTHH']
+	zone_df.loc[x,'INC4'] = (zone_df.loc[x,'HHINC4']  / zone_df.loc[x,'frac_tot']) * zone_df.loc[x,'TOTHH']
+'''
+# refactor
+zone_df['INC1'] = zone_df['HHINC1'] * zone_df['TOTHH']
+zone_df['INC2'] = zone_df['HHINC2'] * zone_df['TOTHH']
+zone_df['INC3'] = zone_df['HHINC3'] * zone_df['TOTHH']
+zone_df['INC4'] = zone_df['HHINC4'] * zone_df['TOTHH']
+'''
 # Replace empty cells with 0
 zone_df.fillna(0, inplace=True) # Replace blank cells with 0
 
@@ -150,8 +182,6 @@ VisumPy.helpers.SetMulti(Visum.Net.Zones,"INC1",zone_df['INC1'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"INC2",zone_df['INC2'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"INC3",zone_df['INC3'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"INC4",zone_df['INC4'])
-
-
 
 
 """ Step 2: Iterative Proportional Fitting/Balancing """
@@ -169,58 +199,65 @@ for x in range(len(zone_df)):
 		r = np.array([zone_df.loc[x,'HHS1'],zone_df.loc[x,'HHS2'],zone_df.loc[x,'HHS3'],zone_df.loc[x,'HHS4']]) # HHSize from the HH size submodel by zone
 		c = np.array([zone_df.loc[x,'INC1'],zone_df.loc[x,'INC2'],zone_df.loc[x,'INC3'],zone_df.loc[x,'INC4']]) # HHIncome from the HH Income submodel by zone
 		""" Run Visum balanceMatrix function """
-		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.1) # TODO matrix balancing issue
-		# Paste in balanced values to new df fields
-		zone_df.loc[x,'HH1INC1'] = balanced_mat[0,0]
-		zone_df.loc[x,'HH1INC2'] = balanced_mat[0,1]
-		zone_df.loc[x,'HH1INC3'] = balanced_mat[0,2]
-		zone_df.loc[x,'HH1INC4'] = balanced_mat[0,3]
-		zone_df.loc[x,'HH2INC1'] = balanced_mat[1,0]
-		zone_df.loc[x,'HH2INC2'] = balanced_mat[1,1]
-		zone_df.loc[x,'HH2INC3'] = balanced_mat[1,2]
-		zone_df.loc[x,'HH2INC4'] = balanced_mat[1,3]
-		zone_df.loc[x,'HH3INC1'] = balanced_mat[2,0]
-		zone_df.loc[x,'HH3INC2'] = balanced_mat[2,1]
-		zone_df.loc[x,'HH3INC3'] = balanced_mat[2,2]
-		zone_df.loc[x,'HH3INC4'] = balanced_mat[2,3]
-		zone_df.loc[x,'HH4INC1'] = balanced_mat[3,0]
-		zone_df.loc[x,'HH4INC2'] = balanced_mat[3,1]
-		zone_df.loc[x,'HH4INC3'] = balanced_mat[3,2]
-		zone_df.loc[x,'HH4INC4'] = balanced_mat[3,3]
+		
+		try:
+			balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.1) # TODO matrix balancing issue default 0.0001
+			
+			# Paste in balanced values to new df fields
+			zone_df.loc[x,'HH1INC1'] = balanced_mat[0,0]
+			zone_df.loc[x,'HH1INC2'] = balanced_mat[0,1]
+			zone_df.loc[x,'HH1INC3'] = balanced_mat[0,2]
+			zone_df.loc[x,'HH1INC4'] = balanced_mat[0,3]
+			zone_df.loc[x,'HH2INC1'] = balanced_mat[1,0]
+			zone_df.loc[x,'HH2INC2'] = balanced_mat[1,1]
+			zone_df.loc[x,'HH2INC3'] = balanced_mat[1,2]
+			zone_df.loc[x,'HH2INC4'] = balanced_mat[1,3]
+			zone_df.loc[x,'HH3INC1'] = balanced_mat[2,0]
+			zone_df.loc[x,'HH3INC2'] = balanced_mat[2,1]
+			zone_df.loc[x,'HH3INC3'] = balanced_mat[2,2]
+			zone_df.loc[x,'HH3INC4'] = balanced_mat[2,3]
+			zone_df.loc[x,'HH4INC1'] = balanced_mat[3,0]
+			zone_df.loc[x,'HH4INC2'] = balanced_mat[3,1]
+			zone_df.loc[x,'HH4INC3'] = balanced_mat[3,2]
+			zone_df.loc[x,'HH4INC4'] = balanced_mat[3,3]
 
-		# Also Paste values into csv file with 1 row per zone/HH size/income group
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[0,0]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[0,1]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[0,2]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[0,3]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[1,0]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[1,1]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[1,2]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[1,3]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[2,0]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[2,1]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[2,2]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[2,3]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[3,0]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[3,1]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[3,2]
-		y = y + 1
-		HIOutputFile.loc[y,'TOTHH'] = balanced_mat[3,3]
-		y = y + 1
+			# Also Paste values into csv file with 1 row per zone/HH size/income group
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[0,0]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[0,1]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[0,2]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[0,3]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[1,0]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[1,1]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[1,2]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[1,3]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[2,0]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[2,1]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[2,2]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[2,3]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[3,0]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[3,1]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[3,2]
+			y = y + 1
+			HIOutputFile.loc[y,'TOTHH'] = balanced_mat[3,3]
+			y = y + 1	
+		except:
+			errstring = f"Could not balance NO {zone_df.loc[x,'NO']}	HH size: {np.array2string(r)} sum: {np.sum(r)}	INC: {np.array2string(c)} sum: {np.sum(c)}\n"
+			addIn.ReportMessage(errstring, MessageType.Error)
+			continue
 		
 	else:
 		y = y + 16
@@ -260,14 +297,14 @@ y = 0
 for x in range(len(HIOutputFile)):
 	if HIOutputFile.loc[x,'TOTHH'] > 0:
 		XArray[0] = 1 # ASC
-		XArray[1] = 1 if HIOutputFile.loc[x,'HHSIZE'] == 1 else 0
-		XArray[2] = 1 if HIOutputFile.loc[x,'HHSIZE'] == 2 else 0
-		XArray[3] = 1 if HIOutputFile.loc[x,'HHSIZE'] == 3 else 0
-		XArray[4] = 1 if HIOutputFile.loc[x,'HHSIZE'] == 4 else 0
-		XArray[5] = 1 if HIOutputFile.loc[x,'INCOME'] == 1 else 0
-		XArray[6] = 1 if HIOutputFile.loc[x,'INCOME'] == 2 else 0
-		XArray[7] = 1 if HIOutputFile.loc[x,'INCOME'] == 3 else 0
-		XArray[8] = 1 if HIOutputFile.loc[x,'INCOME'] == 4 else 0
+		XArray[1] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'HHSIZE'] == 1 else 0
+		XArray[2] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'HHSIZE'] == 2 else 0
+		XArray[3] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'HHSIZE'] == 3 else 0
+		XArray[4] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'HHSIZE'] == 4 else 0
+		XArray[5] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'INCOME'] == 1 else 0
+		XArray[6] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'INCOME'] == 2 else 0
+		XArray[7] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'INCOME'] == 3 else 0
+		XArray[8] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'INCOME'] == 4 else 0
 		
 		# Initialize Utilities
 		v0 = 0
@@ -277,7 +314,7 @@ for x in range(len(HIOutputFile)):
 		# Calculate utilities
 		for i in range(len(XArray)):
 			# Compute utility for each number of workers by TAZ/HH Size/Income 
-			v0 =  v0 + NumWorkersModel.loc[i,'Work0']  * XArray[i]
+			v0 =  v0 + NumWorkersModel.loc[i,'Work0']  * XArray[i] # wont this be 1/0 rather than number of HH?
 			v1 =  v1 + NumWorkersModel.loc[i,'Work1']  * XArray[i]
 			v2 =  v2 + NumWorkersModel.loc[i,'Work2']  * XArray[i]
 			v3 =  v3 + NumWorkersModel.loc[i,'Work3p'] * XArray[i]
@@ -324,7 +361,8 @@ for x in range(len(HIOutputFile)):
 		HIWOutputFile.loc[y,'TOTHH'] = 0
 		y = y + 1
 		continue
-	
+
+
 # Paste 3-Way distribution output table into csv file TOTHH field
 HIWOutputFile['TOTHH'].fillna(0, inplace=True) # Replace blank cells with 0
 HIWOutputFile.to_csv(hh_out_path+"HHSize_Inc_Workers.csv", index = False)
@@ -370,21 +408,26 @@ for x in range(len(zone_df)):
 		r = np.array([zone_df.loc[x,'HHS1'],zone_df.loc[x,'HHS2'],zone_df.loc[x,'HHS3'],zone_df.loc[x,'HHS4']]) # HHSize from the HH size submodel by zone
 		c = np.array([zone_df.loc[x,'HHWRK0'],zone_df.loc[x,'HHWRK1'],zone_df.loc[x,'HHWRK2'],zone_df.loc[x,'HHWRK3']]) # HHWorkers from the HH workers submodel by zone
 		""" Run Visum balanceMatrix function """
-		balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.1) # TODO matrix balancing issue
-		# Paste in balanced values to new df fields
-		zone_df.loc[x,'HH1W0'] = balanced_mat[0,0]
-		zone_df.loc[x,'HH1W1'] = balanced_mat[0,1]
-		zone_df.loc[x,'HH2W0'] = balanced_mat[1,0]
-		zone_df.loc[x,'HH2W1'] = balanced_mat[1,1]
-		zone_df.loc[x,'HH2W2'] = balanced_mat[1,2]
-		zone_df.loc[x,'HH3W0'] = balanced_mat[2,0]
-		zone_df.loc[x,'HH3W1'] = balanced_mat[2,1]
-		zone_df.loc[x,'HH3W2'] = balanced_mat[2,2]
-		zone_df.loc[x,'HH3W3'] = balanced_mat[2,3]
-		zone_df.loc[x,'HH4W0'] = balanced_mat[3,0]
-		zone_df.loc[x,'HH4W1'] = balanced_mat[3,1]
-		zone_df.loc[x,'HH4W2'] = balanced_mat[3,2]
-		zone_df.loc[x,'HH4W3'] = balanced_mat[3,3]
+		try:
+			balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001) # TODO matrix balancing issue default 0.0001
+			# Paste in balanced values to new df fields
+			zone_df.loc[x,'HH1W0'] = balanced_mat[0,0]
+			zone_df.loc[x,'HH1W1'] = balanced_mat[0,1]
+			zone_df.loc[x,'HH2W0'] = balanced_mat[1,0]
+			zone_df.loc[x,'HH2W1'] = balanced_mat[1,1]
+			zone_df.loc[x,'HH2W2'] = balanced_mat[1,2]
+			zone_df.loc[x,'HH3W0'] = balanced_mat[2,0]
+			zone_df.loc[x,'HH3W1'] = balanced_mat[2,1]
+			zone_df.loc[x,'HH3W2'] = balanced_mat[2,2]
+			zone_df.loc[x,'HH3W3'] = balanced_mat[2,3]
+			zone_df.loc[x,'HH4W0'] = balanced_mat[3,0]
+			zone_df.loc[x,'HH4W1'] = balanced_mat[3,1]
+			zone_df.loc[x,'HH4W2'] = balanced_mat[3,2]
+			zone_df.loc[x,'HH4W3'] = balanced_mat[3,3]
+		except:
+			errstring = f"Could not balance NO {zone_df.loc[x,'NO']}	HH size: {np.array2string(r)} sum: {np.sum(r)}	Workers: {np.array2string(c)} sum: {np.sum(c)}\n"
+			addIn.ReportMessage(errstring, MessageType.Error)
+			continue
 
 # Set Visum zone fields with HHWRK(0-3) values
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1W0",zone_df['HH1W0'])
