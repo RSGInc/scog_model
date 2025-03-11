@@ -201,7 +201,7 @@ for x in range(len(zone_df)):
 		""" Run Visum balanceMatrix function """
 		
 		try:
-			balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.1) # TODO matrix balancing issue default 0.0001
+			balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001) # TODO matrix balancing issue default 0.0001
 			
 			# Paste in balanced values to new df fields
 			zone_df.loc[x,'HH1INC1'] = balanced_mat[0,0]
@@ -297,14 +297,14 @@ y = 0
 for x in range(len(HIOutputFile)):
 	if HIOutputFile.loc[x,'TOTHH'] > 0:
 		XArray[0] = 1 # ASC
-		XArray[1] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'HHSIZE'] == 1 else 0
-		XArray[2] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'HHSIZE'] == 2 else 0
-		XArray[3] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'HHSIZE'] == 3 else 0
-		XArray[4] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'HHSIZE'] == 4 else 0
-		XArray[5] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'INCOME'] == 1 else 0
-		XArray[6] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'INCOME'] == 2 else 0
-		XArray[7] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'INCOME'] == 3 else 0
-		XArray[8] = HIOutputFile.loc[x,'TOTHH'] if HIOutputFile.loc[x,'INCOME'] == 4 else 0
+		XArray[1] = 1 if HIOutputFile.loc[x,'HHSIZE'] == 1 else 0
+		XArray[2] = 1 if HIOutputFile.loc[x,'HHSIZE'] == 2 else 0
+		XArray[3] = 1 if HIOutputFile.loc[x,'HHSIZE'] == 3 else 0
+		XArray[4] = 1 if HIOutputFile.loc[x,'HHSIZE'] == 4 else 0
+		XArray[5] = 1 if HIOutputFile.loc[x,'INCOME'] == 1 else 0
+		XArray[6] = 1 if HIOutputFile.loc[x,'INCOME'] == 2 else 0
+		XArray[7] = 1 if HIOutputFile.loc[x,'INCOME'] == 3 else 0
+		XArray[8] = 1 if HIOutputFile.loc[x,'INCOME'] == 4 else 0
 		
 		# Initialize Utilities
 		v0 = 0
@@ -314,7 +314,7 @@ for x in range(len(HIOutputFile)):
 		# Calculate utilities
 		for i in range(len(XArray)):
 			# Compute utility for each number of workers by TAZ/HH Size/Income 
-			v0 =  v0 + NumWorkersModel.loc[i,'Work0']  * XArray[i] # wont this be 1/0 rather than number of HH?
+			v0 =  v0 + NumWorkersModel.loc[i,'Work0']  * XArray[i]
 			v1 =  v1 + NumWorkersModel.loc[i,'Work1']  * XArray[i]
 			v2 =  v2 + NumWorkersModel.loc[i,'Work2']  * XArray[i]
 			v3 =  v3 + NumWorkersModel.loc[i,'Work3p'] * XArray[i]
@@ -409,7 +409,7 @@ for x in range(len(zone_df)):
 		c = np.array([zone_df.loc[x,'HHWRK0'],zone_df.loc[x,'HHWRK1'],zone_df.loc[x,'HHWRK2'],zone_df.loc[x,'HHWRK3']]) # HHWorkers from the HH workers submodel by zone
 		""" Run Visum balanceMatrix function """
 		try:
-			balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001) # TODO matrix balancing issue default 0.0001
+			balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001) # matrix balancing default 0.0001
 			# Paste in balanced values to new df fields
 			zone_df.loc[x,'HH1W0'] = balanced_mat[0,0]
 			zone_df.loc[x,'HH1W1'] = balanced_mat[0,1]
