@@ -10,7 +10,7 @@ import VisumPy.matrices
 import pandas as pd
 import csv
 from itertools import product
-import os
+import os.path
 # import logging
 from VisumPy.AddIn import AddIn, AddInState, MessageType, AddInParameter
 
