@@ -20,7 +20,10 @@ import os.path
 def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdir):
     
     # set defaults/handle null
+    fftime = 'FFTIME'
+    congtime = 'CTIME'
 
+    # output path
     timestamp = datetime.now().strftime("%m%d%Y_%H%M%S")
     filename = "CalRep_"+name+"_"+timestamp+".csv"
 
@@ -29,15 +32,15 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     calrep_df = pd.DataFrame(columns = cols)
 
     # calc directional flow * time
-    links_df['volfftime'] = links_df['PM_AUTO_VOLUME'] * links_df['FFTIME']
-    links_df['volctime'] = links_df['PM_AUTO_VOLUME'] * links_df['CTIME']
+    links_df['volfftime'] = links_df[flowfld] * links_df[fftime]
+    links_df['volctime'] = links_df[flowfld] * links_df[congtime]
 
-    # group links by direction
+    # group links by No and sum each direction
     field_map = {
         'TYPENO': 'first',
         'TSYSSET': 'first',
         'LENGTH': 'first',
-        'PM_AUTO_VOLUME': 'sum',
+        flowfld: 'sum',
         'volfftime': 'sum',
         'volctime': 'sum'
     }
@@ -105,7 +108,7 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
         # query whole network
         if numobs > 0:
             summiles = group_df['LENGTH'].sum()
-            vmt_vect = group_df['PM_AUTO_VOLUME'] * group_df['LENGTH']
+            vmt_vect = group_df[flowfld] * group_df['LENGTH']
             vht_ff_vect = group_df['volfftime'] / 60
             vht_ct_vect = group_df['volctime'] / 60
             vmt = vmt_vect.sum()/1000
@@ -117,13 +120,11 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
             vht_ff = 0
             vht_ct = 0
 
-        # allobs = links_df.query(q)
-        # summiles, vmt, vht_ff, vht_ct
-        # if numobs zero, fill zero
+        if numobs == 0:
+             totcnt, totvol, avgcnt, avgvol, tstat, avgerr, pcterr, pctrmse, mape, corrcoef, sumsqerr, mse, summiles, vmt, vht_ff, vht_ct = (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+		
         # add record/row
         calrep_df.loc[i] = list((qtype[0], qtype[1], numobs, totcnt, totvol, avgcnt, avgvol, tstat, avgerr, pcterr, pctrmse, mape, corrcoef, sumsqerr, mse, summiles, vmt, vht_ff, vht_ct))
-        # ["Type","Item","NumObs","TotCnt","TotMod","AvgCnt","AvgMod","Tstat","AvgErr","PctErr","PctRMSE","MAPE","CorrCoef","SumSqErr","MeanSqErr","Miles","VMT","AvgCtXMil"]
-    
     
     # Export count_summary_df to csv file in timestamped folder
     calrep_df.to_csv(os.path.join(outdir, filename))
@@ -145,7 +146,7 @@ ctime      = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_CTIME")
 # Set up dataframe to use for all needed zone attributes. Update as needed during coding
 links_df = pd.DataFrame({'NO':no, 'LENGTH': length, 'TYPENO': typeno, 'TSYSSET': tsys, 'PM_AUTO_VOLUME': pmvol, 'FFTIME': fftime, 'CTIME': ctime})
 
-#links_test = pd.read_csv(reports_path + 'links_out.csv')
+# TODO testing files
 count_test = pd.read_csv(reports_path + 'counts_2way.csv')
 query_test = reports_path + 'calrepinfo.csv'
 
