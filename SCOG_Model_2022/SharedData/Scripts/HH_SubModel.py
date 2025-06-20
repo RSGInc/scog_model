@@ -444,6 +444,37 @@ VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W1",zone_df['HH4W1'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W2",zone_df['HH4W2'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W3",zone_df['HH4W3'])
 
+""" Step 4: number of vehicles available """
+
+# TODO dummy values as placeholder
+
+zone_df['HH1VEH0'] = zone_df['HHS1'] * 0.1
+zone_df['HH1VEH1'] = zone_df['HHS1'] * 0.9
+zone_df['HH2VEH0'] = zone_df['HHS2'] * 0.1 
+zone_df['HH2VEH1'] = zone_df['HHS2'] * 0.3 
+zone_df['HH2VEH2'] = zone_df['HHS2'] * 0.6 
+zone_df['HH3VEH0'] = zone_df['HHS3'] * 0.1
+zone_df['HH3VEH1'] = zone_df['HHS3'] * 0.2 
+zone_df['HH3VEH2'] = zone_df['HHS3'] * 0.7 
+zone_df['HH4VEH0'] = zone_df['HHS4'] * 0.1
+zone_df['HH4VEH1'] = zone_df['HHS4'] * 0.1
+zone_df['HH4VEH2'] = zone_df['HHS4'] * 0.5
+zone_df['HH4VEH3'] = zone_df['HHS4'] * 0.2
+
+# Set Visum zone fields with HHWRK(0-3) values
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH0",zone_df['HH1VEH0'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH1",zone_df['HH1VEH1'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH0",zone_df['HH2VEH0'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH1",zone_df['HH2VEH1'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH2",zone_df['HH2VEH2'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH0",zone_df['HH3VEH0'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH1",zone_df['HH3VEH1'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH2",zone_df['HH3VEH2'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH0",zone_df['HH4VEH0'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH1",zone_df['HH4VEH1'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH2",zone_df['HH4VEH2'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH3",zone_df['HH4VEH3'])
+
 
 # Reshape 3-way distribution to be pasted into Visum zone layer
 # triple_dist = pd.DataFrame({'NO':zone_df['NO']})
