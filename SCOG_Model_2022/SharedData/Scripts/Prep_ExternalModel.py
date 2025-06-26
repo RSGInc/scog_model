@@ -62,7 +62,7 @@ for i in range(len(df)):
 	# df.at[i,'Trk_XX_D_Out']     = df.at[i,'Trk_XX_D']    *((1+df.at[i,'Trk_Ext_Growth']) **grow_years)
 	# df.at[i,'Trk_XIIX_OD_Out']  = df.at[i,'Trk_XIIX_OD'] *((1+df.at[i,'Trk_Ext_Growth']) **grow_years)
 
-
+df.to_csv('debug_Ext_sta_summary.csv')
 # Zero Visum fields to ensure internals are 0
 df['Zero'] = 0
 VisumPy.helpers.SetMulti(Visum.Net.Zones, "XX_AUTO_P", df['Zero'])
