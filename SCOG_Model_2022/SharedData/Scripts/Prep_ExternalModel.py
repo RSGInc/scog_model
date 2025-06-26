@@ -90,32 +90,33 @@ VisumPy.helpers.SetMulti(Visum.Net.Zones, "X_NW_PCT", df['X_NW%'],activeOnly = T
 
 
 #if (int(Visum.Net.AttValue("YEAR"))) > 2022: # Fratar matrix for future years
-if scen_year > base_year: # Fratar matrix for future years
-	# Pull full fields (not just externals) for matrix balancing
-	XX_auto_P  = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_AUTO_P")
-	XX_auto_A  = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_AUTO_A")
-	# XX_truck_P = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_TRUCK_P")
-	# XX_truck_A = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_TRUCK_A")
-	
-	# Balance XX Matrices to Grown P's and A's for Autos
-	mat = VisumPy.helpers.GetMatrix(Visum, 6) # Auto XX Matrix # bug? initially zeros
-	r = np.array(XX_auto_P)
-	c = np.array(XX_auto_A)
-	#  Run Visum balanceMatrix function
-	balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c)
-	# Set matrix in Visum
-	VisumPy.helpers.SetMatrix(Visum, 76, balanced_mat)
-	
-	
-	# Balance XX Matrices to Grown P's and A's for Trucks
-	# mat = VisumPy.helpers.GetMatrix(Visum, 567) # Truck XX Matrix
-	# r = np.array(XX_truck_P)
-	# c = np.array(XX_truck_A)
-	# #  Run Visum balanceMatrix function
-	# balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c)
-	# # Set matrix in Visum
-	# VisumPy.helpers.SetMatrix(Visum, 569, balanced_mat)
+#if scen_year > base_year: # Fratar matrix for future years # grow always
+# Pull full fields (not just externals) for matrix balancing
+XX_auto_P  = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_AUTO_P")
+XX_auto_A  = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_AUTO_A")
+# XX_truck_P = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_TRUCK_P")
+# XX_truck_A = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_TRUCK_A")
 
+# Balance XX Matrices to Grown P's and A's for Autos
+mat = VisumPy.helpers.GetMatrix(Visum, 6) # Auto XX Matrix # bug? initially zeros
+r = np.array(XX_auto_P)
+c = np.array(XX_auto_A)
+#  Run Visum balanceMatrix function
+balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001)
+# Set matrix in Visum
+VisumPy.helpers.SetMatrix(Visum, 76, balanced_mat)
+
+
+# Balance XX Matrices to Grown P's and A's for Trucks
+# mat = VisumPy.helpers.GetMatrix(Visum, 567) # Truck XX Matrix
+# r = np.array(XX_truck_P)
+# c = np.array(XX_truck_A)
+# #  Run Visum balanceMatrix function
+# balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c)
+# # Set matrix in Visum
+# VisumPy.helpers.SetMatrix(Visum, 569, balanced_mat)
+
+"""
 else: # Base year just copy Base Matrices to working matrices
 	# Auto
 	mat = VisumPy.helpers.GetMatrix(Visum, 6) # Auto XX Matrix
@@ -123,7 +124,4 @@ else: # Base year just copy Base Matrices to working matrices
 	# Truck
 	# mat = VisumPy.helpers.GetMatrix(Visum, 567) # Truck XX Matrix
 	# VisumPy.helpers.SetMatrix(Visum, 569, mat)
-	
-	
-
-
+"""
