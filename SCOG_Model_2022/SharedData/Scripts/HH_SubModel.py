@@ -34,7 +34,9 @@ HHSizeModel = pd.read_csv(hh_parameters_path+'HHSizeModel.csv')
 IncomeModel = pd.read_csv(hh_parameters_path+'IncomeModel.csv')
 HHIncSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_income_2d_table.csv')
 HHWrkSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_workers_2d_table.csv')
+HHVehSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_vehicles_2d_table.csv')
 NumWorkersModel = pd.read_csv(hh_parameters_path+'NumberOfWorkersModel_MNL.csv')
+NumVehiclesModel = pd.read_csv(hh_parameters_path+'NumberOfVehiclesModel_MNL.csv')
 
 
 # Pull Zone attributes from Visum and create dataframe
@@ -54,17 +56,22 @@ zone_df = pd.DataFrame({'NO':no, 'TOTHH':tothh, 'HHINC':hhinc, 'HHSIZE':hhsize})
 hhsize = [1,2,3,4] 
 hhinc = [1,2,3,4]
 hhwrk = [0,1,2,3]
+hhveh = [0,1,2,3]
 tothh = [0]
 combinations1 = list(product(no,hhsize,hhinc,tothh))
 combinations2 = list(product(no,hhsize,hhinc,hhwrk,tothh))
+combinations3 = list(product(no,hhsize,hhinc,hhwrk,hhveh,tothh))
 HIOut = pd.DataFrame(combinations1, columns=['ZONE','HHSIZE','INCOME','TOTHH'])
 HIWOut = pd.DataFrame(combinations2, columns=['ZONE','HHSIZE','INCOME','WORKERS','TOTHH'])
+HIWVOut = pd.DataFrame(combinations3, columns=['ZONE','HHSIZE','INCOME','WORKERS','VEHICLES','TOTHH'])
 
 HIOut.to_csv(hh_out_path+"HHSize_Inc.csv", index = False)
 HIWOut.to_csv(hh_out_path+"HHSize_Inc_Workers.csv", index = False)
+HIWVOut.to_csv(hh_out_path+"HHSize_Inc_Workers_Veh.csv", index = False)
 
 HIOutputFile   = pd.read_csv(hh_out_path+"HHSize_Inc.csv")
 HIWOutputFile  = pd.read_csv(hh_out_path+"HHSize_Inc_Workers.csv")
+HIWVOutputFile  = pd.read_csv(hh_out_path+"HHSize_Inc_Workers_Veh.csv")
 #HIWCOutputFile = pd.read_csv(hh_out_path+"HHSize_Inc_Workers_Childrn.csv")
 
 # Drop P&R and External TAZs
@@ -445,21 +452,147 @@ VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W2",zone_df['HH4W2'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W3",zone_df['HH4W3'])
 
 """ Step 4: number of vehicles available """
+# Create array to match up with coefficient array for worker model
+XArray = np.zeros(len(NumVehiclesModel))
 
-# TODO dummy values as placeholder
+y = 0
+for x in range(len(HIWOutputFile)):
+	if HIWOutputFile.loc[x,'TOTHH'] > 0:
+		XArray[0] =  1 # ASC
+		XArray[1] =  1 if HIWOutputFile.loc[x,'HHSIZE'] == 1 else 0
+		XArray[2] =  1 if HIWOutputFile.loc[x,'HHSIZE'] == 2 else 0
+		XArray[3] =  1 if HIWOutputFile.loc[x,'HHSIZE'] == 3 else 0
+		XArray[4] =  1 if HIWOutputFile.loc[x,'HHSIZE'] == 4 else 0
+		XArray[5] =  1 if HIWOutputFile.loc[x,'INCOME'] == 1 else 0
+		XArray[6] =  1 if HIWOutputFile.loc[x,'INCOME'] == 2 else 0
+		XArray[7] =  1 if HIWOutputFile.loc[x,'INCOME'] == 3 else 0
+		XArray[8] =  1 if HIWOutputFile.loc[x,'INCOME'] == 4 else 0
+		XArray[9] =  1 if HIWOutputFile.loc[x,'WORKERS'] == 0 else 0
+		XArray[10] = 1 if HIWOutputFile.loc[x,'WORKERS'] == 1 else 0
+		XArray[11] = 1 if HIWOutputFile.loc[x,'WORKERS'] == 2 else 0
+		XArray[12] = 1 if HIWOutputFile.loc[x,'WORKERS'] == 3 else 0
+		
+		# Initialize Utilities
+		v0 = 0
+		v1 = 0
+		v2 = 0
+		v3 = 0
+		# Calculate utilities
+		for i in range(len(XArray)):
+			# Compute utility for each number of workers by TAZ/HH Size/Income 
+			v0 =  v0 + NumVehiclesModel.loc[i,'Veh0']  * XArray[i]
+			v1 =  v1 + NumVehiclesModel.loc[i,'Veh1']  * XArray[i]
+			v2 =  v2 + NumVehiclesModel.loc[i,'Veh2']  * XArray[i]
+			v3 =  v3 + NumVehiclesModel.loc[i,'Veh3'] * XArray[i]
+		
+		# Constrain number of workers by HHSize [# Workers <= HH Size)
+		v2 = v2 - 500 if HIWOutputFile.loc[x,'HHSIZE'] <= 2 else v2
+		v3 = v3 - 500 if HIWOutputFile.loc[x,'HHSIZE'] <= 3 else v3
+		
+		# Compute probabilities for each number of vehicles
+		p0 = np.exp(v0)/(np.exp(v0)+np.exp(v1)+np.exp(v2)+np.exp(v3))
+		p1 = np.exp(v1)/(np.exp(v0)+np.exp(v1)+np.exp(v2)+np.exp(v3))
+		p2 = np.exp(v2)/(np.exp(v0)+np.exp(v1)+np.exp(v2)+np.exp(v3))
+		p3 = np.exp(v3)/(np.exp(v0)+np.exp(v1)+np.exp(v2)+np.exp(v3))
+		
+		# Compute number workers distribution for given TAZ/HH Size/Income
+		v0 = p0 * HIWOutputFile.loc[x,'TOTHH']
+		v1 = p1 * HIWOutputFile.loc[x,'TOTHH']
+		v2 = p2 * HIWOutputFile.loc[x,'TOTHH']
+		v3 = p3 * HIWOutputFile.loc[x,'TOTHH']
+		
+		# Replace values from instances of # Workers > HH Size with 0
+		if HIWOutputFile.loc[x,'HHSIZE'] == 1:
+			w2 = 0
+			w3 = 0
+		elif HIWOutputFile.loc[x,'HHSIZE'] == 2:
+			w3 = 0
+		
+		# Paste in number of vehicles to HIWVOutputFile by TAZ/HH Size/Income/Workers
+		HIWVOutputFile.loc[y,'TOTHH'] = v0
+		y = y + 1
+		HIWVOutputFile.loc[y,'TOTHH'] = v1
+		y = y + 1
+		HIWVOutputFile.loc[y,'TOTHH'] = v2
+		y = y + 1
+		HIWVOutputFile.loc[y,'TOTHH'] = v3
+		y = y + 1
+	else:
+		HIWVOutputFile.loc[y,'TOTHH'] = 0
+		y = y + 1
+		HIWVOutputFile.loc[y,'TOTHH'] = 0
+		y = y + 1
+		HIWVOutputFile.loc[y,'TOTHH'] = 0
+		y = y + 1
+		HIWVOutputFile.loc[y,'TOTHH'] = 0
+		y = y + 1
+		continue
 
-zone_df['HH1VEH0'] = zone_df['HHS1'] * 0.1
-zone_df['HH1VEH1'] = zone_df['HHS1'] * 0.9
-zone_df['HH2VEH0'] = zone_df['HHS2'] * 0.1 
-zone_df['HH2VEH1'] = zone_df['HHS2'] * 0.3 
-zone_df['HH2VEH2'] = zone_df['HHS2'] * 0.6 
-zone_df['HH3VEH0'] = zone_df['HHS3'] * 0.1
-zone_df['HH3VEH1'] = zone_df['HHS3'] * 0.2 
-zone_df['HH3VEH2'] = zone_df['HHS3'] * 0.7 
-zone_df['HH4VEH0'] = zone_df['HHS4'] * 0.1
-zone_df['HH4VEH1'] = zone_df['HHS4'] * 0.1
-zone_df['HH4VEH2'] = zone_df['HHS4'] * 0.5
-zone_df['HH4VEH3'] = zone_df['HHS4'] * 0.2
+
+# Paste 3-Way distribution output table into csv file TOTHH field
+HIWVOutputFile['TOTHH'].fillna(0, inplace=True) # Replace blank cells with 0
+HIWVOutputFile.to_csv(hh_out_path+"HHSize_Inc_Workers_Veh.csv", index = False)
+
+# Collapse Number of Vehicles by TAZ to get HHVEH(0-3)
+# Filter by # of vehciles
+veh0 = HIWVOutputFile[HIWVOutputFile['VEHICLES'] == 0].reset_index(drop=True)
+veh1 = HIWVOutputFile[HIWVOutputFile['VEHICLES'] == 1].reset_index(drop=True)
+veh2 = HIWVOutputFile[HIWVOutputFile['VEHICLES'] == 2].reset_index(drop=True)
+veh3 = HIWVOutputFile[HIWVOutputFile['VEHICLES'] == 3].reset_index(drop=True)
+
+zone_df['HHVEH0'] = 0
+zone_df['HHVEH1'] = 0
+zone_df['HHVEH2'] = 0
+zone_df['HHVEH3'] = 0
+# Groupby ZONE 
+veh0 = veh0.groupby(['ZONE'])
+veh1 = veh1.groupby(['ZONE'])
+veh2 = veh2.groupby(['ZONE'])
+veh3 = veh3.groupby(['ZONE'])
+# Sum TOTHH by ZONE
+zone_df['HHVEH0'] = veh0['TOTHH'].sum().reset_index(drop=True)
+zone_df['HHVEH1'] = veh1['TOTHH'].sum().reset_index(drop=True)
+zone_df['HHVEH2'] = veh2['TOTHH'].sum().reset_index(drop=True)
+zone_df['HHVEH3'] = veh3['TOTHH'].sum().reset_index(drop=True)
+# Replace empty cells with 0
+zone_df.fillna(0, inplace=True) # Replace blank cells with 0	
+# Set Visum zone fields with HHWRK(0-3) values
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHVEH0",zone_df['HHVEH0'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHVEH1",zone_df['HHVEH1'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHVEH2",zone_df['HHVEH2'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHVEH3",zone_df['HHVEH3'])
+
+for x in range(len(zone_df)):
+
+	if zone_df.loc[x,'TOTHH'] > 0:
+		## HHSize x Workers
+		mat = np.array([[HHVehSeedMtx ['VEH0'].values[0],HHVehSeedMtx['VEH1'].values[0],HHVehSeedMtx['VEH2'].values[0],HHVehSeedMtx['VEH3'].values[0]],  # HH1
+                        [HHVehSeedMtx ['VEH0'].values[1],HHVehSeedMtx['VEH1'].values[1],HHVehSeedMtx['VEH2'].values[1],HHVehSeedMtx['VEH3'].values[1]],  # HH2
+                        [HHVehSeedMtx ['VEH0'].values[2],HHVehSeedMtx['VEH1'].values[2],HHVehSeedMtx['VEH2'].values[2],HHVehSeedMtx['VEH3'].values[2]],  # HH3
+                        [HHVehSeedMtx ['VEH0'].values[3],HHVehSeedMtx['VEH1'].values[3],HHVehSeedMtx['VEH2'].values[3],HHVehSeedMtx['VEH3'].values[3]]]) # HH4
+		r = np.array([zone_df.loc[x,'HHS1'],zone_df.loc[x,'HHS2'],zone_df.loc[x,'HHS3'],zone_df.loc[x,'HHS4']]) # HHSize from the HH size submodel by zone
+		c = np.array([zone_df.loc[x,'HHVEH0'],zone_df.loc[x,'HHVEH1'],zone_df.loc[x,'HHVEH2'],zone_df.loc[x,'HHVEH3']]) # HHVehicles from the HH Vehicles submodel by zone
+		""" Run Visum balanceMatrix function """
+		try:
+			balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001) # matrix balancing default 0.0001
+			# Paste in balanced values to new df fields
+			zone_df.loc[x,'HH1VEH0'] = balanced_mat[0,0]
+			zone_df.loc[x,'HH1VEH1'] = balanced_mat[0,1]
+			zone_df.loc[x,'HH2VEH0'] = balanced_mat[1,0]
+			zone_df.loc[x,'HH2VEH1'] = balanced_mat[1,1]
+			zone_df.loc[x,'HH2VEH2'] = balanced_mat[1,2]
+			zone_df.loc[x,'HH3VEH0'] = balanced_mat[2,0]
+			zone_df.loc[x,'HH3VEH1'] = balanced_mat[2,1]
+			zone_df.loc[x,'HH3VEH2'] = balanced_mat[2,2]
+			zone_df.loc[x,'HH3VEH3'] = balanced_mat[2,3]
+			zone_df.loc[x,'HH4VEH0'] = balanced_mat[3,0]
+			zone_df.loc[x,'HH4VEH1'] = balanced_mat[3,1]
+			zone_df.loc[x,'HH4VEH2'] = balanced_mat[3,2]
+			zone_df.loc[x,'HH4VEH3'] = balanced_mat[3,3]
+		except:
+			errstring = f"Could not balance NO {zone_df.loc[x,'NO']}	HH size: {np.array2string(r)} sum: {np.sum(r)}	Vehicles: {np.array2string(c)} sum: {np.sum(c)}\n"
+			addIn.ReportMessage(errstring, MessageType.Error)
+			continue
 
 # Set Visum zone fields with HHWRK(0-3) values
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH0",zone_df['HH1VEH0'])
@@ -470,10 +603,39 @@ VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH2",zone_df['HH2VEH2'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH0",zone_df['HH3VEH0'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH1",zone_df['HH3VEH1'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH2",zone_df['HH3VEH2'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH3",zone_df['HH3VEH3'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH0",zone_df['HH4VEH0'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH1",zone_df['HH4VEH1'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH2",zone_df['HH4VEH2'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH3",zone_df['HH4VEH3'])
+
+# TODO dummy values as placeholder
+# zone_df['HH1VEH0'] = zone_df['HHS1'] * 0.1
+# zone_df['HH1VEH1'] = zone_df['HHS1'] * 0.9
+# zone_df['HH2VEH0'] = zone_df['HHS2'] * 0.1 
+# zone_df['HH2VEH1'] = zone_df['HHS2'] * 0.3 
+# zone_df['HH2VEH2'] = zone_df['HHS2'] * 0.6 
+# zone_df['HH3VEH0'] = zone_df['HHS3'] * 0.1
+# zone_df['HH3VEH1'] = zone_df['HHS3'] * 0.2 
+# zone_df['HH3VEH2'] = zone_df['HHS3'] * 0.7 
+# zone_df['HH4VEH0'] = zone_df['HHS4'] * 0.1
+# zone_df['HH4VEH1'] = zone_df['HHS4'] * 0.1
+# zone_df['HH4VEH2'] = zone_df['HHS4'] * 0.5
+# zone_df['HH4VEH3'] = zone_df['HHS4'] * 0.2
+# 
+# # Set Visum zone fields with HHWRK(0-3) values
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH0",zone_df['HH1VEH0'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH1",zone_df['HH1VEH1'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH0",zone_df['HH2VEH0'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH1",zone_df['HH2VEH1'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH2",zone_df['HH2VEH2'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH0",zone_df['HH3VEH0'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH1",zone_df['HH3VEH1'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH2",zone_df['HH3VEH2'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH0",zone_df['HH4VEH0'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH1",zone_df['HH4VEH1'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH2",zone_df['HH4VEH2'])
+# VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH3",zone_df['HH4VEH3'])
 
 
 # Reshape 3-way distribution to be pasted into Visum zone layer
