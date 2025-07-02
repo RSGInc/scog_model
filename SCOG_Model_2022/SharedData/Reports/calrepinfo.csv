@@ -8,18 +8,18 @@ AADT > 80k,All,AADT > 80000
 WithCounts,All,AADT >= 0
 Freeways,All,FCLASS < 3
 Non-Freeways,All,FCLASS > 2
-Urban,All,AREATYPE = 1
-Rural,All,AREATYPE = 2
-Interstates,All,FCLASS = 1
-Non-Interstate Freeway,All,FCLASS = 2
-Principal Arterial,All,FCLASS = 3
-Minor Arterial,All,FCLASS = 4
-Major Collector,All,FCLASS = 5
-Minor Collector,All,FCLASS = 6
-Local Road or Street,All,FCLASS = 7
-Ramp,All,FCLASS = 8
-External Centroid Connect,All,FCLASS = 98
-Internal Centroid Connect,All,FCLASS = 99
+Urban,All,AREATYPE == 1
+Rural,All,AREATYPE == 2
+Interstates,All,FCLASS == 1
+Non-Interstate Freeway,All,FCLASS == 2
+Principal Arterial,All,FCLASS == 3
+Minor Arterial,All,FCLASS == 4
+Major Collector,All,FCLASS == 5
+Minor Collector,All,FCLASS == 6
+Local Road or Street,All,FCLASS == 7
+Ramp,All,FCLASS == 8
+External Centroid Connect,All,FCLASS == 98
+Internal Centroid Connect,All,FCLASS == 99
 AADT < 5k,FSUTMS RMSE,AADT < 5000
 AADT 5k to 10k,FSUTMS RMSE,AADT >= 5000 and AADT < 10000
 AADT 10k to 15k,FSUTMS RMSE,AADT >= 10000 and AADT < 15000
@@ -34,3 +34,4 @@ AADT 30k to 50k,FSUTMS Pct Error,AADT >= 30000 and AADT < 50000
 AADT 50k to 65k,FSUTMS Pct Error,AADT >= 50000 and AADT < 65000
 AADT 65k to 75k,FSUTMS Pct Error,AADT >= 65000 and AADT < 75000
 AADT > 75k,FSUTMS Pct Error,AADT >= 75000
+Ext Counts,All,ExtCount == 1
