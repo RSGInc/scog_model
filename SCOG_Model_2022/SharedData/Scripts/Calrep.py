@@ -157,6 +157,6 @@ calrep("AMAuto", links_df, 'AM_AUTO_VOLUME', 'NO', count_file, 'Count_AM', query
 calrep("PMAuto", links_df, 'PM_AUTO_VOLUME', 'NO', count_file, 'Count_PM', query_file, out_path)
 calrep("OPAuto", links_df, 'OP_AUTO_VOLUME', 'NO', count_file, 'Count_OP', query_file, out_path)
 calrep("PMPeakAuto", links_df, 'PMPK_AUTO_VOLUME', 'NO', count_file, 'Count_PMPK', query_file, out_path)
-# TODO daily volume vs count
-#calrep("PMAuto", links_df, 'PM_AUTO_VOLUME', 'NO', count_test, 'AADT', query_test, out_path)
+#calrep("DLYAuto", links_df, 'DLY_AUTO_VOLUME', 'NO', count_file, 'Count_DLY', query_file, out_path) # TODO daily volume vs count
+
 
