@@ -1,37 +1,34 @@
 Type,Item,Query
-AADT < 5k,All,AADT < 5000
-AADT 5k to 10k,All,AADT >= 5000 and AADT < 10000
-AADT 10k to 20k,All,AADT >= 10000 and AADT < 20000
-AADT 20k to 40k,All,AADT >= 20000 and AADT < 40000
-AADT 40k to 80k,All,AADT >= 40000 and AADT < 80000
-AADT > 80k,All,AADT > 80000
-WithCounts,All,AADT >= 0
+AADT < 5k,All,DLY < 5000
+AADT 5k to 10k,All,DLY >= 5000 and DLY < 10000
+AADT 10k to 20k,All,DLY >= 10000 and DLY < 20000
+AADT 20k to 40k,All,DLY >= 20000 and DLY < 40000
+AADT 40k to 80k,All,DLY >= 40000 and DLY < 80000
+AADT > 80k,All,DLY > 80000
+WithCounts,All,DLY >= 0
 Freeways,All,FCLASS < 3
 Non-Freeways,All,FCLASS > 2
-Urban,All,AREATYPE == 1
-Rural,All,AREATYPE == 2
-Interstates,All,FCLASS == 1
-Non-Interstate Freeway,All,FCLASS == 2
-Principal Arterial,All,FCLASS == 3
-Minor Arterial,All,FCLASS == 4
-Major Collector,All,FCLASS == 5
-Minor Collector,All,FCLASS == 6
-Local Road or Street,All,FCLASS == 7
-Ramp,All,FCLASS == 8
-External Centroid Connect,All,FCLASS == 98
-Internal Centroid Connect,All,FCLASS == 99
-AADT < 5k,FSUTMS RMSE,AADT < 5000
-AADT 5k to 10k,FSUTMS RMSE,AADT >= 5000 and AADT < 10000
-AADT 10k to 15k,FSUTMS RMSE,AADT >= 10000 and AADT < 15000
-AADT 15k to 20k,FSUTMS RMSE,AADT >= 15000 and AADT < 20000
-AADT 20k to 30k,FSUTMS RMSE,AADT >= 20000 and AADT < 30000
-AADT 30k to 50k,FSUTMS RMSE,AADT >= 30000 and AADT < 50000
-AADT 50k to 60k,FSUTMS RMSE,AADT >= 50000 and AADT < 60000
-AADT > 60k,FSUTMS RMSE,AADT >= 60000
-AADT < 10k,FSUTMS Pct Error,AADT < 10000
-AADT 10k to 30k,FSUTMS Pct Error,AADT >= 10000 and AADT < 30000
-AADT 30k to 50k,FSUTMS Pct Error,AADT >= 30000 and AADT < 50000
-AADT 50k to 65k,FSUTMS Pct Error,AADT >= 50000 and AADT < 65000
-AADT 65k to 75k,FSUTMS Pct Error,AADT >= 65000 and AADT < 75000
-AADT > 75k,FSUTMS Pct Error,AADT >= 75000
+Urban,All,AreaType == "Urban"
+Rural,All,AreaType == "Rural"
+Interstates,All,NFCLASS == 1
+Non-Interstate Freeway,All,NFCLASS == 2
+Principal Arterial,All,NFCLASS == 3
+Minor Arterial,All,NFCLASS == 4
+Major Collector,All,NFCLASS == 5
+Minor Collector,All,NFCLASS == 6
+Local Road or Street,All,NFCLASS == 7
+AADT < 5k,FSUTMS RMSE,DLY < 5000
+AADT 5k to 10k,FSUTMS RMSE,DLY >= 5000 and DLY < 10000
+AADT 10k to 15k,FSUTMS RMSE,DLY >= 10000 and DLY < 15000
+AADT 15k to 20k,FSUTMS RMSE,DLY >= 15000 and DLY < 20000
+AADT 20k to 30k,FSUTMS RMSE,DLY >= 20000 and DLY < 30000
+AADT 30k to 50k,FSUTMS RMSE,DLY >= 30000 and DLY < 50000
+AADT 50k to 60k,FSUTMS RMSE,DLY >= 50000 and DLY < 60000
+AADT > 60k,FSUTMS RMSE,DLY >= 60000
+AADT < 10k,FSUTMS Pct Error,DLY < 10000
+AADT 10k to 30k,FSUTMS Pct Error,DLY >= 10000 and DLY < 30000
+AADT 30k to 50k,FSUTMS Pct Error,DLY >= 30000 and DLY < 50000
+AADT 50k to 65k,FSUTMS Pct Error,DLY >= 50000 and DLY < 65000
+AADT 65k to 75k,FSUTMS Pct Error,DLY >= 65000 and DLY < 75000
+AADT > 75k,FSUTMS Pct Error,DLY >= 75000
 Ext Counts,All,ExtCount == 1

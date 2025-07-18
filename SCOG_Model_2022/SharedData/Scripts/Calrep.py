@@ -139,24 +139,26 @@ no          = VisumPy.helpers.GetMulti(Visum.Net.Links,"No")
 length      = VisumPy.helpers.GetMulti(Visum.Net.Links,"Length")
 typeno      = VisumPy.helpers.GetMulti(Visum.Net.Links,"TypeNo")
 tsys        = VisumPy.helpers.GetMulti(Visum.Net.Links,"TSysSet")
+nfc         = VisumPy.helpers.GetMulti(Visum.Net.Links,"NFCLASS")
 amvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"AM_AUTO_VOLUME")
 pmvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_AUTO_VOLUME")
 pmpkvol     = VisumPy.helpers.GetMulti(Visum.Net.Links,"PMPK_AUTO_VOLUME")
 opvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"OP_AUTO_VOLUME")
+dlyvol      = VisumPy.helpers.GetMulti(Visum.Net.Links,"DLY_AUTO_VOLUME")
 fftime      = VisumPy.helpers.GetMulti(Visum.Net.Links,"T0_PRTSYS(C)")
-ctime      = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_CTIME")
+ctime       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_CTIME")
 
 # Set up dataframe to use for all needed zone attributes. Update as needed during coding
-links_df = pd.DataFrame({'NO':no, 'LENGTH': length, 'TYPENO': typeno, 'TSYSSET': tsys, 'AM_AUTO_VOLUME': amvol, 'PM_AUTO_VOLUME': pmvol, 'PMPK_AUTO_VOLUME': pmpkvol, 'OP_AUTO_VOLUME': opvol,  'FFTIME': fftime, 'CTIME': ctime})
+links_df = pd.DataFrame({'NO':no, 'LENGTH': length, 'TYPENO': typeno, 'TSYSSET': tsys, 'NFCLASS': nfc, 'AM_AUTO_VOLUME': amvol, 'PM_AUTO_VOLUME': pmvol, 'PMPK_AUTO_VOLUME': pmpkvol, 'OP_AUTO_VOLUME': opvol, 'DLY_AUTO_VOLUME': dlyvol,  'FFTIME': fftime, 'CTIME': ctime})
 
 # count_test = pd.read_csv(reports_path + 'counts_2way.csv') # testing file
-count_file = pd.read_csv(reports_path + 'merged_Auto_counts_5_13.csv')
+# count_file = pd.read_csv(reports_path + 'merged_Auto_counts_5_13.csv')
+count_file = pd.read_csv(reports_path + '/SCOG_Counts_07142025/Auto_Counts.csv')
 query_file = reports_path + 'calrepinfo.csv' # TODO testing
 
-calrep("AMAuto", links_df, 'AM_AUTO_VOLUME', 'NO', count_file, 'Count_AM', query_file, out_path)
-calrep("PMAuto", links_df, 'PM_AUTO_VOLUME', 'NO', count_file, 'Count_PM', query_file, out_path)
-calrep("OPAuto", links_df, 'OP_AUTO_VOLUME', 'NO', count_file, 'Count_OP', query_file, out_path)
-calrep("PMPeakAuto", links_df, 'PMPK_AUTO_VOLUME', 'NO', count_file, 'Count_PMPK', query_file, out_path)
-#calrep("DLYAuto", links_df, 'DLY_AUTO_VOLUME', 'NO', count_file, 'Count_DLY', query_file, out_path) # TODO daily volume vs count
-
+calrep("AMAuto", links_df, 'AM_AUTO_VOLUME', 'NO', count_file, 'AM', query_file, out_path)
+calrep("PMAuto", links_df, 'PM_AUTO_VOLUME', 'NO', count_file, 'PM', query_file, out_path)
+calrep("OPAuto", links_df, 'OP_AUTO_VOLUME', 'NO', count_file, 'OP', query_file, out_path)
+calrep("PMPeakAuto", links_df, 'PMPK_AUTO_VOLUME', 'NO', count_file, 'PM_PKHR', query_file, out_path)
+calrep("DLYAuto", links_df, 'DLY_AUTO_VOLUME', 'NO', count_file, 'DLY', query_file, out_path)
 
