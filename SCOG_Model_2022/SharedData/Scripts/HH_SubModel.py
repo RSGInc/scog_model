@@ -34,7 +34,7 @@ HHSizeModel = pd.read_csv(hh_parameters_path+'HHSizeModel.csv')
 IncomeModel = pd.read_csv(hh_parameters_path+'IncomeModel.csv')
 HHIncSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_income_2d_table.csv')
 HHWrkSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_workers_2d_table.csv')
-HHVehSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_vehicles_2d_table.csv')
+HHVehSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_vehicles_2d_table_PUMS.csv')
 NumWorkersModel = pd.read_csv(hh_parameters_path+'NumberOfWorkersModel_MNL.csv')
 NumVehiclesModel = pd.read_csv(hh_parameters_path+'NumberOfVehiclesModel_MNL.csv')
 
@@ -467,10 +467,10 @@ for x in range(len(HIWOutputFile)):
 		XArray[6] =  1 if HIWOutputFile.loc[x,'INCOME'] == 2 else 0
 		XArray[7] =  1 if HIWOutputFile.loc[x,'INCOME'] == 3 else 0
 		XArray[8] =  1 if HIWOutputFile.loc[x,'INCOME'] == 4 else 0
-		XArray[9] =  1 if HIWOutputFile.loc[x,'WORKERS'] == 0 else 0
-		XArray[10] = 1 if HIWOutputFile.loc[x,'WORKERS'] == 1 else 0
-		XArray[11] = 1 if HIWOutputFile.loc[x,'WORKERS'] == 2 else 0
-		XArray[12] = 1 if HIWOutputFile.loc[x,'WORKERS'] == 3 else 0
+		XArray[9] =  1 if HIWOutputFile.loc[x,'WORKERS'] == 0 else 0 # veh 1, 2, 3 gt workers 
+		XArray[10] = 1 if HIWOutputFile.loc[x,'WORKERS'] == 1 else 0 # veh 2, 3 gt workers
+		XArray[11] = 1 if HIWOutputFile.loc[x,'WORKERS'] == 2 else 0 # veh 3 gt workers
+		XArray[12] = 1 if HIWOutputFile.loc[x,'WORKERS'] == 3 else 0 # veh 0, 1, 2, 3 lt workers
 		
 		# Initialize Utilities
 		v0 = 0
@@ -485,9 +485,10 @@ for x in range(len(HIWOutputFile)):
 			v2 =  v2 + NumVehiclesModel.loc[i,'Veh2']  * XArray[i]
 			v3 =  v3 + NumVehiclesModel.loc[i,'Veh3'] * XArray[i]
 		
+		# disable and check
 		# Constrain number of workers by HHSize [# Workers <= HH Size)
-		v2 = v2 - 500 if HIWOutputFile.loc[x,'HHSIZE'] <= 2 else v2
-		v3 = v3 - 500 if HIWOutputFile.loc[x,'HHSIZE'] <= 3 else v3
+		v2 = v2 - 500 if HIWOutputFile.loc[x,'HHSIZE'] == 1 else v2
+		v3 = v3 - 500 if HIWOutputFile.loc[x,'HHSIZE'] <= 2 else v3
 		
 		# Compute probabilities for each number of vehicles
 		p0 = np.exp(v0)/(np.exp(v0)+np.exp(v1)+np.exp(v2)+np.exp(v3))
@@ -534,7 +535,7 @@ HIWVOutputFile['TOTHH'].fillna(0, inplace=True) # Replace blank cells with 0
 HIWVOutputFile.to_csv(hh_out_path+"HHSize_Inc_Workers_Veh.csv", index = False)
 
 # Collapse Number of Vehicles by TAZ to get HHVEH(0-3)
-# Filter by # of vehciles
+# Filter by # of vehicles
 veh0 = HIWVOutputFile[HIWVOutputFile['VEHICLES'] == 0].reset_index(drop=True)
 veh1 = HIWVOutputFile[HIWVOutputFile['VEHICLES'] == 1].reset_index(drop=True)
 veh2 = HIWVOutputFile[HIWVOutputFile['VEHICLES'] == 2].reset_index(drop=True)
@@ -594,7 +595,7 @@ for x in range(len(zone_df)):
 			addIn.ReportMessage(errstring, MessageType.Error)
 			continue
 
-# Set Visum zone fields with HHWRK(0-3) values
+# Set Visum zone fields with HHSize x Vehicle values
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH0",zone_df['HH1VEH0'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH1",zone_df['HH1VEH1'])
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH0",zone_df['HH2VEH0'])

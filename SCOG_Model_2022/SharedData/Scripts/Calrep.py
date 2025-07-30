@@ -17,15 +17,29 @@ import pandas as pd
 from datetime import datetime
 import os.path
 
+# def screenlines ():
+#   # Break out SCRNLINE field to separate by commas into individual columns                                                                                                                        
+#   df = pd.concat([df,df['SCRNLINE'].str.split(',', expand = True)], axis = 1)
+#   # Change Screenline field names
+#   df = df.rename(columns = {0:'SCRNLINE1',1:'SCRNLINE2'})
+#   # Replace null values with 0 in the screenline fields
+#   df['SL1'] = df['SL1'].replace('',np.nan).fillna(0)
+#   df['SL2'] = df['SL2'].replace('',np.nan).fillna(0)
+    
+
 def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdir):
     
     # set defaults/handle null
     fftime = 'FFTIME'
     congtime = 'CTIME'
+    
+    write_links = True if cntfld == "DLY" else False
 
     # output path
     timestamp = datetime.now().strftime("%m%d%Y_%H%M%S")
     filename = "CalRep_"+name+"_"+timestamp+".csv"
+    joinexport = "CountJoin_"+name+"_"+timestamp+".csv"
+    
 
     # create output
     cols = ["Type","Item","NumObs","TotCnt","TotMod","AvgCnt","AvgMod","Tstat","AvgErr","PctErr","PctRMSE","MAPE","CorrCoef","SumSqErr","MeanSqErr","Miles","kVMT","kVHT_FF","kVHT_CTime"]
@@ -39,12 +53,14 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     field_map = {
         'TYPENO': 'first',
         'TSYSSET': 'first',
+        'NFCLASS': 'first',
         'LENGTH': 'first',
         flowfld: 'sum',
         'volfftime': 'sum',
         'volctime': 'sum'
     }
 
+    # ensure links are either 1 per direction or grouped into 2
     links_agg = links_df.groupby('NO').agg(field_map).reset_index()
 
     # join counts to network
@@ -53,7 +69,6 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     # loop through queries
     query_df = pd.read_csv(queryfile)
 
-    # ensure links are either 1 per direction or grouped into 2
     for i in range(len(query_df)):
         qtype = query_df.loc[i,['Type', 'Item', 'Query']].to_list()
         q = qtype[2]
@@ -122,12 +137,25 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
 
         if numobs == 0:
              totcnt, totvol, avgcnt, avgvol, tstat, avgerr, pcterr, pctrmse, mape, corrcoef, sumsqerr, mse, summiles, vmt, vht_ff, vht_ct = (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
-		
+        
         # add record/row
         calrep_df.loc[i] = list((qtype[0], qtype[1], numobs, totcnt, totvol, avgcnt, avgvol, tstat, avgerr, pcterr, pctrmse, mape, corrcoef, sumsqerr, mse, summiles, vmt, vht_ff, vht_ct))
     
     # Export count_summary_df to csv file in timestamped folder
     calrep_df.to_csv(os.path.join(outdir, filename))
+    join_df.to_csv(os.path.join(outdir, joinexport))
+    
+    if write_links == True:
+        # calc individual link errors for calibration
+        join_df2 = links_df.merge(count_df, how="left", on=joinfld)
+        join_df2['count_tot'] = join_df2[cntfld]
+        join_df2['count_err'] = join_df2[flowfld] -join_df2[cntfld]
+        
+        # write back err to visum network
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_count",join_df2['count_tot'])
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_err",join_df2['count_err'])
+        
+    
 
 # set paths 
 out_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..', 'Outputs'))
@@ -140,6 +168,7 @@ length      = VisumPy.helpers.GetMulti(Visum.Net.Links,"Length")
 typeno      = VisumPy.helpers.GetMulti(Visum.Net.Links,"TypeNo")
 tsys        = VisumPy.helpers.GetMulti(Visum.Net.Links,"TSysSet")
 nfc         = VisumPy.helpers.GetMulti(Visum.Net.Links,"NFCLASS")
+scrnln    = VisumPy.helpers.GetMulti(Visum.Net.Links,r"CONCATENATE:SCREENLINES\CODE")
 amvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"AM_AUTO_VOLUME")
 pmvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_AUTO_VOLUME")
 pmpkvol     = VisumPy.helpers.GetMulti(Visum.Net.Links,"PMPK_AUTO_VOLUME")
@@ -153,8 +182,9 @@ links_df = pd.DataFrame({'NO':no, 'LENGTH': length, 'TYPENO': typeno, 'TSYSSET':
 
 # count_test = pd.read_csv(reports_path + 'counts_2way.csv') # testing file
 # count_file = pd.read_csv(reports_path + 'merged_Auto_counts_5_13.csv')
-count_file = pd.read_csv(reports_path + '/SCOG_Counts_07142025/Auto_Counts.csv')
-query_file = reports_path + 'calrepinfo.csv' # TODO testing
+# count_file = pd.read_csv(reports_path + '/SCOG_Counts_07142025/Auto_Counts.csv')
+count_file = pd.read_csv(reports_path + '/SCOG_Counts_07142025/Auto_Counts_additionaljoins7-23.csv')
+query_file = reports_path + 'calrepinfo.csv'
 
 calrep("AMAuto", links_df, 'AM_AUTO_VOLUME', 'NO', count_file, 'AM', query_file, out_path)
 calrep("PMAuto", links_df, 'PM_AUTO_VOLUME', 'NO', count_file, 'PM', query_file, out_path)
