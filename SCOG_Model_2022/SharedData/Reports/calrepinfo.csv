@@ -1,15 +1,15 @@
 Type,Item,Query
+Areawide,All,DLY >= 0
 AADT < 5k,All,DLY < 5000
 AADT 5k to 10k,All,DLY >= 5000 and DLY < 10000
 AADT 10k to 20k,All,DLY >= 10000 and DLY < 20000
 AADT 20k to 40k,All,DLY >= 20000 and DLY < 40000
 AADT 40k to 80k,All,DLY >= 40000 and DLY < 80000
 AADT > 80k,All,DLY > 80000
-WithCounts,All,DLY >= 0
-Freeways,All,FCLASS < 3
-Non-Freeways,All,FCLASS > 2
-Urban,All,AreaType == "Urban"
-Rural,All,AreaType == "Rural"
+Freeways,All,NFCLASS < 3
+Non-Freeways,All,NFCLASS > 2
+Urban,All,AreaType == 1
+Rural,All,AreaType == 2
 Interstates,All,NFCLASS == 1
 Non-Interstate Freeway,All,NFCLASS == 2
 Principal Arterial,All,NFCLASS == 3
@@ -33,3 +33,12 @@ AADT 65k to 75k,FSUTMS Pct Error,DLY >= 65000 and DLY < 75000
 AADT > 75k,FSUTMS Pct Error,DLY >= 75000
 Internal Counts,All,EXT_COUNT != 1
 External Counts,All,EXT_COUNT == 1
+Sc 3 Deception Pass,All,SCREENLINE == 3
+Sc 4 EW Fidalgo-Main,All,SCREENLINE == 4
+Sc 5 NS Southwest County,All,SCREENLINE == 5
+Sc 6 EW East Sedro-Woolley,All,SCREENLINE == 6
+Sc 7 NS Skagit River @I5,All,SCREENLINE == 7
+Sc 8 EW Northwest County,All,SCREENLINE == 8
+Sc 9 NS Mount Vernon,All,SCREENLINE == 9
+Sc 10 EW Mount Vernon,All,SCREENLINE == 10
+Sc 11 EW West Sedro-Woolley,All,SCREENLINE == 11

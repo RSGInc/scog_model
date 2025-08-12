@@ -17,9 +17,11 @@ import pandas as pd
 from datetime import datetime
 import os.path
 
-# def screenlines ():
-#   # Break out SCRNLINE field to separate by commas into individual columns                                                                                                                        
-#   df = pd.concat([df,df['SCRNLINE'].str.split(',', expand = True)], axis = 1)
+# split multiple screenlines (not neccessary)
+# def screenlines (df):
+#   # Break out SCRNLINE field to separate by commas into individual columns
+#   df['SCREENLINES'] = df['SCREENLINES'].astype(str)
+#   df = pd.concat([df,df['SCREENLINES'].str.split(',', expand = True)], axis = 1)
 #   # Change Screenline field names
 #   df = df.rename(columns = {0:'SCRNLINE1',1:'SCRNLINE2'})
 #   # Replace null values with 0 in the screenline fields
@@ -39,7 +41,7 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     timestamp = datetime.now().strftime("%m%d%Y_%H%M%S")
     filename = "CalRep_"+name+"_"+timestamp+".csv"
     joinexport = "CountJoin_"+name+"_"+timestamp+".csv"
-    
+    joinexport2 = "CountJoin2_"+name+"_"+timestamp+".csv"
 
     # create output
     cols = ["Type","Item","NumObs","TotCnt","TotMod","AvgCnt","AvgMod","Tstat","AvgErr","PctErr","PctRMSE","MAPE","CorrCoef","SumSqErr","MeanSqErr","Miles","kVMT","kVHT_FF","kVHT_CTime"]
@@ -54,6 +56,8 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
         'TYPENO': 'first',
         'TSYSSET': 'first',
         'NFCLASS': 'first',
+        'AreaType': 'first',
+        'SCREENLINE': 'max', # ','.join, # appears in one direction
         'LENGTH': 'first',
         flowfld: 'sum',
         'volfftime': 'sum',
@@ -150,6 +154,7 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
         join_df2 = links_df.merge(count_df, how="left", on=joinfld)
         join_df2['count_tot'] = join_df2[cntfld]
         join_df2['count_err'] = join_df2[flowfld] -join_df2[cntfld]
+        join_df2.to_csv(os.path.join(outdir, joinexport2))
         
         # write back err to visum network
         VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_count",join_df2['count_tot'])
@@ -168,7 +173,8 @@ length      = VisumPy.helpers.GetMulti(Visum.Net.Links,"Length")
 typeno      = VisumPy.helpers.GetMulti(Visum.Net.Links,"TypeNo")
 tsys        = VisumPy.helpers.GetMulti(Visum.Net.Links,"TSysSet")
 nfc         = VisumPy.helpers.GetMulti(Visum.Net.Links,"NFCLASS")
-scrnln    = VisumPy.helpers.GetMulti(Visum.Net.Links,r"CONCATENATE:SCREENLINES\CODE")
+area         = VisumPy.helpers.GetMulti(Visum.Net.Links,"AREATYPE")
+scrnln    = VisumPy.helpers.GetMulti(Visum.Net.Links,r"CONCATENATE:SCREENLINES\NO")
 amvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"AM_AUTO_VOLUME")
 pmvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_AUTO_VOLUME")
 pmpkvol     = VisumPy.helpers.GetMulti(Visum.Net.Links,"PMPK_AUTO_VOLUME")
@@ -178,7 +184,9 @@ fftime      = VisumPy.helpers.GetMulti(Visum.Net.Links,"T0_PRTSYS(C)")
 ctime       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_CTIME")
 
 # Set up dataframe to use for all needed zone attributes. Update as needed during coding
-links_df = pd.DataFrame({'NO':no, 'LENGTH': length, 'TYPENO': typeno, 'TSYSSET': tsys, 'NFCLASS': nfc, 'AM_AUTO_VOLUME': amvol, 'PM_AUTO_VOLUME': pmvol, 'PMPK_AUTO_VOLUME': pmpkvol, 'OP_AUTO_VOLUME': opvol, 'DLY_AUTO_VOLUME': dlyvol,  'FFTIME': fftime, 'CTIME': ctime})
+links_df = pd.DataFrame({'NO':no, 'LENGTH': length, 'TYPENO': typeno, 'TSYSSET': tsys, 'NFCLASS': nfc, 'AreaType': area, 'AM_AUTO_VOLUME': amvol, 'PM_AUTO_VOLUME': pmvol, 'PMPK_AUTO_VOLUME': pmpkvol, 'OP_AUTO_VOLUME': opvol, 'DLY_AUTO_VOLUME': dlyvol,  'FFTIME': fftime, 'CTIME': ctime, 'SCREENLINE':scrnln})
+
+links_df.to_csv(reports_path + "calrep_df.csv")
 
 # count_test = pd.read_csv(reports_path + 'counts_2way.csv') # testing file
 # count_file = pd.read_csv(reports_path + 'merged_Auto_counts_5_13.csv')
