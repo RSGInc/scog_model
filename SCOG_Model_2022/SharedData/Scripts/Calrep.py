@@ -191,7 +191,7 @@ links_df.to_csv(reports_path + "calrep_df.csv")
 # count_test = pd.read_csv(reports_path + 'counts_2way.csv') # testing file
 # count_file = pd.read_csv(reports_path + 'merged_Auto_counts_5_13.csv')
 # count_file = pd.read_csv(reports_path + '/SCOG_Counts_07142025/Auto_Counts.csv')
-count_file = pd.read_csv(reports_path + '/SCOG_Counts_07142025/Auto_Counts_additionaljoins7-23.csv')
+count_file = pd.read_csv(reports_path + '/SCOG_Counts_07142025/Auto_Counts_additionaljoins7-23_ext.csv')
 query_file = reports_path + 'calrepinfo.csv'
 
 calrep("AMAuto", links_df, 'AM_AUTO_VOLUME', 'NO', count_file, 'AM', query_file, out_path)
