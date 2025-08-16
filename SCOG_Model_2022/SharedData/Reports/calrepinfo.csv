@@ -17,6 +17,7 @@ Minor Arterial,All,NFCLASS == 4
 Major Collector,All,NFCLASS == 5
 Minor Collector,All,NFCLASS == 6
 Local Road or Street,All,NFCLASS == 7
+Ramps,All,NFCLASS == 8
 AADT < 5k,FSUTMS RMSE,DLY < 5000
 AADT 5k to 10k,FSUTMS RMSE,DLY >= 5000 and DLY < 10000
 AADT 10k to 15k,FSUTMS RMSE,DLY >= 10000 and DLY < 15000
