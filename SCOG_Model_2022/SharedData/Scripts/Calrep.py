@@ -153,16 +153,25 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     join_df.to_csv(os.path.join(outdir, joinexport))
     
     if write_links == True:
+        # join totflow and totcount to links df
+        join_df2 = links_df.merge(counts_agg, how="left", on=joinfld)
+        join_df2 = join_df2[['NO','DLY']]
+        join_df3 = join_df2.merge(links_agg, how="left", on=joinfld)
+        
+        join_df3.to_csv(os.path.join(outdir, joinexport2)) # this join has all links and duplicates the counts on the right
+        
         # calc individual link errors for calibration
-        join_df2 = links_df.merge(count_df, how="left", on=joinfld)
-        join_df2['count_tot'] = join_df2[cntfld]
-        join_df2['count_err'] = join_df2[flowfld] -join_df2[cntfld]
-        join_df2.to_csv(os.path.join(outdir, joinexport2))
-        # this join has all links and duplicates the counts/errors on the right
+        join_df3['count_tot'] = join_df3[cntfld]
+        join_df3['count_err'] = join_df3[flowfld] - join_df3[cntfld]
+        join_df3['pct_err'] = 100*(join_df3['count_err'] / join_df3[cntfld])
         
         # write back err to visum network
-        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_count",join_df2['count_tot'])
-        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_err",join_df2['count_err'])
+        counts_list = join_df3['count_tot'].to_list()
+        errs_list = join_df3['count_err'].to_list()
+        pcterr_list = join_df3['pct_err'].to_list()
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_count",counts_list)
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_err",errs_list)
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_pcterr",pcterr_list)
         
     
 
