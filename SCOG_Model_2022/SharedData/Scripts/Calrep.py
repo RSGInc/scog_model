@@ -67,8 +67,11 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     # ensure links are either 1 per direction or grouped into 2
     links_agg = links_df.groupby('NO').agg(field_map).reset_index()
 
+    # also group counts by link NO and manually exclude some counts
+    counts_agg = count_df[count_df['USECOUNT'] == 1].groupby('NO').agg({'StationName': 'first', 'EXT_COUNT':'max','USECOUNT':'min','DLY':'sum','AM':'sum','PM':'sum','PM_PKHR':'sum','OP':'sum'}).reset_index()
+
     # join counts to network
-    join_df = links_agg.merge(count_df, how="left", on=joinfld)
+    join_df = links_agg.merge(counts_agg, how="left", on=joinfld)
 
     # loop through queries
     query_df = pd.read_csv(queryfile)
@@ -155,6 +158,7 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
         join_df2['count_tot'] = join_df2[cntfld]
         join_df2['count_err'] = join_df2[flowfld] -join_df2[cntfld]
         join_df2.to_csv(os.path.join(outdir, joinexport2))
+        # this join has all links and duplicates the counts/errors on the right
         
         # write back err to visum network
         VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_count",join_df2['count_tot'])

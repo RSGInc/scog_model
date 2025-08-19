@@ -6,7 +6,7 @@ AADT 10k to 20k,All,DLY >= 10000 and DLY < 20000
 AADT 20k to 40k,All,DLY >= 20000 and DLY < 40000
 AADT 40k to 80k,All,DLY >= 40000 and DLY < 80000
 AADT > 80k,All,DLY > 80000
-Freeways,All,NFCLASS < 3
+Freeways,All,NFCLASS >= 1 and NFCLASS < 3
 Non-Freeways,All,NFCLASS > 2
 Urban,All,AreaType == 1
 Rural,All,AreaType == 2
