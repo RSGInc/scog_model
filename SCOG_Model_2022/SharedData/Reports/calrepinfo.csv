@@ -18,6 +18,22 @@ Major Collector,All,NFCLASS == 5
 Minor Collector,All,NFCLASS == 6
 Local Road or Street,All,NFCLASS == 7
 Ramps,All,NFCLASS == 8
+Urban Interstates,All,NFCLASS == 1 and AreaType == 1
+Urban Non-Interstate Freeway,All,NFCLASS == 2 and AreaType == 1
+Urban Principal Arterial,All,NFCLASS == 3 and AreaType == 1
+Urban Minor Arterial,All,NFCLASS == 4 and AreaType == 1
+Urban Major Collector,All,NFCLASS == 5 and AreaType == 1
+Urban Minor Collector,All,NFCLASS == 6 and AreaType == 1
+Urban Local Road or Street,All,NFCLASS == 7 and AreaType == 1
+Urban Ramps,All,NFCLASS == 8 and AreaType == 1
+Rural Interstates,All,NFCLASS == 1 and AreaType == 2
+Rural Non-Interstate Freeway,All,NFCLASS == 2 and AreaType == 2
+Rural Principal Arterial,All,NFCLASS == 3 and AreaType == 2
+Rural Minor Arterial,All,NFCLASS == 4 and AreaType == 2
+Rural Major Collector,All,NFCLASS == 5 and AreaType == 2
+Rural Minor Collector,All,NFCLASS == 6 and AreaType == 2
+Rural Local Road or Street,All,NFCLASS == 7 and AreaType == 2
+Rural Ramps,All,NFCLASS == 8 and AreaType == 2
 AADT < 5k,FSUTMS RMSE,DLY < 5000
 AADT 5k to 10k,FSUTMS RMSE,DLY >= 5000 and DLY < 10000
 AADT 10k to 15k,FSUTMS RMSE,DLY >= 10000 and DLY < 15000
@@ -34,12 +50,20 @@ AADT 65k to 75k,FSUTMS Pct Error,DLY >= 65000 and DLY < 75000
 AADT > 75k,FSUTMS Pct Error,DLY >= 75000
 Internal Counts,All,EXT_COUNT != 1
 External Counts,All,EXT_COUNT == 1
-Sc 3 Deception Pass,All,SCREENLINE == 3
-Sc 4 EW Fidalgo-Main,All,SCREENLINE == 4
-Sc 5 NS Southwest County,All,SCREENLINE == 5
-Sc 6 EW East Sedro-Woolley,All,SCREENLINE == 6
-Sc 7 NS Skagit River @I5,All,SCREENLINE == 7
-Sc 8 EW Northwest County,All,SCREENLINE == 8
-Sc 9 NS Mount Vernon,All,SCREENLINE == 9
-Sc 10 EW Mount Vernon,All,SCREENLINE == 10
-Sc 11 EW West Sedro-Woolley,All,SCREENLINE == 11
+Sc 3 Deception Pass,All,SCREENLINE == '3'
+Sc 4 EW Fidalgo-Main,All,SCREENLINE == '4'
+Sc 5 NS Southwest County,All,SCREENLINE == '5'
+Sc 6 EW East Sedro-Woolley,All,SCREENLINE == '6'
+Sc 7 NS Skagit River @I5,All,SCREENLINE == '7'
+Sc 8 EW Northwest County,All,SCREENLINE == '8'
+Sc 9 NS Mount Vernon,All,SCREENLINE == '9'
+Sc 10 EW Mount Vernon,All,SCREENLINE == '10'
+Sc 11 EW West Sedro-Woolley,All,SCREENLINE == '11'
+Sc 12 EW Fidalgo Bay,All,SCREENLINE == '12'
+Sc 13 Sedro-Woolley Cordon,All,SCREENLINE == '13'
+Sc 14 NS Bow Hill Rd,All,SCREENLINE == '14'
+Sc 15 Anacortes,All,SCREENLINE == '15'
+Sc 16 Outer Mount Vernon,All,SCREENLINE == '16'
+
+
+

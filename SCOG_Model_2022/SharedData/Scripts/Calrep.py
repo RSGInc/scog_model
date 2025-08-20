@@ -71,7 +71,7 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     counts_agg = count_df[count_df['USECOUNT'] == 1].groupby('NO').agg({'StationName': 'first', 'EXT_COUNT':'max','USECOUNT':'min','DLY':'sum','AM':'sum','PM':'sum','PM_PKHR':'sum','OP':'sum'}).reset_index()
 
     # join counts to network
-    join_df = links_agg.merge(counts_agg, how="left", on=joinfld)
+    join_df = links_agg.merge(counts_agg, how="right", on=joinfld)
 
     # loop through queries
     query_df = pd.read_csv(queryfile)
@@ -187,7 +187,8 @@ typeno      = VisumPy.helpers.GetMulti(Visum.Net.Links,"TypeNo")
 tsys        = VisumPy.helpers.GetMulti(Visum.Net.Links,"TSysSet")
 nfc         = VisumPy.helpers.GetMulti(Visum.Net.Links,"NFCLASS")
 area         = VisumPy.helpers.GetMulti(Visum.Net.Links,"AREATYPE")
-scrnln    = VisumPy.helpers.GetMulti(Visum.Net.Links,r"CONCATENATE:SCREENLINES\NO")
+scrnlna    = VisumPy.helpers.GetMulti(Visum.Net.Links,r"CONCATENATE:SCREENLINES\NO")
+scrnlnb    = VisumPy.helpers.GetMulti(Visum.Net.Links,r"ReverseLink\CONCATENATE:SCREENLINES\NO")
 amvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"AM_AUTO_VOLUME")
 pmvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_AUTO_VOLUME")
 pmpkvol     = VisumPy.helpers.GetMulti(Visum.Net.Links,"PMPK_AUTO_VOLUME")
@@ -197,9 +198,13 @@ fftime      = VisumPy.helpers.GetMulti(Visum.Net.Links,"T0_PRTSYS(C)")
 ctime       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_CTIME")
 
 # Set up dataframe to use for all needed zone attributes. Update as needed during coding
-links_df = pd.DataFrame({'NO':no, 'LENGTH': length, 'TYPENO': typeno, 'TSYSSET': tsys, 'NFCLASS': nfc, 'AreaType': area, 'AM_AUTO_VOLUME': amvol, 'PM_AUTO_VOLUME': pmvol, 'PMPK_AUTO_VOLUME': pmpkvol, 'OP_AUTO_VOLUME': opvol, 'DLY_AUTO_VOLUME': dlyvol,  'FFTIME': fftime, 'CTIME': ctime, 'SCREENLINE':scrnln})
+links_df = pd.DataFrame({'NO':no, 'LENGTH': length, 'TYPENO': typeno, 'TSYSSET': tsys, 'NFCLASS': nfc, 'AreaType': area, 'AM_AUTO_VOLUME': amvol, 'PM_AUTO_VOLUME': pmvol, 'PMPK_AUTO_VOLUME': pmpkvol, 'OP_AUTO_VOLUME': opvol, 'DLY_AUTO_VOLUME': dlyvol,  'FFTIME': fftime, 'CTIME': ctime, 
+'SC_with':scrnlna, 'SC_against':scrnlnb})
 
-links_df.to_csv(reports_path + "calrep_df.csv")
+links_df['SC_with'] = links_df['SC_with'].replace('', np.nan)
+links_df['SCREENLINE'] = np.where(links_df['SC_with'].isna(),links_df['SC_against'],links_df['SC_with'])
+
+# links_df.to_csv(reports_path + "calrep_df.csv")
 
 # count_test = pd.read_csv(reports_path + 'counts_2way.csv') # testing file
 # count_file = pd.read_csv(reports_path + 'merged_Auto_counts_5_13.csv')
