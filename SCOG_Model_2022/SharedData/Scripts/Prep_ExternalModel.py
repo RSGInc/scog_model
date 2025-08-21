@@ -26,7 +26,7 @@ ext_auto_growth  = VisumPy.helpers.GetMulti(Visum.Net.Zones, "EXT_AUTO_GROWTH", 
 growth_df = pd.DataFrame({'NO':no, 'Auto_Ext_Growth':ext_auto_growth}) #, 'Trk_Ext_Growth':ext_truck_growth})
 
 # External counts and percentages lookup table
-externalLookupTableFileName = external_path + "/Ext_Sta_Summary.csv" # TODO dummy file
+externalLookupTableFileName = external_path + "/Ext_Sta_Summary.csv"
 external_lookup_table = VisumPy.csvHelpers.readCSV(externalLookupTableFileName)
 df = pd.DataFrame(external_lookup_table[1:], columns=external_lookup_table[0])
 # Sort increasing order of NO
@@ -62,7 +62,6 @@ for i in range(len(df)):
 	# df.at[i,'Trk_XX_D_Out']     = df.at[i,'Trk_XX_D']    *((1+df.at[i,'Trk_Ext_Growth']) **grow_years)
 	# df.at[i,'Trk_XIIX_OD_Out']  = df.at[i,'Trk_XIIX_OD'] *((1+df.at[i,'Trk_Ext_Growth']) **grow_years)
 
-df.to_csv('debug_Ext_sta_summary.csv')
 # Zero Visum fields to ensure internals are 0
 df['Zero'] = 0
 VisumPy.helpers.SetMulti(Visum.Net.Zones, "XX_AUTO_P", df['Zero'])
@@ -88,9 +87,6 @@ VisumPy.helpers.SetMulti(Visum.Net.Zones, "XI_W_PCT", df['XI_W%'],activeOnly = T
 VisumPy.helpers.SetMulti(Visum.Net.Zones, "IX_W_PCT", df['IX_W%'],activeOnly = True)
 VisumPy.helpers.SetMulti(Visum.Net.Zones, "X_NW_PCT", df['X_NW%'],activeOnly = True)
 
-
-#if (int(Visum.Net.AttValue("YEAR"))) > 2022: # Fratar matrix for future years
-#if scen_year > base_year: # Fratar matrix for future years # grow always
 # Pull full fields (not just externals) for matrix balancing
 XX_auto_P  = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_AUTO_P")
 XX_auto_A  = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_AUTO_A")
@@ -98,7 +94,7 @@ XX_auto_A  = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_AUTO_A")
 # XX_truck_A = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_TRUCK_A")
 
 # Balance XX Matrices to Grown P's and A's for Autos
-mat = VisumPy.helpers.GetMatrix(Visum, 6) # Auto XX Matrix # bug? initially zeros
+mat = VisumPy.helpers.GetMatrix(Visum, 6) # Auto XX Matrix
 r = np.array(XX_auto_P)
 c = np.array(XX_auto_A)
 #  Run Visum balanceMatrix function
@@ -115,13 +111,3 @@ VisumPy.helpers.SetMatrix(Visum, 76, balanced_mat)
 # balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c)
 # # Set matrix in Visum
 # VisumPy.helpers.SetMatrix(Visum, 569, balanced_mat)
-
-"""
-else: # Base year just copy Base Matrices to working matrices
-	# Auto
-	mat = VisumPy.helpers.GetMatrix(Visum, 6) # Auto XX Matrix
-	VisumPy.helpers.SetMatrix(Visum, 76, mat)
-	# Truck
-	# mat = VisumPy.helpers.GetMatrix(Visum, 567) # Truck XX Matrix
-	# VisumPy.helpers.SetMatrix(Visum, 569, mat)
-"""

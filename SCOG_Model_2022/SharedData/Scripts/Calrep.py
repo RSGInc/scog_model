@@ -67,8 +67,8 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     # ensure links are either 1 per direction or grouped into 2
     links_agg = links_df.groupby('NO').agg(field_map).reset_index()
 
-    # also group counts by link NO and manually exclude some counts
-    counts_agg = count_df[count_df['USECOUNT'] == 1].groupby('NO').agg({'StationName': 'first', 'EXT_COUNT':'max','USECOUNT':'min','DLY':'sum','AM':'sum','PM':'sum','PM_PKHR':'sum','OP':'sum'}).reset_index()
+    # also group counts by link NO, exclude empty counts, and manually exclude some counts
+    counts_agg = count_df[(count_df['USECOUNT'] == 1) & (count_df[cntfld] > 0)].groupby('NO').agg({'StationName': 'first', 'EXT_COUNT':'max','USECOUNT':'min','DLY':'sum','AM':'sum','PM':'sum','PM_PKHR':'sum','OP':'sum'}).reset_index()
 
     # join counts to network
     join_df = links_agg.merge(counts_agg, how="right", on=joinfld)
