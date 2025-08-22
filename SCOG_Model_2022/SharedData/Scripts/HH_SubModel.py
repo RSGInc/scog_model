@@ -40,14 +40,14 @@ NumVehiclesModel = pd.read_csv(hh_parameters_path+'NumberOfVehiclesModel_MNL.csv
 
 
 # Pull Zone attributes from Visum and create dataframe
-no          = VisumPy.helpers.GetMulti(Visum.Net.Zones,"No")
-tothh       = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HousingUnits")
-#tothh_h12   = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HH_CENSUS")
-hhinc       = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHINC")
-#hhpop       = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHPOP")
-#hhveh	    = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHVEH")
-#hhwrk	    = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHWRK")
-hhsize      = VisumPy.helpers.GetMulti(Visum.Net.Zones,"AvgHHSize")
+no          = VisumPy.helpers.GetMulti(Visum.Net.Zones,"No",activeOnly = True)
+tothh       = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HousingUnits",activeOnly = True)
+#tothh_h12   = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HH_CENSUS",activeOnly = True)
+hhinc       = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHINC",activeOnly = True)
+#hhpop       = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHPOP",activeOnly = True)
+#hhveh	    = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHVEH",activeOnly = True)
+#hhwrk	    = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHWRK",activeOnly = True)
+hhsize      = VisumPy.helpers.GetMulti(Visum.Net.Zones,"ACS_AvgHHSize",activeOnly = True)
 
 # Set up dataframe to use for all needed zone attributes. Update as needed during coding
 zone_df = pd.DataFrame({'NO':no, 'TOTHH':tothh, 'HHINC':hhinc, 'HHSIZE':hhsize})
@@ -274,22 +274,22 @@ for x in range(len(zone_df)):
 zone_df.fillna(0, inplace=True) # Replace blank cells with 0
 
 # Paste Joint distribution fields from zone_df fields into Visum zone table
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC1",zone_df['HH1INC1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC2",zone_df['HH1INC2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC3",zone_df['HH1INC3'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC4",zone_df['HH1INC4'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC1",zone_df['HH2INC1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC2",zone_df['HH2INC2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC3",zone_df['HH2INC3'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC4",zone_df['HH2INC4'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC1",zone_df['HH3INC1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC2",zone_df['HH3INC2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC3",zone_df['HH3INC3'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC4",zone_df['HH3INC4'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC1",zone_df['HH4INC1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC2",zone_df['HH4INC2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC3",zone_df['HH4INC3'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC4",zone_df['HH4INC4'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC1",zone_df['HH1INC1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC2",zone_df['HH1INC2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC3",zone_df['HH1INC3'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1INC4",zone_df['HH1INC4'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC1",zone_df['HH2INC1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC2",zone_df['HH2INC2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC3",zone_df['HH2INC3'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2INC4",zone_df['HH2INC4'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC1",zone_df['HH3INC1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC2",zone_df['HH3INC2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC3",zone_df['HH3INC3'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3INC4",zone_df['HH3INC4'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC1",zone_df['HH4INC1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC2",zone_df['HH4INC2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC3",zone_df['HH4INC3'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4INC4",zone_df['HH4INC4'],activeOnly = True)
 
 # Paste Joint distribution output table into csv file TOTHH field
 HIOutputFile['TOTHH'].fillna(0, inplace=True) # Replace blank cells with 0
@@ -399,10 +399,10 @@ zone_df['HHWRK3'] = worker3['TOTHH'].sum().reset_index(drop=True)
 # Replace empty cells with 0
 zone_df.fillna(0, inplace=True) # Replace blank cells with 0	
 # Set Visum zone fields with HHWRK(0-3) values
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK0",zone_df['HHWRK0'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK1",zone_df['HHWRK1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK2",zone_df['HHWRK2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK3",zone_df['HHWRK3'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK0",zone_df['HHWRK0'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK1",zone_df['HHWRK1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK2",zone_df['HHWRK2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HHWRK3",zone_df['HHWRK3'],activeOnly = True)
 
 for x in range(len(zone_df)):
 
@@ -437,19 +437,19 @@ for x in range(len(zone_df)):
 			continue
 
 # Set Visum zone fields with HHWRK(0-3) values
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1W0",zone_df['HH1W0'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1W1",zone_df['HH1W1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2W0",zone_df['HH2W0'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2W1",zone_df['HH2W1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2W2",zone_df['HH2W2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W0",zone_df['HH3W0'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W1",zone_df['HH3W1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W2",zone_df['HH3W2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W3",zone_df['HH3W3'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W0",zone_df['HH4W0'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W1",zone_df['HH4W1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W2",zone_df['HH4W2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W3",zone_df['HH4W3'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1W0",zone_df['HH1W0'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1W1",zone_df['HH1W1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2W0",zone_df['HH2W0'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2W1",zone_df['HH2W1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2W2",zone_df['HH2W2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W0",zone_df['HH3W0'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W1",zone_df['HH3W1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W2",zone_df['HH3W2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3W3",zone_df['HH3W3'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W0",zone_df['HH4W0'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W1",zone_df['HH4W1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W2",zone_df['HH4W2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4W3",zone_df['HH4W3'],activeOnly = True)
 
 """ Step 4: number of vehicles available """
 # Create array to match up with coefficient array for worker model
@@ -596,19 +596,19 @@ for x in range(len(zone_df)):
 			continue
 
 # Set Visum zone fields with HHSize x Vehicle values
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH0",zone_df['HH1VEH0'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH1",zone_df['HH1VEH1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH0",zone_df['HH2VEH0'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH1",zone_df['HH2VEH1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH2",zone_df['HH2VEH2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH0",zone_df['HH3VEH0'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH1",zone_df['HH3VEH1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH2",zone_df['HH3VEH2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH3",zone_df['HH3VEH3'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH0",zone_df['HH4VEH0'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH1",zone_df['HH4VEH1'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH2",zone_df['HH4VEH2'])
-VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH3",zone_df['HH4VEH3'])
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH0",zone_df['HH1VEH0'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH1",zone_df['HH1VEH1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH0",zone_df['HH2VEH0'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH1",zone_df['HH2VEH1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH2VEH2",zone_df['HH2VEH2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH0",zone_df['HH3VEH0'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH1",zone_df['HH3VEH1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH2",zone_df['HH3VEH2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH3VEH3",zone_df['HH3VEH3'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH0",zone_df['HH4VEH0'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH1",zone_df['HH4VEH1'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH2",zone_df['HH4VEH2'],activeOnly = True)
+VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH3",zone_df['HH4VEH3'],activeOnly = True)
 
 # TODO dummy values as placeholder
 # zone_df['HH1VEH0'] = zone_df['HHS1'] * 0.1
