@@ -68,7 +68,7 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     links_agg = links_df.groupby('NO').agg(field_map).reset_index()
 
     # also group counts by link NO, exclude empty counts, and manually exclude some counts
-    counts_agg = count_df[(count_df['USECOUNT'] == 1) & (count_df[cntfld] > 0)].groupby('NO').agg({'StationName': 'first', 'EXT_COUNT':'max','USECOUNT':'min','DLY':'sum','AM':'sum','PM':'sum','PM_PKHR':'sum','OP':'sum'}).reset_index()
+    counts_agg = count_df[(count_df['NO'] > 0) & (count_df['USECOUNT'] == 1) & (count_df[cntfld] > 0)].groupby('NO').agg({'StationName': 'first', 'EXT_COUNT':'max','USECOUNT':'min','DLY':'sum','AM':'sum','PM':'sum','PM_PKHR':'sum','OP':'sum'}).reset_index()
 
     # join counts to network
     join_df = links_agg.merge(counts_agg, how="right", on=joinfld)
@@ -86,8 +86,8 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
         numobs = len(group_df)
 
         if numobs > 0:
-            cnt = group_df[cntfld]
-            vol = group_df[flowfld]
+            cnt = group_df[cntfld].astype(float)
+            vol = group_df[flowfld].astype(float)
             totcnt = cnt.sum()
             avgcnt = cnt.mean() 
             stdcnt = cnt.std()

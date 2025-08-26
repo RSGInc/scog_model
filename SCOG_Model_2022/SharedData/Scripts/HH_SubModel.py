@@ -47,7 +47,8 @@ hhinc       = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHINC",activeOnly = True
 #hhpop       = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHPOP",activeOnly = True)
 #hhveh	    = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHVEH",activeOnly = True)
 #hhwrk	    = VisumPy.helpers.GetMulti(Visum.Net.Zones,"HHWRK",activeOnly = True)
-hhsize      = VisumPy.helpers.GetMulti(Visum.Net.Zones,"ACS_AvgHHSize",activeOnly = True)
+#hhsize      = VisumPy.helpers.GetMulti(Visum.Net.Zones,"ACS_AvgHHSize",activeOnly = True)
+hhsize      = VisumPy.helpers.GetMulti(Visum.Net.Zones,"ACS_AVGHHSIZE_BG",activeOnly = True)
 
 # Set up dataframe to use for all needed zone attributes. Update as needed during coding
 zone_df = pd.DataFrame({'NO':no, 'TOTHH':tothh, 'HHINC':hhinc, 'HHSIZE':hhsize})

@@ -1,11 +1,5 @@
 Type,Item,Query
 Areawide,All,DLY >= 0
-AADT < 5k,All,DLY < 5000
-AADT 5k to 10k,All,DLY >= 5000 and DLY < 10000
-AADT 10k to 20k,All,DLY >= 10000 and DLY < 20000
-AADT 20k to 40k,All,DLY >= 20000 and DLY < 40000
-AADT 40k to 80k,All,DLY >= 40000 and DLY < 80000
-AADT > 80k,All,DLY > 80000
 Freeways,All,NFCLASS >= 1 and NFCLASS < 3
 Non-Freeways,All,NFCLASS > 2
 Urban,All,AreaType == 1
@@ -64,6 +58,3 @@ Sc 13 Sedro-Woolley Cordon,All,SCREENLINE == '13'
 Sc 14 NS Bow Hill Rd,All,SCREENLINE == '14'
 Sc 15 Anacortes,All,SCREENLINE == '15'
 Sc 16 Outer Mount Vernon,All,SCREENLINE == '16'
-
-
-
