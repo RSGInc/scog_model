@@ -169,9 +169,9 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
         counts_list = join_df3['count_tot'].to_list()
         errs_list = join_df3['count_err'].to_list()
         pcterr_list = join_df3['pct_err'].to_list()
-        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_count",counts_list)
-        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_err",errs_list)
-        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_pcterr",pcterr_list)
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_count",counts_list,activeOnly = True)
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_err",errs_list,activeOnly = True)
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_pcterr",pcterr_list,activeOnly = True)
         
     
 
@@ -181,21 +181,21 @@ shared_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..',
 reports_path = shared_path + "/Reports/"
 
 # Pull Link attributes from Visum and create dataframe
-no          = VisumPy.helpers.GetMulti(Visum.Net.Links,"No")
-length      = VisumPy.helpers.GetMulti(Visum.Net.Links,"Length")
-typeno      = VisumPy.helpers.GetMulti(Visum.Net.Links,"TypeNo")
-tsys        = VisumPy.helpers.GetMulti(Visum.Net.Links,"TSysSet")
-nfc         = VisumPy.helpers.GetMulti(Visum.Net.Links,"NFCLASS")
-area         = VisumPy.helpers.GetMulti(Visum.Net.Links,"AREATYPE")
-scrnlna    = VisumPy.helpers.GetMulti(Visum.Net.Links,r"CONCATENATE:SCREENLINES\NO")
-scrnlnb    = VisumPy.helpers.GetMulti(Visum.Net.Links,r"ReverseLink\CONCATENATE:SCREENLINES\NO")
-amvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"AM_AUTO_VOLUME")
-pmvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_AUTO_VOLUME")
-pmpkvol     = VisumPy.helpers.GetMulti(Visum.Net.Links,"PMPK_AUTO_VOLUME")
-opvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"OP_AUTO_VOLUME")
-dlyvol      = VisumPy.helpers.GetMulti(Visum.Net.Links,"DLY_AUTO_VOLUME")
-fftime      = VisumPy.helpers.GetMulti(Visum.Net.Links,"T0_PRTSYS(C)")
-ctime       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_CTIME")
+no          = VisumPy.helpers.GetMulti(Visum.Net.Links,"No",activeOnly = True)
+length      = VisumPy.helpers.GetMulti(Visum.Net.Links,"Length",activeOnly = True)
+typeno      = VisumPy.helpers.GetMulti(Visum.Net.Links,"TypeNo",activeOnly = True)
+tsys        = VisumPy.helpers.GetMulti(Visum.Net.Links,"TSysSet",activeOnly = True)
+nfc         = VisumPy.helpers.GetMulti(Visum.Net.Links,"NFCLASS",activeOnly = True)
+area         = VisumPy.helpers.GetMulti(Visum.Net.Links,"AREATYPE",activeOnly = True)
+scrnlna    = VisumPy.helpers.GetMulti(Visum.Net.Links,r"CONCATENATE:SCREENLINES\NO",activeOnly = True)
+scrnlnb    = VisumPy.helpers.GetMulti(Visum.Net.Links,r"ReverseLink\CONCATENATE:SCREENLINES\NO",activeOnly = True)
+amvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"AM_AUTO_VOLUME",activeOnly = True)
+pmvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_AUTO_VOLUME",activeOnly = True)
+pmpkvol     = VisumPy.helpers.GetMulti(Visum.Net.Links,"PMPK_AUTO_VOLUME",activeOnly = True)
+opvol       = VisumPy.helpers.GetMulti(Visum.Net.Links,"OP_AUTO_VOLUME",activeOnly = True)
+dlyvol      = VisumPy.helpers.GetMulti(Visum.Net.Links,"DLY_AUTO_VOLUME",activeOnly = True)
+fftime      = VisumPy.helpers.GetMulti(Visum.Net.Links,"T0_PRTSYS(C)",activeOnly = True)
+ctime       = VisumPy.helpers.GetMulti(Visum.Net.Links,"PM_CTIME",activeOnly = True)
 
 # Set up dataframe to use for all needed zone attributes. Update as needed during coding
 links_df = pd.DataFrame({'NO':no, 'LENGTH': length, 'TYPENO': typeno, 'TSYSSET': tsys, 'NFCLASS': nfc, 'AreaType': area, 'AM_AUTO_VOLUME': amvol, 'PM_AUTO_VOLUME': pmvol, 'PMPK_AUTO_VOLUME': pmpkvol, 'OP_AUTO_VOLUME': opvol, 'DLY_AUTO_VOLUME': dlyvol,  'FFTIME': fftime, 'CTIME': ctime, 
