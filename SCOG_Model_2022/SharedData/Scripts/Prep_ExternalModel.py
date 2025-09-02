@@ -94,7 +94,7 @@ XX_auto_A  = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_AUTO_A")
 # XX_truck_A = VisumPy.helpers.GetMulti(Visum.Net.Zones, "XX_TRUCK_A")
 
 # Balance XX Matrices to Grown P's and A's for Autos
-mat = VisumPy.helpers.GetMatrix(Visum, 6) # Auto XX Matrix
+mat = VisumPy.helpers.GetMatrix(Visum, 10) # Auto XX Matrix: 10 = Replica, 6 = 2019 Passive Data
 r = np.array(XX_auto_P)
 c = np.array(XX_auto_A)
 #  Run Visum balanceMatrix function
