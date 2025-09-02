@@ -209,7 +209,7 @@ for x in range(len(zone_df)):
 		""" Run Visum balanceMatrix function """
 		
 		try:
-			balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001) # TODO matrix balancing issue default 0.0001
+			balanced_mat = VisumPy.matrices.balanceMatrix(mat,r,c,closePctDiff=0.001)
 			
 			# Paste in balanced values to new df fields
 			zone_df.loc[x,'HH1INC1'] = balanced_mat[0,0]
@@ -611,20 +611,7 @@ VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH1",zone_df['HH4VEH1'],activeOnly
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH2",zone_df['HH4VEH2'],activeOnly = True)
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH4VEH3",zone_df['HH4VEH3'],activeOnly = True)
 
-# TODO dummy values as placeholder
-# zone_df['HH1VEH0'] = zone_df['HHS1'] * 0.1
-# zone_df['HH1VEH1'] = zone_df['HHS1'] * 0.9
-# zone_df['HH2VEH0'] = zone_df['HHS2'] * 0.1 
-# zone_df['HH2VEH1'] = zone_df['HHS2'] * 0.3 
-# zone_df['HH2VEH2'] = zone_df['HHS2'] * 0.6 
-# zone_df['HH3VEH0'] = zone_df['HHS3'] * 0.1
-# zone_df['HH3VEH1'] = zone_df['HHS3'] * 0.2 
-# zone_df['HH3VEH2'] = zone_df['HHS3'] * 0.7 
-# zone_df['HH4VEH0'] = zone_df['HHS4'] * 0.1
-# zone_df['HH4VEH1'] = zone_df['HHS4'] * 0.1
-# zone_df['HH4VEH2'] = zone_df['HHS4'] * 0.5
-# zone_df['HH4VEH3'] = zone_df['HHS4'] * 0.2
-# 
+ 
 # # Set Visum zone fields with HHWRK(0-3) values
 # VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH0",zone_df['HH1VEH0'])
 # VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH1",zone_df['HH1VEH1'])
