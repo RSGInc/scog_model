@@ -42,6 +42,9 @@ AADT 30k to 50k,FSUTMS Pct Error,DLY >= 30000 and DLY < 50000
 AADT 50k to 65k,FSUTMS Pct Error,DLY >= 50000 and DLY < 65000
 AADT 65k to 75k,FSUTMS Pct Error,DLY >= 65000 and DLY < 75000
 AADT > 75k,FSUTMS Pct Error,DLY >= 75000
+Freeways,FSUTMS Pct Error,NFCLASS >= 1 and NFCLASS < 3
+Arterials,FSUTMS Pct Error,NFCLASS == 3 or NFCLASS == 4
+Collectors,FSUTMS Pct Error,NFCLASS == 5 or NFCLASS == 6
 Internal Counts,All,EXT_COUNT != 1
 External Counts,All,EXT_COUNT == 1
 Sc 3 Deception Pass,All,SCREENLINE == '3'
