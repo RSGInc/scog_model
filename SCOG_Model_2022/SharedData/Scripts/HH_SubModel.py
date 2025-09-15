@@ -437,6 +437,9 @@ for x in range(len(zone_df)):
 			addIn.ReportMessage(errstring, MessageType.Error)
 			continue
 
+# Replace empty cells with 0
+zone_df.fillna(0, inplace=True) # Replace blank cells with 0
+
 # Set Visum zone fields with HHWRK(0-3) values
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1W0",zone_df['HH1W0'],activeOnly = True)
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1W1",zone_df['HH1W1'],activeOnly = True)
@@ -595,6 +598,9 @@ for x in range(len(zone_df)):
 			errstring = f"Could not balance NO {zone_df.loc[x,'NO']}	HH size: {np.array2string(r)} sum: {np.sum(r)}	Vehicles: {np.array2string(c)} sum: {np.sum(c)}\n"
 			addIn.ReportMessage(errstring, MessageType.Error)
 			continue
+
+# Replace empty cells with 0
+zone_df.fillna(0, inplace=True) # Replace blank cells with 0
 
 # Set Visum zone fields with HHSize x Vehicle values
 VisumPy.helpers.SetMulti(Visum.Net.Zones,"HH1VEH0",zone_df['HH1VEH0'],activeOnly = True)

@@ -17,6 +17,9 @@
 			<attributeDefinition aggregate="false" aggregationFunction="COMPARE" alignment="RIGHTALIGNMENT" attributeID="SUM_ZONES_TOTPOPULATION" displayUnits="false" numberOfDecimalPlaces="0" stringFormatType="DEFAULTFMT" subAttributeID1="" subAttributeID2="" subAttributeID3="" useThousandsSeparator="false" weightedAverageAttribute="1.0"/>
 			<attributeDefinition aggregate="false" aggregationFunction="COMPARE" alignment="RIGHTALIGNMENT" attributeID="SUM_ZONES_TOTEMPLOYMENT" displayUnits="false" numberOfDecimalPlaces="0" stringFormatType="DEFAULTFMT" subAttributeID1="" subAttributeID2="" subAttributeID3="" useThousandsSeparator="false" weightedAverageAttribute="1.0"/>
 			<attributeDefinition aggregate="false" aggregationFunction="COMPARE" alignment="RIGHTALIGNMENT" attributeID="SUM_ZONES_HOUSINGUNITS" displayUnits="false" numberOfDecimalPlaces="0" stringFormatType="DEFAULTFMT" subAttributeID1="" subAttributeID2="" subAttributeID3="" useThousandsSeparator="false" weightedAverageAttribute="1.0"/>
+			<attributeDefinition aggregate="false" aggregationFunction="COMPARE" alignment="RIGHTALIGNMENT" attributeID="SUM_LINKS_DLY_VMT" displayUnits="false" numberOfDecimalPlaces="2" stringFormatType="DEFAULTFMT" subAttributeID1="" subAttributeID2="" subAttributeID3="" useThousandsSeparator="false" weightedAverageAttribute="1.0"/>
+			<attributeDefinition aggregate="false" aggregationFunction="COMPARE" alignment="RIGHTALIGNMENT" attributeID="SUM_LINKS_DLY_VHT" displayUnits="true" numberOfDecimalPlaces="0" stringFormatType="HOURS" subAttributeID1="" subAttributeID2="" subAttributeID3="" useThousandsSeparator="false" weightedAverageAttribute="1.0"/>
+			<attributeDefinition aggregate="false" aggregationFunction="COMPARE" alignment="RIGHTALIGNMENT" attributeID="SUM_LINKS_DLY_VHD" displayUnits="true" numberOfDecimalPlaces="0" stringFormatType="HOURS" subAttributeID1="" subAttributeID2="" subAttributeID3="" useThousandsSeparator="false" weightedAverageAttribute="1.0"/>
 		</attributeDefinitions>
 		<columnWidths>
 			<columnWidth width="36"/>
@@ -34,6 +37,9 @@
 			<columnWidth width="60"/>
 			<columnWidth width="60"/>
 			<columnWidth width="60"/>
+			<columnWidth width="95"/>
+			<columnWidth width="129"/>
+			<columnWidth width="75"/>
 		</columnWidths>
 		<fontDefinition characterSet="0" clipPrecision="0" escapement="0" faceName="Arial" height="-12" italic="false" orientation="0" outPrecision="0" pitchAndFamily="0" quality="0" strikeOut="false" underline="false" weight="400" width="0"/>
 		<initialColumnSortings/>

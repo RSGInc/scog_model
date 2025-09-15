@@ -165,13 +165,16 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
         join_df3['count_err'] = join_df3[flowfld] - join_df3[cntfld]
         join_df3['pct_err'] = 100*(join_df3['count_err'] / join_df3[cntfld])
         
+        # Replace empty cells with 0
+        join_df3.fillna(0, inplace=True) # Replace blank cells with 0
+        
         # write back err to visum network
-        counts_list = join_df3['count_tot'].to_list()
-        errs_list = join_df3['count_err'].to_list()
-        pcterr_list = join_df3['pct_err'].to_list()
-        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_count",counts_list,activeOnly = True)
-        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_err",errs_list,activeOnly = True)
-        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_pcterr",pcterr_list,activeOnly = True)
+        # counts_list = join_df3['count_tot'].to_list()
+        # errs_list = join_df3['count_err'].to_list()
+        # pcterr_list = join_df3['pct_err'].to_list()
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_count",join_df3['count_tot'],activeOnly = True)
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_err",join_df3['count_err'],activeOnly = True)
+        VisumPy.helpers.SetMulti(Visum.Net.Links,"calrep_2way_pcterr",join_df3['pct_err'],activeOnly = True)
         
     
 
