@@ -16,7 +16,7 @@
 			<columnWidth width="42"/>
 			<columnWidth width="60"/>
 		</columnWidths>
-		<fontDefinition characterSet="0" clipPrecision="0" escapement="0" faceName="Arial" height="-8" italic="false" orientation="0" outPrecision="0" pitchAndFamily="0" quality="0" strikeOut="false" underline="false" weight="400" width="0"/>
+		<fontDefinition characterSet="0" clipPrecision="0" escapement="0" faceName="Arial" height="-12" italic="false" orientation="0" outPrecision="0" pitchAndFamily="0" quality="0" strikeOut="false" underline="false" weight="400" width="0"/>
 		<initialColumnSortings/>
 	</listLayoutCommonEntries>
 	<listGraphicParameterLayoutItems netObjectType=""/>
