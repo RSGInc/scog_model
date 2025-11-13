@@ -34,7 +34,7 @@ HHSizeModel = pd.read_csv(hh_parameters_path+'HHSizeModel.csv')
 IncomeModel = pd.read_csv(hh_parameters_path+'IncomeModel.csv')
 HHIncSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_income_2d_table.csv')
 HHWrkSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_workers_2d_table.csv')
-HHVehSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_vehicles_2d_table_PUMS.csv')
+HHVehSeedMtx   = pd.read_csv(hh_parameters_path+'HHsize_vehicles_2d_table.csv')
 NumWorkersModel = pd.read_csv(hh_parameters_path+'NumberOfWorkersModel_MNL.csv')
 NumVehiclesModel = pd.read_csv(hh_parameters_path+'NumberOfVehiclesModel_MNL.csv')
 

@@ -209,11 +209,8 @@ links_df['SCREENLINE'] = np.where(links_df['SC_with'].isna(),links_df['SC_agains
 
 # links_df.to_csv(reports_path + "calrep_df.csv")
 
-# count_test = pd.read_csv(reports_path + 'counts_2way.csv') # testing file
-# count_file = pd.read_csv(reports_path + 'merged_Auto_counts_5_13.csv')
-# count_file = pd.read_csv(reports_path + '/SCOG_Counts_07142025/Auto_Counts.csv')
-count_file = pd.read_csv(reports_path + '/SCOG_Counts_07142025/Auto_Counts_additionaljoins7-23_ext.csv')
-query_file = reports_path + 'calrepinfo.csv'
+count_file = pd.read_csv(reports_path + '/Counts/Auto_Counts.csv')
+query_file = reports_path + '/Counts/calrepinfo.csv'
 
 calrep("AMAuto", links_df, 'AM_AUTO_VOLUME', 'NO', count_file, 'AM', query_file, out_path)
 calrep("PMAuto", links_df, 'PM_AUTO_VOLUME', 'NO', count_file, 'PM', query_file, out_path)
