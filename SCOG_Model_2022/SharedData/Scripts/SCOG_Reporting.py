@@ -18,12 +18,14 @@ import os.path
 out_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..', 'Outputs'))
 shared_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..', 'SharedData'))
 reports_path = shared_path + "/Reports/"
-timestamp = datetime.now().strftime("%Y%m%d_%H%M")
+timestamp = datetime.now().strftime("%Y%m%d") # _%H%M
 scenname = Visum.Net.AttValue("SCENARIO")
 
 # Create timestamped folder for all results
 scen_out = out_path + "/ModelRun_"+scenname+"_"+timestamp
-os.mkdir(scen_out)
+
+if not os.path.exists(scen_out):
+	os.mkdir(scen_out)
 
 # Formatting functions
 # Formatting for columns

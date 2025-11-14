@@ -38,7 +38,7 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     write_links = True if cntfld == "DLY" else False
 
     # output path
-    timestamp = datetime.now().strftime("%m%d%Y_%H%M%S")
+    timestamp = datetime.now().strftime("%H%M%S")
     filename = "CalRep_"+name+"_"+timestamp+".csv"
     joinexport = "CountJoin_"+name+"_"+timestamp+".csv"
     joinexport2 = "CountJoin2_"+name+"_"+timestamp+".csv"
@@ -150,7 +150,7 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
     
     # Export count_summary_df to csv file in timestamped folder
     calrep_df.to_csv(os.path.join(outdir, filename))
-    join_df.to_csv(os.path.join(outdir, joinexport))
+    #join_df.to_csv(os.path.join(outdir, joinexport))
     
     if write_links == True:
         # join totflow and totcount to links df
@@ -158,7 +158,7 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
         join_df2 = join_df2[['NO','DLY']]
         join_df3 = join_df2.merge(links_agg, how="left", on=joinfld)
         
-        join_df3.to_csv(os.path.join(outdir, joinexport2)) # this join has all links and duplicates the counts on the right
+        #join_df3.to_csv(os.path.join(outdir, joinexport2)) # this join has all links and duplicates the counts on the right
         
         # calc individual link errors for calibration
         join_df3['count_tot'] = join_df3[cntfld]
@@ -182,6 +182,15 @@ def calrep (name, links_df, flowfld, joinfld, count_df, cntfld, queryfile, outdi
 out_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..', 'Outputs'))
 shared_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..', 'SharedData'))
 reports_path = shared_path + "/Reports/"
+
+timestamp = datetime.now().strftime("%Y%m%d") # _%H%M
+scenname = Visum.Net.AttValue("SCENARIO")
+
+# Dated folder for scenario results
+scen_out = out_path + "/ModelRun_"+scenname+"_"+timestamp
+
+if not os.path.exists(scen_out):
+	os.mkdir(scen_out)
 
 # Pull Link attributes from Visum and create dataframe
 no          = VisumPy.helpers.GetMulti(Visum.Net.Links,"No",activeOnly = True)
@@ -212,9 +221,9 @@ links_df['SCREENLINE'] = np.where(links_df['SC_with'].isna(),links_df['SC_agains
 count_file = pd.read_csv(reports_path + '/Counts/Auto_Counts.csv')
 query_file = reports_path + '/Counts/calrepinfo.csv'
 
-calrep("AMAuto", links_df, 'AM_AUTO_VOLUME', 'NO', count_file, 'AM', query_file, out_path)
-calrep("PMAuto", links_df, 'PM_AUTO_VOLUME', 'NO', count_file, 'PM', query_file, out_path)
-calrep("OPAuto", links_df, 'OP_AUTO_VOLUME', 'NO', count_file, 'OP', query_file, out_path)
-calrep("PMPeakAuto", links_df, 'PMPK_AUTO_VOLUME', 'NO', count_file, 'PM_PKHR', query_file, out_path)
-calrep("DLYAuto", links_df, 'DLY_AUTO_VOLUME', 'NO', count_file, 'DLY', query_file, out_path)
+calrep("AMAuto", links_df, 'AM_AUTO_VOLUME', 'NO', count_file, 'AM', query_file, scen_out)
+calrep("PMAuto", links_df, 'PM_AUTO_VOLUME', 'NO', count_file, 'PM', query_file, scen_out)
+calrep("OPAuto", links_df, 'OP_AUTO_VOLUME', 'NO', count_file, 'OP', query_file, scen_out)
+calrep("PMPeakAuto", links_df, 'PMPK_AUTO_VOLUME', 'NO', count_file, 'PM_PKHR', query_file, scen_out)
+calrep("DLYAuto", links_df, 'DLY_AUTO_VOLUME', 'NO', count_file, 'DLY', query_file, scen_out)
 
