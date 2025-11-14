@@ -1,0 +1,17 @@
+﻿$VISION
+* Resource Systems Group
+* 2025-11-13 20:30:02
+* From: U:\Projects\Clients\SCOG\Model\scog_model\SCOG_Model_2022\Temp\Temp_Mod3.ver
+* To:   *
+* 
+* Table: Version block
+* 
+$VERSION:VERSNR;FILETYPE;LANGUAGE;UNIT
+15;Trans;ENG;MI
+
+* 
+* Table: Network (modified)
+* 
+$NETWORK:SCENARIO
+2050 No Build
+
