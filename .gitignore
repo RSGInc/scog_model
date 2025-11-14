@@ -1,1 +1,5 @@
+SCOG_Model_2022/Outputs/**
+!SCOG_Model_2022/Outputs/.gitkeep
 
+SCOG_Model_2022/Scenarios/**
+!SCOG_Model_2022/Scenarios/.gitkeep
