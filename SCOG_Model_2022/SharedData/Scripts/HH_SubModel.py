@@ -27,7 +27,12 @@ else:
 # set paths 
 hhsubmodel_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'HH_Submodel'))
 hh_parameters_path = hhsubmodel_path + "/Parameters/"
-hh_out_path = hhsubmodel_path + "/Outputs/"
+scenname = Visum.Net.AttValue("SCENARIO")
+hh_out_path = hhsubmodel_path + "/Outputs_"+scenname+"/"
+
+if not os.path.exists(hh_out_path):
+	os.mkdir(hh_out_path)
+
 
 """ Define Input files and Constants """
 HHSizeModel = pd.read_csv(hh_parameters_path+'HHSizeModel.csv')
