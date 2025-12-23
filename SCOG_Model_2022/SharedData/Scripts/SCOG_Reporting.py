@@ -284,6 +284,7 @@ vol_corridor_summary_df.set_index('Volume Corridor', inplace=True)
 array1 = links_df['VOL_CORR'].dropna().to_numpy()
 array2 = links_df['VOL_CORR_2'].dropna().to_numpy()
 combined_array = np.concatenate((array1, array2), axis=0)
+combined_array = combined_array[combined_array > 0] # drop corridors tagged 0
 unique_vol_corr = np.unique(combined_array)
 
 # Calculate average volume by corridor for PM Peak and Daily
@@ -382,8 +383,8 @@ tt_corridor_summary_df = pd.read_csv(os.path.join(shared_path,'Reports/Template/
 # Set indices for vol_corridor_summary_df to use the Volume Corridor column
 tt_corridor_summary_df.set_index('Travel Time Corridor', inplace=True)
 
-# Drop rows with empty 'VOL_CORR'
-tt_links_df = links_df.dropna(subset=['TT_CORR'])
+# Drop rows with zero/empty 'VOL_CORR'
+tt_links_df = links_df[links_df['TT_CORR'] > 0].dropna(subset=['TT_CORR'])
 
 # Pull unique Volume Corridor values
 unique_tt_corr = tt_links_df['TT_CORR'].unique()

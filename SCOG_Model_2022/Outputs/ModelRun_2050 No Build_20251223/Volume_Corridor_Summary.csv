@@ -1,0 +1,19 @@
+Volume Corridor,Route,From/To,Node 1,To/From,Node 2,Length (miles),Number of Lanes,Avg PM Peak Hour Volume (both directions),PM Peak Hour LOS,Avg Daily Model Volume (both directions),Daily LOS
+1,A SR-20 Spur,Anacortes Ferry Terminal,6847,Sharpes Corner,622,7.9,4.0,928,C,"11,125",C
+2,B SR-20 Rural,Deception Pass,6982,Gibraltar Rd,650,4.9,2.0,"1,452",D,"18,050",F
+3,C SR-20 Urban,Gibraltar Rd,650,Swinomish Channel,679,4.4,4.0,"2,486",C,"31,812",C
+4,D SR-20 Rural,Swinomish Channel,679,Pulver Rd,605,7.1,4.0,"2,632",C,"34,578",D
+5,E SR-536 Rural,SR-20,700,Valley View Dr,7066,3.2,2.0,569,C,"7,425",C
+6,F SR-536 Urban,Valley View Dr,7066,I-5 at Kincaid,812,2.3,2.0,709,D,"9,328",D
+7,G SR-9 Rural South,SR-9 South External,1361,SR-538 College Way,6432,12.1,2.0,276,C,"3,232",C
+8,H SR-538 College Way Urban,I-5,734,SR-9,6432,3.7,4.0,"1,469",D,"19,414",D
+9,I I-5 Rural South,I-5 South External,1087/1088,Old Highway 99,1867/1868,6.6,6.0,"2,355",B,"29,475",B
+10,J I-5 Urban Mount Vernon,Old Highway 99,1867/1868,Skagit River,687/688,4.9,4.0,"2,690",B,"33,839",B
+11,K I-5 Urban Burlington,Skagit River,687/688,Cook Rd,402/403,3.9,4.0,"2,625",B,"32,982",B
+12,L I-5 Rural North,Cook Rd,402/403,Cook Rd,402/403,10.1,4.0,"1,761",B,"22,108",B
+13,M SR-11 Rural,Burlington Blvd/Josh Wilson Rd,6723,SR-11 External,192,14.1,2.0,401,C,"4,885",C
+14,N SR-20 Burlington Sedro-Woolley,Pulver Rd,605,Helmick Rd,317,8.9,2.0,"1,445",F,"19,131",F
+15,O SR-9 Rural Middle,SR-538 College Way,6432,Skagit River,6763,5.2,2.0,566,C,"6,977",C
+16,P SR-9 Urban,Skagit River,6763,Kalloch Rd,289,4.1,2.0,880,D,"11,884",D
+17,Q SR-9 Rural North,Kalloch Rd,289,SR-9 North External,190,7.9,2.0,222,C,"2,454",C
+18,R SR-20 Rural East,Helmick Rd,317,SR-20 East External,317,30.4,2.0,735,C,"9,454",C
