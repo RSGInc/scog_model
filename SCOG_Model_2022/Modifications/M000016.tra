@@ -1,0 +1,19 @@
+﻿$VISION
+* Skagit Council of Governments Mount Vernon
+* 2025-12-05 10:52:29
+* From: \\skagit\dept\SCOG\Shared\Transportation\Travel Demand Model\SCOG_Model\2026_RTP\SCOG_Model_2022\Temp\Temp_Mod16.ver
+* To:   *
+* 
+* Table: Version block
+* 
+$VERSION:VERSNR;FILETYPE;LANGUAGE;UNIT
+15;Trans;ENG;MI
+
+* 
+* Table: Nodes (modified)
+* 
+$*NODE:NO;CONTROLTYPE
+806;5
+808;5
+810;5
+

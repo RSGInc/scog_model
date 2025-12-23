@@ -1,28 +1,26 @@
 Volume Corridor,Route,From/To,Node 1,To/From,Node 2,Length (miles),Number of Lanes,Avg PM Peak Hour Volume (both directions),PM Peak Hour LOS,Avg Daily Model Volume (both directions),Daily LOS,PM Peak Hour LOS Table,Daily LOS Table,LOS Pct Adjustment,LOS PM Peak Additive Adjustment,LOS Daily Additive Adjustment
-1,US 2,Lincoln County ,18016,Fairchild AFB,19809,,,,,,,6c,3c,0,0,0
-2,US 2,Flint Road,19341,I-90,20298/20241,,,,,,,5d,2d,0.05,0,0
-3,US 2,Day Mt. Spokane,1835,Westwood,863,,,,,,,6c,3c,0.05,0,0
-4,US 2,Westwood,863,Pend Oreille County,18,,,,,,,6c,3c,0,0,0
-5,SR 27,Whitman County,26069,32nd Ave,20177,,,,,,,6c,3c,0.05,0,0
-6,SR 290 ,Evergreen Road,7834,Barker Road,6746,,,,,,,5d,2d,0.05,0,0
-7,SR 290,Barker Road,6746,Starr Road,4199,,,,,,,6c,3c,0.05,0,0
-8,SR 291 ,Indian Trail Road,5670,Seven Mile,4233,,,,,,,5d,2d,0.05,0,0
-9,SR 291 ,Seven Mile,4233,Stevens County,2226,,,,,,,6c,3c,0.05,0,0
-10,US 395,Wandermere Rd.,2585,Fender Road,1330,,,,,,,6c,3c,0,0,0
-11,US 395,Fender Road,1330,Stevens County Line,293,,,,,,,6c,3c,0.33,0,0
-12,SR 902,Exit 264,24730,Medical Lk City Limits,24327,,,,,,,6c,3c,0,0,0
-13,SR 902,Medical Lk City Limits,23646,Exit 272,23346,,,,,,,6c,3c,0,0,0
-14,SR 904,Exit 257,25452,Cheney City Limits,25178,,,,,,,6c,3c,0,0,0
-15,SR 904,Cheney City Limits,24647,Exit 270,24019,,,,,,,6c,3c,0.05,0,0
-16,NSC,I-90,28560/28556,Francis Ave,28532/28535,,,,,,,4c,1c,0,0,0
-17,NSC,Francis Ave,28532/28535,Wandermere Rd,28513/28512,,,,,,,4c,1c,0,0,0
-18,I-90,Lincoln County,25536/25529,Geiger I/C,21947/21934,,,,,,,6b,3b,0,0,0
-19,I-90,Geiger I/C,21947/21934,Sprague I/C,15146/15149,,,,,,,4c,1c,0,0,0
-20,I-90,Sprague I/C,15146/15149,Barker I/C,12851/12820,,,,,,,4c,1c,0,0,0
-21,I-90,Barker I/C,12851/12820,Kootenai County,6649/6603,,,,,,,5c,2c,0,0,0
-22,US 195,Whitman County,26086,Approx Watt Rd,25341,,,,,,,6c,3c,0,0,0
-23,US 195,Approx Watt Rd,25337,UZA Bndry/Hatch Rd,23343/27010,,,,,,,6c,3c,0,0,0
-24,US 195,UZA Bndry/Hatch Rd,23343/27010,I-90,18590/18514,,,,,,,5d,2d,0,0,0
-25,Bigelow Gulch - entire,Havana,5338,Wellesley,6874,,,,,,,5d,2d,0,0,0
-26,Bigelow Gulch-west,Havana,5338,Argonne,4702,,,,,,,5d,2d,0,0,0
-27,Bigelow Gulch-east,Argonne,4702,Wellesley,6874,,,,,,,5d,2d,0,0,0
+1,A SR-20 Spur,Anacortes Ferry Terminal,6847,Sharpes Corner,622,,,,,,,4b,1b,0,0,0
+2,B SR-20 Rural,Deception Pass,6982,Gibraltar Rd,650,,,,,,,5a,2a,0,0,0
+3,C SR-20 Urban,Gibraltar Rd,650,Swinomish Channel,679,,,,,,,4a,1a,0,0,0
+4,D SR-20 Rural,Swinomish Channel,679,Pulver Rd,605,,,,,,,5a,2a,0,0,0
+5,E SR-536 Rural,SR-20,700,Valley View Dr,7066,,,,,,,5a,2a,0,0,0
+6,F SR-536 Urban,Valley View Dr,7066,I-5 at Kincaid,812,,,,,,,4b,1b,0,0,0
+7,G SR-9 Rural South,SR-9 South External,1361,SR-538 College Way,6432,,,,,,,5a,2a,0,0,0
+8,H SR-538 College Way Urban,I-5,734,SR-9,6432,,,,,,,4b,1b,0,0,0
+9,I I-5 Rural South,I-5 South External,1087/1088,Old Highway 99,1867/1868,,,,,,,5c,2c,0,0,0
+10,J I-5 Urban Mount Vernon,Old Highway 99,1867/1868,Skagit River,687/688,,,,,,,4c,1c,0,0,0
+11,K I-5 Urban Burlington,Skagit River,687/688,Cook Rd,402/403,,,,,,,4c,1c,0,0,0
+12,L I-5 Rural North,Cook Rd,402/403,Cook Rd,402/403,,,,,,,5c,2c,0,0,0
+13,M SR-11 Rural,Burlington Blvd/Josh Wilson Rd,6723,SR-11 External,192,,,,,,,5a,2a,0,0,0
+14,N SR-20 Burlington Sedro-Woolley,Pulver Rd,605,Helmick Rd,317,,,,,,,4b,1b,0,0,0
+15,O SR-9 Rural Middle,SR-538 College Way,6432,Skagit River,6763,,,,,,,5a,2a,0,0,0
+16,P SR-9 Urban,Skagit River,6763,Kalloch Rd,289,,,,,,,4b,1b,0,0,0
+17,Q SR-9 Rural North,Kalloch Rd,289,SR-9 North External,190,,,,,,,5a,2a,0,0,0
+18,R SR-20 Rural East,Helmick Rd,317,SR-20 East External,317,,,,,,,6a,3a,0,0,0
+
+
+
+
+
+
+

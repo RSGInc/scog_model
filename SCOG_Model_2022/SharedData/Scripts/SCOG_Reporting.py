@@ -1,5 +1,5 @@
 """
-Model Trip, VMT, VHT, VHD reporting
+Model Trip, VMT, VHT, VHD, LOS reporting
 michael.mccarthy@rsginc.com 2025-07-28
 revised 2025-11-13
 
